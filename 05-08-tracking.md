@@ -8,12 +8,12 @@ Tracker蒐集: Identifier, 地理位置資訊、網路流量、瀏覽過的葉�
 ### 1. 儲存狀態分類
 
 * **Stateful（有狀態）：** 將識別碼（Identifier）儲存在瀏覽器內。
-* **Cookie:** 最常見的 Key-value 儲存方式。
-* **其他儲存空間:** Local Storage、Session Storage、IndexedDB、Cache。
+    * **Cookie:** 最常見的 Key-value 儲存方式。
+    * **其他儲存空間:** Local Storage、Session Storage、IndexedDB、Cache。
 
 
 * **Stateless（無狀態 / 指紋追蹤）：**
-* **Browser Fingerprinting:** 收集瀏覽器版本、作業系統、硬體配置、字體、螢幕解析度等資訊，計算出唯一的識別碼。
+    * **Browser Fingerprinting:** 收集瀏覽器版本、作業系統、硬體配置、字體、螢幕解析度等資訊，計算出唯一的識別碼。
 
 
 
@@ -66,8 +66,8 @@ Tracker蒐集: Identifier, 地理位置資訊、網路流量、瀏覽過的葉�
 * **同源政策 (Same-Origin Policy):** 網頁安全基石，限制不同來源（Scheme + Host + Port）的腳本互動，但 Cookie 的 Domain 屬性可能成為例外。
 * **WebRTC:** 雖然方便線上會議（影音串流），但可能洩漏真實內部 IP。
 * **防禦工具與機制:**
-* **uBlock Origin:** 強大的阻擋器。
-* **Brave Browser:** 具備 **Debouncing**（反跳轉追蹤）與防指紋技術。
-* **資安意識:** 推薦閱讀《監控資本主義時代》，理解隱私洩漏對社會結構與行為操弄的深遠影響。
+    * **uBlock Origin:** 強大的阻擋器。
+    * **Brave Browser:** 具備 **Debouncing**（反跳轉追蹤）與防指紋技術。
+    * **資安意識:** 推薦閱讀《監控資本主義時代》，理解隱私洩漏對社會結構與行為操弄的深遠影響。
 
 
