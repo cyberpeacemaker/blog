@@ -82,3 +82,7 @@
 ---
 
 **本文件僅供宣導參考，若您正處於危急情況，請立即聯繫當地執法部門。**
+
+---
+
+In false accusations, many cyberstalkers try to damage the reputation of their victim and turn other people against them. They post false information about them on Websites. They may set up their own Websites, blogs, or user pages for this purpose. They post allegations about the victim to newsgroups, chat rooms, or other sites that allow public contributions
