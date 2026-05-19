@@ -1,17 +1,12 @@
-These are excellent, highly recommended adjustments for anyone looking to harden their email security against phishing and tracking.
-
-Here is a deeper elaboration on exactly *why* these two settings are so crucial for your cybersecurity, breaking down the mechanics of the threats they mitigate.
-
----
 
 ### 一、 核心防護：變更圖片顯示設定 (Core Protection: Disabling Automatic Images)
 
 The instruction here is to select **"Ask before displaying external images."** This is primarily designed to defeat a common surveillance technique known as **Tracking Pixels** (or Web Beacons).
 
 **How the Threat Works:**
-When marketers or malicious hackers send you an email, they often embed a tiny, invisible 1x1 pixel image into the HTML of the message.
+When marketers or malicious hackers send you an email, **they often embed a tiny, invisible 1x1 pixel image into the HTML of the message.**
 
-When you open the email, your email client automatically tries to display all the images. To do this, it has to fetch that tiny image from the sender's server. The moment your computer requests that image, the sender's server logs the request.
+When you open the email, your email client automatically tries to display all the images. To do this, it has to fetch that tiny image from the sender's server. **The moment your computer requests that image, the sender's server logs the request.**
 
 **What the Attacker Gains:**
 
@@ -37,7 +32,3 @@ The Reading Pane is designed for convenience, automatically loading and displayi
 * **Zero-Click Vulnerabilities (Rare but possible):** While modern email clients like Gmail are excellent at stripping out malicious scripts, historically, severe vulnerabilities have allowed malware to execute simply by the email client rendering the code in the preview pane—no clicking required.
 
 **Why this setting helps:** Disabling the Reading Pane acts as a psychological buffer. It forces a two-step process: you must first look at the **Sender** and the **Subject Line** in your inbox list, and then make a conscious, deliberate click to open it. This gives your brain a crucial extra second to notice red flags, like a misspelled sender domain (e.g., `support@paypa1.com` instead of `paypal.com`), before you are exposed to the manipulative content inside.
-
----
-
-Would you like me to walk you through any other recommended Gmail security settings, such as adjusting your Safe Browsing features or reviewing third-party app permissions?
