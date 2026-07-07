@@ -35,7 +35,7 @@ Entry point for the blog vault. Use the MOCs below to navigate by topic.
 
 ## Templates & Guidelines
 
-- [[2026-06-06-CLAUDE]] — agent instruction template
-- [[2026-07-07-writeup-guideline]] — CTF/IR write-up framework
-- [[2026-06-09-YAML-markdown]] — frontmatter reference
+- [[CLAUDE]] — agent instruction template
+- [[writeup-guideline]] — CTF/IR write-up framework
+- [[YAML-markdown]] — frontmatter reference
 - [[Tag Taxonomy]] — standard tags for this vault

@@ -6,7 +6,7 @@ lang: en
 status: published
 ---
 
-> Related: [[MOC - Threat Hunting]] · [[2026-06-04-threat-hunt-evolution]] · [[2026-06-18-forensic-remote-control]]
+> Related: [[MOC - Threat Hunting]] · [[threat-hunt-evolution]] · [[forensic-remote-control]]
 
 Here is the English translation of your requirements, polished for clarity and a professional technical tone:
 

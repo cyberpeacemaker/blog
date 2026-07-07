@@ -6,7 +6,7 @@ lang: en
 status: draft
 ---
 
-> Related: [[MOC - AI Agents]] · [[2026-06-10-NICSA-ai-framework-v1]] · [[2026-06-06-CLAUDE]] · [[2026-06-11-context-management]]
+> Related: [[MOC - AI Agents]] · [[NICSA-ai-framework-v1]] · [[CLAUDE]] · [[context-management]]
 
 An **agent framework** is the software toolkit, libraries, and architecture developers use to build, manage, and orchestrate AI agents.
 

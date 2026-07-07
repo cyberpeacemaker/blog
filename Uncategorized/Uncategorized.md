@@ -13,13 +13,14 @@ Inbox for new captures before filing into a topic folder. Review weekly and move
 ## Daily notes
 
 - Calendar daily notes: `Uncategorized/daily/YYYY-MM-DD.md`
-- Template: [[00-Meta/templates/daily-note]]
+- Template: [[00-Meta\templates/daily-note]]
 
 ## Obsidian setup notes
 
-- [[2026-07-07-obsidian]] — Git vs Obsidian Sync workflow
-- [[2026-07-07-obsidian-setting]] — vault settings and plugin independence
-- [[2026-07-07-obsidian-cursor-explain]] — vault setup plan reference
+- [[obsidian]] — Git vs Obsidian Sync workflow
+- [[obsidian-setting]] — vault settings and plugin independence
+- [[obsidian-cursor-explain]] — vault setup plan reference
+- [[windows-user-determine]] — Windows user context notes
 
 ## When to move out
 

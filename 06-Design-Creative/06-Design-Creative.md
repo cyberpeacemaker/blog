@@ -10,15 +10,15 @@ status: published
 
 UI/UX, p5.js, visual tools, and creative coding.
 
-- [[2026-06-08-design]]
-- [[2026-06-09-design-60-30-10]]
-- [[2026-06-08-p5js]]
-- [[2026-06-11-js-lib-p5js-threejs]]
-- [[2026-06-11-svg-flowchart-react-flow]]
-- [[2026-06-11-unpack-and-rebuild]]
-- [[2026-06-05-asana-figma]]
-- [[2026-06-11-visual-feedback]]
-- [[2026-06-08-pie-server]]
-- [[2026-06-08-claude-design]]
+- [[design]]
+- [[design-60-30-10]]
+- [[p5js]]
+- [[js-lib-p5js-threejs]]
+- [[svg-flowchart-react-flow]]
+- [[unpack-and-rebuild]]
+- [[asana-figma]]
+- [[visual-feedback]]
+- [[pie-server]]
+- [[claude-design]]
 
 See also: [[MOC - Claude & Cursor]]

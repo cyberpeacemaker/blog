@@ -12,33 +12,33 @@ Threat hunting methodology, forensics, CTF, and write-up standards.
 
 ## Methodology & Frameworks
 
-- [[2026-06-04-threat-hunt-evolution]] — threat hunting maturity model
-- [[2026-05-08-mitre]] — MITRE ATT&CK / CTI reference
-- [[2026-07-07-writeup-guideline]] — write-up quality framework (no time-travel analysis)
-- [[2026-05-25-qa-infosec]] — infosec Q&A reference
+- [[threat-hunt-evolution]] — threat hunting maturity model
+- [[mitre]] — MITRE ATT&CK / CTI reference
+- [[writeup-guideline]] — write-up quality framework (no time-travel analysis)
+- [[qa-infosec]] — infosec Q&A reference
 
 ## Forensics & Investigation
 
-- [[2026-06-18-forensic-remote-control]] — C2 forensics (Caldera)
-- [[2026-06-18-forensic-same-mac-dhcp]] — same MAC / DHCP forensics
-- [[2026-06-18-c2ma]] — C2 malware analysis
-- [[2026-06-11-inforensic-1m-review]] — inforensic review
+- [[forensic-remote-control]] — C2 forensics (Caldera)
+- [[forensic-same-mac-dhcp]] — same MAC / DHCP forensics
+- [[c2ma]] — C2 malware analysis
+- [[inforensic-1m-review]] — inforensic review
 
 ## Malware & Offense
 
-- [[2026-05-14-MobileRAT]] — mobile RAT analysis
-- [[2026-05-15-cyberstalker]] — cyberstalker case
-- [[2026-05-09-persistent]] — persistence techniques
-- [[2026-05-08-tracking]] — tracking methodology
-- [[2026-05-08-tracking-ori]] — tracking (original notes)
+- [[MobileRAT]] — mobile RAT analysis
+- [[cyberstalker]] — cyberstalker case
+- [[persistent]] — persistence techniques
+- [[tracking]] — tracking methodology
+- [[tracking-ori]] — tracking (original notes)
 
 ## Threat Intel
 
-- [[2026-06-17-google-threat-intelligence]] — Google Threat Intelligence
+- [[google-threat-intelligence]] — Google Threat Intelligence
 
 ## CTF
 
-- [[2026-06-04-CTF-roadmap]] — CTF learning roadmap
+- [[CTF-roadmap]] — CTF learning roadmap
 
 ## Related
 

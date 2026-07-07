@@ -6,7 +6,7 @@ lang: en
 status: draft
 ---
 
-> Related: [[MOC - AI Agents]] · [[2026-06-10-agent-framework]] · [[2026-06-10-NICSA-ai-framework-v1]] · [[2026-06-06-CLAUDE]]
+> Related: [[MOC - AI Agents]] · [[agent-framework]] · [[NICSA-ai-framework-v1]] · [[CLAUDE]]
 
 At its core, a **Multi-Agent System (MAS)** is a network of multiple autonomous entities—called **agents**—that interact, cooperate, and communicate with each other to solve complex problems that are too difficult for a single agent or a traditional centralized system to handle.
 

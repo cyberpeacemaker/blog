@@ -6,7 +6,7 @@ lang: en
 status: draft
 ---
 
-> Related: [[MOC - Claude & Cursor]] · [[2026-06-06-CLAUDE]] · [[2026-06-09-claude-skills-example]] · [[2026-06-09-claude-skill-command]]
+> Related: [[MOC - Claude & Cursor]] · [[CLAUDE]] · [[claude-skills-example]] · [[claude-skill-command]]
 
 **Skills** extend Claude's capabilities by bundling custom instructions, templates, and scripts. Create a `SKILL.md` file in `~/.claude/skills/<skill-name>/` or `.claude/skills/` (project-level), and Claude loads it automatically when relevant or when you invoke it with `/skill-name`. Skills support dynamic context injection (running commands and inlining output), supporting files, and frontmatter configuration to control invocation. Unlike `CLAUDE.md`, skill content loads only when used, reducing token costs for large reference material.
 

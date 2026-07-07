@@ -8,13 +8,13 @@ status: published
 
 # My Stack
 
-Living index of tools and how they connect. Expanded from [[2026-06-08-tools]].
+Living index of tools and how they connect. Expanded from [[tools]].
 
 ## Secure Ops & Communication
 
 - **Signal & Telegram** — out-of-band secure comms; Telegram for threat intel channels
 - **Slack & Asana / Jira** — team collaboration and project tracking
-  - See [[2026-07-06-slack-asana-jira]], [[2026-07-06-slack]], [[2026-07-06-business-productive-tool]]
+  - See [[slack-asana-jira]], [[slack]], [[business-productive-tool]]
 
 ## Threat Intel Brain (Obsidian)
 
@@ -23,7 +23,7 @@ Using Obsidian with **IOC Lens**, **SOC Toolkit**, and **VirusTotal Enrichment**
 - Map threat actors, malware behavior, and vulnerabilities
 - Parse IOCs from raw logs directly in markdown
 - See [[MOC - Threat Hunting]] for hunt methodology
-- See [[2026-05-13-env-setup]] for Obsidian + Canvas setup
+- See [[env-setup]] for Obsidian + Canvas setup
 
 ## NSM & Hunting Stack
 
@@ -34,7 +34,7 @@ Using Obsidian with **IOC Lens**, **SOC Toolkit**, and **VirusTotal Enrichment**
 ## Modern Dev & Code Acceleration
 
 - **Claude & Cursor** — AI-assisted coding → [[MOC - Claude & Cursor]]
-- **Hermes** — local LLM for function-calling agents → [[2026-06-08-hermes-claude]]
+- **Hermes** — local LLM for function-calling agents → [[hermes-claude]]
 - See [[MOC - AI Agents]] for agent frameworks
 
 ## Code Management & AI Infrastructure
@@ -44,8 +44,8 @@ Using Obsidian with **IOC Lens**, **SOC Toolkit**, and **VirusTotal Enrichment**
 
 ## Design & Creative
 
-- **Figma / Asana** — design workflow → [[2026-06-05-asana-figma]]
-- **p5.js / Three.js** — creative coding → [[2026-06-08-p5js]]
+- **Figma / Asana** — design workflow → [[asana-figma]]
+- **p5.js / Three.js** — creative coding → [[p5js]]
 
 ## The Big Picture
 

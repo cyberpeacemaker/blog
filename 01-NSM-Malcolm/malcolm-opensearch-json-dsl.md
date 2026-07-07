@@ -6,7 +6,7 @@ lang: en
 status: draft
 ---
 
-> Related: [[MOC - OpenSearch Querying]] · [[MOC - Malcolm & NSM]] · [[2026-05-27-lucene-dql-json-dsl]] · [[2026-05-27-opensearch-must-filter]]
+> Related: [[MOC - OpenSearch Querying]] · [[MOC - Malcolm & NSM]] · [[lucene-dql-json-dsl]] · [[opensearch-must-filter]]
 
 Yes, absolutely. You've got it exactly right.
 

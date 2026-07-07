@@ -6,7 +6,7 @@ lang: zh
 status: draft
 ---
 
-> Related: [[MOC - AI Agents]] · [[2026-06-10-agent-framework]] · [[2026-06-06-CLAUDE]] · [[2026-06-11-context-management]]
+> Related: [[MOC - AI Agents]] · [[agent-framework]] · [[CLAUDE]] · [[context-management]]
 
 ## 一、 資工背景專屬：AI Agent 開發的技術棧（Tech Stack）
 

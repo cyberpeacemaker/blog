@@ -6,7 +6,7 @@ lang: en
 status: draft
 ---
 
-> Related: [[MOC - Threat Hunting]] · [[2026-05-08-mitre]] · [[2026-07-07-writeup-guideline]] · [[MOC - Malcolm & NSM]]
+> Related: [[MOC - Threat Hunting]] · [[mitre]] · [[writeup-guideline]] · [[MOC - Malcolm & NSM]]
 
 # My Threat Hunting Attempts and Evolution
 

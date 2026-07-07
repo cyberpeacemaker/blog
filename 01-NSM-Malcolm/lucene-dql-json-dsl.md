@@ -6,7 +6,7 @@ lang: en
 status: draft
 ---
 
-> Related: [[MOC - OpenSearch Querying]] · [[2026-05-27-malcolm-opensearch-json-dsl]] · [[2026-05-27-lucene-power-usage]]
+> Related: [[MOC - OpenSearch Querying]] · [[malcolm-opensearch-json-dsl]] · [[lucene-power-usage]]
 
 This is a great question. The easiest way to understand the relationship is to think of **Lucene** and **DQL** as human-friendly "front-end" languages, and **JSON Query DSL** as the machine-friendly "back-end" language.
 

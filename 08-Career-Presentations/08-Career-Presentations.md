@@ -10,10 +10,10 @@ status: published
 
 Talks, transcripts, scripts, and career notes.
 
-- [[2026-06-09-presentation-talk]]
-- [[2026-06-09-project-presentation]]
-- [[2026-07-02-presentaion-transcription]]
-- [[2026-07-01-transcription-ideas]]
-- [[2026-07-01-draft-a-script]]
-- [[2026-06-17-cybersecurity-role]]
-- [[2026-06-27-job-title]]
+- [[presentation-talk]]
+- [[project-presentation]]
+- [[presentaion-transcription]]
+- [[transcription-ideas]]
+- [[draft-a-script]]
+- [[cybersecurity-role]]
+- [[job-title]]

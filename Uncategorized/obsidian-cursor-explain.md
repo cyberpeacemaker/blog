@@ -185,7 +185,7 @@ Today there are **zero** `[[wikilinks]]`. Add them incrementally — do not try 
 
 1. All Malcolm/OpenSearch/Arkime notes ↔ `[[MOC - Malcolm & NSM]]`
 2. `06-04-threat-hunt-evolution` ↔ `05-08-mitre` ↔ forensic notes
-3. Every AI workflow note → `[[2026-06-06-CLAUDE]]` (your agent instruction template)
+3. Every AI workflow note → `[[CLAUDE]]` (your agent instruction template)
 4. Tool mentions in body text → `[[My Stack]]` or specific tool notes
 
 **Obsidian features unlocked by linking:**

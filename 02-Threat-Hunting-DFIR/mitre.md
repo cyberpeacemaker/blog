@@ -6,7 +6,7 @@ lang: zh
 status: draft
 ---
 
-> Related: [[MOC - Threat Hunting]] · [[2026-06-04-threat-hunt-evolution]] · [[2026-06-18-forensic-remote-control]]
+> Related: [[MOC - Threat Hunting]] · [[threat-hunt-evolution]] · [[forensic-remote-control]]
 
 ## 🛑 一、 企業現實與挑戰
 

@@ -6,7 +6,7 @@ lang: en
 status: draft
 ---
 
-> Related: [[MOC - OpenSearch Querying]] · [[MOC - Malcolm & NSM]] · [[2026-06-03-arkime-api]] · [[2026-05-27-malcolm-opensearch-json-dsl]]
+> Related: [[MOC - OpenSearch Querying]] · [[MOC - Malcolm & NSM]] · [[arkime-api]] · [[malcolm-opensearch-json-dsl]]
 
 Arkime (formerly Moloch) sits on top of the exact same OpenSearch/Elasticsearch backend as Malcolm, so the final destination is the same: **it all has to become an OpenSearch JSON Query DSL.** However, *how* Arkime gets there is completely different.
 

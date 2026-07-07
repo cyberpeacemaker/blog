@@ -6,7 +6,7 @@ lang: en
 status: draft
 ---
 
-> Related: [[MOC - Malcolm & NSM]] · [[2026-05-27-malcolm-orchestration]] · [[2026-05-22-zeek-suricata]] · [[2026-05-27-arkime]]
+> Related: [[MOC - Malcolm & NSM]] · [[malcolm-orchestration]] · [[zeek-suricata]] · [[arkime]]
 
 You are absolutely correct! You have a spot-on understanding of how these tools function within this network security monitoring architecture.
 

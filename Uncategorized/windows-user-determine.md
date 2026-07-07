@@ -1,3 +1,13 @@
+---
+created: 2026-07-07
+tags: [uncategorized, forensic, windows]
+type: howto
+lang: zh
+status: draft
+---
+
+> Related: [[Uncategorized]]
+
 ```powershell
 # 1. 請在下方引號內替換成你的真實資料夾路徑
 $FolderPath = "C:\Users\ydnaa\Documents\Github\2025-06-02-萬大班設備"

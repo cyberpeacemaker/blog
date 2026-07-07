@@ -6,7 +6,7 @@ lang: en
 status: draft
 ---
 
-> Related: [[MOC - Claude & Cursor]] · [[MOC - AI Agents]] · [[2026-06-06-CLAUDE]] · [[2026-06-09-claude-skills]]
+> Related: [[MOC - Claude & Cursor]] · [[MOC - AI Agents]] · [[CLAUDE]] · [[claude-skills]]
 
 ### Why Didn't I Mention This Setup Initially? (The Cons)
 

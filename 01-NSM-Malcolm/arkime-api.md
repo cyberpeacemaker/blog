@@ -6,7 +6,7 @@ lang: en
 status: draft
 ---
 
-> Related: [[MOC - Malcolm & NSM]] · [[2026-05-27-arkime]] · [[2026-05-27-arkime-query-opensearch]] · [[2026-05-27-malcolm-orchestration]]
+> Related: [[MOC - Malcolm & NSM]] · [[arkime]] · [[arkime-query-opensearch]] · [[malcolm-orchestration]]
 
 ### 1. The `/arkime` Prefix
 

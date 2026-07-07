@@ -6,7 +6,7 @@ lang: en
 status: draft
 ---
 
-> Related: [[MOC - AI Agents]] · [[2026-06-11-context-management]] · [[2026-06-09-dynamic-context-injection]]
+> Related: [[MOC - AI Agents]] · [[context-management]] · [[dynamic-context-injection]]
 
 The shift discussed in this video—moving away from complex infrastructure like vector databases and RAG (Retrieval-Augmented Generation) toward structured, plain-text files (Google's Open Knowledge Format)—is a fascinating turn in AI architecture. It feels like a return to the fundamentals of software engineering: simplicity, readability, and deterministic version control.
 

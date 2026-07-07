@@ -6,7 +6,7 @@ lang: en
 status: draft
 ---
 
-> Related: [[MOC - Dev Environment]] · [[My Stack]] · [[2026-06-06-CLAUDE]]
+> Related: [[MOC - Dev Environment]] · [[My Stack]] · [[CLAUDE]]
 
 ### 1. The "Agentic" Upgrade (Beyond VS Code)
 

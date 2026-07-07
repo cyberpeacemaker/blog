@@ -14,14 +14,14 @@ How to capture, link, and maintain notes in this vault.
 
 1. Open [[Home]] or the relevant MOC for your current work
 2. **Quick capture:** save to `Uncategorized/` or use Calendar daily notes (`Uncategorized/daily/YYYY-MM-DD.md`)
-3. **Named notes:** use `YYYY-MM-DD-slug.md` (e.g. `2026-07-07-malcolm-query.md`)
-4. Add YAML frontmatter with `created: YYYY-MM-DD` (see [[2026-06-09-YAML-markdown]] and [[Tag Taxonomy]])
+3. **Named notes:** use a semantic slug — `malcolm-query.md`, not a date prefix
+4. Set `created: YYYY-MM-DD` in frontmatter (see [[YAML-markdown]] and [[Tag Taxonomy]])
 
 ## Link
 
 1. Before finishing a note, add **1–2 wikilinks** to related notes
 2. If the note is important, add it to the relevant MOC
-3. AI workflow notes should link to [[2026-06-06-CLAUDE]] (agent instruction template)
+3. AI workflow notes should link to [[CLAUDE]] (agent instruction template)
 
 ## Commit
 
@@ -56,17 +56,17 @@ How to capture, link, and maintain notes in this vault.
 
 | Pattern | Example | Use |
 |---------|---------|-----|
-| `YYYY-MM-DD-slug.md` | `2026-05-27-malcolm-orchestration.md` | Topic notes |
-| `YYYY-MM-DD.md` | `2026-07-07.md` | Daily notes (Calendar) |
-| No date prefix | `Home.md`, `MOC - Malcolm & NSM.md` | Hub pages only |
+| `slug.md` | `malcolm-orchestration.md` | Topic notes — date lives in frontmatter |
+| `YYYY-MM-DD.md` | `2026-07-07.md` | Daily notes only (Calendar) |
+| No date prefix | `Home.md`, `MOC - Malcolm & NSM.md` | Hub pages |
 
 ## Known Duplicates to Clean Up
 
-- [[2026-05-08-tracking]] + [[2026-05-08-tracking-ori]]
-- [[2026-05-20-python-venv]] + [[2026-05-21-python-venv]]
-- [[2026-05-21-ai-workflow]] + [[2026-05-22-ai-workflow]]
-- [[2026-05-20-vscode-tips]] + [[2026-05-22-vscode-tips]]
-- [[03-AI-Agents/Harness-DevSecOps/2026-06-10-harness]] + [[03-AI-Agents/Harness-DevSecOps/2026-06-11-harness]]
+- [[tracking]] + [[tracking-ori]]
+- [[python-venv]] + [[python-venv-v2]]
+- [[ai-workflow]] + [[ai-workflow-v2]]
+- [[vscode-tips]] + [[vscode-tips-v2]]
+- [[harness]] + [[harness-v2]]
 
 ## Plugins
 
@@ -77,7 +77,7 @@ How to capture, link, and maintain notes in this vault.
 | Templater | Enabled | Note templates |
 | Tag Wrangler | Enabled | Rename/merge tags |
 | Advanced Canvas | Enabled | Attack-surface / concept maps |
-| Dataview | Optional | Query by frontmatter |
+| Dataview | Optional | Query by `created` frontmatter |
 | IOC Lens / SOC Toolkit | When actively hunting | Threat intel enrichment |
 
 ## Obsidian Sync vs Git
@@ -86,4 +86,4 @@ How to capture, link, and maintain notes in this vault.
 - **Obsidian Sync** = optional for mobile/second machine
 - Avoid editing the same note on two machines without pulling first
 
-See also: [[2026-07-07-obsidian]] for Sync vs Git decision guide.
+See also: [[obsidian]] for Sync vs Git decision guide.

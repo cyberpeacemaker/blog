@@ -6,7 +6,7 @@ lang: zh
 status: draft
 ---
 
-> Related: [[MOC - AI Agents]] · [[2026-06-27-rag-okf-wiki]] · [[2026-06-09-dynamic-context-injection]] · [[2026-06-06-CLAUDE]]
+> Related: [[MOC - AI Agents]] · [[rag-okf-wiki]] · [[dynamic-context-injection]] · [[CLAUDE]]
 
 在探討 **動態提示詞監聽（Dynamic Prompt Listening）** 與 **RAG（檢索增強生成，Retrieval-Augmented Generation）** 之前，我們可以先用一個生動的比喻來理解它們：
 

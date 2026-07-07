@@ -44,9 +44,9 @@ Standard tags for this vault. Use Obsidian tag pane to browse.
 
 ## File naming
 
-- Topic notes: `YYYY-MM-DD-slug.md` (e.g. `2026-05-27-malcolm-orchestration.md`)
+- Topic notes: `slug.md` (e.g. `malcolm-orchestration.md`) — **no date in filename**
 - Daily notes: `YYYY-MM-DD.md` in `Uncategorized/daily/`
 - Hub pages: no date prefix (`Home.md`, `MOC - Malcolm & NSM.md`)
-- `created` in frontmatter must match the date in the filename
+- `created: YYYY-MM-DD` in frontmatter is the source of truth for when a note was captured
 
-See also: [[2026-06-09-YAML-markdown]] for frontmatter syntax.
+See also: [[YAML-markdown]] for frontmatter syntax.
