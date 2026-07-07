@@ -1,12 +1,12 @@
 ---
-created: {{date}}
+created: {{date:YYYY-MM-DD}}
 tags: [daily]
 type: daily
 lang: en
 status: draft
 ---
 
-# {{date}}
+# {{date:YYYY-MM-DD}}
 
 ## Capture
 
@@ -15,6 +15,7 @@ status: draft
 ## Links
 
 - [[Home]]
+- [[Uncategorized]]
 
 ## Follow-ups
 

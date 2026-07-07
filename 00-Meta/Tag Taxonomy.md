@@ -40,6 +40,13 @@ Standard tags for this vault. Use Obsidian tag pane to browse.
 
 ## Domain (use in frontmatter `tags` array)
 
-`malcolm`, `nsm`, `opensearch`, `threat-hunting`, `dfir`, `mitre`, `ai`, `agents`, `claude`, `cursor`, `dev`, `git`, `python`, `moc`, `meta`, `stack`, `workflow`
+`malcolm`, `nsm`, `opensearch`, `threat-hunting`, `dfir`, `mitre`, `ai`, `agents`, `claude`, `cursor`, `dev`, `git`, `python`, `moc`, `meta`, `stack`, `workflow`, `obsidian`, `uncategorized`
 
-See also: [[06-09-YAML-markdown]] for frontmatter syntax.
+## File naming
+
+- Topic notes: `YYYY-MM-DD-slug.md` (e.g. `2026-05-27-malcolm-orchestration.md`)
+- Daily notes: `YYYY-MM-DD.md` in `Uncategorized/daily/`
+- Hub pages: no date prefix (`Home.md`, `MOC - Malcolm & NSM.md`)
+- `created` in frontmatter must match the date in the filename
+
+See also: [[2026-06-09-YAML-markdown]] for frontmatter syntax.

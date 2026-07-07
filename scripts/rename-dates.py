@@ -7,7 +7,7 @@ import re
 import subprocess
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parent.parent
 
 MM_DD_PATTERN = re.compile(r"^(\d{2})-(\d{2})-(.+)\.md$")
 WIKILINK_PATTERN = re.compile(r"\[\[([^\]|#]+)(#[^\]]+)?(\|[^\]]+)?\]\]")

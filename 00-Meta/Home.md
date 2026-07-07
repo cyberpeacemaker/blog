@@ -31,10 +31,11 @@ Entry point for the blog vault. Use the MOCs below to navigate by topic.
 - [[07-Productivity-Work]] — Slack, meetings, work tools
 - [[08-Career-Presentations]] — talks, transcripts, career
 - [[09-Personal]] — personal notes (finance, hobbies)
+- [[Uncategorized]] — inbox / daily notes / unsorted captures
 
 ## Templates & Guidelines
 
-- [[06-06-CLAUDE]] — agent instruction template
-- [[07-07-writeup-guideline]] — CTF/IR write-up framework
-- [[06-09-YAML-markdown]] — frontmatter reference
+- [[2026-06-06-CLAUDE]] — agent instruction template
+- [[2026-07-07-writeup-guideline]] — CTF/IR write-up framework
+- [[2026-06-09-YAML-markdown]] — frontmatter reference
 - [[Tag Taxonomy]] — standard tags for this vault
