@@ -33,6 +33,10 @@ Entry point for the blog vault. Use the MOCs below to navigate by topic.
 - [[09-Personal]] — personal notes (finance, hobbies)
 - [[Uncategorized]] — inbox / daily notes / unsorted captures
 
+## Visual
+
+- [[Vault Map]] — MOC hub map (Obsidian Canvas; regenerate with `python scripts/build-vault-canvas.py --all`)
+
 ## Templates & Guidelines
 
 - [[CLAUDE]] — agent instruction template

@@ -35,6 +35,19 @@ How to capture, link, and maintain notes in this vault.
 2. Move inbox notes from [[Uncategorized]] into the right topic folder
 3. Connect orphans to a MOC or archive to [[09-Personal]]
 4. Merge duplicates (see list below)
+5. Regenerate the vault map: `python scripts/build-vault-canvas.py --all`
+
+## Regenerate vault map
+
+```bash
+python scripts/build-vault-canvas.py --all
+```
+
+Run after bulk renames, new MOC links, or tag taxonomy changes. Updates:
+
+- `scripts/vault-graph.json` — scan metrics
+- `00-Meta/Vault Map.canvas` — Obsidian MOC map
+- Cursor `vault-map.canvas.tsx` — dashboard beside chat in Cursor
 
 ## Folder Guide
 

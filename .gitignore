@@ -4,3 +4,6 @@
 .obsidian/graph.json
 .obsidian/hotkeys.json
 
+# Generated vault graph (regenerate with scripts/build-vault-canvas.py)
+scripts/vault-graph.json
+
