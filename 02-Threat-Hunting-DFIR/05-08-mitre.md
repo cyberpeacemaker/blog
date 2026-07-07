@@ -1,3 +1,12 @@
+---
+created: 2026-05-08
+tags: [threat-hunting, mitre]
+type: reference
+lang: zh
+status: draft
+---
+
+> Related: [[MOC - Threat Hunting]] · [[06-04-threat-hunt-evolution]] · [[06-18-forensic-remote-control]]
 
 ## 🛑 一、 企業現實與挑戰
 

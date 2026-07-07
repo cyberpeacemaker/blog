@@ -1,3 +1,13 @@
+---
+created: 2026-05-27
+tags: [malcolm, nsm, arkime]
+type: reference
+lang: en
+status: draft
+---
+
+> Related: [[MOC - Malcolm & NSM]] · [[05-26-zeek-suricata-arkime-opensearch]] · [[06-03-arkime-api]] · [[MOC - OpenSearch Querying]]
+
 Ah, adding **Arkime** to the mix gives us the complete picture of how the data flows! You are essentially looking at the core engines that make **Malcolm** such a powerhouse for network traffic analysis.
 
 Here is how all four of these pieces fit together to capture, store, and visualize network data.

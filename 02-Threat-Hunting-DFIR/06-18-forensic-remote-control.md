@@ -1,3 +1,13 @@
+---
+created: 2026-06-18
+tags: [threat-hunting, dfir, forensic, arkime, zeek]
+type: reference
+lang: zh
+status: draft
+---
+
+> Related: [[MOC - Threat Hunting]] · [[05-08-mitre]] · [[06-04-threat-hunt-evolution]] · [[MOC - Malcolm & NSM]]
+
 這是一個非常核心且內行的問題！在缺乏主機日誌（沒有 Windows 紀錄檔、沒有 Sysmon 監控）的狀況下，這兩個發生在電腦「內部」的動作（建立 WMI 訂閱、清除命令紀錄），竟然會被資安分析師抓得一清二楚，關鍵就在於：**「駭客是透過網路遠端遙控執行這些指令的，而且他們的通訊秘密被破解了。」**
 
 具體的發現過程可以拆解為以下三個步驟：

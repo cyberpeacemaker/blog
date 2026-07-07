@@ -1,3 +1,13 @@
+---
+created: 2026-07-07
+tags: [threat-hunting, writeup, meta]
+type: reference
+lang: en
+status: published
+---
+
+> Related: [[MOC - Threat Hunting]] · [[06-04-threat-hunt-evolution]] · [[06-18-forensic-remote-control]]
+
 Here is the English translation of your requirements, polished for clarity and a professional technical tone:
 
 ### Guidelines for Revising and Enhancing Write-up Details

@@ -1,3 +1,13 @@
+---
+created: 2026-05-27
+tags: [arkime, opensearch]
+type: reference
+lang: en
+status: draft
+---
+
+> Related: [[MOC - OpenSearch Querying]] · [[MOC - Malcolm & NSM]] · [[06-03-arkime-api]] · [[05-27-malcolm-opensearch-json-dsl]]
+
 Arkime (formerly Moloch) sits on top of the exact same OpenSearch/Elasticsearch backend as Malcolm, so the final destination is the same: **it all has to become an OpenSearch JSON Query DSL.** However, *how* Arkime gets there is completely different.
 
 While Malcolm’s Dashboards pass your Lucene/DQL searches fairly directly to the database, Arkime uses its own custom, highly engineered expression parser built into its Node.js Viewer application.

@@ -1,3 +1,13 @@
+---
+created: 2026-06-04
+tags: [threat-hunting, mitre, zeek, suricata]
+type: reference
+lang: en
+status: draft
+---
+
+> Related: [[MOC - Threat Hunting]] · [[05-08-mitre]] · [[07-07-writeup-guideline]] · [[MOC - Malcolm & NSM]]
+
 # My Threat Hunting Attempts and Evolution
 
 1. **Collected all data and ingested it all at once into the engine** > The engine crashed/overloaded.

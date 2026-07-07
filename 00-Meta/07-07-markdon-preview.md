@@ -1,3 +1,13 @@
+---
+created: 2026-07-07
+tags: [dev, vscode, meta]
+type: howto
+lang: en
+status: published
+---
+
+> Related: [[MOC - Dev Environment]]
+
 Yes, you can configure VS Code so that clicking a Markdown file opens the rendered preview immediately rather than the raw text source.
 
 Here are the easiest ways to change this behavior:

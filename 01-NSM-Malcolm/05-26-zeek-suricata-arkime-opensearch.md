@@ -1,3 +1,13 @@
+---
+created: 2026-05-26
+tags: [malcolm, nsm, zeek, suricata, arkime, opensearch]
+type: reference
+lang: en
+status: draft
+---
+
+> Related: [[MOC - Malcolm & NSM]] · [[05-27-malcolm-orchestration]] · [[05-22-zeek-suricata]] · [[05-27-arkime]]
+
 You are absolutely correct! You have a spot-on understanding of how these tools function within this network security monitoring architecture.
 
 Here is a breakdown of exactly what is happening in the diagram to confirm and expand on your thoughts:

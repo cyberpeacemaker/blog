@@ -1,3 +1,13 @@
+---
+created: 2026-06-03
+tags: [malcolm, arkime, opensearch]
+type: howto
+lang: en
+status: draft
+---
+
+> Related: [[MOC - Malcolm & NSM]] · [[05-27-arkime]] · [[05-27-arkime-query-opensearch]] · [[05-27-malcolm-orchestration]]
+
 ### 1. The `/arkime` Prefix
 
 Because Malcolm heavily utilizes reverse proxies (like Nginx) to route traffic to its various tools, Arkime doesn't sit at the root of the web server—it sits at `/arkime/`. By fixing that prefix, you successfully routed your script past Malcolm's front door and directly to the Arkime backend. That is why your basic BEC session stats and OT records started connecting and pulling correctly.

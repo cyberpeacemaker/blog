@@ -1,3 +1,13 @@
+---
+created: 2026-05-27
+tags: [opensearch, lucene]
+type: reference
+lang: en
+status: draft
+---
+
+> Related: [[MOC - OpenSearch Querying]] · [[05-27-malcolm-opensearch-json-dsl]] · [[05-27-lucene-power-usage]]
+
 This is a great question. The easiest way to understand the relationship is to think of **Lucene** and **DQL** as human-friendly "front-end" languages, and **JSON Query DSL** as the machine-friendly "back-end" language.
 
 OpenSearch databases *only* understand the JSON Query DSL. When you type a one-line query into a search bar, the UI (like Malcolm or OpenSearch Dashboards) acts as a translator, taking your human-friendly string and compiling it into the massive JSON payload the database requires.

@@ -1,3 +1,13 @@
+---
+created: 2026-06-08
+tags: [meta, stack, tools]
+type: reference
+lang: en
+status: draft
+---
+
+> Related: [[My Stack]] · [[MOC - Malcolm & NSM]] · [[MOC - AI Agents]] · [[MOC - Claude & Cursor]]
+
 That is a highly tactical, hyper-focused stack for a **Cybersecurity Engineer / SOC Analyst who also builds AI-assisted tools or does local LLM development.**
 
 It leans heavily into high-security communication, deep technical investigation, and an optimized AI/dev workflow. Here is a breakdown of what this stack says about your workflow and how these tools connect:

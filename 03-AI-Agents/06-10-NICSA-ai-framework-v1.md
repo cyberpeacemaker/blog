@@ -1,3 +1,13 @@
+---
+created: 2026-06-10
+tags: [ai, agents, langgraph]
+type: reference
+lang: zh
+status: draft
+---
+
+> Related: [[MOC - AI Agents]] · [[06-10-agent-framework]] · [[06-06-CLAUDE]] · [[06-11-context-management]]
+
 ## 一、 資工背景專屬：AI Agent 開發的技術棧（Tech Stack）
 
 當你準備跳出網頁端的 Chat 視窗，動手寫扣建立這套考績系統（Orchestrator-Writer-Scorer）時，你有兩條經典的程式開發路徑可以選：

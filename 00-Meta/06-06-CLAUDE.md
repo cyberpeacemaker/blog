@@ -1,3 +1,13 @@
+---
+created: 2026-06-06
+tags: [ai, claude, template]
+type: reference
+lang: en
+status: published
+---
+
+> Related: [[MOC - AI Agents]] · [[MOC - Claude & Cursor]] · [[Daily Workflow]]
+
 # CLAUDE.md
 
 Behavioral guidelines to reduce common LLM coding mistakes. Merge with project-specific instructions as needed.

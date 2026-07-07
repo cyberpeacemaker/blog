@@ -1,3 +1,13 @@
+---
+created: 2026-06-11
+tags: [ai, agents, rag]
+type: reference
+lang: zh
+status: draft
+---
+
+> Related: [[MOC - AI Agents]] · [[06-27-rag-okf-wiki]] · [[06-09-dynamic-context-injection]] · [[06-06-CLAUDE]]
+
 在探討 **動態提示詞監聽（Dynamic Prompt Listening）** 與 **RAG（檢索增強生成，Retrieval-Augmented Generation）** 之前，我們可以先用一個生動的比喻來理解它們：
 
 如果把 LLM 當作一個**擁有頂級邏輯能力、但缺乏長期記憶的「天才圖書館員」**：

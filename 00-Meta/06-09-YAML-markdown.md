@@ -1,3 +1,13 @@
+---
+created: 2026-06-09
+tags: [meta, yaml, reference]
+type: reference
+lang: en
+status: published
+---
+
+> Related: [[Tag Taxonomy]] · [[Daily Workflow]] · [[Home]]
+
 **YAML** stands for "YAML Ain't Markup Language" (a bit of programmer humor there). It is a human-readable data serialization language. In plain English: it is a standardized way to structure data (like settings, configurations, or data lists) so that both humans can easily read it and computers can easily parse it.
 
 Here is everything you need to know about what makes it special and how it compares to Markdown.

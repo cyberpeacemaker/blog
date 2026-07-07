@@ -1,3 +1,13 @@
+---
+created: 2026-05-13
+tags: [dev, environment, obsidian]
+type: howto
+lang: en
+status: draft
+---
+
+> Related: [[MOC - Dev Environment]] · [[My Stack]] · [[06-06-CLAUDE]]
+
 ### 1. The "Agentic" Upgrade (Beyond VS Code)
 
 While VS Code is great, the current standard for AI researchers and devs has shifted toward **Agentic IDEs** that understand entire codebases rather than just the file you’re typing in.

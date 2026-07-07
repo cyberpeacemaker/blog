@@ -1,3 +1,13 @@
+---
+created: 2026-06-10
+tags: [ai, agents]
+type: reference
+lang: en
+status: draft
+---
+
+> Related: [[MOC - AI Agents]] · [[06-10-NICSA-ai-framework-v1]] · [[06-06-CLAUDE]] · [[06-11-context-management]]
+
 An **agent framework** is the software toolkit, libraries, and architecture developers use to build, manage, and orchestrate AI agents.
 
 If a multi-agent system is a "team of chefs in a kitchen," the agent framework is the **entire restaurant operating system**. It provides the kitchen layout, the communication headsets, the recipe database, and the ticket system that keeps everyone coordinated.

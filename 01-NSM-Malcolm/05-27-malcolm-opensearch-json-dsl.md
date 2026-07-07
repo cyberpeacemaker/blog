@@ -1,3 +1,13 @@
+---
+created: 2026-05-27
+tags: [malcolm, opensearch]
+type: howto
+lang: en
+status: draft
+---
+
+> Related: [[MOC - OpenSearch Querying]] · [[MOC - Malcolm & NSM]] · [[05-27-lucene-dql-json-dsl]] · [[05-27-opensearch-must-filter]]
+
 Yes, absolutely. You've got it exactly right.
 
 In the Malcolm web GUI (which is powered by OpenSearch Dashboards, a fork of Kibana), everything you interact with visually on the dashboard is ultimately compiled into a single, unified JSON payload. This payload is written in **OpenSearch Query DSL** (Domain Specific Language) and is sent directly via an API request to the OpenSearch backend document store.

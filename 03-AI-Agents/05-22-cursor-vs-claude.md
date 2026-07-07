@@ -1,3 +1,13 @@
+---
+created: 2026-05-22
+tags: [claude, cursor, ai]
+type: reference
+lang: en
+status: draft
+---
+
+> Related: [[MOC - Claude & Cursor]] · [[MOC - AI Agents]] · [[06-06-CLAUDE]] · [[06-09-claude-skills]]
+
 ### Why Didn't I Mention This Setup Initially? (The Cons)
 
 I usually point beginners toward **Cursor** or **GitHub Copilot** first because of **friction**.
