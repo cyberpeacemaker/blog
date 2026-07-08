@@ -20,5 +20,7 @@ Slack, meetings, and work productivity tools.
 - [[obsidian]] — Obsidian Sync vs Git, Canvas, MOC, Metadata
 - [[obsidian-setting]] — per-vault plugin and theme isolation
 - [[obsidian-search-date]] — search notes by `created` date
+- [[obsidian-daily-note]] — practical daily note templates and advice
+- [[obsidian-vault-layout]] — single-vault vs multi-vault tradeoffs
 
 See also: [[My Stack]]

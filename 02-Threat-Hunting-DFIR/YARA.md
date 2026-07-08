@@ -1,10 +1,13 @@
 ---
-created: 2026-07-08 19:07
-tags: []
+created: 2026-07-08
+tags: [threat-hunting, malware, yara]
 type: reference
-lang:
+lang: en
 status: draft
 ---
+
+> Related: [[MOC - Threat Hunting]] · [[anti-virus]] · [[threat-hunting-ctf-get-started]]
+
 YARA (Yet Another Ridiculous Acronym) is ==an open-source cybersecurity tool created by [VirusTotal](https://docs.virustotal.com/docs/what-is-yara)==. It acts as the "pattern-matching Swiss knife" for malware researchers and incident responders, allowing them to identify and classify files based on specific textual, binary, or behavioral patterns rather than relying on simple file hashes. [[1](https://virustotal.github.io/yara/), [2](https://docs.virustotal.com/docs/what-is-yara), [3](https://en.wikipedia.org/wiki/YARA), [4](https://blog.ecapuano.com/p/introduction-to-yara)]
 
 Why YARA is Used

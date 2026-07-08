@@ -1,10 +1,13 @@
 ---
-created: 2026-07-08 19:07
-tags: []
+created: 2026-07-08
+tags: [dev, vscode, markdown]
 type: reference
-lang:
+lang: en
 status: draft
 ---
+
+> Related: [[MOC - Dev Environment]] · [[vscode-open-view]] · [[markdown-link-check-github-action]]
+
 The short answer is **no, not natively on GitHub.com or via raw Git commands**. Git is incredible at tracking _where_ files go, but it treats the inside of your markdown files like a black box—it won't automatically rewrite your text to fix broken references when you move a file.
 
 However, you can absolutely replicate this Obsidian magic depending on how you edit and manage your repository.

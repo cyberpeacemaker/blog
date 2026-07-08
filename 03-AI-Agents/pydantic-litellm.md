@@ -1,10 +1,13 @@
 ---
-created: 2026-07-08 19:07
-tags: []
+created: 2026-07-08
+tags: [ai, pydantic, litellm]
 type: reference
-lang:
+lang: en
 status: draft
 ---
+
+> Related: [[MOC - AI Agents]] · [[claude-to-local-migration]] · [[ai-tool-platform-libraries-product-stack]]
+
 Starting with a flat folder and a couple of script files is completely normal for a scratchpad. But to build a product that can seamlessly pivot from Claude to a local model, we need to transition that script into a modular architecture.
 
 The strategy requires a **"Separation of Concerns"** layout. You want your data definitions, your AI prompts, and your application configuration living in entirely separate files.

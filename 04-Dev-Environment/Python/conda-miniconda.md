@@ -1,10 +1,13 @@
 ---
-created: 2026-07-08 19:07
-tags: []
+created: 2026-07-08
+tags: [python, conda, dev-environment]
 type: reference
-lang:
+lang: zh
 status: draft
 ---
+
+> Related: [[MOC - Dev Environment]] · [[python-venv]] · [[env-setup]]
+
 沒問題！既然你已經在 Windows 11 上裝好了，接下來我們就來聊聊這個在 Data Science（資料科學）和 AI 領域幾乎人手一套的工具。
 
 簡單來說，**Conda 是「本體（核心引擎）」，而 Miniconda 是「輕量化包裝」**。

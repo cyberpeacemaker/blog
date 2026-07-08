@@ -1,10 +1,13 @@
 ---
 created: 2026-07-08
-tags: []
+tags: [ai, rag, knowledge-base]
 type: reference
 lang: en
 status: draft
 ---
+
+> Related: [[MOC - AI Agents]] · [[rag-okf-wiki]] · [[context-management]]
+
 **Spot** on! The acronym you are thinking of is **OKF**, which stands for **Open Knowledge Format**. Launched by Google Cloud, it has quickly become a massive talking point in the AI engineering world because it directly challenges the long-held assumption that every enterprise AI tool needs a heavy Retrieval-Augmented Generation (RAG) pipeline backed by vector databases.
 
 Rather than a completely new type of AI model, OKF is an open, vendor-neutral standard for structuring "LLM wikis"—a blueprint heavily inspired by AI researcher Andrej Karpathy.

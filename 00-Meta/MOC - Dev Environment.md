@@ -14,6 +14,8 @@ Developer tooling: Git, Python, VS Code, testing, and environment setup.
 
 - [[env-setup]] — full dev environment setup (C, AI, cybersecurity)
 - [[timezone]] — timezone configuration
+- [[YAML]] — YAML configuration files
+- [[microsoft-store]] — Microsoft Store vs standalone installers for dev tools
 
 ## Git
 
@@ -27,6 +29,7 @@ Developer tooling: Git, Python, VS Code, testing, and environment setup.
 - [[git-other]] — miscellaneous Git notes
 - [[git-bash]] — Git Bash on Windows
 - [[gitkeep]] — .gitkeep pattern
+- [[markdown-link-check-github-action]] — GitHub Action for Markdown link checks
 
 ## Python
 
@@ -34,6 +37,9 @@ Developer tooling: Git, Python, VS Code, testing, and environment setup.
 - [[python-import]] — Python import patterns
 - [[python-venv]] — Python venv
 - [[python-venv-v2]] — Python venv (updated)
+- [[conda-necessary]] — when Conda is necessary
+- [[conda-miniconda]] — Conda, Miniconda, and Anaconda overview
+- [[uv-conda]] — choosing uv for PoC work and Conda for GPU-heavy AI
 - [[python-cpp-environment]] — Python + C++ environment
 - [[python-test-module-path]] — test module paths
 - [[dry-run-pytest]] — pytest dry-run patterns
@@ -54,6 +60,8 @@ Developer tooling: Git, Python, VS Code, testing, and environment setup.
 - [[vscode-pretty]] — VS Code prettify
 - [[markdon-preview]] — default markdown preview in VS Code
 - [[vscode-open-view]] — open .md files in preview by default
+- [[vscode-toggle-view]] — Markdown preview shortcuts
+- [[automatically-update-internal-link]] — Markdown link updates when moving files
 
 ## Testing
 

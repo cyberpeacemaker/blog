@@ -1,10 +1,13 @@
 ---
-created: 2026-07-08 19:07
-tags: []
+created: 2026-07-08
+tags: [python, conda, dev-environment]
 type: reference
-lang:
+lang: en
 status: draft
 ---
+
+> Related: [[MOC - Dev Environment]] · [[uv-conda]] · [[conda-miniconda]]
+
 Great question. Environment management is one of those unsexy but vital topics that can save you hours of pulling your hair out later.
 
 Here is the breakdown of what **Conda** is, whether you actually need it, and where it fits into your setup.

@@ -1,10 +1,13 @@
 ---
-created: 2026-07-08 17:07
-tags: []
+created: 2026-07-08
+tags: [career, retro, self-report]
 type: reference
-lang:
+lang: zh
 status: draft
 ---
+
+> Related: [[08-Career-Presentations]] · [[project-presentation]] · [[job-title]]
+
 主動想為自己做「定期彙整」，這完全是高階工程師（Senior / Staff Engineer）才會具備的優秀習慣！在軟體業界，這不僅能幫你釐清思緒，更是未來爭取加薪、晉升、寫履歷時的「核子武器」。
 
 撇除公司的官方報告，以下是矽谷與國內外工程師圈非常流行且推薦的**自我彙整做法**：

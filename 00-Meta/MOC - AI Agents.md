@@ -18,13 +18,17 @@ AI agent frameworks, multi-agent systems, context management, and local LLM work
 - [[claude-dynamic-workflow-multi-agent]] — dynamic multi-agent workflow
 - [[ai-framework-proposal]] — AI framework proposal
 - [[edge-ai-terms]] — edge AI terminology
+- [[ai-tool-platform-libraries-product-stack]] — AI platforms, libraries, and product stack
+- [[pydantic-litellm]] — model-agnostic Python AI app structure
+- [[claude-to-local-migration]] — roadmap from Claude PoC to local LLM
 
 ## Context & Knowledge
 
 - [[context-management]] — RAG vs dynamic context injection
 - [[rag-okf-wiki]] — OKF wiki vs RAG knowledge bases
+- [[RAG-OKF]] — RAG vs Open Knowledge Format comparison
 - [[dynamic-context-injection]] — dynamic context injection
-- [[claude-session.context-window]] — Claude context window management
+- [[03-AI-Agents/claude-session.context-window|claude-session.context-window]] — Claude context window management
 - [[ai-artifacts]] — AI artifact handling
 
 ## Agent Instructions & Rules
@@ -38,7 +42,8 @@ AI agent frameworks, multi-agent systems, context management, and local LLM work
 ## Models
 
 - [[hermes-claude]] — Hermes + Claude integration
-- [[claude.-hermes]] — Claude + Hermes notes
+- [[03-AI-Agents/claude.-hermes|claude.-hermes]] — Claude + Hermes notes
+- [[local-ai]] — local LLM model families and deployment tools
 
 ## Harness.io / DevSecOps
 

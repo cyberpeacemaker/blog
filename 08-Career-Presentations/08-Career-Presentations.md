@@ -17,3 +17,4 @@ Talks, transcripts, scripts, and career notes.
 - [[draft-a-script]]
 - [[cybersecurity-role]]
 - [[job-title]]
+- [[self-report-retro]] — brag document and personal retro practices
