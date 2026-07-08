@@ -26,11 +26,18 @@ Two paths — pick based on *when* vs *what*:
 
 ### Hotkeys (assign once in Settings → Hotkeys)
 
-| Shortcut | Command | Creates / opens |
-|----------|---------|-----------------|
-| `Ctrl+N` | Create new note | `Inbox/slug.md` + default frontmatter |
-| `Ctrl+Shift+D` | Daily notes: Open today's daily note | `daily/YYYY-MM-DD.md` + daily template |
+Vault defaults in [`.obsidian/hotkeys.json`](.obsidian/hotkeys.json). Reload Obsidian if a shortcut does nothing.
+
+| Shortcut | Command | Result |
+|----------|---------|--------|
+| `Ctrl+N` | Create new note | `Inbox/slug.md` + frontmatter (filename = displayed title) |
+| `Ctrl+Shift+D` | Daily notes: Open today's daily note | Opens/creates `daily/YYYY-MM-DD.md` |
+| `Ctrl+Shift+C` | Calendar: Open view | Opens **Calendar sidebar** (pick dates visually) |
 | Calendar click | (visual) | Same as daily shortcut for that date |
+
+**Note:** `Ctrl+Shift+D` opens today's **daily note file**, not the Calendar panel. Use `Ctrl+Shift+C` or the calendar icon in the left ribbon for the sidebar.
+
+Topic notes do not need a `# heading` in the body — Obsidian shows the **filename** as the title in the tab and inline title bar.
 
 `created` is auto-filled by templates. Manual entry only if the template did not run (see **Manual fallback** below).
 
@@ -113,6 +120,56 @@ Run after bulk renames, new MOC links, or tag taxonomy changes. Updates:
 | `slug.md` | `malcolm-orchestration.md` | Topic notes — date lives in frontmatter |
 | `YYYY-MM-DD.md` | `2026-07-07.md` | Daily notes only (Calendar) |
 | No date prefix | `Home.md`, `MOC - Malcolm & NSM.md` | Hub pages |
+
+## Editing templates
+
+Template **files** live in `00-Meta/templates/` (visible in the file explorer). Changes apply to **new notes only** — existing notes are not updated.
+
+| File | Trigger | Syntax | Config |
+|------|---------|--------|--------|
+| `default-note.md` | `Ctrl+N` → `Inbox/` | Templater `<%* ... %>` | Templater plugin (see below) |
+| `daily-note.md` | `Ctrl+Shift+D` / Calendar | Core `{{date:YYYY-MM-DD}}` | Settings → **Daily notes** (or `.obsidian/daily-notes.json`) |
+
+### Edit inbox defaults (`default-note.md`)
+
+Open the file and change the frontmatter inside the `` tR = `...` `` block — e.g. default `tags`, `lang`, or add starter sections. Keep the `<%* ... %>` wrapper for dynamic dates.
+
+Test: save → `Ctrl+N` → new test note → check Properties.
+
+### Edit daily defaults (`daily-note.md`)
+
+Edit markdown directly. Use `{{date:YYYY-MM-DD}}` for dates, not Templater syntax.
+
+Test: save → `Ctrl+Shift+D` → check today's daily note.
+
+### Folder templates — not a vault folder
+
+**`folder_templates` is not a folder in your vault.** It is a **Templater plugin setting** that means: *"when a new empty file is created in vault folder X, apply template Y automatically."*
+
+Current mapping: **`Inbox/`** → **`default-note.md`**
+
+**In Obsidian UI (easiest):**
+
+1. Settings → **Community plugins** → **Templater** → gear icon
+2. Scroll to **Folder Templates**
+3. You should see: folder `Inbox` → template `00-Meta/templates/default-note.md`
+4. Add or change rows here (e.g. map `09-Personal/` to a Chinese-default template later)
+
+**In Git / Cursor (same data, hidden from normal browsing):**
+
+- File: `.obsidian/plugins/templater-obsidian/data.json`
+- Key: `"folder_templates"` — array of `{ "folder": "...", "template": "..." }` objects
+
+The `.obsidian/` folder is Obsidian's config area. It does not appear as a normal note folder unless you open it in Cursor or enable "Show hidden files."
+
+### Manual template (no auto-trigger)
+
+Create any file in `00-Meta/templates/`, then:
+
+- Command palette → **Templater: Insert template** (into current note), or
+- **Templater: Create new note from template** (pick template + name)
+
+No `folder_templates` entry needed unless you want it automatic for a folder.
 
 ## Known Duplicates to Clean Up
 

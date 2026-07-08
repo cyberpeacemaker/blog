@@ -1,2 +1,13 @@
+---
+created: 2026-07-08
+tags: []
+type: reference
+lang: en
+status: draft
+---
 
-d
+# 07-08-test-template-3
+
+seems work
+
+
