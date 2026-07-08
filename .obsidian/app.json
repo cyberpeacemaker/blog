@@ -4,7 +4,7 @@
   "alwaysUpdateLinks": true,
   "useMarkdownLinks": false,
   "showUnsupportedFiles": false,
-  "promptDelete": true,
+  "promptDelete": false,
   "attachmentFolderPath": "00-Meta/attachments",
   "showLineNumber": true,
   "strictLineBreaks": false,
