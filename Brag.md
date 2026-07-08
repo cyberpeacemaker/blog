@@ -7,7 +7,7 @@
 - obsidian筆記 >
 	- link 
 	- graph
-	- template
+	- template [plugin]
 	- automatically update internal link (vs code)
 - 協同開發 > 
 
