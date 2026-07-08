@@ -1,3 +1,13 @@
+---
+created: 2026-07-07
+tags: [threat-hunting, c2, dfir]
+type: reference
+lang: zh
+status: draft
+---
+
+> Related: [[MOC - Threat Hunting]] · [[forensic-remote-control]] · [[threat-hunting-ctf-get-started]]
+
 你的直覺非常準確。你提到的這種特徵（固定的 `POST /beacon`、預設的 `Go-http-client` User-Agent、完全規律的時間間隔）屬於最初階的特徵碼（IOC）層面。
 
 在實際的紅藍對抗中，現代 C2 框架（如 Sliver、Cobalt Strike、Havoc、Mythic 等）普遍支援 **Malleable C2 Profile（可延展 C2 設定檔）**。攻擊者只需花 10 秒鐘修改設定，就能把 User-Agent 改成最新版 Chrome，把 URI 改成 `/index.php`，並加入 30%~50% 的**隨機抖動時間（Jitter）**。這樣一來，傳統基於字串匹配或單純固定頻率的偵測規則就會立刻失效。

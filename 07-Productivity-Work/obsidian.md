@@ -1,12 +1,12 @@
 ---
 created: 2026-07-07
-tags: [uncategorized, obsidian]
+tags: [obsidian, productivity]
 type: draft
 lang: zh
 status: draft
 ---
 
-> Related: [[Inbox]] · [[obsidian-setting]] · [[Daily Workflow]] · [[Home]]
+> Related: [[07-Productivity-Work]] · [[obsidian-setting]] · [[Daily Workflow]] · [[Home]]
 
 這段話的核心意思非常直白：**「Git 是你的大本營（最終檔案庫），而 Obsidian Sync 只是用來幫你把筆記傳送到手機或第二台電腦的『傳輸線』。」**
 
@@ -95,3 +95,16 @@ status: draft
 因為你的底層依然是純文字的 Markdown 和 Git，就算你用了 Canvas（它會存成 `.canvas` 檔，本質也是 JSON），**你隨時想放棄 Obsidian 回歸純 Git 編輯，檔案也不會壞掉。** 這是一場完全沒有風險的實驗。
 
 在這三個你想嘗試的功能中（Canvas、MOC、Metadata），哪一個最貼近你目前在 GitHub 筆記中覺得「最想提升效率」或「最想視覺化」的地方呢？
+
+---
+
+## File format
+
+The filename extension used by Obsidian is **`.md`**, which stands for **Markdown**.
+
+Every note you see in your file explorer sidebar (like `CTF-roadmap` or `forensic-remote-control`) is stored locally on your computer as a plain-text Markdown file (e.g., `CTF-roadmap.md`).
+
+### Why Obsidian uses `.md`
+
+- **Portability:** Because they are standard text files, you can open, read, and edit them using almost any text editor (like VS Code, Notepad, or TextEdit), completely independent of Obsidian.
+- **Future-proof:** Your data isn't trapped in a proprietary database format. If you ever decide to switch to a different note-taking app, your files remain completely readable and yours.

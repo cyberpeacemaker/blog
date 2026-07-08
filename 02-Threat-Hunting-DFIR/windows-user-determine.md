@@ -1,12 +1,12 @@
 ---
 created: 2026-07-07
-tags: [uncategorized, forensic, windows]
+tags: [threat-hunting, forensic, windows]
 type: howto
 lang: zh
 status: draft
 ---
 
-> Related: [[Inbox]]
+> Related: [[MOC - Threat Hunting]] · [[forensic-remote-control]]
 
 ```powershell
 # 1. 請在下方引號內替換成你的真實資料夾路徑

@@ -1,3 +1,13 @@
+---
+created: 2026-07-08
+tags: [obsidian, productivity]
+type: howto
+lang: en
+status: draft
+---
+
+> Related: [[07-Productivity-Work]] · [[obsidian]] · [[Daily Workflow]]
+
 ```dataview
 LIST 
 WHERE created = date(2026-07-07)

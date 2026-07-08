@@ -1,3 +1,13 @@
+---
+created: 2026-07-07
+tags: [threat-hunting, dfir, malware]
+type: reference
+lang: zh
+status: draft
+---
+
+> Related: [[MOC - Threat Hunting]] · [[forensic-remote-control]] · [[c2ma]]
+
 這張日誌清單完全印證了我們之前的推論，但也揭露了防毒軟體更令人白眼翻到後腦勺的「加戲」行為。
 
 這張表完美展示了「當資安研究員在本機做實驗時，防毒軟體是如何集體崩潰的」。我們來逐行拆解 Symantec 在這裡到底有多敏感：

@@ -1,3 +1,13 @@
+---
+created: 2026-07-08
+tags: [dev, git, github]
+type: howto
+lang: en
+status: draft
+---
+
+> Related: [[MOC - Dev Environment]] · [[github-organization]] · [[github-authentication]]
+
 How you share a GitHub repository depends on whether it is **public** (anyone can see it) or **private** (only invited people can see it).
 
 Here are the easiest ways to do both.

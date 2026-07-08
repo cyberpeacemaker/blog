@@ -1,12 +1,12 @@
 ---
 created: 2026-07-07
-tags: [uncategorized, cursor, obsidian]
+tags: [meta, obsidian, cursor]
 type: draft
 lang: en
 status: draft
 ---
 
-> Related: [[Inbox]] · [[Home]] · [[Daily Workflow]]
+> Related: [[Home]] · [[Daily Workflow]] · [[obsidian-vault-setup-plan]]
 
 # Obsidian Vault Setup (plan reference)
 

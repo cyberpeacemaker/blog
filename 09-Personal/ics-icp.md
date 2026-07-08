@@ -1,3 +1,13 @@
+---
+created: 2026-07-07
+tags: [personal, ics]
+type: reference
+lang: zh
+status: draft
+---
+
+> Related: [[09-Personal]]
+
 這我當然知道！在工業自動化（FA）領域中，工控箱（或稱控制盤、電控箱）就像是整台自動化設備的「大腦與神經中樞」。
 
 你提到的 **Siemens（西門子）** 和 **Delta（台達電）** 分別是歐美系與亞洲系的指標性大廠。在工控箱的世界裡，它們各自有非常鮮明的定位和優勢：

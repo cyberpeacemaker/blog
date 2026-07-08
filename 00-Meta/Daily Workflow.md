@@ -24,6 +24,22 @@ Two paths — pick based on *when* vs *what*:
 
 **Rule of thumb:** Daily = *when* (today's inbox). Topic = *what* (durable knowledge).
 
+```mermaid
+flowchart TB
+  subgraph dailyFlow [Daily capture]
+    Cal[Calendar sidebar]
+    Cal --> DailyFile["daily/YYYY-MM-DD.md"]
+    DailyFile --> DailyTpl["daily-note.md template"]
+  end
+  subgraph topicFlow [Topic capture]
+    NewNote[New note button]
+    NewNote --> SlugFile["Inbox/my-topic.md"]
+    SlugFile --> DefaultTpl["default-note.md template"]
+  end
+  DailyTpl --> Promote["Weekly: promote to named note"]
+  DefaultTpl --> MOC["Link to MOC / topic folder"]
+```
+
 ### Hotkeys (assign once in Settings → Hotkeys)
 
 Vault defaults in [`.obsidian/hotkeys.json`](.obsidian/hotkeys.json). Reload Obsidian if a shortcut does nothing.

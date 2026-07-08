@@ -1,18 +1,12 @@
 ---
-name: Obsidian Default Note Template
-overview: Yes — you can auto-fill frontmatter (including `created`) when creating notes. Your vault already has the plugins and conventions; we just need a default template and Templater auto-trigger wired to your existing workflow.
-todos:
-  - id: create-default-template
-    content: Create `00-Meta/templates/default-note.md` with Templater syntax for `created`, standard frontmatter, and title heading
-    status: pending
-  - id: configure-templater
-    content: Create `.obsidian/plugins/templater-obsidian/data.json` — enable `trigger_on_file_creation`, map `Uncategorized/` to default template
-    status: pending
-  - id: verify-workflow
-    content: Test New note + Calendar daily note in Obsidian; confirm `created` populates and daily notes are unaffected
-    status: pending
-isProject: false
+created: 2026-07-08
+tags: [meta, obsidian, cursor]
+type: reference
+lang: en
+status: draft
 ---
+
+> Related: [[Daily Workflow]] · [[obsidian-new-note-template]] · [[obsidian-setting]]
 
 # Auto-populate `created` date on new Obsidian notes
 
@@ -64,19 +58,19 @@ Wire Templater to `Uncategorized/` only. This matches your existing **New note**
 
 ```markdown
 ---
-created: <% tp.date.now("YYYY-MM-DD") %>
+created: 2026-07-08
 tags: []
 type: reference
 lang: en
 status: draft
 ---
 
-# <% tp.file.title %>
+# obsidian-default-note-template-plan
 
 ```
 
-- `<% tp.date.now("YYYY-MM-DD") %>` → Templater syntax for today's date (shows in Properties as `created`)
-- `<% tp.file.title %>` → heading from filename (e.g. `my-topic.md` → `# my-topic`)
+- `2026-07-08` → Templater syntax for today's date (shows in Properties as `created`)
+- `obsidian-default-note-template-plan` → heading from filename (e.g. `my-topic.md` → `# my-topic`)
 - Matches your existing note shape (see [`yoyocard.md`](09-Personal/yoyocard.md), [`CLAUDE.md`](00-Meta/CLAUDE.md))
 
 **Templater config:** create [`.obsidian/plugins/templater-obsidian/data.json`](.obsidian/plugins/templater-obsidian/data.json) with:

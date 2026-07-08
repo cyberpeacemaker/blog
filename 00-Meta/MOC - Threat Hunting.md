@@ -23,6 +23,7 @@ Threat hunting methodology, forensics, CTF, and write-up standards.
 - [[forensic-same-mac-dhcp]] — same MAC / DHCP forensics
 - [[c2ma]] — C2 malware analysis
 - [[inforensic-1m-review]] — inforensic review
+- [[windows-user-determine]] — Windows folder ownership / SID forensics
 
 ## Malware & Offense
 
@@ -31,6 +32,8 @@ Threat hunting methodology, forensics, CTF, and write-up standards.
 - [[persistent]] — persistence techniques
 - [[tracking]] — tracking methodology
 - [[tracking-ori]] — tracking (original notes)
+- [[beacon]] — C2 beacon detection (behavioral / statistical)
+- [[anti-virus]] — AV false positives during malware research
 
 ## Threat Intel
 
@@ -39,6 +42,7 @@ Threat hunting methodology, forensics, CTF, and write-up standards.
 ## CTF
 
 - [[CTF-roadmap]] — CTF learning roadmap
+- [[threat-hunting-ctf-get-started]] — CTF vs real-world threat hunting
 
 ## Related
 

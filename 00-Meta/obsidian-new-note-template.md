@@ -1,10 +1,12 @@
 ---
 created: 2026-07-08
-tags: []
+tags: [meta, obsidian]
 type: reference
 lang: en
 status: draft
 ---
+
+> Related: [[Daily Workflow]] · [[obsidian-default-note-template-plan]] · [[obsidian-setting]]
 
 Yes — that’s exactly right.
 

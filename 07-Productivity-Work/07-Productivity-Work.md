@@ -17,5 +17,8 @@ Slack, meetings, and work productivity tools.
 - [[meeting-minute]]
 - [[word-changes-tracking]]
 - [[adhoc-request]]
+- [[obsidian]] — Obsidian Sync vs Git, Canvas, MOC, Metadata
+- [[obsidian-setting]] — per-vault plugin and theme isolation
+- [[obsidian-search-date]] — search notes by `created` date
 
 See also: [[My Stack]]

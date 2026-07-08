@@ -17,6 +17,7 @@ Architecture, agile development, MVP, and software concepts.
 - [[self-extracting-architecture]]
 - [[mvp]]
 - [[dev-workflow]]
+- [[cicd-get-started]] — CI/CD roadmap for small teams
 - [[project-reorganization-challenge]]
 - [[trading-bot-ad-bidding]]
 - [[blue-sky]]

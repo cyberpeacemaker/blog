@@ -21,6 +21,8 @@ Developer tooling: Git, Python, VS Code, testing, and environment setup.
 - [[git-pr-example]] — PR workflow example
 - [[github-authentication]] — GitHub authentication
 - [[github-organization]] — GitHub repo organization
+- [[github-share-repo]] — sharing repos and collaborator access
+- [[git-copied]] — Git push checklist (save, upload, .gitignore)
 - [[git-nuclear]] — Git nuclear options
 - [[git-other]] — miscellaneous Git notes
 - [[git-bash]] — Git Bash on Windows
@@ -51,6 +53,7 @@ Developer tooling: Git, Python, VS Code, testing, and environment setup.
 - [[setting-split]] — settings split
 - [[vscode-pretty]] — VS Code prettify
 - [[markdon-preview]] — default markdown preview in VS Code
+- [[vscode-open-view]] — open .md files in preview by default
 
 ## Testing
 

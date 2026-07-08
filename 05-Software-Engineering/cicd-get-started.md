@@ -1,3 +1,13 @@
+---
+created: 2026-07-08
+tags: [software-engineering, cicd, git]
+type: reference
+lang: en
+status: draft
+---
+
+> Related: [[05-Software-Engineering]] · [[git-best-practice]] · [[dev-workflow]]
+
 It is awesome that you two are doing this now. Honestly, being a two-person team is the _perfect_ time to build these habits. You don't have the chaotic overhead of a 50-person engineering team, which means you can experiment and learn without breaking a massive enterprise system.
 
 Since you already know how to `commit`, `push`, and `pull`, you’ve already cleared the first hurdle. Let's take you from "saving code online" to a modern, automated development machine.

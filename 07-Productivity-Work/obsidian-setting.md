@@ -1,12 +1,12 @@
 ---
 created: 2026-07-07
-tags: [uncategorized, obsidian]
+tags: [obsidian, productivity]
 type: howto
 lang: zh
 status: draft
 ---
 
-> Related: [[Inbox]] · [[obsidian]] · [[Daily Workflow]]
+> Related: [[07-Productivity-Work]] · [[obsidian]] · [[Daily Workflow]]
 
 **Core settings to enable** (`.obsidian/app.json` / Settings UI):
 

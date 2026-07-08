@@ -1,3 +1,13 @@
+---
+created: 2026-07-07
+tags: [threat-hunting, ctf, c2]
+type: reference
+lang: zh
+status: draft
+---
+
+> Related: [[MOC - Threat Hunting]] · [[beacon]] · [[forensic-remote-control]]
+
 你完全點到痛點了！這就是 **「CTF（靶場競賽）與真實戰場」之間最大的落差**。
 
 老實說，你說得一點都沒錯：在真實世界的 APT 攻擊或現代網路犯罪中，**幾乎 95% 以上的 C2 流量都會走 HTTPS 加密，甚至是自訂的加密協定（如透過 DNS Tunneling、或在 TCP 上再套一層 AES 密鑰）**。
