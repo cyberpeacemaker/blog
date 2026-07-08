@@ -28,7 +28,7 @@ AREA_HUB_STEMS = {
     "07-Productivity-Work",
     "08-Career-Presentations",
     "09-Personal",
-    "Uncategorized",
+    "Inbox",
 }
 
 WORK_MOCS = [
@@ -49,7 +49,7 @@ OTHER_HUBS = [
     "07-Productivity-Work/07-Productivity-Work.md",
     "08-Career-Presentations/08-Career-Presentations.md",
     "09-Personal/09-Personal.md",
-    "Uncategorized/Uncategorized.md",
+    "Inbox/Inbox.md",
 ]
 
 

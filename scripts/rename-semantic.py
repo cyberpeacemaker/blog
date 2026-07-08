@@ -18,7 +18,7 @@ SKIP_NAMES = {
     "Daily Workflow.md",
     "Tag Taxonomy.md",
     "daily-note.md",
-    "Uncategorized.md",
+    "Inbox.md",
 }
 
 SKIP_PREFIXES = ("MOC - ",)

@@ -31,7 +31,7 @@ Entry point for the blog vault. Use the MOCs below to navigate by topic.
 - [[07-Productivity-Work]] — Slack, meetings, work tools
 - [[08-Career-Presentations]] — talks, transcripts, career
 - [[09-Personal]] — personal notes (finance, hobbies)
-- [[Uncategorized]] — inbox / daily notes / unsorted captures
+- [[Inbox]] — inbox captures; daily journal in `daily/`
 
 ## Visual
 

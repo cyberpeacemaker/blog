@@ -6,7 +6,7 @@ lang: zh
 status: draft
 ---
 
-> Related: [[Uncategorized]] · [[obsidian-setting]] · [[Daily Workflow]] · [[Home]]
+> Related: [[Inbox]] · [[obsidian-setting]] · [[Daily Workflow]] · [[Home]]
 
 這段話的核心意思非常直白：**「Git 是你的大本營（最終檔案庫），而 Obsidian Sync 只是用來幫你把筆記傳送到手機或第二台電腦的『傳輸線』。」**
 

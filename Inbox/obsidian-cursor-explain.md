@@ -6,7 +6,7 @@ lang: en
 status: draft
 ---
 
-> Related: [[Uncategorized]] · [[Home]] · [[Daily Workflow]]
+> Related: [[Inbox]] · [[Home]] · [[Daily Workflow]]
 
 # Obsidian Vault Setup (plan reference)
 

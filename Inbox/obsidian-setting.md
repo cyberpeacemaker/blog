@@ -6,7 +6,7 @@ lang: zh
 status: draft
 ---
 
-> Related: [[Uncategorized]] · [[obsidian]] · [[Daily Workflow]]
+> Related: [[Inbox]] · [[obsidian]] · [[Daily Workflow]]
 
 **Core settings to enable** (`.obsidian/app.json` / Settings UI):
 

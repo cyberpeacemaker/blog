@@ -33,12 +33,12 @@ FOLDER_TAGS: dict[str, list[str]] = {
     "07-Productivity-Work": ["productivity"],
     "08-Career-Presentations": ["career"],
     "09-Personal": ["personal"],
-    "Uncategorized": ["uncategorized"],
+    "Inbox": ["inbox"],
 }
 
 FOLDER_TYPE: dict[str, str] = {
     "00-Meta": "reference",
-    "Uncategorized": "draft",
+    "Inbox": "draft",
 }
 
 HUB_BASENAMES = {
@@ -106,7 +106,7 @@ def infer_type(rel: Path, basename: str) -> str:
 
 
 def folder_tags(rel: Path) -> list[str]:
-    top = rel.parts[0] if rel.parts else "Uncategorized"
+    top = rel.parts[0] if rel.parts else "Inbox"
     tags = list(FOLDER_TAGS.get(top, ["uncategorized"]))
     name = rel.stem.lower()
     keyword_map = {

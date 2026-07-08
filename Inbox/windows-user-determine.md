@@ -6,7 +6,7 @@ lang: zh
 status: draft
 ---
 
-> Related: [[Uncategorized]]
+> Related: [[Inbox]]
 
 ```powershell
 # 1. 請在下方引號內替換成你的真實資料夾路徑
