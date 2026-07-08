@@ -1,6 +1,7 @@
 ---
 created: 2026-06-15
-tags: [personal]
+tags:
+  - personal
 type: reference
 lang: zh
 status: draft
