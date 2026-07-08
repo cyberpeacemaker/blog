@@ -1,10 +1,13 @@
 ---
-created: 2026-07-08 19:07
-tags: []
+created: 2026-07-08
+tags: [github-actions, ci-cd, automation]
 type: reference
-lang:
+lang: en
 status: draft
 ---
+
+> Related: [[05-Software-Engineering]] · [[cicd-get-started]] · [[YAML]]
+
 ## What is GitHub Actions?
 
 **GitHub Actions** is an automated CI/CD (Continuous Integration and Continuous Deployment) platform built directly into GitHub. It allows you to automate, customize, and execute your software development lifecycles right inside your repository.

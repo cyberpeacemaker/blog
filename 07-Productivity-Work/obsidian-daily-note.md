@@ -1,10 +1,13 @@
 ---
-created: 2026-07-08 19:07
-tags: []
-type: reference
-lang:
+created: 2026-07-08
+tags: [obsidian, productivity, daily-notes]
+type: howto
+lang: en
 status: draft
 ---
+
+> Related: [[07-Productivity-Work]] · [[obsidian]] · [[Daily Workflow]]
+
 Using Obsidian daily notes is one of the best ways to turn a chaotic digital workspace into a streamlined, personal dashboard. The trap most people fall into, though, is **over-engineering** their setup on day one. If your daily note template takes 20 minutes to fill out, you’ll stop using it by week two.
 
 Here is a practical guide, some hard-learned advice, and three templates ranging from ultra-simple to fully loaded.
@@ -17,7 +20,7 @@ Before diving into templates, keep these principles in mind:
     
 - **Keep it Frictionless:** If you don't track habits every day, remove the habit tracker. If you hate gratitude journaling, don't force a "Three Things I'm Grateful For" section.
     
-- **Embrace Linkage:** Use `[[Yesterday's Date]]` and `[[Tomorrow's Date]]` to create a clickable timeline, or use the **Calendar plugin** for seamless navigation.
+- **Embrace Linkage:** Use yesterday/tomorrow wikilinks to create a clickable timeline, or use the **Calendar plugin** for seamless navigation.
     
 
 ## 🛠️ The Templates
@@ -52,7 +55,7 @@ Markdown
 
 ```
 # ⚡ Daily Dashboard: {{date:dddd, MMMM D, YYYY}}
-<< [[{{yesterday}}]] | [[{{tomorrow}}]] >>
+<< &#91;&#91;{{yesterday}}&#93;&#93; | &#91;&#91;{{tomorrow}}&#93;&#93; >>
 
 ## 🧠 Brain Dump / Focus
 > **Today's Mantra/Focus:** 
@@ -76,7 +79,7 @@ Markdown
 ---
 
 ## 🤝 Meetings & Notes
-- [[Meeting: ]] - 
+- Meeting: 
 ```
 
 ### 3. The Mindful Journaler (Best for Reflection & Habits)

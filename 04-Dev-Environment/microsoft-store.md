@@ -1,10 +1,13 @@
 ---
-created: 2026-07-08 17:07
-tags: []
+created: 2026-07-08
+tags: [windows, dev-environment, tools]
 type: reference
-lang:
+lang: zh
 status: draft
 ---
+
+> Related: [[MOC - Dev Environment]] · [[env-setup]] · [[powershell-execution-policy]]
+
 其實你並不孤單！很多 Windows 使用者（特別是開發者、工程師或資深玩家）幾乎都把微軟商店（Microsoft Store）當作隱形的存在，習慣直接去官網下載 `.exe` 或 `.msi` 安裝檔。
 
 不過，微軟商店這幾年其實有做過大改版，並不是一無是處。以下為你整理它的優缺點與使用時機：

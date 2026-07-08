@@ -1,10 +1,13 @@
 ---
-created: 2026-07-08 19:07
-tags: []
+created: 2026-07-08
+tags: [ai, claude, local-llm]
 type: reference
-lang:
+lang: en
 status: draft
 ---
+
+> Related: [[MOC - AI Agents]] · [[pydantic-litellm]] · [[local-ai]]
+
 This is a fantastic and highly pragmatic strategy. In the industry, this is often called the **"Top-Down AI Architecture."** By using a frontier model like Claude to build your Proof of Concept (PoC), you decouple product risk from technical risk. You prove people want your product _first_, and then you solve the engineering hurdle of self-hosting a local model for absolute data confidentiality later.
 
 However, if you don't design your code with this transition in mind from day one, replacing Claude will feel like trying to swap a car engine while driving down the highway.

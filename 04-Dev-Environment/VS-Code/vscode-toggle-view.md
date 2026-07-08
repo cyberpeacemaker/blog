@@ -1,10 +1,13 @@
 ---
 created: 2026-07-08
-tags: []
-type: reference
-lang:
+tags: [dev, vscode, markdown]
+type: howto
+lang: en
 status: draft
 ---
+
+> Related: [[MOC - Dev Environment]] · [[vscode-open-view]] · [[markdon-preview]]
+
 In VS Code, the hotkey depends on whether you want to toggle the preview in the **same tab** or open it **side-by-side**.
 
 Here are the default shortcuts for Markdown files:

@@ -1,10 +1,13 @@
 ---
-created: 2026-07-08 19:07
-tags: []
-type: reference
-lang:
+created: 2026-07-08
+tags: [github-actions, markdown, documentation]
+type: howto
+lang: en
 status: draft
 ---
+
+> Related: [[MOC - Dev Environment]] · [[automatically-update-internal-link]] · [[github-action-workflows]]
+
 The GitHub Action that brings the `tcort/markdown-link-check` tool into your repository is highly popular. It acts like an automated guard dog for your documentation: every time you push code or open a Pull Request, it spins up a tiny virtual machine, scans all your `.md` files, tests every link, and throws a red flag if any of them are broken.
 
 ## How It Works Under the Hood

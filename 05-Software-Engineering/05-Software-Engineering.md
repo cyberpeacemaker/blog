@@ -18,6 +18,7 @@ Architecture, agile development, MVP, and software concepts.
 - [[mvp]]
 - [[dev-workflow]]
 - [[cicd-get-started]] — CI/CD roadmap for small teams
+- [[github-action-workflows]] — GitHub Actions workflow fundamentals
 - [[project-reorganization-challenge]]
 - [[trading-bot-ad-bidding]]
 - [[blue-sky]]

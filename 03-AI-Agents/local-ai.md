@@ -1,10 +1,12 @@
 ---
 created: 2026-07-08
-tags: []
+tags: [ai, local-llm, models]
 type: reference
-lang: en
+lang: zh
 status: draft
 ---
+
+> Related: [[MOC - AI Agents]] · [[claude-to-local-migration]] · [[pydantic-litellm]]
 
 既然專案是 100% 全英文，且想完全擺脫對岸模型的地緣政治或合規風險，那你的選擇反而變得非常純粹。西洋開源模型生態系效能大幅超越以往，不論是推理、寫 Code（Coding）還是工具調用（Tool-calling），都有極為強悍的替代方案。
 

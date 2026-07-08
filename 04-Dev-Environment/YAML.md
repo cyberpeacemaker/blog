@@ -1,10 +1,13 @@
 ---
-created: 2026-07-08 19:07
-tags: []
+created: 2026-07-08
+tags: [dev, yaml, config]
 type: reference
-lang:
+lang: en
 status: draft
 ---
+
+> Related: [[MOC - Dev Environment]] · [[YAML-markdown]] · [[github-action-workflows]]
+
 The `.yml` (or `.yaml`) file extension stands for **YAML**.
 
 Here is everything you need to know about what it means, how to say it, and what it does.

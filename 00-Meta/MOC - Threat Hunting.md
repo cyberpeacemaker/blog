@@ -34,6 +34,7 @@ Threat hunting methodology, forensics, CTF, and write-up standards.
 - [[tracking-ori]] — tracking (original notes)
 - [[beacon]] — C2 beacon detection (behavioral / statistical)
 - [[anti-virus]] — AV false positives during malware research
+- [[YARA]] — malware pattern matching and threat hunting rules
 
 ## Threat Intel
 

@@ -1,10 +1,13 @@
 ---
 created: 2026-07-08
-tags: []
+tags: [ai, agents, product-stack]
 type: reference
 lang: en
 status: draft
 ---
+
+> Related: [[MOC - AI Agents]] · [[pydantic-litellm]] · [[rag-okf-wiki]]
+
 ## 🛠️ The AI Toolkit: Essential Platforms & Libraries
 
 You don't need to learn all of these on day one, but these are the industry standards you will encounter.

@@ -1,10 +1,13 @@
 ---
-created: 2026-07-08 19:07
-tags: []
+created: 2026-07-08
+tags: [python, uv, conda]
 type: reference
-lang:
+lang: zh
 status: draft
 ---
+
+> Related: [[MOC - Dev Environment]] · [[conda-necessary]] · [[conda-miniconda]]
+
 這樣說**完全可以**！這句建議非常到位，而且切中了目前 Python 開發工具鏈（Tooling）的最新趨勢與痛點。
 
 這段話之所以很專業，原因在於你精準區分了兩個工具在不同階段的「核心優勢」：
