@@ -45,7 +45,7 @@ status: draft
 ### 2. 統一分支命名規範
 
 兩個人雖然少，但習慣要先養好。建議統一分支的開頭，例如：
-
+****
 - 開發新功能：`feature/login-page`
     
 - 修復 Bug：`bugfix/payment-error`
