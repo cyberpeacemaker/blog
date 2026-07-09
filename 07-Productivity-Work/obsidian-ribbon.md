@@ -1,11 +1,16 @@
 ---
-created: 2026-07-09 15:07
-updated: 2026-07-09 15:07
-tags: []
-type: reference
+title: "Obsidian Ribbon and Git Panel"
+description: "Explains the Obsidian Ribbon, why panels cannot be dragged into it, and how to reorder ribbon buttons."
+created: 2026-07-09
+updated: 2026-07-09
+type: howto
 lang: en
 status: draft
+tags: [obsidian, workflow]
 ---
+
+> Related: [[07-Productivity-Work]] · [[obsidian-setting]] · [[Daily Workflow]]
+
 That far-left vertical strip you are looking at is called the **Ribbon** in Obsidian.
 
 Here is how the layout works for the Ribbon versus the Sidebar panels:
@@ -34,4 +39,3 @@ If you want that Git button to be at the very top of the leftest side instead of
 2. Select **Configure ribbon...** from the context menu.
     
 3. A menu will pop up allowing you to drag and drop the icons into whatever order you like. Just drag the Git icon to the very top!
-

@@ -1,11 +1,16 @@
 ---
-created: 2026-07-09 16:07
-updated: 2026-07-09 16:07
-tags: []
+title: "MCP Vision Bridge vs Local Image Recognition"
+description: "Compares MCP-style image handoff to Claude with local computer vision inference for image recognition workflows."
+created: 2026-07-09
+updated: 2026-07-09
 type: reference
-lang: en
+lang: zh
 status: draft
+tags: [ai, agents]
 ---
+
+> Related: [[MOC - AI Agents]] · [[edge-ai-terms]] · [[local-cv-yolo-vs-cloud-vision]]
+
 Python
 
 ```
@@ -89,4 +94,3 @@ return {
 **總結來說：**
 
 你看到的這類 MCP 專案，說的「圖像識別」其實是指「具備將圖像餵給 AI 進行識別的能力」。真正的識別引擎都在大語言模型內部，所以你在 Repo 裡面只會看到把圖片轉成 Base64 並丟出去的「橋接」程式碼！
-

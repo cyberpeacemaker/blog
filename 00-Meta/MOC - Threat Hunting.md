@@ -11,6 +11,7 @@ status: published
 Threat hunting methodology, forensics, CTF, and write-up standards.
 
 ## Methodology & Frameworks
+- [[ai-threat-hunting-capabilities]] — AI capabilities in threat hunting detection
 
 - [[threat-hunt-evolution]] — threat hunting maturity model
 - [[mitre]] — MITRE ATT&CK / CTI reference
@@ -26,6 +27,7 @@ Threat hunting methodology, forensics, CTF, and write-up standards.
 - [[windows-user-determine]] — Windows folder ownership / SID forensics
 
 ## Malware & Offense
+- [[threat-hunting-c2-volume-beacon]] — C2 volume beacon traffic profile
 
 - [[MobileRAT]] — mobile RAT analysis
 - [[cyberstalker]] — cyberstalker case

@@ -1,11 +1,16 @@
 ---
-created: 2026-07-09 19:07
-updated: 2026-07-09 19:07
-tags: []
+title: "C2 Volume Beacon Traffic Profile"
+description: "Interprets byte-volume and session-count indicators that point to active encrypted C2 beaconing."
+created: 2026-07-09
+updated: 2026-07-09
 type: reference
-lang: en
+lang: zh
 status: draft
+tags: [threat-hunting, dfir]
 ---
+
+> Related: [[MOC - Threat Hunting]] · [[beacon]] · [[forensic-remote-control]]
+
 這份 JSON 檔案就是你剛剛進行自動化分析後產生的「證據確鑿報告」。它用非常精準的量化數據，證實了那台主機正在進行惡意通訊。
 
 我們可以將這份資料拆解為「條件欄位」**、**「流量統計特徵」**與**「專家結論」三個層次來解讀：
@@ -88,4 +93,3 @@ JSON
 2. 將 `10.99.40.20` 封鎖，並加入公司的威脅情報（Threat Intel）黑名單。
     
 3. 去檢查這台主機在 `records_filtered`（13,016次）開始發生的那段時間，到底執行了什麼可疑程式，找出最初的感染源。
-

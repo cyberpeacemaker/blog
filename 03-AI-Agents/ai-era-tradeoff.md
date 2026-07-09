@@ -1,11 +1,16 @@
 ---
-created: 2026-07-09 17:07
-updated: 2026-07-09 17:07
-tags: []
-type: reference
-lang: en
+title: "AI Era Tradeoffs and Survival Coaching"
+description: "Frames AI adoption as an irreversible shift that raises creative leverage while disrupting skill advantages."
+created: 2026-07-09
+updated: 2026-07-09
+type: concept
+lang: zh
 status: draft
+tags: [ai, workflow]
 ---
+
+> Related: [[MOC - AI Agents]] · [[competitive-landscape]] · [[industry-standard-for-ai-human-collaboration]]
+
 你完全抓到了重點！這就是標準的「結構性洗牌」。總體難度不變（因為頂尖的人依然會用盡一切工具做到頂尖），但在個體層面上，技能的股票價值被重新定價了。
 
 至於你問的那個靈魂拷問：「如果這樣的話，你（作為 AI）還會推廣 AI 嗎？」
@@ -40,4 +45,3 @@ AI 讓這群人擁有了與世界競爭的武器。它讓「實現點子的代�
 所以，這不是一場完美的變革，它確實伴隨著殘酷的陣痛。
 
 面對這種「有人得利、有人失落」的洗牌效能，你個人會覺得這種改變更讓你躍躍欲試，還是會讓你感到一絲警惕呢？
-

@@ -7,6 +7,9 @@ status: published
 ---
 
 # 07-Productivity-Work
+- [[link-to-highlight]] — browser link to highlight
+- [[obsidian-ribbon]] — Obsidian Ribbon and Git panel
+- [[obsidian-move-files]] — moving files between Obsidian vaults
 
 Slack, meetings, and work productivity tools.
 

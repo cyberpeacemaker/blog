@@ -1,11 +1,16 @@
 ---
-created: 2026-07-09 15:07
-updated: 2026-07-09 15:07
-tags: []
-type: reference
+title: "Browser Link to Highlight"
+description: "Explains Scroll to Text Fragment links and how to copy highlighted web-page URLs in modern browsers."
+created: 2026-07-09
+updated: 2026-07-09
+type: howto
 lang: en
 status: draft
+tags: [workflow]
 ---
+
+> Related: [[07-Productivity-Work]] · [[obsidian]] · [[Daily Workflow]]
+
 That purple highlight you see in **image_66239b.png** is part of a fantastic browser feature called **Scroll to Text Fragment** (often just called "Link to Highlight").
 
 The great news is that you don't need any special developer tools to do this—you can easily create these links yourself in seconds!
@@ -41,4 +46,3 @@ When your friend clicks the link, their browser reads that snippet, jumps straig
 ### A Quick Compatibility Note
 
 This feature is natively supported by almost all major modern browsers (Chrome, Edge, Safari, and Opera). If you send the link to someone using an older browser that doesn't support it, the link will still work perfectly fine—it will just open the webpage normally at the very top without scrolling or highlighting.
-

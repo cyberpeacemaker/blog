@@ -1,11 +1,16 @@
 ---
-created: 2026-07-09 15:07
-updated: 2026-07-09 15:07
-tags: []
-type: reference
+title: "Moving Files Between Obsidian Vaults"
+description: "Explains how to move notes, canvases, attachments, and settings between Obsidian vault folders safely."
+created: 2026-07-09
+updated: 2026-07-09
+type: howto
 lang: en
 status: draft
+tags: [obsidian, workflow]
 ---
+
+> Related: [[07-Productivity-Work]] · [[obsidian-vault-layout]] · [[obsidian-supported-files]]
+
 ## Yes, absolutely!
 
 One of Obsidian’s biggest strengths is that it doesn't trap your data in a proprietary cloud. An Obsidian vault is just a standard folder on your computer's hard drive, and your notes, canvases, and attachments are just regular files inside it.
@@ -36,4 +41,3 @@ While the physical moving of files is seamless, Obsidian relies heavily on inter
 - **Canvas Images & Attachments:** Canvas files (`.canvas`) often embed images, PDFs, or other notes. If you move a canvas file alone, any embedded images or cards pointing to local notes will show up as blank or broken in the new vault. **Tip:** Make sure to grab the corresponding assets from your attachments folder too!
     
 - **Settings and Plugins:** Moving a note doesn't move your custom fonts, plugins, or themes. If you want Vault B to look and act _exactly_ like Vault A, you need to copy the hidden `.obsidian` folder from the root of Vault A into Vault B. (You may need to press `Ctrl + Shift + .` on Windows or `Cmd + Shift + .` on Mac to see hidden folders).
-

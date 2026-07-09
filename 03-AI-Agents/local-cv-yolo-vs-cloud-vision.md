@@ -1,11 +1,16 @@
 ---
-created: 2026-07-09 17:07
-updated: 2026-07-09 17:07
-tags: []
+title: "Local YOLO Vision vs Cloud Vision Models"
+description: "Explains why realtime automation uses local YOLO/ONNX inference instead of cloud LLM vision calls."
+created: 2026-07-09
+updated: 2026-07-09
 type: reference
-lang: en
+lang: zh
 status: draft
+tags: [ai, python]
 ---
+
+> Related: [[MOC - AI Agents]] · [[edge-ai-terms]] · [[ai-new-era-image-identification]]
+
 Python
 
 ```
@@ -121,5 +126,3 @@ AI 算完後，只會吐出一堆密密麻麻的數字（座標和機率）。�
 >     
 
 既然你注意到了 YOLOv8 的做法，你目前是有打算自己開發某種自動化腳本或影像辨識的小工具，還是在評估你工作/專案上的技術選型呢？
-
-
