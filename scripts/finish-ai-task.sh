@@ -12,7 +12,10 @@ if [[ "$BRANCH_NAME" == "main" ]]; then
   exit 1
 fi
 
-if [[ "$BRANCH_NAME" != automation/daily-inbox-triage* && "$BRANCH_NAME" != cursor/daily-inbox-triage* ]]; then
+if [[ "$BRANCH_NAME" != automation/daily-inbox-triage* &&
+      "$BRANCH_NAME" != cursor/daily-inbox-triage* &&
+      "$BRANCH_NAME" != automation/inbox-rule-application* &&
+      "$BRANCH_NAME" != cursor/inbox-rule-application* ]]; then
   echo "Error: Refusing to finish unexpected branch: $BRANCH_NAME"
   exit 1
 fi

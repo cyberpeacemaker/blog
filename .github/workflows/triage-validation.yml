@@ -12,26 +12,34 @@ jobs:
       - name: Skip non-triage PRs
         if: >-
           !startsWith(github.head_ref, 'cursor/daily-inbox-triage') &&
-          !startsWith(github.head_ref, 'automation/daily-inbox-triage')
+          !startsWith(github.head_ref, 'automation/daily-inbox-triage') &&
+          !startsWith(github.head_ref, 'cursor/inbox-rule-application') &&
+          !startsWith(github.head_ref, 'automation/inbox-rule-application')
         run: echo "Not a triage PR; check passes."
 
       - uses: actions/checkout@v4
         if: >-
           startsWith(github.head_ref, 'cursor/daily-inbox-triage') ||
-          startsWith(github.head_ref, 'automation/daily-inbox-triage')
+          startsWith(github.head_ref, 'automation/daily-inbox-triage') ||
+          startsWith(github.head_ref, 'cursor/inbox-rule-application') ||
+          startsWith(github.head_ref, 'automation/inbox-rule-application')
         with:
           fetch-depth: 0
 
       - name: Validate changed paths
         if: >-
           startsWith(github.head_ref, 'cursor/daily-inbox-triage') ||
-          startsWith(github.head_ref, 'automation/daily-inbox-triage')
+          startsWith(github.head_ref, 'automation/daily-inbox-triage') ||
+          startsWith(github.head_ref, 'cursor/inbox-rule-application') ||
+          startsWith(github.head_ref, 'automation/inbox-rule-application')
         run: bash scripts/validate-triage-paths.sh origin/${{ github.base_ref }}
 
       - name: Set up Python
         if: >-
           startsWith(github.head_ref, 'cursor/daily-inbox-triage') ||
-          startsWith(github.head_ref, 'automation/daily-inbox-triage')
+          startsWith(github.head_ref, 'automation/daily-inbox-triage') ||
+          startsWith(github.head_ref, 'cursor/inbox-rule-application') ||
+          startsWith(github.head_ref, 'automation/inbox-rule-application')
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
@@ -39,5 +47,7 @@ jobs:
       - name: Build vault map
         if: >-
           startsWith(github.head_ref, 'cursor/daily-inbox-triage') ||
-          startsWith(github.head_ref, 'automation/daily-inbox-triage')
+          startsWith(github.head_ref, 'automation/daily-inbox-triage') ||
+          startsWith(github.head_ref, 'cursor/inbox-rule-application') ||
+          startsWith(github.head_ref, 'automation/inbox-rule-application')
         run: python scripts/build-vault-canvas.py --all
