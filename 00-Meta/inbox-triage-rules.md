@@ -22,11 +22,11 @@ Do **not** move:
 
 ## Date inference
 
-| Filename pattern | `created` value |
-|------------------|-----------------|
-| `MM-DD-slug.md` | `2026-MM-DD` (use current year) |
-| `slug.md` (no date prefix) | Previous calendar day, or explicit date from body if stated |
-| Frontmatter already has `created` | Keep existing value |
+| Filename pattern                  | `created` value                                             |
+| --------------------------------- | ----------------------------------------------------------- |
+| `MM-DD-slug.md`                   | `2026-MM-DD` (use current year)                             |
+| `slug.md` (no date prefix)        | Previous calendar day, or explicit date from body if stated |
+| Frontmatter already has `created` | Keep existing value                                         |
 
 Never add date prefixes to topic filenames after triage.
 
@@ -36,13 +36,21 @@ Use [`00-Meta/templates/default-note.md`](templates/default-note.md):
 
 ```yaml
 ---
+title: "Clear, Semantic Title"
+description: "Punchy SEO summary + core semantic intent for RAG/vector filtering."
 created: YYYY-MM-DD
-tags: [domain-tags]
-type: reference   # reference | howto | hub | draft
-lang: en          # en | zh — infer from body
-status: draft
----
-```
+updated: YYYY-MM-DD        # Crucial for AI to know if the knowledge is stale
+type: howto                # reference | howto | hub | concept — vital for MCP routers
+lang: en
+draft: true
+
+# --- AI & Agent Enhanced Fields (Infer these where possible!) ---
+domain: ""                 # e.g., tech/ai, life/health — narrows RAG search scope
+relations: []              # [slug-of-parent, slug-of-related] — builds the AI graph
+prerequisites: []          # What the human (or agent) needs to know before reading
+visibility: "private"      # private | internal | public — guards against AI data leakage
+tags: []                   # For hybrid (keyword + vector) RAG search
+---```
 
 Add a `Related:` block pointing to the relevant MOC, not `[[Inbox]]`.
 
