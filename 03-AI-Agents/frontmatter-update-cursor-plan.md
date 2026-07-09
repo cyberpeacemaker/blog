@@ -1,49 +1,43 @@
 ---
-created: 2026-07-09 09:07
-tags: []
-type:
-lang:
+title: "Frontmatter Schema Advice and Improvement Plan"
+description: "Plan for aligning vault frontmatter with OKF-style AI readability without duplicating tags, relations, or future-only fields."
+created: 2026-07-09
+updated: 2026-07-09
+type: reference
+lang: en
 status: draft
+tags: [meta, workflow, ai, agents]
 ---
----
-name: Frontmatter Schema Advice
-overview: Your expanded frontmatter is directionally right for OKF-style agent-readable knowledge, but several fields conflate different layers (RAG vs MCP vs A2A), conflict with existing vault conventions, and are not yet wired into templates or scripts. This plan realigns the schema into tiers, fixes inconsistencies, and maps each AI concept to what it actually optimizes in your vault.
-todos:
-  - id: fix-triage-schema
-    content: "Rewrite Frontmatter schema in inbox-triage-rules.md: Tier 1/2/3, fix checklist, add concept map, remove relations/domain duplication"
-    status: pending
-  - id: sync-template
-    content: Sync default-note.md + daily-note.md to Tier 1 (add updated, restore type defaults)
-    status: pending
-  - id: new-type-templates
-    content: Create howto-note.md, reference-note.md, and tier3-future-note.md (placeholder) in 00-Meta/templates/
-    status: pending
-  - id: frontmatter-schema-doc
-    content: Create 00-Meta/frontmatter-schema.md — canonical tiers, design principles, template index; link from Tag Taxonomy, inbox-triage-rules, Daily Workflow
-    status: pending
-  - id: update-tag-taxonomy
-    content: Add concept type + frontmatter field reference table to Tag Taxonomy.md
-    status: pending
-  - id: optional-canvas
-    content: "Phase 2: extend build-vault-canvas.py to use description/updated in node metadata"
-    status: pending
-  - id: triage-example
-    content: Apply new schema to industry-standard-for-ai-human-collaboration.md as reference example during next triage
-    status: pending
-isProject: false
----
+
+> Related: [[frontmatter-schema]] · [[inbox-triage-rules]] · [[yaml-okf]]
 
 # Frontmatter Schema: Advice and Improvement Plan
 
+## Plan metadata
+
+- **Name:** Frontmatter Schema Advice
+- **Overview:** Your expanded frontmatter is directionally right for OKF-style agent-readable knowledge, but several fields conflate different layers (RAG vs MCP vs A2A), conflict with existing vault conventions, and are not yet wired into templates or scripts. This plan realigns the schema into tiers, fixes inconsistencies, and maps each AI concept to what it actually optimizes in your vault.
+- **Project:** false
+
+### Original todo list
+
+- [ ] Rewrite `inbox-triage-rules.md`: Tier 1/2/3, checklist fixes, concept map, remove `relations`/`domain` duplication
+- [ ] Sync `default-note.md` and `daily-note.md` to Tier 1
+- [ ] Create `howto-note.md`, `reference-note.md`, and `tier3-future-note.md`
+- [ ] Create `frontmatter-schema.md` as canonical tier/design-principle reference
+- [ ] Update `Tag Taxonomy.md` with concept type and frontmatter reference
+- [ ] Extend `build-vault-canvas.py` to use `description`/`updated` in node metadata
+- [ ] Apply the new schema to an example triaged note
+
 ## What you got right
 
-Your instinct matches what your own notes already describe in [`03-AI-Agents/yaml-okf.md`](03-AI-Agents/yaml-okf.md) and [`03-AI-Agents/rag-okf-wiki.md`](03-AI-Agents/rag-okf-wiki.md):
+Your instinct matches what your own notes already describe in [[yaml-okf]] and [[rag-okf-wiki]]:
 
 - **Structured metadata before body text** → agents filter without reading full notes (token efficiency)
 - **`title` + `description`** → best ROI fields for semantic retrieval (Cursor search, future embeddings)
 - **`type`** → routing (howto vs reference vs hub)
 - **`updated`** → stale-knowledge detection (called out in your OKF wiki note as "knowledge drift")
-- **MOC hub pages** → you already have OKF-style `index.md` maps ([`MOC - AI Agents.md`](00-Meta/MOC%20-%20AI%20Agents.md), etc.)
+- **MOC hub pages** → you already have OKF-style `index.md` maps ([[MOC - AI Agents]], etc.)
 
 You do **not** need a vector database to benefit from this. For your vault today, the "RAG" layer is mostly: grep + `@` file references + MOC navigation + frontmatter filtering.
 
@@ -96,15 +90,15 @@ flowchart TB
 
 ## Problems in the current draft
 
-### 1. Internal inconsistencies in [`00-Meta/inbox-triage-rules.md`](00-Meta/inbox-triage-rules.md)
+### 1. Internal inconsistencies in [[inbox-triage-rules]]
 
 | Location | Says | Conflict |
 |----------|------|----------|
 | Frontmatter schema | `draft: true` | Per-file checklist (line 76) still says `status` |
 | Existing vault (~164 notes) | `status: draft \| published` | New schema drops `status` |
-| [`00-Meta/Tag Taxonomy.md`](00-Meta/Tag%20Taxonomy.md) | Domain lives in `tags` array | New `domain:` field duplicates taxonomy |
-| Body convention | `Related: [[MOC]]` + wikilinks | New `relations: []` duplicates graph edges |
-| [`00-Meta/templates/default-note.md`](00-Meta/templates/default-note.md) | Old 5-field template | Not synced with new schema |
+| [[Tag Taxonomy]] | Domain lives in `tags` array | New `domain:` field duplicates taxonomy |
+| Body convention | Related block + wikilinks | New `relations: []` duplicates graph edges |
+| [[default-note]] | Old 5-field template | Not synced with new schema |
 
 ### 2. Field design issues
 
@@ -116,7 +110,7 @@ flowchart TB
 
 ### 3. Nothing consumes the new fields yet
 
-[`scripts/build-vault-canvas.py`](scripts/build-vault-canvas.py) only reads `tags` and `type`. [`scripts/rename-dates.py`](scripts/rename-dates.py) builds the old 5-field block. Until scripts/automation read new fields, they are documentation-only.
+[`scripts/build-vault-canvas.py`](../scripts/build-vault-canvas.py) only reads `tags` and `type`. [`scripts/rename-dates.py`](../scripts/rename-dates.py) builds the old 5-field block. Until scripts/automation read new fields, they are documentation-only.
 
 ---
 
@@ -175,7 +169,7 @@ Add these only when you build the consumer (embedding script, MCP vault-search t
 
 ## Concrete file changes (after plan approval)
 
-### 1. Rewrite Frontmatter section in [`00-Meta/inbox-triage-rules.md`](00-Meta/inbox-triage-rules.md)
+### 1. Rewrite Frontmatter section in [[inbox-triage-rules]]
 
 - Replace current schema block with Tier 1 + Tier 2 optional block
 - Fix per-file checklist: `status` not `draft`; add `title`, `description`, `updated`
@@ -183,14 +177,14 @@ Add these only when you build the consumer (embedding script, MCP vault-search t
 - Remove misleading comment "vital for MCP routers" → "helps agents pick note type before reading body"
 - Document: **do not add `relations`** — use wikilinks + MOC instead
 
-### 2. Sync existing templates in [`00-Meta/templates/`](00-Meta/templates/)
+### 2. Sync existing templates in `00-Meta/templates/`
 
-**Yes — modify both existing templates.** Templates only affect *new* notes ([`Daily Workflow.md`](00-Meta/Daily%20Workflow.md)), so syncing them is low-risk and keeps capture aligned with triage rules.
+**Yes — modify both existing templates.** Templates only affect *new* notes ([[Daily Workflow]]), so syncing them is low-risk and keeps capture aligned with triage rules.
 
 | Template | Role | Change |
 |----------|------|--------|
-| [`default-note.md`](00-Meta/templates/default-note.md) | Auto-applied on `Ctrl+N` via Templater | Tier 1 minimal — add `updated`, restore `type: reference` |
-| [`daily-note.md`](00-Meta/templates/daily-note.md) | Calendar daily notes | Add `updated: {{date:YYYY-MM-DD}}` to match Tier 1 |
+| [[default-note]] | Auto-applied on `Ctrl+N` via Templater | Tier 1 minimal — add `updated`, restore `type: reference` |
+| [[daily-note]] | Calendar daily notes | Add `updated: {{date:YYYY-MM-DD}}` to match Tier 1 |
 
 **`default-note.md`** — Tier 1 only at capture (keep Templater dynamic date):
 
@@ -219,17 +213,17 @@ updated: {{date:YYYY-MM-DD}}
 
 Daily notes stay `type: daily`; triage rules already skip `daily/` promotion.
 
-### 3. New canonical doc: [`00-Meta/frontmatter-schema.md`](00-Meta/frontmatter-schema.md)
+### 3. New canonical doc: [[frontmatter-schema]]
 
 **Best place:** a dedicated meta reference — not buried in triage rules or Tag Taxonomy alone.
 
 | Doc | Role after this change |
 |-----|------------------------|
 | **`frontmatter-schema.md`** (new) | Canonical schema: Tier 1/2/3, design principles, template index, OKF/RAG concept map |
-| [`Tag Taxonomy.md`](00-Meta/Tag%20Taxonomy.md) | Tags and `type` values only — links to `frontmatter-schema` for full field list |
-| [`inbox-triage-rules.md`](00-Meta/inbox-triage-rules.md) | Triage automation rules — links to `frontmatter-schema`, keeps a short Tier 1 reminder |
-| [`YAML-markdown.md`](00-Meta/YAML-markdown.md) | YAML syntax — unchanged |
-| [`03-AI-Agents/yaml-okf.md`](03-AI-Agents/yaml-okf.md) | OKF concept background — `frontmatter-schema` links here for "why" |
+| [[Tag Taxonomy]] | Tags and `type` values only — links to `frontmatter-schema` for full field list |
+| [[inbox-triage-rules]] | Triage automation rules — links to `frontmatter-schema`, keeps a short Tier 1 reminder |
+| [[YAML-markdown]] | YAML syntax — unchanged |
+| [[yaml-okf]] | OKF concept background — `frontmatter-schema` links here for "why" |
 
 **`frontmatter-schema.md` contents:**
 
@@ -247,9 +241,9 @@ Daily notes stay `type: daily`; triage rules already skip `daily/` promotion.
 3. **Template index** — which template for which flow (see section 4 below)
 4. **Related links** — Tag Taxonomy, inbox-triage-rules, yaml-okf, Daily Workflow
 
-Add to [`Home.md`](00-Meta/Home.md) or [`Daily Workflow.md`](00-Meta/Daily%20Workflow.md) under meta references.
+Add to [[Home]] or [[Daily Workflow]] under meta references.
 
-### 4. Templates in [`00-Meta/templates/`](00-Meta/templates/)
+### 4. Templates in `00-Meta/templates/`
 
 **Modify existing** (section 2 above) plus **three new** files:
 
@@ -299,7 +293,7 @@ Include a short HTML comment or markdown callout at top of template body:
 
 Document all five templates in `frontmatter-schema.md` § Templates and a short list in `Daily Workflow.md`.
 
-### 5. Extend [`00-Meta/Tag Taxonomy.md`](00-Meta/Tag%20Taxonomy.md)
+### 5. Extend [[Tag Taxonomy]]
 
 - Add `concept` to type list if adopted
 - Replace duplicated field tables with link: *See [[frontmatter-schema]] for Tier 1/2/3 fields and design principles*
@@ -307,11 +301,11 @@ Document all five templates in `frontmatter-schema.md` § Templates and a short 
 
 ### 6. Optional script enhancement (Phase 2)
 
-Extend [`scripts/build-vault-canvas.py`](scripts/build-vault-canvas.py) `parse_frontmatter` usage to surface `description` and `updated` in canvas node labels — makes the investment visible without building embeddings yet.
+Extend [`scripts/build-vault-canvas.py`](../scripts/build-vault-canvas.py) `parse_frontmatter` usage to surface `description` and `updated` in canvas node labels — makes the investment visible without building embeddings yet.
 
 ### 7. Example: triage the inbox test note
 
-[`Inbox/industry-standard-for-ai-human-collaboration.md`](Inbox/industry-standard-for-ai-human-collaboration.md) would become:
+An inbox note such as `industry-standard-for-ai-human-collaboration.md` would become:
 
 ```yaml
 ---
@@ -350,7 +344,7 @@ flowchart LR
 
 ## What NOT to do (common beginner traps)
 
-Documented in full in [`00-Meta/frontmatter-schema.md`](00-Meta/frontmatter-schema.md) § Design principles. Summary:
+Documented in full in [[frontmatter-schema]] § Design principles. Summary:
 
 1. **Don't build vector RAG before structured metadata** — fix titles, descriptions, MOC links first (cheaper, immediate Cursor benefit)
 2. **Don't duplicate the link graph in YAML** — wikilinks + MOCs are your OKF index; YAML relations will drift
@@ -358,7 +352,7 @@ Documented in full in [`00-Meta/frontmatter-schema.md`](00-Meta/frontmatter-sche
 4. **Don't conflate MCP with metadata** — MCP is tools; metadata helps file *selection*
 5. **Don't migrate all notes at once** — enrich on triage touch only
 
-Tier 3 fields live in [`tier3-future-note.md`](00-Meta/templates/tier3-future-note.md) as a **reference placeholder** until embedding or visibility consumers exist.
+Tier 3 fields live in [[tier3-future-note]] as a **reference placeholder** until embedding or visibility consumers exist.
 
 ---
 
@@ -367,7 +361,7 @@ Tier 3 fields live in [`tier3-future-note.md`](00-Meta/templates/tier3-future-no
 After changes, a triage run should produce notes where:
 
 1. Every moved file has Tier 1 frontmatter with no `status`/`draft` conflict
-2. [`frontmatter-schema.md`](00-Meta/frontmatter-schema.md) exists as canonical reference with design principles
+2. [[frontmatter-schema]] exists as canonical reference with design principles
 3. `default-note.md`, `daily-note.md`, and triage rules agree on Tier 1
 4. `howto-note.md`, `reference-note.md`, and `tier3-future-note.md` exist in templates/
 5. Agent can grep `description:` or `type: howto` and get meaningful filters

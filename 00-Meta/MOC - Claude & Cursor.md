@@ -18,6 +18,8 @@ AI-assisted coding: Claude, Cursor IDE, skills, and design workflows.
 - [[ai-workflow]] — AI workflow (May)
 - [[ai-workflow-v2]] — AI workflow (May, updated)
 - [[cursor-skip]] — Cursor skip patterns
+- [[cursor-cloud-sandbox-trap]] — scheduled automation sandbox and PR branch workflow
+- [[automation-prompt-suggestion]] — prompt pattern for unattended Cursor inbox triage
 
 ## Claude Skills & Commands
 

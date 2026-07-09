@@ -28,6 +28,8 @@ AI agent frameworks, multi-agent systems, context management, and local LLM work
 - [[rag-okf-wiki]] — OKF wiki vs RAG knowledge bases
 - [[RAG-OKF]] — RAG vs Open Knowledge Format comparison
 - [[yaml-okf]] — OKF-style Markdown and YAML frontmatter for AI-readable repos
+- [[frontmatter-ai-a2a-mcp-rag-okf]] — AI/RAG/MCP/A2A rationale for frontmatter design
+- [[frontmatter-update-cursor-plan]] — Cursor plan for frontmatter schema and template alignment
 - [[dynamic-context-injection]] — dynamic context injection
 - [[03-AI-Agents/claude-session.context-window|claude-session.context-window]] — Claude context window management
 - [[ai-artifacts]] — AI artifact handling
