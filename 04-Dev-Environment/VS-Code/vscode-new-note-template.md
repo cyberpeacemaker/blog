@@ -1,10 +1,12 @@
 ---
 created: 2026-07-08 20:07
-tags: []
+tags: [dev, vscode, templates]
 type: reference
-lang:
+lang: en
 status: draft
 ---
+> Related: [[MOC - Dev Environment]] · [[Daily Workflow]] · [[obsidian-new-note-template]]
+
 Here’s what **“Ctrl+N → Inbox/ with frontmatter”** means in VS Code/Cursor, and how you’d actually do it.
 
 ## What Obsidian does (reminder)

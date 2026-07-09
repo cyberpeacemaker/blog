@@ -1,10 +1,12 @@
 ---
 created: 2026-07-08 20:07
-tags: []
+tags: [ai, okf, knowledge-base]
 type: reference
-lang:
+lang: en
 status: draft
 ---
+> Related: [[MOC - AI Agents]] · [[RAG-OKF]] · [[rag-okf-wiki]]
+
 You hit the nail on the head. **OKF** stands for the **Open Knowledge Format**, and it is a open, vendor-neutral specification designed to formalize what people call the "LLM-wiki" pattern.
 
 It is essentially a standardized way of writing Markdown files with YAML frontmatter so that both **humans can read them** and **AI agents can instantly query them**.

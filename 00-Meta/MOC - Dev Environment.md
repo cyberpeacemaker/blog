@@ -62,6 +62,7 @@ Developer tooling: Git, Python, VS Code, testing, and environment setup.
 - [[vscode-open-view]] — open .md files in preview by default
 - [[vscode-toggle-view]] — Markdown preview shortcuts
 - [[automatically-update-internal-link]] — Markdown link updates when moving files
+- [[vscode-new-note-template]] — VS Code/Cursor options for creating templated Inbox notes
 
 ## Testing
 
