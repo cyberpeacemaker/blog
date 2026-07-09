@@ -13,6 +13,7 @@ AI-assisted coding: Claude, Cursor IDE, skills, and design workflows.
 ## IDE & Workflow Comparison
 
 - [[cursor-vs-claude]] — Cursor vs Claude Desktop
+- [[claude-desktop-cli]] — Claude Desktop vs Claude Code CLI workflow fit
 - [[cursor-plsu-claude]] — Cursor + Claude combined workflow
 - [[ai-coding]] — AI coding practices
 - [[ai-workflow]] — AI workflow (May)
