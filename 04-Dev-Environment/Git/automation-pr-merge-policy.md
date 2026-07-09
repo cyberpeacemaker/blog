@@ -13,42 +13,19 @@ status: draft
 
 # Automation Delivery Patterns
 
-Use three automation delivery modes. For this personal Obsidian vault, **daily inbox triage uses Mode 1: direct push to `main`**.
+Use three automation delivery modes. For this personal Obsidian vault, **daily inbox triage uses Mode 2: branch PR with auto-merge after checks**.
 
 ## Mode 1: direct push to main
 
-Use this only for narrow, repeatable, low-risk chores where the rules are stable, the changed paths are predictable, and the result is easy to revert.
+Use this only for narrow, repeatable, low-risk chores where the rules are stable, the changed paths are predictable, and the result is easy to revert — and where the automation environment can actually push to `main` (not Cursor Cloud scheduled automations).
 
 Good fit:
 
-- Daily inbox triage for this personal vault
-- Formatting-only maintenance in documentation
+- Formatting-only maintenance in documentation (local scripts)
 - Regenerating derived vault artifacts after deterministic note moves
 - Other non-production tasks where a bad output is visible in Git history and easy to revert
 
-How daily inbox triage should finish:
-
-```bash
-bash scripts/finish-ai-task.sh
-```
-
-The direct-push finish script should:
-
-- fail fast with `set -euo pipefail`
-- require the automation to be running on `main`
-- require a clean working tree before pushing
-- fetch `origin/main` and fail if local `main` is behind or diverged
-- inspect `origin/main..HEAD` and allow only trusted vault-triage paths
-- push committed phase changes directly to `origin main`
-- avoid PR creation, PR merge, and `--admin` bypasses
-
-Operational expectation:
-
-1. Configure the Cursor Automation target branch as `main`.
-2. Let the agent commit locally by phase.
-3. Run validation before the final push.
-4. Push all phase commits to `main` only after the working tree is clean.
-5. Review the commit history afterward if something looks wrong; use `git revert` for rollback.
+Not a fit for Cursor Cloud scheduled automations, which always work on an ephemeral cloud branch.
 
 ## Mode 2: branch PR with auto-merge after checks
 
@@ -56,10 +33,47 @@ Use this when you want unattended completion but still want GitHub branch protec
 
 Good fit:
 
+- **Daily inbox triage for this personal vault** (Cursor Automation)
 - Bot dependency updates
 - Generated documentation in shared repositories
 - Repeatable tasks with reliable CI checks
 - Maintenance where reviewers do not need to inspect every run
+
+How daily inbox triage should finish:
+
+```bash
+bash scripts/finish-ai-task.sh
+```
+
+The finish script:
+
+- fail fast with `set -euo pipefail`
+- refuse to run on `main` (Cursor Cloud creates a branch like `cursor/daily-inbox-triage-*`)
+- require a clean working tree before pushing
+- fetch `origin/main` and fail if the branch is behind
+- validate changed paths via [`scripts/validate-triage-paths.sh`](../../scripts/validate-triage-paths.sh)
+- push the cloud branch, open a PR, and enable auto-merge (`gh pr merge --auto --squash --delete-branch`)
+- avoid immediate merge and `--admin` bypasses
+
+Operational expectation:
+
+1. Configure the Cursor Automation target branch as `main` (base branch to clone).
+2. Let the agent commit locally by phase on the cloud branch Cursor creates.
+3. Run validation before calling the finish script.
+4. Finish script opens a PR and enables auto-merge; GitHub merges after CI passes.
+5. Review the squash commit on `main` afterward if something looks wrong; use `git revert` for rollback.
+
+### GitHub repo settings
+
+Required for unattended daily triage:
+
+1. **Enable auto-merge:** Settings → General → Allow auto-merge (or `gh repo edit --enable-auto-merge`)
+2. **Branch protection on `main`:**
+   - Require status check: `triage-validation`
+   - Allow auto-merge to satisfy required checks
+   - No required human reviewers (keeps it unattended)
+
+CI workflow: [`.github/workflows/triage-validation.yml`](../../.github/workflows/triage-validation.yml) runs on PRs from `cursor/daily-inbox-triage*` or `automation/daily-inbox-triage*` branches.
 
 Guardrails:
 
@@ -89,14 +103,14 @@ In this mode, the agent should still commit and push its work, but should stop a
 
 Unattended automation is convenient, but it has sharp edges:
 
-- Direct push to `main` skips the PR review surface entirely.
+- Direct push to `main` skips the PR review surface entirely and is incompatible with Cursor Cloud branch workflow.
 - `gh pr merge --squash --delete-branch --admin` can bypass review and branch protections.
 - `gh pr create` and `gh pr merge` are GitHub write operations. Some environments, including Cursor Cloud automation contexts, may restrict direct `gh` writes.
 - Without `set -e`, later commands can run after `git push` or `gh pr create` fails.
 - Plain `gh pr create` fails when a PR already exists for the branch.
 - `git checkout main` changes the local branch after completion, which is risky in interactive agent workflows.
 
-The hardened daily-triage script accepts direct-to-main risk only for trusted repeatable chores, then adds guardrails so it fails closed instead of continuing through partial failure.
+The hardened daily-triage script uses auto-merge (not immediate merge) so CI gates the merge, and fails closed instead of continuing through partial failure.
 
 ## Phase-based commits for larger work
 
@@ -114,6 +128,6 @@ Why this works:
 - Each commit is a rollback point.
 - Git history shows the agent's reasoning path.
 - A failed verification step does not obscure which phase caused the problem.
-- Individual commits make direct-to-main rollback straightforward.
+- Phase commits appear in the PR; squash merge keeps `main` history clean.
 
 Rule of thumb: commit by **milestone**, not by individual file and not as one giant final commit.
