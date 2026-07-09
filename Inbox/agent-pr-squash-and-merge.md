@@ -8,3 +8,18 @@ status: draft
 ---
 
 
+```bash
+#!/bin/bash
+BRANCH_NAME="automation/daily-inbox-triage"
+
+# Push the iterative commits the AI made
+git push origin $BRANCH_NAME
+
+# Create the PR
+gh pr create --title "chore(triage): daily inbox triage" --body "Automated daily cleanup."
+
+# Squash, merge, delete the remote branch, and update local main
+gh pr merge --squash --delete-branch --admin
+git checkout main
+git pull
+```
