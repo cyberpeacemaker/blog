@@ -1,11 +1,15 @@
 ---
-created: 2026-07-09 16:07
-updated: 2026-07-09 16:07
-tags: []
+title: "Conda, Miniconda, and Anaconda Overview"
+description: "Explains the relationship between Conda, Miniconda, and Anaconda with common environment-management commands."
+created: 2026-07-09
+updated: 2026-07-09
 type: reference
-lang: en
+lang: zh
 status: draft
+tags: [dev, python]
 ---
+
+> Related: [[MOC - Dev Environment]] · [[conda-miniconda]] · [[conda-necessary]]
 沒問題！既然你已經在 Windows 11 上裝好了，接下來我們就來聊聊這個在 Data Science（資料科學）和 AI 領域幾乎人手一套的工具。
 
 簡單來說，**Conda 是「本體（核心引擎）」，而 Miniconda 是「輕量化包裝」**。
@@ -125,4 +129,3 @@ conda env remove --name myenv
 ```
 
 有了 Miniconda 之後，你就可以針對每個不同的專案建立乾淨、獨立的開發環境了。你接下來是打算開發什麼樣的專案呢（例如：AI 模型、網頁開發、還是特定的前端/後端整合）？
-

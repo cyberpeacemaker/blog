@@ -1,11 +1,15 @@
 ---
-created: 2026-07-09 16:07
-updated: 2026-07-09 16:07
-tags: []
+title: "VS Code Extensions Starter Pack"
+description: "Lists practical VS Code extensions such as Git Graph, Error Lens, Prettier, and Todo Tree."
+created: 2026-07-09
+updated: 2026-07-09
 type: reference
-lang: en
+lang: zh
 status: draft
+tags: [dev]
 ---
+
+> Related: [[MOC - Dev Environment]] · [[vscode-gitlens-get-started]] · [[vscode-tips]]
 ## 🛠️ 還有哪些開發者必裝的「神級標配」外掛？
 
 除了 GitLens，以下這幾款外掛在開發圈的普及率極高，能大幅提升你的開發體驗：
@@ -39,4 +43,3 @@ status: draft
     
 
 你目前在開發時，最常遇到哪種讓你覺得「有點手忙腳亂」的場景呢？（例如：常常忘記自己改了什麼、找 Bug 找很久、還是排版很麻煩？）說不定有更對症下藥的外掛可以推薦給你！
-

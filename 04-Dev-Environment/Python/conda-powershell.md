@@ -1,11 +1,15 @@
 ---
-created: 2026-07-09 16:07
-updated: 2026-07-09 16:07
-tags: []
-type: reference
-lang: en
+title: "Conda in PowerShell on Windows"
+description: "Shows how to initialize Conda for PowerShell, adjust execution policy, and verify Node.js and Conda commands."
+created: 2026-07-09
+updated: 2026-07-09
+type: howto
+lang: zh
 status: draft
+tags: [dev, python]
 ---
+
+> Related: [[MOC - Dev Environment]] · [[conda-miniconda]] · [[powershell-execution-policy]]
 可以，而且用 PowerShell（或 Windows Terminal）絕對比舊版的 Command Prompt 舒服多了！
 
 不過，因為我們在安裝 Miniconda 時沒有勾選「加入環境變數 (PATH)」，所以如果你直接打開一般的 PowerShell 輸入 `conda`，系統會跟你裝傻說找不到這個指令。
@@ -80,4 +84,3 @@ node -v
 ```
 
 只要都有出來，以後你就可以完全拋棄 Miniconda Prompt，直接在 PowerShell 裡通吃 Python 和 Node.js 了！
-

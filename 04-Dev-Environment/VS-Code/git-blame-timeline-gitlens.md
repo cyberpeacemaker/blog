@@ -1,11 +1,15 @@
 ---
-created: 2026-07-09 16:07
-updated: 2026-07-09 16:07
-tags: []
+title: "Git Blame, Timeline, and GitLens"
+description: "Explains GitHub file diffs, git blame, VS Code Timeline, and GitLens workflows for code history context."
+created: 2026-07-09
+updated: 2026-07-09
 type: reference
-lang: en
+lang: zh
 status: draft
+tags: [dev, git]
 ---
+
+> Related: [[MOC - Dev Environment]] · [[vscode-gitlens-get-started]] · [[git-squash-merge]]
 我完全懂你的痛點！GitHub 預設點進去 Commit 就會把那次提交的「所有改動檔案」鋪天蓋地列出來，如果那次改動了幾十個檔案，只想看 `README.md` 就會找到眼花。
 
 要在 GitHub 上獲得像 VS Code 那樣只專注在單一檔案的 Diff（差異對照）體驗，點進 Commit 後你可以使用以下**兩種最有效率的方法**：
@@ -96,4 +100,3 @@ VS Code 本身有一些基本功能，但要達到「極致流暢」的 Blame �
     
 
 你有在 VS Code 裡裝過 GitLens 嗎？還是目前都是用純內建的功能在看 code 呢？
-

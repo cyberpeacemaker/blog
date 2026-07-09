@@ -1,11 +1,15 @@
 ---
-created: 2026-07-09 15:07
-updated: 2026-07-09 15:07
-tags: []
+title: "Microsoft Learn Git and GitHub Study Path"
+description: "Curates Microsoft Learn modules for Git, GitHub Foundations, GitHub Actions, and certification prep."
+created: 2026-07-09
+updated: 2026-07-09
 type: reference
-lang: en
+lang: zh
 status: draft
+tags: [dev, git]
 ---
+
+> Related: [[MOC - Dev Environment]] · [[git-recommended-roadmap]] · [[git-self-experience]]
 問得太精準了！**Microsoft Learn 現在就是學習 Git 和 GitHub 的「官方終極大本營」**。
 
 自從微軟收購 GitHub 後，所有的官方教學資源、模擬試題和證照路徑，都已經全面整合到 Microsoft Learn 平台上。如果你打算用這個平台來複習，那真的是選對地方了——因為它**完全免費**，而且內容是**第一手、最權威的官方標準**。

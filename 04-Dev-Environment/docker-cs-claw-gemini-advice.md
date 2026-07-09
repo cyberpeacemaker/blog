@@ -1,11 +1,15 @@
 ---
-created: 2026-07-09 20:07
-updated: 2026-07-09 20:07
-tags: []
+title: "Hybrid Local Development with Docker Services"
+description: "Compares local Node/Python development with using Docker selectively for databases and deployable services."
+created: 2026-07-09
+updated: 2026-07-09
 type: reference
-lang: en
+lang: zh
 status: draft
+tags: [dev, python]
 ---
+
+> Related: [[MOC - Dev Environment]] · [[env-setup]] · [[conda-miniconda]]
 既然你們的電腦已經裝好了 **本機 Miniconda** 和 **本機 Node.js**，這代表你們已經具備了前後端開發的完整能力。
 
 在這種情況下，我「不推薦」盲目地把所有東西都搬進 Docker。不過，隨著專案變大，Docker 在某個時間點會變成神隊友。
@@ -61,4 +65,3 @@ status: draft
 這個「本機開發 + Docker 資料庫」的混合模式，是目前主流軟體工程師在 Windows 上最推崇、寫起來最舒服的配置。
 
 你們目前的專案除了前端（Node.js）和後端（Python/Conda）之外，有預計會用到什麼資料庫（例如 MySQL、PostgreSQL）或是其他服務嗎？
-

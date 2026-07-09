@@ -1,11 +1,15 @@
 ---
-created: 2026-07-09 14:07
-updated: 2026-07-09 14:07
-tags: []
+title: "GitHub Squash Merge Review Safety"
+description: "Explains how PR pages preserve individual commits while squash merge keeps main history clean."
+created: 2026-07-09
+updated: 2026-07-09
 type: reference
 lang: en
 status: draft
+tags: [dev, git, workflow]
 ---
+
+> Related: [[MOC - Dev Environment]] · [[git-squash-and-merge]] · [[agent-pr-squash-and-merge]]
 Ah, don't worry! You haven't misunderstood the goal, but there is a brilliant safety net built into GitHub and VS Code that prevents exactly what you're fearing.
 
 You can absolutely still review your code easily. In fact, squashing often makes reviews **much cleaner**.
@@ -123,4 +127,3 @@ It looks like your automation script or GitHub repository settings are still def
     ```
     
 2. **In GitHub Settings (Optional):** If you want to prevent this from ever happening accidentally again, go to your repository settings on GitHub.com, scroll down to the **Pull Requests** section, and **uncheck** "Allow merge commits" so that _only_ "Allow squash merging" is turned on.
-

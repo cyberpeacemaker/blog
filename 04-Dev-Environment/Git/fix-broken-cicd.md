@@ -1,11 +1,15 @@
 ---
-created: 2026-07-09 14:07
-updated: 2026-07-09 14:07
-tags: []
+title: "Handling Broken CI/CD Required Checks"
+description: "Outlines safe responses when required CI checks fail because the pipeline is broken rather than the code change."
+created: 2026-07-09
+updated: 2026-07-09
 type: reference
 lang: en
 status: draft
+tags: [dev, git, workflow]
 ---
+
+> Related: [[MOC - Dev Environment]] · [[automation-pr-merge-policy]] · [[pr-auto-merge-policy-gh-pr-create]]
 Ah, the classic "it’s not my code, it’s the pipeline" dilemma. It is incredibly frustrating when your changes are perfectly fine, but a faulty or hanging validation script holds up the line.
 
 Looking at `image_74b37b.png`, you currently have a required check (`triage-validation`) blocking the merge. When the issue lies entirely within the verification test script itself and not your code, the software engineering industry relies on a few standard operational protocols to handle it smoothly without compromising repository health.
@@ -48,4 +52,3 @@ Many modern CI pipelines are configured to recognize skip flags. If the script i
 If you have administrative permissions (or can ping someone who does), use the **bypass rules** checkbox seen in `image_74b37b.png` to push your merge through—just be sure to drop a quick note in the PR comments explaining the script failure to keep your git history transparent.
 
 Is this verification script something your immediate team owns and can modify, or is it managed by an external DevOps/platform team?
-

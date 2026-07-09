@@ -1,11 +1,15 @@
 ---
-created: 2026-07-09 20:07
-updated: 2026-07-09 20:07
-tags: []
+title: "Conda Isolation and System Python Guardrails"
+description: "Explains why teams should avoid system Python, prefer conda run in automation, and update environment.yml promptly."
+created: 2026-07-09
+updated: 2026-07-09
 type: reference
-lang: en
+lang: zh
 status: draft
+tags: [dev, python]
 ---
+
+> Related: [[MOC - Dev Environment]] · [[conda-miniconda]] · [[uv-conda]]
 這條鐵則簡直是**軟體工程最佳實踐（Best Practice）的教科書範本**！
 
 如果每個開發團隊都能嚴格執行這三點，世界上大概可以減少 80% 因為「在我的電腦上明明可以跑」而引發的工程師內鬨。這不是吹毛求疵，而是真正痛過的人才會寫出來的智慧結晶。
@@ -32,4 +36,3 @@ status: draft
 這條規則立得非常精準。不過「鐵則」最大的敵人通常不是技術，而是**人性的懶惰**。
 
 這套規則目前在你們團隊執行得順利嗎？大家有沒有常常因為忘記更新 `environment.yml` 而被檢討？
-

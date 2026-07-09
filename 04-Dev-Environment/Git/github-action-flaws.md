@@ -1,11 +1,15 @@
 ---
-created: 2026-07-09 21:07
-updated: 2026-07-09 21:07
-tags: []
+title: "Git Hooks and GitHub Actions Guardrail Tradeoffs"
+description: "Explains why local hooks catch issues before push while GitHub Actions remain the authoritative CI backstop."
+created: 2026-07-09
+updated: 2026-07-09
 type: reference
-lang: en
+lang: zh
 status: draft
+tags: [dev, git, workflow]
 ---
+
+> Related: [[MOC - Dev Environment]] · [[github-hook-action]] · [[automation-pr-merge-policy]]
 這份設定檔寫得非常漂亮，具備高水準的工程紀律！它不只是一個簡單的開發指南，而是一套完整的「防呆與資安防禦機制」。
 
 針對你的問題，我們來逐一拆解這個設定的精妙之處、Git Hook 的致命缺點，以及它跟 GitHub Actions 的微妙關係。
@@ -73,4 +77,3 @@ Git Hook 是一個「君子協定」，它完全運行在開發者的本機電�
 這份設定檔負責了非常完美的「第一道防線」，是一個非常有水準的架構設計。
 
 你在看這份設定時，有沒有哪一個檢查項目（例如前端型別、ruff 錯誤）是你在過去的開發中也常常不小心踩到的雷呢？
-

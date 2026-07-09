@@ -11,6 +11,7 @@ status: published
 Developer tooling: Git, Python, VS Code, testing, and environment setup.
 
 ## Setup
+- [[docker-cs-claw-gemini-advice]] — hybrid local development with Docker-managed services
 
 - [[env-setup]] — full dev environment setup (C, AI, cybersecurity)
 - [[timezone]] — timezone configuration
@@ -18,6 +19,20 @@ Developer tooling: Git, Python, VS Code, testing, and environment setup.
 - [[microsoft-store]] — Microsoft Store vs standalone installers for dev tools
 
 ## Git
+- [[fix-broken-cicd]] — handling broken CI/CD required checks
+- [[git-squash-merge]] — GitHub squash merge review safety
+- [[git-self-experience]] — Git and CI/CD review roadmap
+- [[pr-auto-merge-github-action]] — daily triage PR auto-merge workflow plan
+- [[github-action-flaws]] — Git hooks and GitHub Actions guardrail tradeoffs
+- [[github-collaboration]] — GitHub collaboration workflow for small teams
+- [[github-collaboration-personal-organization-account]] — personal-account collaboration and organization tradeoffs
+- [[github-hook-action]] — Git hooks vs GitHub Actions
+- [[github-private-clone]] — private repo clone over SSH on Windows
+- [[github-ssh]] — GitHub SSH setup on Windows PowerShell
+- [[github-permission-ssh]] — SSH permission troubleshooting
+- [[git-issue-nuke]] — avoiding Git repository nuclear recovery
+- [[git-recommended-roadmap]] — progressive Git learning roadmap
+- [[git-learn]] — Microsoft Learn Git and GitHub study path
 
 - [[git-best-practice]] — Git best practices
 - [[git-pr-example]] — PR workflow example
@@ -37,6 +52,12 @@ Developer tooling: Git, Python, VS Code, testing, and environment setup.
 - [[markdown-link-check-github-action]] — GitHub Action for Markdown link checks
 
 ## Python
+- [[miniconda-powershell-shortcut]] — dedicated Miniconda PowerShell shortcut
+- [[conda-system-python]] — Conda isolation and system Python guardrails
+- [[conda-uv-pixi]] — Conda, uv, and pixi toolchain tradeoffs
+- [[powershell-brackets]] — PowerShell array syntax for path checks
+- [[conda-miniconda-anaconda]] — Conda, Miniconda, and Anaconda overview
+- [[conda-powershell]] — Conda in PowerShell on Windows
 
 - [[pyproject]] — pyproject.toml setup
 - [[python-import]] — Python import patterns
@@ -57,6 +78,9 @@ Developer tooling: Git, Python, VS Code, testing, and environment setup.
 - [[powershell-execution-policy]] — PowerShell execution policy
 
 ## VS Code / Cursor
+- [[vscode-gitlens-get-started]] — GitLens getting started
+- [[vscode-extensions-starter-pack]] — VS Code extensions starter pack
+- [[git-blame-timeline-gitlens]] — Git blame, Timeline, and GitLens workflows
 
 - [[vscode-tips]] — VS Code tips
 - [[vscode-tips-v2]] — VS Code tips (updated)

@@ -1,11 +1,15 @@
 ---
-created: 2026-07-09 16:07
-updated: 2026-07-09 16:07
-tags: []
-type: reference
-lang: en
+title: "GitLens Getting Started"
+description: "Introduces the first GitLens features to try in VS Code for blame, hover context, and line history."
+created: 2026-07-09
+updated: 2026-07-09
+type: howto
+lang: zh
 status: draft
+tags: [dev, git]
 ---
+
+> Related: [[MOC - Dev Environment]] · [[git-blame-timeline-gitlens]] · [[vscode-tips]]
 哈哈，很多人都是這樣！GitLens 因為功能太強大、選單太多，剛裝的時候很容易迷路，最後就把它當成裝飾品放著養蚊子。
 
 既然你已經裝了，我們先用**最簡單、最有感**的 3 個招式把它點亮，接著再推薦你幾款現代開發者幾乎人手一套的「神級標配」外掛！
@@ -35,5 +39,3 @@ status: draft
 - **怎麼用：** 點擊 VS Code 最左側活動列的 **GitLens 圖示**（一個像分支的標誌），會打開一堆面板。
     
 - **威力所在：** 找到 **「LINE HISTORY」** 這個面板。當你在程式碼點選某一行時，這個面板會「即時連動」，單獨列出**這特定一行程式碼**在過去幾年內被改動的所有歷史。這在抓特定 Bug 時是開掛般的速度。
-    
-

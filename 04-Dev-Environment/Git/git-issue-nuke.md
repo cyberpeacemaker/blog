@@ -1,11 +1,15 @@
 ---
-created: 2026-07-09 16:07
-updated: 2026-07-09 16:07
-tags: []
+title: "Avoiding Git Repository Nuclear Recovery"
+description: "Contrasts secret-prevention guardrails with history rewriting and repo deletion after sensitive data exposure."
+created: 2026-07-09
+updated: 2026-07-09
 type: reference
-lang: en
+lang: zh
 status: draft
+tags: [dev, git]
 ---
+
+> Related: [[MOC - Dev Environment]] · [[git-nuclear]] · [[github-action-flaws]]
 聽到「整個 Repo 刪除重建」這幾個字，相信任何開發者都會心驚肉跳。這等於是把過去累積的 Issue、Pull Request、討論紀錄、甚至星星（Stars）都一起送進骨灰罈的「核彈級」作法。
 
 簡單直接地回答你的問題：**這絕對是可以避免的！而且在技術上，通常不需要走到「刪除 Repo 重建」這最後一步。**
@@ -62,4 +66,3 @@ Git 提供了修改歷史的能力。我們可以使用 **`git filter-repo`**（
 > 這次事件是一次典型的「用最痛的代價買資安教訓」。技術上雖然有優雅的清洗手段，但面對個資外洩的巨大壓力，選擇刪除重建往往是為了追求 100% 安全的無奈之舉。
 
 你們團隊目前有打算引入地端的自動化掃描工具（例如 Gitleaks），來防止未來再次發生類似的悲劇嗎？
-

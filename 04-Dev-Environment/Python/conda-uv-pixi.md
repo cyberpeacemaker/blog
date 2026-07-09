@@ -1,11 +1,15 @@
 ---
-created: 2026-07-09 16:07
-updated: 2026-07-09 16:07
-tags: []
+title: "Conda, uv, and pixi Toolchain Tradeoffs"
+description: "Compares traditional Conda with modern uv and pixi workflows for Python and AI development environments."
+created: 2026-07-09
+updated: 2026-07-09
 type: reference
-lang: en
+lang: zh
 status: draft
+tags: [dev, python]
 ---
+
+> Related: [[MOC - Dev Environment]] · [[uv-conda]] · [[conda-miniconda]]
 你直覺非常敏銳！完全沒錯。Conda 雖然在學術界、大型企業和傳統資料科學領域依舊是老大哥，但近年它的確面臨了「中年危機」，顯得有些臃腫、緩慢。
 
 現在的 Python 生態圈正在經歷一場**由 Rust 語言主導的工具鏈革命**。現代最熱門（Trendy）的工作流，核心思想是：**極致的速度**、**單一工具搞定一切（All-in-One）**，以及**免手動激活環境**。
@@ -83,4 +87,3 @@ status: draft
 2. 如果你要玩的是**本土重度 AI 訓練（要用自己的顯卡跑 PyTorch）**，或是你的專案規定要用 Conda：
     
     那留在 **Miniconda** 或試試 **`pixi`** 會是比較安全的做法。
-

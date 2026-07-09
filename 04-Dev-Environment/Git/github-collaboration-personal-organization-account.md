@@ -1,11 +1,15 @@
 ---
-created: 2026-07-09 20:07
-updated: 2026-07-09 20:07
-tags: []
+title: "GitHub Collaboration from Personal Accounts"
+description: "Explains how direct collaborators work on personal-account repos and why organizations are safer for teams."
+created: 2026-07-09
+updated: 2026-07-09
 type: reference
 lang: en
 status: draft
+tags: [dev, git]
 ---
+
+> Related: [[MOC - Dev Environment]] · [[github-share-repo]] · [[github-organization]]
 Yes, **it absolutely still works!**
 
 Even if the repository is owned by a personal account (like `nagameTW`) instead of a company organization, you can still use Scenario A. You just have to explicitly give your coworker permission to access it.
@@ -65,4 +69,3 @@ If this repo is critical for your company's daily operations, keeping it under a
 Moving a repository to a free GitHub Organization takes about two minutes and allows you to manage permissions as a team, rather than relying on one person's account.
 
 Is this repo just a temporary tool you guys are using for onboarding, or is it a core project that your team will be building on long-term?
-

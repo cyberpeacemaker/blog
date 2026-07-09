@@ -1,11 +1,15 @@
 ---
-created: 2026-07-09 20:07
-updated: 2026-07-09 20:07
-tags: []
-type: reference
+title: "GitHub SSH Setup on Windows PowerShell"
+description: "Walks through generating an SSH key, enabling ssh-agent, adding the key to GitHub, and testing authentication."
+created: 2026-07-09
+updated: 2026-07-09
+type: howto
 lang: en
 status: draft
+tags: [dev, git]
 ---
+
+> Related: [[MOC - Dev Environment]] · [[github-authentication]] · [[github-private-clone]]
 Windows 11 makes this pretty easy since it has OpenSSH built right in, but there is one classic Windows quirk we need to handle: the **SSH Agent service** is usually turned off by default.
 
 Since it's a private repository, once you finish these steps, GitHub will know exactly who you are and let you right in (provided your GitHub account has been granted collaborator access to that repo!).
@@ -114,4 +118,3 @@ ssh-add ~/.ssh/id_ed25519
 ```
 
 Let me know once you've done that, and we'll copy it over to GitHub!
-

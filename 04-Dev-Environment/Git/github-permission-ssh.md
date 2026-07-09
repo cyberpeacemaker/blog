@@ -1,11 +1,15 @@
 ---
-created: 2026-07-09 17:07
-updated: 2026-07-09 17:07
-tags: []
-type: reference
+title: "GitHub SSH Permission Troubleshooting"
+description: "Explains SSH clone failures caused by missing GitHub keys and gives HTTPS and SSH setup fixes."
+created: 2026-07-09
+updated: 2026-07-09
+type: howto
 lang: en
 status: draft
+tags: [dev, git]
 ---
+
+> Related: [[MOC - Dev Environment]] · [[github-authentication]] · [[github-ssh]]
 Ah, the classic SSH handshake fail. It's super common to run into this!
 
 Here is what’s going on: seeing the repository in your browser just means the repository is either public or you're logged into your GitHub account on Chrome/Edge. However, your **PowerShell terminal** doesn't use your browser's login session. Because you used the SSH URL (`git@github.com:...`), GitHub is looking for a digital security badge (an SSH key) from your computer, and it isn't finding one it recognizes.
@@ -84,4 +88,3 @@ git clone git@github.com:nagameTW/otex-claw.git
 ```
 
 _(It might ask you if you trust github.com; just type `yes` and hit Enter)._
-

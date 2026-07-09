@@ -1,11 +1,15 @@
 ---
-created: 2026-07-09 14:07
-updated: 2026-07-09 14:07
-tags: []
+title: "Progressive Git Learning Roadmap"
+description: "Builds a five-stage path from local Git basics through branches, recovery, hooks, and CI/CD."
+created: 2026-07-09
+updated: 2026-07-09
 type: reference
-lang: en
+lang: zh
 status: draft
+tags: [dev, git]
 ---
+
+> Related: [[MOC - Dev Environment]] · [[git-self-experience]] · [[git-learn]]
 原來如此！這份心得整理得非常有感，代表你已經踩過不少坑，完全抓到了現代開發的痛點。
 
 既然你的目標是從「基本 Git」一路串聯到「自動化 CI/CD」，我為你規劃了一份**由淺入深、最符合現代開發節奏的 Git 學習地圖 (Learning Roadmap)**。這份地圖分為五個階段，幫你把零散的指令串成一套完整的內功。
@@ -94,4 +98,3 @@ status: draft
 |**5. 雲端部署**|GitHub Actions / CI/CD|每次改完都要手動測試、手動打包上傳伺服器|🚀 全自動化（雲端）|
 
 你看完這個地圖後，覺得目前最符合你現階段需求、想要優先深入研究的是哪一個階段呢？
-

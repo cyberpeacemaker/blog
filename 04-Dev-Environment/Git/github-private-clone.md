@@ -1,11 +1,15 @@
 ---
-created: 2026-07-09 19:07
-updated: 2026-07-09 19:07
-tags: []
-type: reference
+title: "GitHub Private Repo Clone over SSH on Windows"
+description: "Explains why browser GitHub access differs from SSH terminal access and how to clone private repos from PowerShell."
+created: 2026-07-09
+updated: 2026-07-09
+type: howto
 lang: en
 status: draft
+tags: [dev, git]
 ---
+
+> Related: [[MOC - Dev Environment]] · [[github-authentication]] · [[github-ssh]]
 Ah, the classic SSH handshake fail. It's super common to run into this!
 
 Here is what’s going on: seeing the repository in your browser just means the repository is either public or you're logged into your GitHub account on Chrome/Edge. However, your **PowerShell terminal** doesn't use your browser's login session. Because you used the SSH URL (`git@github.com:...`), GitHub is looking for a digital security badge (an SSH key) from your computer, and it isn't finding one it recognizes.

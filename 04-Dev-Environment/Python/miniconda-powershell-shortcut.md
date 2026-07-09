@@ -1,11 +1,15 @@
 ---
-created: 2026-07-09 20:07
-updated: 2026-07-09 20:07
-tags: []
-type: reference
+title: "Dedicated Miniconda PowerShell Shortcut"
+description: "Shows how to undo global conda init and launch Conda only through a dedicated PowerShell shortcut."
+created: 2026-07-09
+updated: 2026-07-09
+type: howto
 lang: en
 status: draft
+tags: [dev, python]
 ---
+
+> Related: [[MOC - Dev Environment]] · [[conda-miniconda]] · [[conda-powershell]]
 Sharp eye! Yes, that is exactly what `conda init` did. It appended a block of startup code to your personal PowerShell profile script (`$PROFILE`). If you like keeping your global PowerShell clean and fast without Conda loading every single time you open a terminal, your instinct is 100% correct.
 
 You can completely undo that profile modification and launch a standalone "Miniconda Prompt" manually instead.
@@ -57,4 +61,3 @@ powershell.exe -ExecutionPolicy ByPass -NoExit -Command "& 'C:\YOUR\PATH\TO\mini
 - Your normal PowerShell stays perfectly vanilla and untouched.
     
 - Whenever you want to use Conda or manage your environments, just double-click your new **Miniconda PowerShell** desktop shortcut. It will open a dedicated terminal window with the `(base)` environment active and ready to go!
-

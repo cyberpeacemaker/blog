@@ -1,11 +1,15 @@
 ---
-created: 2026-07-09 14:07
-updated: 2026-07-09 14:07
-tags: []
+title: "Daily Triage PR Auto-Merge Workflow Plan"
+description: "Captures the branch PR auto-merge plan for Cursor daily triage automation and its validation workflow."
+created: 2026-07-09
+updated: 2026-07-09
 type: reference
 lang: en
 status: draft
+tags: [dev, git, workflow, ai]
 ---
+
+> Related: [[MOC - Dev Environment]] · [[automation-pr-merge-policy]] · [[automation-prompt-suggestion]]
 ---
 name: Fix triage automation workflow
 overview: Revert the incorrect direct-to-main daily triage pattern from commit 8e9f320, restore a cloud-branch PR workflow compatible with Cursor Automation, and add GitHub Actions CI so PRs can auto-merge after checks pass.
@@ -150,5 +154,3 @@ After changes land:
 - **Docs:** 8 markdown files listed above
 
 No changes to vault content or unrelated scripts.
-
-

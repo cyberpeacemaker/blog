@@ -1,11 +1,15 @@
 ---
-created: 2026-07-09 14:07
-updated: 2026-07-09 14:07
-tags: []
+title: "Git and CI/CD Review Roadmap"
+description: "Organizes Git, PR, GitHub Actions, and CI/CD topics into a layered review path."
+created: 2026-07-09
+updated: 2026-07-09
 type: reference
-lang: en
+lang: zh
 status: draft
+tags: [dev, git, workflow]
 ---
+
+> Related: [[MOC - Dev Environment]] · [[git-recommended-roadmap]] · [[git-learn]]
 點頭如搗蒜！這絕對是超明智的決定。
 
 在軟體開發裡，「磨刀不誤砍柴工」這句話在 Git 和 CI/CD 的世界完全是真理。當專案規模變大，流程從「自己一個人在本地端自嗨」變成「多人協作加自動化流水線」時，如果基礎觀念不夠穩，很容易一不小心就把 Git 倉庫變成「災難片現場」（相信我，大家都經歷過解 Conflict 解到懷疑人生的階段）。
@@ -43,4 +47,3 @@ status: draft
 把這套流程整起來之後，你會發現開發體驗完全提升到另一個層次。你不再需要手動去測試、手動去上傳伺服器，只要專心寫好程式碼、解好 PR，剩下的髒活累活都交給自動化工具去跑，非常有成就感！
 
 這幾個議題裡，有沒有哪一個是你打算**今天第一個先攻克**的？或者是目前實作上最讓你頭痛的痛點？我們可以先從那裡開始複習！
-

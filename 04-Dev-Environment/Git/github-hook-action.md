@@ -1,11 +1,15 @@
 ---
-created: 2026-07-09 21:07
-updated: 2026-07-09 21:07
-tags: []
+title: "Git Hooks vs GitHub Actions"
+description: "Compares local Git hooks with cloud GitHub Actions and shows how teams combine both automation layers."
+created: 2026-07-09
+updated: 2026-07-09
 type: reference
-lang: en
+lang: zh
 status: draft
+tags: [dev, git, workflow]
 ---
+
+> Related: [[MOC - Dev Environment]] · [[github-action-flaws]] · [[automation-pr-merge-policy]]
 你非常敏銳！這兩個概念確實高度相關，因為它們的核心思想都是「當 Git 發生某個事件時，就自動觸發特定的自動化任務」。
 
 不過，它們最大的差別在於「執行的舞台（地方）」**和**「掌控的權力」不同。
@@ -60,4 +64,3 @@ status: draft
 這樣既不會讓開發者因為在 Local 等測試等太久而抓狂，又能確保推上雲端的程式碼擁有 100% 的品質。
 
 你目前正在規劃的專案，是有一個團隊要一起協作，還是你個人的獨立專案呢？
-

@@ -1,11 +1,15 @@
 ---
-created: 2026-07-09 17:07
-updated: 2026-07-09 17:07
-tags: []
+title: "GitHub Collaboration Workflow for Small Teams"
+description: "Recommends collaborator-based GitHub flow, branch protection, issues, and organization ownership for small teams."
+created: 2026-07-09
+updated: 2026-07-09
 type: reference
-lang: en
+lang: zh
 status: draft
+tags: [dev, git, workflow]
 ---
+
+> Related: [[MOC - Dev Environment]] · [[github-share-repo]] · [[github-organization]]
 恭喜你們邁出新創的第一步！
 
 針對你的問題，答案是：**沒錯，這絕對是一個完全可行且標準的方案。**
@@ -69,4 +73,3 @@ status: draft
 **總結來說：** 你們目前的流程（Branch + PR）是對的，不需要改成複雜的 Fork 模式。但建議花個 5 分鐘，去申請一個 **GitHub Organization**，把專案轉移過去，這會是更具備「新創格局」的起手式！
 
 你們目前正在開發的是網頁、App 還其他類型的產品呢？如果需要，我也可以針對你們的技術棧（Tech Stack）提供合適的 CI/CD 自動化部署建議。
-
