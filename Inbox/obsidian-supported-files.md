@@ -1,11 +1,18 @@
 ---
-created: 2026-07-09 11:07
-updated: 2026-07-09 11:07
-tags: []
-type: reference
+title: "Show Unsupported File Types in Obsidian"
+description: "How to reveal scripts and other unsupported files in Obsidian and choose plugins for code-friendly editing."
+created: 2026-07-09
+updated: 2026-07-09
+tags: [obsidian, productivity, dev]
+type: howto
 lang: en
 status: draft
 ---
+
+> Related: [[07-Productivity-Work]] · [[obsidian]] · [[obsidian-setting]]
+
+# Show Unsupported File Types in Obsidian
+
 ## Yes, You Can Alter It
 
 By default, Obsidian hides file types it doesn't natively support (such as `.js`, `.py`, `.sh`, or `.bat`) to keep your note vault clean. However, you can easily change this behavior using a built-in setting.
