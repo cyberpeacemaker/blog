@@ -1,11 +1,18 @@
 ---
-created: 2026-07-09 11:07
-updated: 2026-07-09 11:07
-tags: []
+title: "RAG Trees, OKF Graphs, and Agent-Legible Knowledge"
+description: "Explains how folder namespaces and MOC links make Obsidian notes easier for AI agents to retrieve and traverse."
+created: 2026-07-09
+updated: 2026-07-09
+tags: [ai, agents, obsidian]
 type: reference
 lang: en
 status: draft
 ---
+
+> Related: [[MOC - AI Agents]] · [[yaml-okf]] · [[RAG-OKF]] · [[frontmatter-schema]]
+
+# RAG Trees, OKF Graphs, and Agent-Legible Knowledge
+
 You have mapped this out **perfectly**. Your intuition is spot-on. What you are seeing here is the formal blending of traditional human-centric note-taking structures (Trees and Graphs) into formats explicitly optimized for **AI Agents**.
 
 Here is exactly how your ideas connect to these technical RAG and agent concepts.
