@@ -1,6 +1,6 @@
 ---
-title: "Automation PR Merge Policy"
-description: "Decision guide for when simple automation tasks may auto-merge and when agent work should stay review-first with phase commits."
+title: "Automation Delivery Patterns"
+description: "Decision guide for direct-to-main automation, PR auto-merge, and review-first automation patterns."
 created: 2026-07-09
 updated: 2026-07-09
 tags: [dev, git, ai, workflow]
@@ -11,44 +11,65 @@ status: draft
 
 > Related: [[MOC - Dev Environment]] · [[agent-pr-squash-and-merge]] · [[git-squash-and-merge]]
 
-# Automation PR Merge Policy
+# Automation Delivery Patterns
 
-Use two automation modes:
+Use three automation delivery modes. For this personal Obsidian vault, **daily inbox triage uses Mode 1: direct push to `main`**.
 
-1. **Simple trusted automation:** create a PR, squash-merge automatically, delete the branch, and sync `main`.
-2. **Review-first automation:** create or update a PR, but leave merge approval to a human.
+## Mode 1: direct push to main
 
-## Mode 1: trusted simple automation with automatic PR merge
-
-Use this only for narrow, repeatable, low-risk chores where the rules are stable and the blast radius is small.
+Use this only for narrow, repeatable, low-risk chores where the rules are stable, the changed paths are predictable, and the result is easy to revert.
 
 Good fit:
 
-- Daily inbox triage
-- Formatting-only maintenance
+- Daily inbox triage for this personal vault
+- Formatting-only maintenance in documentation
 - Regenerating derived vault artifacts after deterministic note moves
-- Other tasks where bad output is easy to revert and unlikely to damage production code
+- Other non-production tasks where a bad output is visible in Git history and easy to revert
 
-For daily inbox triage, the automation can run:
+How daily inbox triage should finish:
 
 ```bash
 bash scripts/finish-ai-task.sh
 ```
 
-The script should:
+The direct-push finish script should:
 
 - fail fast with `set -euo pipefail`
-- refuse to run on `main`
-- allow only known triage branch patterns, such as `automation/daily-inbox-triage*` or `cursor/daily-inbox-triage*`
+- require the automation to be running on `main`
 - require a clean working tree before pushing
-- push the current branch
-- reuse an existing PR when one exists
-- create a PR when one does not exist
-- squash-merge the specific PR URL
-- delete the remote branch
-- fetch and sync local `main`
+- fetch `origin/main` and fail if local `main` is behind or diverged
+- inspect `origin/main..HEAD` and allow only trusted vault-triage paths
+- push committed phase changes directly to `origin main`
+- avoid PR creation, PR merge, and `--admin` bypasses
 
-## Mode 2: review-first automation
+Operational expectation:
+
+1. Configure the Cursor Automation target branch as `main`.
+2. Let the agent commit locally by phase.
+3. Run validation before the final push.
+4. Push all phase commits to `main` only after the working tree is clean.
+5. Review the commit history afterward if something looks wrong; use `git revert` for rollback.
+
+## Mode 2: branch PR with auto-merge after checks
+
+Use this when you want unattended completion but still want GitHub branch protection or CI checks to gate the merge.
+
+Good fit:
+
+- Bot dependency updates
+- Generated documentation in shared repositories
+- Repeatable tasks with reliable CI checks
+- Maintenance where reviewers do not need to inspect every run
+
+Guardrails:
+
+- open a PR from a bot branch
+- require passing checks
+- use auto-merge or a merge queue
+- avoid `--admin` unless there is a documented emergency reason
+- delete the branch after merge
+
+## Mode 3: branch PR with manual review
 
 Use review-first for everything outside the trusted-simple category.
 
@@ -64,17 +85,18 @@ Good fit:
 
 In this mode, the agent should still commit and push its work, but should stop after opening or updating a PR. A human reviews the diff, checks assumptions, and merges manually.
 
-## Why auto-merge is risky
+## Why unattended merging is risky
 
-The minimal auto-merge script is convenient, but it has sharp edges:
+Unattended automation is convenient, but it has sharp edges:
 
+- Direct push to `main` skips the PR review surface entirely.
 - `gh pr merge --squash --delete-branch --admin` can bypass review and branch protections.
 - `gh pr create` and `gh pr merge` are GitHub write operations. Some environments, including Cursor Cloud automation contexts, may restrict direct `gh` writes.
 - Without `set -e`, later commands can run after `git push` or `gh pr create` fails.
 - Plain `gh pr create` fails when a PR already exists for the branch.
 - `git checkout main` changes the local branch after completion, which is risky in interactive agent workflows.
 
-The hardened daily-triage script accepts those risks only for trusted repeatable chores, then adds guardrails so it fails closed instead of continuing through partial failure.
+The hardened daily-triage script accepts direct-to-main risk only for trusted repeatable chores, then adds guardrails so it fails closed instead of continuing through partial failure.
 
 ## Phase-based commits for larger work
 
@@ -90,8 +112,8 @@ Example phases for inbox triage:
 Why this works:
 
 - Each commit is a rollback point.
-- Reviewers can see the agent's reasoning path.
+- Git history shows the agent's reasoning path.
 - A failed verification step does not obscure which phase caused the problem.
-- Squash merge can still keep `main` history clean with one final commit.
+- Individual commits make direct-to-main rollback straightforward.
 
 Rule of thumb: commit by **milestone**, not by individual file and not as one giant final commit.
