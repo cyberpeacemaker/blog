@@ -1,10 +1,16 @@
 ---
-created: 2026-07-09 09:07
-tags: []
-type:
-lang:
+title: "AI Frontmatter for A2A, MCP, RAG, and OKF"
+description: "Explains how richer frontmatter can help AI agents filter, retrieve, and reason over vault notes."
+created: 2026-07-09
+updated: 2026-07-09
+type: reference
+lang: en
 status: draft
+tags: [ai, agents, rag, okf]
 ---
+
+> Related: [[frontmatter-schema]] · [[yaml-okf]] · [[RAG-OKF]]
+
 Ah, designing for the **AI-as-a-reader** era! That changes the game completely. When you are optimizing for MCP (Model Context Protocol), RAG (Retrieval-Augmented Generation), and Agent-to-Agent (A2A) workflows, frontmatter isn't just metadata anymore—it is a **semantic API contract** for the LLM.
 
 An LLM or an MCP server will read your frontmatter first to decide whether it even _needs_ to ingest or chunk the rest of the file. If your frontmatter is highly structured, it saves token context, speeds up vector DB filtering, and builds a better knowledge graph.

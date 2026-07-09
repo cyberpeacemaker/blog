@@ -1,11 +1,16 @@
 ---
-created: 2026-07-09 10:07
-updated: 2026-07-09 10:07
-tags: []
+title: "Git Squash and Merge for Iterative Agent Commits"
+description: "Describes using feature branches, micro-checkpoint commits, and squash merge to keep main history clean."
+created: 2026-07-09
+updated: 2026-07-09
+tags: [dev, git, workflow, ai]
 type: reference
 lang: en
 status: draft
 ---
+
+> Related: [[MOC - Dev Environment]] · [[git-best-practice]] · [[git-pr-example]]
+
 I think this is an **excellent approach**. In fact, you’ve hit on a strategy that many top AI engineering teams use. It is often called **"Micro-checkpointing"** or **"Iterative Commits."**
 
 By forcing the AI to work in a dedicated branch and make a new commit for every single step, you get the best of both worlds: the AI can work incrementally, and you get a clear paper trail of its "thought process."

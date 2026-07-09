@@ -1,11 +1,16 @@
 ---
-created: 2026-07-09 10:07
-updated: 2026-07-09 10:07
-tags: []
+title: "Automation Prompt Suggestion"
+description: "Draft prompt pattern for unattended Cursor inbox triage using an audit log, atomic commits, and final push discipline."
+created: 2026-07-09
+updated: 2026-07-09
+tags: [ai, agents, cursor, workflow]
 type: reference
 lang: en
 status: draft
 ---
+
+> Related: [[MOC - Claude & Cursor]] · [[cursor-cloud-sandbox-trap]] · [[inbox-triage-rules]]
+
 ### 1. How Direct-to-Main Pushes Work
 
 You hit the nail on the head. Because you selected the `main` branch as the target in your automation settings (visible at the top of `image_582399.png`), the process looks like this:

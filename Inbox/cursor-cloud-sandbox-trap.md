@@ -1,11 +1,16 @@
 ---
-created: 2026-07-09 10:07
-updated: 2026-07-09 10:07
-tags: []
+title: "Cursor Cloud Sandbox Trap"
+description: "Explains why scheduled Cursor automations need committed branch or PR output instead of leaving changes inside ephemeral cloud runs."
+created: 2026-07-09
+updated: 2026-07-09
+tags: [ai, agents, cursor, workflow]
 type: reference
 lang: en
 status: draft
 ---
+
+> Related: [[MOC - Claude & Cursor]] · [[automation-prompt-suggestion]] · [[Daily Workflow]]
+
 Your scheduled setup in `image_582399.png` looks great, but we run into a bit of a logical paradox because of how scheduled (cron) automations work.
 
 Here is the candid truth about your current instruction: **It is currently running in a "Groundhog Day" loop.**

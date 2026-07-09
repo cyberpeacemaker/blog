@@ -1,11 +1,15 @@
 ---
-created: 2026-07-09 10:07
-updated: 2026-07-09 10:07
-tags: []
-type: reference
+title: "Agent PR Squash and Merge Script"
+description: "Shell sketch for pushing an automation branch, creating a PR, and squash-merging agent triage commits."
+created: 2026-07-09
+updated: 2026-07-09
+tags: [dev, git, ai, workflow]
+type: howto
 lang: en
 status: draft
 ---
+
+> Related: [[MOC - Dev Environment]] · [[git-squash-and-merge]] · [[git-pr-example]]
 
 
 ```bash
