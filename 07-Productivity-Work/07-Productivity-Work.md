@@ -19,6 +19,7 @@ Slack, meetings, and work productivity tools.
 - [[adhoc-request]]
 - [[obsidian]] — Obsidian Sync vs Git, Canvas, MOC, Metadata
 - [[obsidian-setting]] — per-vault plugin and theme isolation
+- [[obsidian-supported-files]] — reveal scripts and unsupported file types in Obsidian
 - [[obsidian-search-date]] — search notes by `created` date
 - [[obsidian-daily-note]] — practical daily note templates and advice
 - [[obsidian-vault-layout]] — single-vault vs multi-vault tradeoffs
