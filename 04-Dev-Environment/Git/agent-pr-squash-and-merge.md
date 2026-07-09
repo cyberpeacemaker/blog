@@ -9,49 +9,37 @@ lang: en
 status: draft
 ---
 
-> Related: [[MOC - Dev Environment]] · [[git-squash-and-merge]] · [[git-pr-example]]
+> Related: [[MOC - Dev Environment]] · [[automation-pr-merge-policy]] · [[git-squash-and-merge]] · [[git-pr-example]]
 
 You are completely right. Committing every single file move is overkill and creates unnecessary noise. Grouping by **logical sub-tasks or phases** is a much smarter, more mature way to handle git history.
 
 Instead of thinking in _files_, we want the AI to think in _milestones_ (e.g., Phase 1: Moving/Sorting, Phase 2: Content polishing, Phase 3: Index/MOC updates).
 
-To make this completely general-purpose so you can use it for _any_ automation workflow, we can make two quick adjustments: make the bash script dynamic (so it works on any branch) and generalize the prompt instruction.
+For trusted daily inbox triage, use a hardened finish script that is dynamic but still restricted to known triage branch patterns.
 
 ## 1. The Generalized "Finish Task" Script
 
 Save this script as something generic, like `scripts/finish-ai-task.sh`.
 
-Instead of hardcoding a specific branch name, it dynamically detects whatever branch the AI is currently working on.
+Instead of hardcoding one exact branch name, it detects the current branch and refuses to auto-merge anything outside daily-triage branches.
 
-Bash
+Current implementation: [`scripts/finish-ai-task.sh`](../../scripts/finish-ai-task.sh).
 
-```
-#!/bin/bash
+Key safeguards:
 
-# 1. Dynamically get the current branch name
-BRANCH_NAME=$(git branch --show-current)
+- fail fast on command errors
+- refuse to run on `main`
+- refuse unexpected branch names
+- require a clean working tree
+- push the current branch with upstream tracking
+- reuse an existing PR when present
+- create a daily-triage PR when needed
+- squash-merge that specific PR
+- fetch and sync `main` after merge
 
-# Safety check: Don't accidentally run this on main
-if [ "$BRANCH_NAME" == "main" ]; then
-    echo "Error: You are on the main branch. Switch to a feature branch first."
-    exit 1
-fi
+## 2. The Daily Triage Prompt Blueprint
 
-# 2. Push the current branch
-git push origin "$BRANCH_NAME"
-
-# 3. Create the PR with a generic title (GitHub will pull in the commit history anyway)
-gh pr create --title "ai($BRANCH_NAME): automated task completion" --body "Review the squash commit description for step-by-step trace."
-
-# 4. Squash, merge, delete remote branch, and sync local main
-gh pr merge --squash --delete-branch --admin
-git checkout main
-git pull
-```
-
-## 2. The New Generalized Prompt Blueprint
-
-Now, your prompt structure becomes modular. You can copy and paste this structure for file triage, coding, content generation, or any other agent workflow.
+Now, your prompt structure becomes modular for trusted daily triage. For larger coding, security, dependency, or ambiguous content work, use [[automation-pr-merge-policy]] and keep the workflow review-first.
 
 > **Context:** Read 'inbox-triage-rules.md' and 'Daily Workflow.md' to organize files in 'Inbox/'.
 > 
