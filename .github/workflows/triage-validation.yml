@@ -1,0 +1,43 @@
+name: Triage Validation
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  triage-validation:
+    name: triage-validation
+    runs-on: ubuntu-latest
+    steps:
+      - name: Skip non-triage PRs
+        if: >-
+          !startsWith(github.head_ref, 'cursor/daily-inbox-triage') &&
+          !startsWith(github.head_ref, 'automation/daily-inbox-triage')
+        run: echo "Not a triage PR; check passes."
+
+      - uses: actions/checkout@v4
+        if: >-
+          startsWith(github.head_ref, 'cursor/daily-inbox-triage') ||
+          startsWith(github.head_ref, 'automation/daily-inbox-triage')
+        with:
+          fetch-depth: 0
+
+      - name: Validate changed paths
+        if: >-
+          startsWith(github.head_ref, 'cursor/daily-inbox-triage') ||
+          startsWith(github.head_ref, 'automation/daily-inbox-triage')
+        run: bash scripts/validate-triage-paths.sh origin/${{ github.base_ref }}
+
+      - name: Set up Python
+        if: >-
+          startsWith(github.head_ref, 'cursor/daily-inbox-triage') ||
+          startsWith(github.head_ref, 'automation/daily-inbox-triage')
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Build vault map
+        if: >-
+          startsWith(github.head_ref, 'cursor/daily-inbox-triage') ||
+          startsWith(github.head_ref, 'automation/daily-inbox-triage')
+        run: python scripts/build-vault-canvas.py --all

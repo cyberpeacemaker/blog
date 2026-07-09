@@ -13,49 +13,42 @@ status: draft
 
 # Daily Inbox Triage PR Workflow Tradeoff
 
-You’ve hit on the classic tension in DevOps and automation: **Safety vs. Friction**.
+You've hit on the classic tension in DevOps and automation: **Safety vs. Friction**.
 
-From a pure software engineering perspective, **yes, creating a branch and opening a PR is absolutely better.** But for a personal Obsidian vault or Markdown blog, the answer comes down to how much administrative work you want to do every morning.
+## The Verdict for Cursor Automation
 
-Let's break down why you might—or might not—want to switch to a PR workflow for this specific daily task.
+**Use PR + auto-merge after checks.** Cursor Cloud scheduled automations always work on an ephemeral branch — direct push to `main` is not compatible with that model.
 
-### Why a PR Workflow is Better (The Pros)
+The daily triage workflow:
 
-- **Ultimate Safety:** If the AI completely hallucinates and scrambles your files, your `main` branch remains untouched.
-    
-- **Visual Diff Review:** GitHub or Gitlab gives you a beautiful, color-coded interface to see exactly what changed before you accept it.
-    
-- **No Ghost Pulls:** You never have to worry about running `git pull` locally and suddenly finding things moved around without your explicit permission.
-    
+1. Agent works on cloud branch (`cursor/daily-inbox-triage-*`)
+2. Commits by phase locally
+3. `finish-ai-task.sh` pushes branch, opens PR, enables auto-merge
+4. CI (`triage-validation`) validates paths and rebuilds vault map
+5. GitHub auto-merges squash commit to `main` — no manual review needed
 
-### The Catch: "PR Fatigue" (The Cons)
+This gives you safety (CI gate, revert point) without PR fatigue (auto-merge handles the daily chore).
 
-- **The Daily Chore:** If this runs every single morning at 7:00 AM, you are signing up to review and merge 7 Pull Requests every week. If you go on vacation for a week, you'll return to a mountain of open PRs that might start conflicting with each other.
-    
-- **Context Switching:** Instead of just opening your vault and typing, you have to open GitHub, click "Merge", switch to your terminal, and pull.
-    
+### Why PR + Auto-Merge Wins for Cursor
 
-## The Verdict: Which should you choose?
+- **Cursor-compatible:** Works with ephemeral cloud branches; direct push does not.
+- **Ultimate Safety:** If the AI hallucinates, `main` stays untouched until CI passes.
+- **No PR Fatigue:** Auto-merge completes the PR after checks pass; you just `git pull`.
+- **Visual Diff:** GitHub shows exactly what changed if you want to review afterward.
 
-Because text/markdown files are incredibly lightweight and **inherently safe to track in Git**, pushing directly to `main` with atomic commits is usually preferred for personal notes. If the AI messes up, a simple `git revert` fixes it instantly.
+### When Direct Push Might Apply
 
-However, if you want to try the **Branch + PR approach** to see if you prefer the safety, here is what that prompt looks like:
+Direct push to `main` is workable only when the automation environment can actually run on and push to `main` — local scripts, not Cursor Cloud scheduled automations. For this vault's daily triage, use Mode 2 from [[automation-pr-merge-policy]].
 
-### The Concise PR Workflow Prompt
+### The Production Prompt
 
-Plaintext
+See [[automation-prompt-suggestion]] for the full copy-paste prompt. Summary:
 
 ```
-Read 'inbox-triage-rules.md' and 'Daily Workflow.md' to organize files in 'Inbox/'.
+Read inbox-triage-rules.md and Daily Workflow.md. Organize Inbox/ per rules.
 
-1. Branch: Checkout a new branch named 'automation/daily-inbox-triage'.
-2. Execute: Move files and update MOCs based on the rules. 
-3. Commit: Group all changes into a single clean commit:
-   `git commit -am "chore(triage): daily inbox triage"`
-4. Push & PR: Push the branch to the remote repository and open a Pull Request targeting 'main'.
+1. Work on the current cloud branch (do NOT checkout main).
+2. Commit by phase after each major milestone.
+3. Verify: clean tree, trusted paths only, validation passes.
+4. Run: bash scripts/finish-ai-task.sh
 ```
-
-_(Note: The Cursor Cloud VM agent has the permissions to push branches and can use the GitHub CLI `gh pr create` or native git commands to open the PR for you)._
-
-How do you feel about that daily manual step? Would you find reviewing a GitHub PR every morning a helpful ritual, or just an annoying roadblock to getting your day started?
-

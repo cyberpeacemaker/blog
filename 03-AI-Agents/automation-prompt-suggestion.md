@@ -1,6 +1,6 @@
 ---
 title: "Automation Prompt Suggestion"
-description: "Draft prompt pattern for unattended Cursor inbox triage using direct-to-main commits, validation, and final push discipline."
+description: "Draft prompt pattern for unattended Cursor inbox triage using cloud-branch commits, PR auto-merge, and CI validation."
 created: 2026-07-09
 updated: 2026-07-09
 tags: [ai, agents, cursor, workflow]
@@ -9,37 +9,48 @@ lang: en
 status: draft
 ---
 
-> Related: [[MOC - Claude & Cursor]] · [[cursor-cloud-sandbox-trap]] · [[inbox-triage-rules]]
+> Related: [[MOC - Claude & Cursor]] · [[cursor-cloud-sandbox-trap]] · [[inbox-triage-rules]] · [[automation-pr-merge-policy]]
 
-### 1. How Direct-to-Main Pushes Work
+### 1. How Cursor Cloud Branch + PR Auto-Merge Works
 
-You hit the nail on the head. Because you selected the `main` branch as the target in your automation settings (visible at the top of `image_582399.png`), the process looks like this:
+Because you selected `main` as the target branch in your automation settings, Cursor clones `main` but the agent works on an ephemeral cloud branch (e.g. `cursor/daily-inbox-triage-9370`). The process looks like this:
 
 ```
-[Cloud VM spins up] ──> [Clones your remote 'main' branch]
+[Cloud VM spins up] ──> [Clones remote 'main']
                              │
                              ▼
-                    [Executes your instructions]
+                    [Works on cloud branch]
                              │
                              ▼
-                    [Commits changes locally in VM]
+                    [Commits changes by phase]
                              │
                              ▼
-[Pushes directly back to remote 'main' on GitHub] ──> [Cloud VM shuts down]
+                    [finish-ai-task.sh]
+                             │
+              ┌──────────────┴──────────────┐
+              ▼                             ▼
+    [Push branch + open PR]      [Enable auto-merge]
+              │                             │
+              └──────────────┬──────────────┘
+                             ▼
+              [CI triage-validation passes]
+                             │
+                             ▼
+              [GitHub auto-merges squash to main]
 ```
 
-There are no Pull Requests or manual branches involved. The next time you open Cursor on your local machine, you will simply see that you are a few commits behind `main`. You run a quick `git pull`, and the newly organized files instantly appear on your computer.
+You wake up to organized files on `main` without manually clicking Merge. If CI fails, the PR stays open for review.
 
-### 2. Direct-to-main prompt: phase commits + final guarded push
+### 2. Cloud-branch prompt: phase commits + PR auto-merge
 
-Since this automation runs completely unattended, do not make it wait for a manual PR review. Configure the Cursor Automation target branch as `main`, let the agent commit by phase locally, validate, then run the guarded finish script that pushes directly to `origin main`.
+Since this automation runs completely unattended, do not make it wait for manual PR review. Configure the Cursor Automation target branch as `main` (base to clone), let the agent commit by phase on the cloud branch, validate, then run the finish script.
 
 Here is a production-grade prompt you can copy and paste directly into your **Agent Instructions**:
 
 ```
 > **Context:** Read `inbox-triage-rules.md` and `Daily Workflow.md` to organize files in `Inbox/`.
 >
-> 1. **Target:** Run this automation on `main`. Do **not** create a feature branch or pull request for daily inbox triage.
+> 1. **Target:** Work on the current cloud branch. Do **not** checkout `main`.
 >
 > 2. **Execute & Commit by Phase:** Divide your work into logical sub-tasks. Make a clean local commit after completing each major phase.
 >
@@ -54,13 +65,12 @@ Here is a production-grade prompt you can copy and paste directly into your **Ag
 >    bash scripts/finish-ai-task.sh
 >    ```
 >
->    The finish script should push the committed phase changes directly to `origin main`. It should not create a PR, merge a PR, or use `--admin`.
+>    The finish script pushes the branch, opens a PR, and enables auto-merge after CI checks pass. It does not merge immediately or use `--admin`.
 ```
 
 ### Why this setup works
 
-- **No PR fatigue:** Successful daily triage appears in `main`; you just pull the latest vault changes.
-    
-- **Phase rollback:** If the AI misclassifies a file, use `git log` and revert the specific phase commit instead of untangling one giant diff.
-    
-- **Guarded final push:** `scripts/finish-ai-task.sh` refuses to push from the wrong branch, with a dirty tree, with a stale local `main`, or with changes outside trusted triage paths.
+- **Cursor-compatible:** Works with Cursor Cloud's ephemeral branch model; no direct push to `main` required.
+- **No PR fatigue:** Auto-merge completes the PR after CI passes; you just pull the latest vault changes.
+- **Phase rollback:** If the AI misclassifies a file, revert the squash commit on `main` or inspect phase commits in the PR.
+- **Guarded finish:** `scripts/finish-ai-task.sh` refuses to run on `main`, with a dirty tree, with a stale branch, or with changes outside trusted triage paths.
