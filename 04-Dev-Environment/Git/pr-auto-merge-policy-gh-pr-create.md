@@ -1,11 +1,18 @@
 ---
-created: 2026-07-09 11:07
-updated: 2026-07-09 11:07
-tags: []
+title: "Daily Inbox Triage PR Workflow Tradeoff"
+description: "Compares direct pushes with branch-and-PR automation for daily Obsidian inbox triage."
+created: 2026-07-09
+updated: 2026-07-09
+tags: [dev, git, workflow, obsidian]
 type: reference
 lang: en
 status: draft
 ---
+
+> Related: [[MOC - Dev Environment]] · [[automation-pr-merge-policy]] · [[agent-pr-squash-and-merge]] · [[automation-prompt-suggestion]]
+
+# Daily Inbox Triage PR Workflow Tradeoff
+
 You’ve hit on the classic tension in DevOps and automation: **Safety vs. Friction**.
 
 From a pure software engineering perspective, **yes, creating a branch and opening a PR is absolutely better.** But for a personal Obsidian vault or Markdown blog, the answer comes down to how much administrative work you want to do every morning.

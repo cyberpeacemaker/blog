@@ -22,6 +22,8 @@ Developer tooling: Git, Python, VS Code, testing, and environment setup.
 - [[git-best-practice]] — Git best practices
 - [[git-pr-example]] — PR workflow example
 - [[automation-pr-merge-policy]] — when automation can auto-merge vs stay review-first
+- [[pr-auto-merge-policy-gh-pr-create]] — branch-and-PR tradeoffs for daily inbox triage automation
+- [[git-post-merge-work-issue]] — recover commits pushed after a PR has already merged
 - [[git-squash-and-merge]] — iterative commits with squash merge workflow
 - [[agent-pr-squash-and-merge]] — agent PR squash-and-merge script sketch
 - [[github-authentication]] — GitHub authentication

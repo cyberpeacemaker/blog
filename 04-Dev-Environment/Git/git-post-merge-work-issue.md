@@ -1,11 +1,18 @@
 ---
-created: 2026-07-09 11:07
-updated: 2026-07-09 11:07
-tags: []
-type: reference
+title: "Git Post-Merge Commit Recovery"
+description: "Explains why commits pushed after a PR merge are stranded and how to recover them with a new PR, cherry-pick, or fresh branch."
+created: 2026-07-09
+updated: 2026-07-09
+tags: [dev, git, workflow]
+type: howto
 lang: en
 status: draft
 ---
+
+> Related: [[MOC - Dev Environment]] · [[git-pr-example]] · [[git-best-practice]]
+
+# Git Post-Merge Commit Recovery
+
 ## What is Happening Here?
 
 You’ve run into a classic Git timing quirk!
