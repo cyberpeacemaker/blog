@@ -1,21 +1,37 @@
 #!/bin/bash
+set -euo pipefail
 
-# 1. Dynamically get the current branch name
-BRANCH_NAME=$(git branch --show-current)
+# Intended for trusted daily inbox triage runs only.
+BRANCH_NAME="$(git branch --show-current)"
 
-# Safety check: Don't accidentally run this on main
-if [ "$BRANCH_NAME" == "main" ]; then
-    echo "Error: You are on the main branch. Switch to a feature branch first."
-    exit 1
+if [[ "$BRANCH_NAME" == "main" ]]; then
+  echo "Error: You are on main. Switch to a feature branch first."
+  exit 1
 fi
 
-# 2. Push the current branch
-git push origin "$BRANCH_NAME"
+if [[ "$BRANCH_NAME" != automation/daily-inbox-triage* && "$BRANCH_NAME" != cursor/daily-inbox-triage* ]]; then
+  echo "Error: Refusing to auto-merge unexpected branch: $BRANCH_NAME"
+  exit 1
+fi
 
-# 3. Create the PR with a generic title (GitHub will pull in the commit history anyway)
-gh pr create --title "ai($BRANCH_NAME): automated task completion" --body "Review the squash commit description for step-by-step trace."
+if [[ -n "$(git status --porcelain)" ]]; then
+  echo "Error: Working tree is dirty. Commit all changes before finishing."
+  git status --short
+  exit 1
+fi
 
-# 4. Squash, merge, delete remote branch, and sync local main
-gh pr merge --squash --delete-branch --admin
+git push -u origin "$BRANCH_NAME"
+
+PR_URL="$(gh pr view "$BRANCH_NAME" --json url --jq .url 2>/dev/null || true)"
+
+if [[ -z "$PR_URL" ]]; then
+  PR_URL="$(gh pr create \
+    --title "chore(triage): daily inbox triage" \
+    --body "Automated daily inbox triage. Review squash commit description for phase-by-phase history.")"
+fi
+
+gh pr merge "$PR_URL" --squash --delete-branch --admin
+
+git fetch origin main
 git checkout main
-git pull
+git pull origin main
