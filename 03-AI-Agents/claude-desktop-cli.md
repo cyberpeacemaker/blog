@@ -1,11 +1,16 @@
 ---
-created: 2026-07-09 12:07
-updated: 2026-07-09 12:07
-tags: []
+title: "Claude Desktop vs Claude CLI"
+description: "Compares Claude Desktop and Claude Code CLI so developers can choose between visual review workflows and terminal automation."
+created: 2026-07-09
+updated: 2026-07-09
+tags: [claude, ai, agents, workflow]
 type: reference
 lang: en
 status: draft
 ---
+
+> Related: [[MOC - Claude & Cursor]] · [[cursor-vs-claude]] · [[ai-workflow]] · [[agent-custom-rule-instruction]]
+
 You're not imagining things—the **Claude Desktop** app has evolved into an incredibly powerful visual workbench, and for most people, it genuinely does offer a cleaner, more intuitive set of benefits.
 
 However, both tools use the exact same underlying AI "brain." The choice boils down to how you like to work: do you want a **visual cockpit** or a **terminal ninja**?
