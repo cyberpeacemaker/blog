@@ -66,7 +66,7 @@ knowledge/
 - claude (基本功能看看)
 
 # Obsidian
-- obsidian vault merge
+- obsidian vault organize
 - [Obsidian+Claude](https://www.youtube.com/watch?v=_ERp82MIj9Q)
 - daily note + calander
 

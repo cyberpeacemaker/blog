@@ -10,6 +10,7 @@
 	- atomic (workflow, commit)
 - 使用obsidian > 又蒐集許多資訊 想優化到其他worklow中
 	- graph > RAG, OKF, frontmatter, link
+	- OKF https://cloud.google.com/blog/products/data-analytics/how-the-open-knowledge-format-can-improve-data-sharing#:~:text=That%27s%20why%20today%2C%20we%27re,that%20modern%20AI%20systems%20need.
 	- plugin, feature > daily note, calendrer > brag
 	- canvas
 - 又想搭配AI優化
@@ -41,10 +42,10 @@ The PR automation expects the platform-designated branch `cursor/daily-inbox-tr
 - github action
 - automaticlly cli verification
 - ci/cd
+- git squash 
 
 
-- git squash
-- obsidian的整理
+- obsidian的整理 這應該拆成兩個部分，一個是我常用的core，且我想放到vault裡面。另一部分是整理剩下的，且不一定放到vault裡面，這部分我先分出來
 - frontmatter的整理
 - 回去dock
 
