@@ -97,7 +97,7 @@ flowchart TB
 | Frontmatter schema | `draft: true` | Per-file checklist (line 76) still says `status` |
 | Existing vault (~164 notes) | `status: draft \| published` | New schema drops `status` |
 | [[Tag Taxonomy]] | Domain lives in `tags` array | New `domain:` field duplicates taxonomy |
-| Body convention | `Related: [[MOC]]` + wikilinks | New `relations: []` duplicates graph edges |
+| Body convention | Related block + wikilinks | New `relations: []` duplicates graph edges |
 | [[default-note]] | Old 5-field template | Not synced with new schema |
 
 ### 2. Field design issues
