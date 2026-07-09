@@ -124,7 +124,15 @@ Do not duplicate MOC entries if the note is already listed.
 
 ## Git policy
 
-**Organize only.** Never run `git add`, `git commit`, or `git push`. Leave all changes unstaged for human review.
+Manual triage: **organize only.** Do not run `git add`, `git commit`, or `git push`; leave changes unstaged for human review.
+
+Cursor Automation daily triage: follow [[automation-prompt-suggestion]] and [[automation-pr-merge-policy]]. The automation may commit by phase on `main`, verify the result, then run:
+
+```bash
+bash scripts/finish-ai-task.sh
+```
+
+The finish script pushes directly to `origin main` only after its guardrails pass.
 
 ## Summary format
 

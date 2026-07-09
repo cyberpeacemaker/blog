@@ -1,6 +1,6 @@
 ---
 title: "Automation Prompt Suggestion"
-description: "Draft prompt pattern for unattended Cursor inbox triage using an audit log, atomic commits, and final push discipline."
+description: "Draft prompt pattern for unattended Cursor inbox triage using direct-to-main commits, validation, and final push discipline."
 created: 2026-07-09
 updated: 2026-07-09
 tags: [ai, agents, cursor, workflow]
@@ -30,37 +30,37 @@ You hit the nail on the head. Because you selected the `main` branch as the targ
 
 There are no Pull Requests or manual branches involved. The next time you open Cursor on your local machine, you will simply see that you are a few commits behind `main`. You run a quick `git pull`, and the newly organized files instantly appear on your computer.
 
-### 2. Upgrading Your Prompt: Plan Mode + Atomic Commits
+### 2. Direct-to-main prompt: phase commits + final guarded push
 
-Since this automation runs completely unattended at 7:00 AM while you might be asleep, "Plan Mode" looks a little different. Instead of waiting for you to say "Yes," the AI will **write a visible audit log inside your vault** before doing anything. Combined with **atomic commits**, this ensures you can see exactly what it did, and easily undo a single mistake without rolling back the whole run.
+Since this automation runs completely unattended, do not make it wait for a manual PR review. Configure the Cursor Automation target branch as `main`, let the agent commit by phase locally, validate, then run the guarded finish script that pushes directly to `origin main`.
 
 Here is a production-grade prompt you can copy and paste directly into your **Agent Instructions**:
 
-Plaintext
-
 ```
-# Context & Goal
-You are an automated vault organization agent. Read 'inbox-triage-rules.md' and 'Daily Workflow.md' to understand the structural logic for organizing markdown notes located in the 'Inbox/' directory.
-
-# Phase 1: Plan Mode (Audit Trail)
-1. Scan the 'Inbox/' directory and formulate a reorganization plan.
-2. Create or append to a file named 'Inbox/Triage-Log.md'. Write out a bulleted list explaining exactly what files you intend to move, merge, or update, and why. 
-3. Commit this log first: `git commit -am "chore(triage): generate daily triage plan"`
-
-# Phase 2: Atomic Execution & Git Discipline
-Execute your plan by manipulating the files. To ensure easy rollbacks, do not group all changes into one giant commit. Make separate, atomic commits for each logical action using these exact naming conventions:
-- Moving a file: `git commit -am "chore(triage): move [filename] to [destination]"`
-- Updating a Map of Content: `git commit -am "docs(moc): update [MOC filename]"`
-
-# Phase 3: Final Push
-Once all actions are complete and committed locally, push all individual commits directly to the remote 'main' branch. If the Inbox is already empty, log "Inbox clean" in 'Triage-Log.md', commit it, push, and exit.
+> **Context:** Read `inbox-triage-rules.md` and `Daily Workflow.md` to organize files in `Inbox/`.
+>
+> 1. **Target:** Run this automation on `main`. Do **not** create a feature branch or pull request for daily inbox triage.
+>
+> 2. **Execute & Commit by Phase:** Divide your work into logical sub-tasks. Make a clean local commit after completing each major phase.
+>
+>    - Example: one commit for polishing content/updating MOCs, and a separate commit for moving/sorting files.
+>    - If 3 or more files are moved, regenerate the vault map before the index/artifact commit.
+>
+> 3. **Verify:** Confirm the working tree is clean, only trusted vault-triage paths changed, and validation commands pass.
+>
+> 4. **Wrap Up:** When all phases are fully completed and committed, run:
+>
+>    ```bash
+>    bash scripts/finish-ai-task.sh
+>    ```
+>
+>    The finish script should push the committed phase changes directly to `origin main`. It should not create a PR, merge a PR, or use `--admin`.
 ```
 
-### Why this setup is incredibly powerful:
+### Why this setup works
 
-- **The Triage Log:** When you open your Obsidian vault or notebook in the morning, you just look at `Triage-Log.md`. It acts like a morning report from your AI assistant.
+- **No PR fatigue:** Successful daily triage appears in `main`; you just pull the latest vault changes.
     
-- **Micro-Rollbacks:** If the AI accidentally misclassifies a file named `yaml-okf.md`, you don't have to sort through a massive 50-file diff. You can open your terminal and type `git log`, find the exact commit for that single file, and revert just that specific mistake.
+- **Phase rollback:** If the AI misclassifies a file, use `git log` and revert the specific phase commit instead of untangling one giant diff.
     
-
-Do you want the `Triage-Log.md` file to overwrite itself every morning so it stays clean, or would you prefer it to keep a running history of past days?
+- **Guarded final push:** `scripts/finish-ai-task.sh` refuses to push from the wrong branch, with a dirty tree, with a stale local `main`, or with changes outside trusted triage paths.
