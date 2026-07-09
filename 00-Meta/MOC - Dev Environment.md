@@ -21,6 +21,8 @@ Developer tooling: Git, Python, VS Code, testing, and environment setup.
 
 - [[git-best-practice]] — Git best practices
 - [[git-pr-example]] — PR workflow example
+- [[git-squash-and-merge]] — iterative commits with squash merge workflow
+- [[agent-pr-squash-and-merge]] — agent PR squash-and-merge script sketch
 - [[github-authentication]] — GitHub authentication
 - [[github-organization]] — GitHub repo organization
 - [[github-share-repo]] — sharing repos and collaborator access
