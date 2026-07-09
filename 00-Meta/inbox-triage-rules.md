@@ -6,7 +6,7 @@ lang: en
 status: published
 ---
 
-> Related: [[Daily Workflow]] · [[Inbox]] · [[Tag Taxonomy]]
+> Related: [[Daily Workflow]] · [[Inbox]] · [[Tag Taxonomy]] · [[frontmatter-schema]]
 
 # Inbox Triage Rules
 
@@ -32,25 +32,40 @@ Never add date prefixes to topic filenames after triage.
 
 ## Frontmatter schema
 
-Use [`00-Meta/templates/default-note.md`](templates/default-note.md):
+Canonical reference: [[frontmatter-schema]]. Capture uses [`default-note.md`](templates/default-note.md) (Tier 1 minimal). Triage completes Tier 1 and adds Tier 2 when the note is high-value.
+
+### Tier 1 — required on every triaged note
 
 ```yaml
 ---
-title: "Clear, Semantic Title"
-description: "Punchy SEO summary + core semantic intent for RAG/vector filtering."
+title: "Human-readable title"           # infer from first H1 or filename
+description: "One sentence: what + why"
 created: YYYY-MM-DD
-updated: YYYY-MM-DD        # Crucial for AI to know if the knowledge is stale
-type: howto                # reference | howto | hub | concept — vital for MCP routers
-lang: en
-draft: true
+updated: YYYY-MM-DD                     # set to triage date if missing
+type: reference                         # reference | howto | hub | daily | concept
+lang: en                                # en | zh — infer from body
+status: draft                           # draft | published
+tags: [ai, workflow]                    # from Tag Taxonomy — domain lives in tags
+---
+```
 
-# --- AI & Agent Enhanced Fields (Infer these where possible!) ---
-domain: ""                 # e.g., tech/ai, life/health — narrows RAG search scope
-relations: []              # [slug-of-parent, slug-of-related] — builds the AI graph
-prerequisites: []          # What the human (or agent) needs to know before reading
-visibility: "private"      # private | internal | public — guards against AI data leakage
-tags: []                   # For hybrid (keyword + vector) RAG search
----```
+### Tier 2 — optional for high-value notes (howtos, agent-reusable references)
+
+```yaml
+prerequisites: []        # wikilink slugs: [yaml-markdown, tag-taxonomy]
+summary: ""              # 2–3 bullet key takeaways
+```
+
+Do **not** add `relations:` — wikilinks, `Related:` blocks, and MOC updates build the graph. Do **not** add a separate `domain:` field — use `tags` per [[Tag Taxonomy]].
+
+### Concept map (what fields actually serve)
+
+| Concept | Frontmatter role |
+|---------|------------------|
+| **OKF** | `type`, `title`, `description` + MOC hub maps |
+| **RAG / search** | `description`, `tags`, `updated` improve retrieval |
+| **MCP** | `type` helps agents pick which file to read — MCP itself routes tools |
+| **A2A** | `prerequisites` on complex notes; handoff is runtime design |
 
 Add a `Related:` block pointing to the relevant MOC, not `[[Inbox]]`.
 
@@ -73,7 +88,7 @@ When uncertain, prefer the most specific match. Flag ambiguous notes in the summ
 
 ## Per-file checklist
 
-1. Add or fix frontmatter (`created`, `tags`, `type`, `lang`, `status`)
+1. Add or fix frontmatter (`title`, `description`, `created`, `updated`, `tags`, `type`, `lang`, `status`); add Tier 2 (`prerequisites`, `summary`) for high-value howtos/references
 2. Strip `MM-DD-` prefix from filename if present
 3. Move with `git mv Inbox/slug.md destination/slug.md`
 4. Replace `Related: [[Inbox]]` with the relevant MOC link

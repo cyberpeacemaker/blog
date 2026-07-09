@@ -64,6 +64,8 @@ class Note:
     status: str
     lang: str
     created: str
+    updated: str
+    description: str
     outbound: list[str] = field(default_factory=list)
     is_hub: bool = False
 
@@ -111,10 +113,16 @@ def is_dated_duplicate(path: Path) -> bool:
     return path.with_name(f"{m.group(4)}.md").exists()
 
 
-def title_from_text(text: str, stem: str) -> str:
+def title_from_text(text: str, stem: str, meta: dict[str, str | list[str]] | None = None) -> str:
+    if meta:
+        fm_title = meta.get("title", "")
+        if isinstance(fm_title, str) and fm_title.strip():
+            return fm_title.strip()
     for line in text.splitlines():
         if line.startswith("# "):
             return line[2:].strip()
+        if line.startswith("## "):
+            return line[3:].strip()
     return stem
 
 
@@ -203,7 +211,7 @@ def scan_vault() -> tuple[dict[str, Note], list[tuple[str, str, str]]]:
 
         notes[nid] = Note(
             id=nid,
-            title=title_from_text(text, path.stem),
+            title=title_from_text(text, path.stem, meta),
             path=rel.as_posix(),
             folder=top_folder(rel),
             note_type=note_type,
@@ -211,6 +219,8 @@ def scan_vault() -> tuple[dict[str, Note], list[tuple[str, str, str]]]:
             status=str(meta.get("status", "")),
             lang=str(meta.get("lang", "")),
             created=str(meta.get("created", "")),
+            updated=str(meta.get("updated", "")),
+            description=str(meta.get("description", "")),
             outbound=outbound,
             is_hub=is_hub,
         )
@@ -224,7 +234,14 @@ def build_hub_graph(notes: dict[str, Note]) -> dict:
     nodes = []
     for nid in sorted(hub_ids):
         n = notes[nid]
-        nodes.append({"id": nid, "label": n.title, "path": n.path, "folder": n.folder})
+        nodes.append({
+            "id": nid,
+            "label": n.title,
+            "path": n.path,
+            "folder": n.folder,
+            "description": n.description,
+            "updated": n.updated,
+        })
     edges = []
     seen_edges: set[tuple[str, str]] = set()
     for nid in hub_ids:

@@ -41,5 +41,6 @@ Entry point for the blog vault. Use the MOCs below to navigate by topic.
 
 - [[CLAUDE]] — agent instruction template
 - [[writeup-guideline]] — CTF/IR write-up framework
-- [[YAML-markdown]] — frontmatter reference
+- [[YAML-markdown]] — frontmatter syntax
+- [[frontmatter-schema]] — Tier 1/2/3 fields, design principles, template index
 - [[Tag Taxonomy]] — standard tags for this vault

@@ -26,6 +26,9 @@ Standard tags for this vault. Use Obsidian tag pane to browse.
 - `#type/reference` — reference material
 - `#type/hub` — MOC hub pages
 - `#type/daily` — daily notes
+- `#type/concept` — conceptual / definitional notes
+
+Frontmatter `type` values mirror the above (without the `#type/` prefix). Full field reference: [[frontmatter-schema]].
 
 ## Language
 
@@ -42,6 +45,8 @@ Standard tags for this vault. Use Obsidian tag pane to browse.
 
 `malcolm`, `nsm`, `opensearch`, `threat-hunting`, `dfir`, `mitre`, `ai`, `agents`, `claude`, `cursor`, `dev`, `git`, `python`, `moc`, `meta`, `stack`, `workflow`, `obsidian`, `uncategorized`
 
+Do **not** add a separate `domain:` frontmatter field — express domain via `tags` above.
+
 ## File naming
 
 - Topic notes: `slug.md` (e.g. `malcolm-orchestration.md`) — **no date in filename**
@@ -50,4 +55,4 @@ Standard tags for this vault. Use Obsidian tag pane to browse.
 - Hub pages: no date prefix (`Home.md`, `MOC - Malcolm & NSM.md`)
 - `created: YYYY-MM-DD` in frontmatter is the source of truth for when a note was captured
 
-See also: [[Daily Workflow]] for capture rules. [[YAML-markdown]] for frontmatter syntax.
+See also: [[Daily Workflow]] for capture rules. [[YAML-markdown]] for frontmatter syntax. [[frontmatter-schema]] for Tier 1/2/3 fields and design principles.

@@ -145,6 +145,11 @@ Template **files** live in `00-Meta/templates/` (visible in the file explorer). 
 |------|---------|--------|--------|
 | `default-note.md` | `Ctrl+N` → `Inbox/` | Templater `<%* ... %>` | Templater plugin (see below) |
 | `daily-note.md` | `Ctrl+Shift+D` / Calendar | Core `{{date:YYYY-MM-DD}}` | Settings → **Daily notes** (or `.obsidian/daily-notes.json`) |
+| `howto-note.md` | Command palette → Insert template | Templater | Manual — step-by-step guides |
+| `reference-note.md` | Command palette → Insert template | Templater | Manual — durable references |
+| `tier3-future-note.md` | **Reference only** | Templater | Do not auto-apply — future RAG/sharing fields |
+
+Schema reference: [[frontmatter-schema]].
 
 ### Edit inbox defaults (`default-note.md`)
 
