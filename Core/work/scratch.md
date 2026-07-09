@@ -1,3 +1,12 @@
+感覺很棒呢，現在回到dock
+OK，在我準備刷功績的時候，已經來不及了，太難過了
+本來應該會有很多立刻可以修補的點，不過他那邊目前翻修很快，看來困難了
+不過想稍微往好處想，我主要想立刻做的就是PR TEST+TYPO修改
+ok學到教訓了，我那兩件事根本不需要環境設置，立刻就可以執行，下次應該直接做
+
+剛剛立刻注意到一件事
+personal [work, todo]雖然不算機密，不過感覺還是分開好了
+blog還是篇比較公開，主要應該是demo展示的話，不會希望這個出現
 # NICS Claw
 這樣看起來真的很有意思，從我從(三)上午接下nics-claw開始
 - 測試環境
@@ -8,6 +17,7 @@
 - 收集許多資訊 > 我就想進一步優化筆記方式
 	- card
 	- atomic (workflow, commit)
+	- frontmatter
 - 使用obsidian > 又蒐集許多資訊 想優化到其他worklow中
 	- graph > RAG, OKF, frontmatter, link
 	- OKF https://cloud.google.com/blog/products/data-analytics/how-the-open-knowledge-format-can-improve-data-sharing#:~:text=That%27s%20why%20today%2C%20we%27re,that%20modern%20AI%20systems%20need.
@@ -43,17 +53,6 @@ The PR automation expects the platform-designated branch `cursor/daily-inbox-tr
 - automaticlly cli verification
 - ci/cd
 - git squash 
-
-
-- obsidian的整理 這應該拆成兩個部分，一個是我常用的core，且我想放到vault裡面。另一部分是整理剩下的，且不一定放到vault裡面，這部分我先分出來
-- frontmatter的整理
-- 回去dock
-
-
-感覺整理repo，也會牽涉到整理新人評核呢
-- 好處:可以一起整理
-- 壞處:就需要多花點心力
-我是可以現在整理，不過我也有點想看BEC report
 
 # BEC CTF完整報告
 
