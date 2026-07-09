@@ -3,7 +3,7 @@
   "newFileFolderPath": "Inbox",
   "alwaysUpdateLinks": true,
   "useMarkdownLinks": false,
-  "showUnsupportedFiles": false,
+  "showUnsupportedFiles": true,
   "promptDelete": false,
   "attachmentFolderPath": "00-Meta/attachments",
   "showLineNumber": true,
