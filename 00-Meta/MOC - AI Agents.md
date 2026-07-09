@@ -27,6 +27,7 @@ AI agent frameworks, multi-agent systems, context management, and local LLM work
 - [[context-management]] — RAG vs dynamic context injection
 - [[rag-okf-wiki]] — OKF wiki vs RAG knowledge bases
 - [[RAG-OKF]] — RAG vs Open Knowledge Format comparison
+- [[yaml-okf]] — OKF-style Markdown and YAML frontmatter for AI-readable repos
 - [[dynamic-context-injection]] — dynamic context injection
 - [[03-AI-Agents/claude-session.context-window|claude-session.context-window]] — Claude context window management
 - [[ai-artifacts]] — AI artifact handling
