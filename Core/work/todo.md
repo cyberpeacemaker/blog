@@ -1,3 +1,12 @@
+---
+created: 2026-07-09
+type: reference
+lang: zh
+status: draft
+visibility: private
+tags: [workflow]
+---
+
 # otex-devkit
 pr test + typo
 

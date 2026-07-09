@@ -2,6 +2,7 @@
 set -euo pipefail
 
 # Validate that changed files in a triage diff stay within trusted vault paths.
+# Core/ is intentionally excluded — operational rolling docs; see Core/Core.md.
 # Usage: validate-triage-paths.sh [base_ref]
 #   base_ref defaults to origin/main (compares origin/main..HEAD)
 

@@ -1,3 +1,14 @@
+---
+created: 2026-07-09
+type: reference
+lang: zh
+status: draft
+visibility: private
+tags: [workflow, career]
+---
+
+> Related: [[Core]] · [[self-report-retro]] · [[08-Career-Presentations]]
+
 # 新人三月
 
 - 參與雙周會議

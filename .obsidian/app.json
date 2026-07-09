@@ -10,5 +10,5 @@
   "strictLineBreaks": false,
   "readableLineLength": true,
   "defaultViewMode": "preview",
-  "livePreview": true
+  "livePreview": false
 }

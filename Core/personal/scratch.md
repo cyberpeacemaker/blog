@@ -1,3 +1,11 @@
+---
+created: 2026-07-09
+type: reference
+lang: zh
+status: draft
+visibility: private
+tags: [workflow]
+---
 
 # 信用卡
 如果成功辦到匯豐信用卡，應該要考慮把所有

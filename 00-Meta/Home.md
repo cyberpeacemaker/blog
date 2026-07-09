@@ -24,6 +24,12 @@ Entry point for the blog vault. Use the MOCs below to navigate by topic.
 - [[MOC - Dev Environment]]
 - [[Daily Workflow]]
 
+## Core
+
+- [[Core]] — operational workspace (todos, scratch, journal, brag)
+- [[Inbox]] — unsorted topic captures
+- Daily journal in `daily/`
+
 ## Other Areas
 
 - [[05-Software-Engineering]] — architecture, agile, MVP
@@ -31,7 +37,6 @@ Entry point for the blog vault. Use the MOCs below to navigate by topic.
 - [[07-Productivity-Work]] — Slack, meetings, work tools
 - [[08-Career-Presentations]] — talks, transcripts, career
 - [[09-Personal]] — personal notes (finance, hobbies)
-- [[Inbox]] — inbox captures; daily journal in `daily/`
 
 ## Visual
 

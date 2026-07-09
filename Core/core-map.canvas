@@ -1,0 +1,17 @@
+{
+	"nodes":[
+		{"id":"812cdfdce379ce85","type":"group","x":-1520,"y":-700,"width":2500,"height":1020,"color":"5","label":"work"},
+		{"id":"8afbabc4ae22064b","type":"group","x":-440,"y":-1800,"width":1420,"height":1020,"color":"1","label":"personal"},
+		{"id":"6ba30c254d7f06e4","type":"file","file":"Core/work/todo.md","x":-420,"y":-640,"width":620,"height":900},
+		{"id":"6fecd35d4b66b4f1","type":"file","file":"Core/work/scratch.md","x":320,"y":-640,"width":640,"height":900},
+		{"id":"df2963b8648e469c","type":"file","file":"Core/personal/scratch.md","x":320,"y":-1720,"width":640,"height":880},
+		{"id":"b2ea8c13dd572816","type":"file","file":"Core/personal/todo.md","x":-420,"y":-1720,"width":620,"height":880},
+		{"id":"46c3c7686da50fed","type":"file","file":"Core/brag.md","x":-1120,"y":-640,"width":520,"height":900},
+		{"id":"37f2f27cfede3b76","type":"file","file":"Core/journal.md","x":-1120,"y":-1720,"width":520,"height":880}
+	],
+	"edges":[],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}
