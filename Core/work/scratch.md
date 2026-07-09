@@ -1,16 +1,3 @@
----
-created: 2026-07-09
-type: reference
-lang: zh
-status: draft
-visibility: private
-tags: [workflow]
----
-
-這
-Atomic思維 認為 commit 筆記
-
-
 # NICS Claw
 這樣看起來真的很有意思，從我從(三)上午接下nics-claw開始
 - 測試環境
@@ -19,6 +6,8 @@ Atomic思維 認為 commit 筆記
 	- AI 開發環境 (conda, uv, pandas, langchain)
 	- AI 架構設計 (pydantic, liteLLM)
 - 收集許多資訊 > 我就想進一步優化筆記方式
+	- card
+	- atomic (workflow, commit)
 - 使用obsidian > 又蒐集許多資訊 想優化到其他worklow中
 	- graph > RAG, OKF, frontmatter, link
 	- plugin, feature > daily note, calendrer > brag
@@ -27,9 +16,6 @@ Atomic思維 認為 commit 筆記
 	- automation > cloud vm, git, pr > git squash, gh > automation pattrn
 	- git action, git CI/CD
 
-現在(四)下午，準備開始收尾
-目前很棒，automation執行大約80%，而真正展開的其實是另外一個話題
-git以及現代CICD所以我拉出來目前應該先這樣
 ### automation
 **some issue need to fix/discuss**
 The working tree is clean on `cursor/daily-inbox-triage-9370`; the task’s triage prompt explicitly asks for an `automation/daily-inbox-triage-*` branch, so I’m creating today’s triage branch from the current checked-out state before editing.
@@ -44,6 +30,7 @@ The PR automation expects the platform-designated branch `cursor/daily-inbox-tr
 
 - - Ran requested finish script, but it failed with:
     - `Error: Refusing to finish unexpected branch: cursor/inbox-rule-application-efec`
+
 ### git
 目前要用到的東西，開始變多，最好再複習一次，再回來做，應該會比較快
 幾個議題
@@ -56,7 +43,6 @@ The PR automation expects the platform-designated branch `cursor/daily-inbox-tr
 - ci/cd
 
 
-- 把core丟到blog vault裡面
 - git squash
 - obsidian的整理
 - frontmatter的整理
