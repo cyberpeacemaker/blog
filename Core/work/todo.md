@@ -1,6 +1,6 @@
-# otex-devkit
-pr test + typo
-
+- creator
+- nics-claw
+- git
 # Bec ctf 完整報告
 - 復現Malcolm GUI上的操作
 - 解釋為什麼這樣操作

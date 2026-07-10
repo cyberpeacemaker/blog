@@ -1,10 +1,4 @@
-感覺很棒呢，現在回到dock
 
-太好了！清完nics-claw的分業
-
-剛剛立刻注意到一件事
-personal [work, todo]雖然不算機密，不過感覺還是分開好了
-blog還是篇比較公開，主要應該是demo展示的話，不會希望這個出現
 # NICS Claw
 這樣看起來真的很有意思，從我從(三)上午接下nics-claw開始
 - 測試環境
@@ -100,6 +94,11 @@ The PR automation expects the platform-designated branch `cursor/daily-inbox-tr
 目前來說，threat hunting tool跟 CTF write up現在分開確實是很好的方向
 
 # Obsidian 
+# Obsidian
+剛剛立刻注意到一件事
+personal [work, todo]雖然不算機密，不過感覺還是分開好了
+blog還是篇比較公開，主要應該是demo展示的話，不會希望這個出現
+
 驚喜
 - git + obsidian sync
 - MOC
