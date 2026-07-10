@@ -1,5 +1,14 @@
 想步道為了備份，當初保留了兩個檔案
 意外造成混淆，事後要處理的情況
+但我當初確實不缺定應該要怎麼班，現在也是
+- 優點，絕大部分都使用一個vault就可以，不用切換
+- 缺點，分享這個vault的時候，要考慮persoanl會被公開
+總之我現在想合併成，主要只是用一個vault，我還是personal也留在這邊好了
+
+這
+Atomic思維 認為 commit 筆記
+
+Pi tau
 # NICS Claw
 這樣看起來真的很有意思，從我從(三)上午接下nics-claw開始
 - 測試環境
@@ -20,17 +29,20 @@
 	- automation > cloud vm, git, pr > git squash, gh > automation pattrn
 	- git action, git CI/CD
 
+現在(四)下午，準備開始收尾
+目前很棒，automation執行大約80%，而真正展開的其實是另外一個話題
+git以及現代CICD所以我拉出來目前應該先這樣
 ### automation
 **some issue need to fix/discuss**
-The working tree is clean on `cursor/daily-inbox-triage-9370`; the task’s triage prompt explicitly asks for an `automation/daily-inbox-triage-*` branch, so I’m creating today’s triage branch from the current checked-out state before editing.
+The working tree is clean on `cursor/daily-inbox-triage-9370`; the task’s triage prompt explicitly asks for an `automation/daily-inbox-triage-*` branch, so I’m creating today’s triage branch from the current checked-out state before editing.
 
-The first staging command used explicit source paths after `git mv`, which Git no longer sees as filesystem files. I’m restaging the move phase with `git add -A` and committing the same move-only changes.
+The first staging command used explicit source paths after `git mv`, which Git no longer sees as filesystem files. I’m restaging the move phase with `git add -A` and committing the same move-only changes.
 
-The finish script is present, but it performs `gh pr create` and `gh pr merge --admin`; I’m first completing safe verification and confirming the tree is clean before deciding how to handle that requested wrap-up under the environment’s GitHub write restrictions.
+The finish script is present, but it performs `gh pr create` and `gh pr merge --admin`; I’m first completing safe verification and confirming the tree is clean before deciding how to handle that requested wrap-up under the environment’s GitHub write restrictions.
 
-The rebuild succeeded but rewrote `Vault Map.canvas` again, which means the generated edge ordering is slightly nondeterministic. I’m committing the latest generated artifact so the finish step can start from a clean working tree.
+The rebuild succeeded but rewrote `Vault Map.canvas` again, which means the generated edge ordering is slightly nondeterministic. I’m committing the latest generated artifact so the finish step can start from a clean working tree.
 
-The PR automation expects the platform-designated branch `cursor/daily-inbox-triage-9370`, while the task prompt asked for an `automation/*` branch. I’ve already pushed the `automation/*` branch, and I’m now copying the completed commits onto the expected Cursor branch so the configured PR tool can publish the work.
+The PR automation expects the platform-designated branch `cursor/daily-inbox-triage-9370`, while the task prompt asked for an `automation/*` branch. I’ve already pushed the `automation/*` branch, and I’m now copying the completed commits onto the expected Cursor branch so the configured PR tool can publish the work.
 
 - - Ran requested finish script, but it failed with:
     - `Error: Refusing to finish unexpected branch: cursor/inbox-rule-application-efec`
@@ -46,6 +58,18 @@ The PR automation expects the platform-designated branch `cursor/daily-inbox-tr
 - automaticlly cli verification
 - ci/cd
 - git squash 
+
+- 把core丟到blog vault裡面
+- git squash
+- obsidian的整理
+- frontmatter的整理
+- 回去dock
+
+
+感覺整理repo，也會牽涉到整理新人評核呢
+- 好處:可以一起整理
+- 壞處:就需要多花點心力
+我是可以現在整理，不過我也有點想看BEC report
 
 # BEC CTF完整報告
 
@@ -95,7 +119,6 @@ The PR automation expects the platform-designated branch `cursor/daily-inbox-tr
 目前來說，threat hunting tool跟 CTF write up現在分開確實是很好的方向
 
 # Obsidian 
-# Obsidian
 剛剛立刻注意到一件事
 personal [work, todo]雖然不算機密，不過感覺還是分開好了
 blog還是篇比較公開，主要應該是demo展示的話，不會希望這個出現
@@ -118,4 +141,3 @@ blog還是篇比較公開，主要應該是demo展示的話，不會希望這個
 - 挖掘obsidian其他功能
 	- daily
 	- https://www.youtube.com/watch?v=hdYzsdUZ9Jg
-

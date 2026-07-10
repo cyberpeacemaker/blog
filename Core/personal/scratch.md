@@ -4,7 +4,7 @@
 
 # PEIPEI出國
 -富國島
-- CISA [Idaho Falls, IDAHO, United States of America] (8/28目前做好)
+- CISA [Idaho Falls, IDAHO, United States of America] (8/28目前做好)
 	- https://www.kkday.com/zh-tw/product/269966?cid=2003&ud1=3630&ud2=269966
 
 # 國泰小數點

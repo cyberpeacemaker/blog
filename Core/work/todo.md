@@ -2,6 +2,10 @@
 - nics-claw
 - git
 - obsidian 檔案conflict 處理
+
+# otex-devkit
+pr test + typo
+
 # Bec ctf 完整報告
 - 復現Malcolm GUI上的操作
 - 解釋為什麼這樣操作
@@ -68,6 +72,7 @@ knowledge/
 
 # Obsidian
 - obsidian vault organize
+- obsidian vault merge
 - [Obsidian+Claude](https://www.youtube.com/watch?v=_ERp82MIj9Q)
 - daily note + calander
 
