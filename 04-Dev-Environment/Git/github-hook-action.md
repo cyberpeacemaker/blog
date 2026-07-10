@@ -1,0 +1,66 @@
+---
+title: "Git Hooks vs GitHub Actions"
+description: "Compares local Git hooks with cloud GitHub Actions and shows how teams combine both automation layers."
+created: 2026-07-09
+updated: 2026-07-09
+type: reference
+lang: zh
+status: draft
+tags: [dev, git, workflow]
+---
+
+> Related: [[MOC - Dev Environment]] · [[github-action-flaws]] · [[automation-pr-merge-policy]]
+你非常敏銳！這兩個概念確實高度相關，因為它們的核心思想都是「當 Git 發生某個事件時，就自動觸發特定的自動化任務」。
+
+不過，它們最大的差別在於「執行的舞台（地方）」**和**「掌控的權力」不同。
+
+我們可以把 **Git Hook** 比喻為**第一線的「貼身保鑣」**，而把 **GitHub Actions** 比喻為**總部的「終極大審判（CI/CD）」**。
+
+## 📊 一分鐘快速對比
+
+|**特性**|**Git Hook (以本機端為主)**|**GitHub Actions (Workflow)**|
+|---|---|---|
+|**執行位置**|你的**本機電腦** (Local Machine)|GitHub 的**雲端伺服器** (Cloud Runner)|
+|**觸發時機**|程式碼**送出前** (如：Commit 前、Push 前)|程式碼**送上雲端後** (如：Push 後、PR 建立時)|
+|**執行速度**|**極快**（幾秒內，因為就在本機跑）|**較慢**（需要等待雲端開機、安裝環境，約需幾分鐘）|
+|**能不能繞過**|**可以**（開發者可以用 `--no-verify` 強行繞過）|**絕對不行**（除非擁有最高管理員權限直接強推）|
+|**主要功能**|抓出低級錯誤（語法、排版、訊息格式）|繁重任務（跨環境測試、打包、自動化部署）|
+
+## 🛠️ 深入使用時機：我該用哪一個？
+
+在實際開發中，我們通常不會二選一，而是讓它們**各司其職、互相搭配**。
+
+### 💡 什麼時候用 Git Hook？（第一線防禦）
+
+因為 Git Hook 在你的電腦上跑，不需要連網、不需要等雲端開機，所以它適合處理「幾秒鐘內就能搞定的小事」。
+
+- **程式碼排版（Linting）**：在 Commit 前，自動用 ESLint 或 Prettier 把程式碼排整齊。要是排版有錯，直接在 local 攔截，別把髒程式碼推上去。
+    
+- **檢查 Commit 訊息**：確保大家寫的 Commit 紀錄都符合規範，如果不符合，連 Commit 都生不出來。
+    
+- **防呆檢查**：檢查程式碼裡有沒有不小心留下了測試用的 `console.log`，或是更嚴重的——把密碼、API Key 寫死在程式碼裡（如 `git-secrets`）。
+    
+
+### 💡 什麼時候用 GitHub Actions？（終極把關）
+
+因為 GitHub Actions 跑在雲端，它擁有完整的虛擬機環境，適合處理「需要公信力、耗時、耗資源的大型任務」。
+
+- **跨環境完整測試**：在 Local 跑測試可能只在 Mac 上跑，但 GitHub Actions 可以同時在 Linux、Windows、macOS 上幫你跑完所有的單元測試與整合測試。
+    
+- **團隊程式碼審查（Code Review）防線**：當隊友發起 Pull Request (PR) 時，GitHub Actions 會自動執行，如果測試沒通過，GitHub 就會把「Merge」按鈕鎖死，誰也別想把壞掉的程式碼塞進主分支。
+    
+- **自動化部署 (CD)**：當程式碼確定合併到 `main` 分支後，自動把網站打包、建立 Docker 映像檔，並部署到 AWS、GCP 或 Vercel 上。
+    
+
+## 🤝 現代團隊的黃金組合
+
+現在最主流的開發流程，通常是兩者並存的：
+
+1. **開發者本機 (Git Hook)**：小明寫完程式，執行 Commit。Git Hook 花了 1.5 秒檢查，發現他少寫了一個分號，立刻拒絕 Commit。小明修正後，順利 Commit 並 Push。
+    
+2. **雲端端 (GitHub Actions)**：GitHub 收到小明的 Push，觸發 Workflow。花了 3 分鐘跑完 500 個整合測試，並打包程式碼，確認一切完美後，自動部署上線。
+    
+
+這樣既不會讓開發者因為在 Local 等測試等太久而抓狂，又能確保推上雲端的程式碼擁有 100% 的品質。
+
+你目前正在規劃的專案，是有一個團隊要一起協作，還是你個人的獨立專案呢？

@@ -11,6 +11,8 @@ status: published
 AI agent frameworks, multi-agent systems, context management, and local LLM workflows.
 
 ## Frameworks & Architecture
+- [[local-cv-yolo-vs-cloud-vision]] — local YOLO vision vs cloud vision models
+- [[ai-new-era-image-identification]] — MCP vision bridge vs local image recognition
 
 - [[NICSA-ai-framework-v1]] — NICSA AI agent framework v1
 - [[agent-framework]] — agent framework overview
@@ -23,6 +25,8 @@ AI agent frameworks, multi-agent systems, context management, and local LLM work
 - [[claude-to-local-migration]] — roadmap from Claude PoC to local LLM
 
 ## Context & Knowledge
+- [[competitive-landscape]] — AI and the changing competitive landscape
+- [[ai-era-tradeoff]] — AI era tradeoffs and survival coaching
 
 - [[context-management]] — RAG vs dynamic context injection
 - [[rag-okf-wiki]] — OKF wiki vs RAG knowledge bases
