@@ -1,4 +1,4 @@
-- creator
+- project-shepherd logo
 - nics-claw
 - git
 # Bec ctf 完整報告
