@@ -1,6 +1,6 @@
 - project-shepherd logo
 - nics-claw
-- git
+- [git]([Introduction - Training | Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/intro-to-git/0-introduction))
 
 # otex-devkit
 pr test + typo
