@@ -1,7 +1,6 @@
 - project-shepherd logo
 - nics-claw
 - git
-- obsidian 檔案conflict 處理
 
 # otex-devkit
 pr test + typo
@@ -25,6 +24,8 @@ Arkime似乎就夠，沒用到opensearch的優勢
 	2. animation fix
 3. meeting-transcript TODO
 4. arkime contribute
+5. 想工作
+6. 承諾 三個月薪水 不是為了賺錢 
 
 # YAML & OKF
 
