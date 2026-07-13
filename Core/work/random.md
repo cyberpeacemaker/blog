@@ -1,3 +1,23 @@
+來能公司外出，我應該很熟公司流程，另外就是我自己的流程
+公司流程:
+- 人事管理請公假
+- 填寫[國內出差旅費申請單](https://esp.nics.nat.gov.tw/ESP/readdocument.aspx?documentId=114719) (或 [國外出差旅費申請單](https://esp.nics.nat.gov.tw/ESP/readdocument.aspx?documentId=114721))
+- ---出差---
+- 列印填寫[國內出差旅費結報單](https://esp.nics.nat.gov.tw/ESP/readdocument.aspx?documentId=114720) (或 [國外出差旅費結報單](https://esp.nics.nat.gov.tw/ESP/readdocument.aspx?documentId=114722)|)
+- 列印填寫[支出憑證黏存單](https://esp.nics.nat.gov.tw/ESP/readdocument.aspx?documentId=114723)
+
+我自己的流程:
+- 開資料夾(雲端木且有些步驟會有問題，暫時不建議)
+- 擷取出差事由
+- 填寫[國內出差旅費申請單](https://esp.nics.nat.gov.tw/ESP/readdocument.aspx?documentId=114719) (或 [國外出差旅費申請單](https://esp.nics.nat.gov.tw/ESP/readdocument.aspx?documentId=114721))
+- ---出差---
+- 回來後根據情況，人事管理申請公假
+- 回來後實報實銷，填寫
+- 列印
+- 簽名 (上方)
+
+公務計程車
+
 久違的開工，不過現在有點吵，稍微有點麻煩
 能做什麼事情呢，我是可以學git，不過本來主要兩件事
 
