@@ -14,6 +14,9 @@ pr test + typo
 # Bec ctf 完整報告
 - 復現Malcolm GUI上的操作
 - 解釋為什麼這樣操作
+- BEC 還沒包到全部事件？讓我有點訝異
+
+---
 
 - dhcp review
 poi 這樣看起來很好，加上
