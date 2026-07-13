@@ -16,12 +16,12 @@ Operational workspace — long-lived rolling docs where you work **from**. Not a
 ## Work
 
 - [[work/todo]] — work action backlog
-- [[work/scratch]] — work thinking stream (may promote to `Inbox/` or topic folders when mature)
+- [[Core/work/random]] — work thinking stream (may promote to `Inbox/` or topic folders when mature)
 
 ## Personal
 
 - [[personal/todo]] — personal errands and tasks
-- [[personal/scratch]] — personal quick thoughts
+- [[Core/personal/random]] — personal quick thoughts
 
 ## Reflection
 

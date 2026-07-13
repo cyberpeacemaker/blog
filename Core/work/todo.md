@@ -1,8 +1,14 @@
+明天訂票
+
 - project-shepherd logo
 - nics-claw
 - [git]([Introduction - Training | Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/intro-to-git/0-introduction))
 
+# NICS Claw
+- collaboration
+- otex-devkit
 # otex-devkit
+
 pr test + typo
 
 # Bec ctf 完整報告
