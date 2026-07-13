@@ -76,6 +76,7 @@ knowledge/
 - obsidian vault merge
 - [Obsidian+Claude](https://www.youtube.com/watch?v=_ERp82MIj9Q)
 - daily note + calander
+- frontmatter (OKF, AI, Automation)
 
 # Project Shepherd
 - project-scaffold in @project-shepherd/docs | session in cursour/proeject-shepherd/Project   
@@ -126,6 +127,7 @@ Malcolm threat hunting methodology
 # 不太重要
 - 會議同意書 (經理遇到的問題)
 - google ai studio
+- PI, Tau
 - claroty
 - 我的第九周雙周會議？
 - github/personal-misc TODO 轉移
