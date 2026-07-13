@@ -18,7 +18,24 @@ Developer tooling: Git, Python, VS Code, testing, and environment setup.
 - [[YAML]] — YAML configuration files
 - [[microsoft-store]] — Microsoft Store vs standalone installers for dev tools
 
+## Windows, WSL, and Shells
+- [[wsl-network-troubleshooting]] — WSL2 DNS, IPv6, mirrored networking, MTU, firewall, and proxy fixes
+- [[wsl-ipv4-ipv6]] — prefer IPv4 in WSL when IPv6 routing causes curl and package-manager timeouts
+- [[wsl-mirrored-cancel-wslconfig]] — roll back WSL mirrored networking to default NAT mode
+- [[wsl-network-issue-antivirus-possible]] — Symantec SONAR and enterprise antivirus interference with WSL/dev tools
+- [[vim-permission]] — save root-owned Linux files after Vim E45 readonly errors
+- [[win-linux-crlf]] — convert Windows CRLF line endings before running shell scripts on Linux
+- [[windows-sh-vs-powershell]] — why Linux .sh and systemd scripts do not run natively in PowerShell
+- [[powershell-v5-v7]] — switch VS Code from Windows PowerShell 5 to PowerShell 7
+- [[powershell-and-operator]] — alternatives to && in Windows PowerShell 5
+- [[windows-file-permissions-icacls]] — chmod and icacls equivalents for sensitive file permissions
+
 ## Git
+- [[github-markdown-spacing]] — GitHub Markdown code fence failures from hidden spaces and list indentation
+- [[github-ssh-gpgkey]] — GitHub SSH, HTTPS, PAT, and Credential Manager troubleshooting in WSL
+- [[win11-git-clone-ssh]] — Windows 11 GitHub SSH clone setup with HTTPS fallback
+- [[git-new-home]] — move an existing Git repo to a new GitHub remote while keeping history
+- [[migrate-without-git]] — start a clean V2 project without carrying Git history
 - [[fix-broken-cicd]] — handling broken CI/CD required checks
 - [[git-squash-merge]] — GitHub squash merge review safety
 - [[git-self-experience]] — Git and CI/CD review roadmap
@@ -52,6 +69,7 @@ Developer tooling: Git, Python, VS Code, testing, and environment setup.
 - [[markdown-link-check-github-action]] — GitHub Action for Markdown link checks
 
 ## Python
+- [[conda-install-option]] — choosing yes or no for Conda installer shell initialization
 - [[miniconda-powershell-shortcut]] — dedicated Miniconda PowerShell shortcut
 - [[conda-system-python]] — Conda isolation and system Python guardrails
 - [[conda-uv-pixi]] — Conda, uv, and pixi toolchain tradeoffs

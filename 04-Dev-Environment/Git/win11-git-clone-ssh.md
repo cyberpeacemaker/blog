@@ -1,11 +1,16 @@
 ---
-created: 2026-07-13 16:07
-updated: 2026-07-13 16:07
-tags: []
-type: reference
+title: "Windows 11 Git SSH Clone Setup"
+description: "Walks through GitHub SSH clone setup on Windows 11 PowerShell with HTTPS as a quick workaround."
+created: 2026-07-13
+updated: 2026-07-13
+type: howto
 lang: en
 status: draft
+tags: [dev, git, windows]
 ---
+
+> Related: [[MOC - Dev Environment]] · [[github-ssh]] · [[github-private-clone]]
+
 Ah, the classic SSH handshake denial. This error means GitHub is looking for an SSH key to verify who you are, but your computer either hasn't generated one, or GitHub doesn't know about it yet.
 
 You have two ways to fix this: **Option A** (Fixing the SSH setup) or **Option B** (The quick workaround using HTTPS).

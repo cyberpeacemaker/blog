@@ -1,11 +1,16 @@
 ---
-created: 2026-07-13 16:07
-updated: 2026-07-13 16:07
-tags: []
+title: "Migrate a Project Without Git History"
+description: "Compares git archive and copy-and-delete approaches for starting a clean V2 project without old history."
+created: 2026-07-13
+updated: 2026-07-13
 type: reference
 lang: en
 status: draft
+tags: [dev, git]
 ---
+
+> Related: [[MOC - Dev Environment]] · [[git-new-home]] · [[git-copied]]
+
 Yes, people absolutely do this! It is a very common practice when you want to use a current project as a template, boilerplate, or a "clean slate" starting point for a brand-new version (V2) without carrying over years of old commit history, dead branches, or massive file tails.
 
 Here is exactly how people handle this process, ranging from the cleanest command-line method to the quick-and-dirty approach.

@@ -1,11 +1,16 @@
 ---
-created: 2026-07-13 15:07
-updated: 2026-07-13 15:07
-tags: []
-type: reference
+title: "PowerShell && Operator Compatibility"
+description: "Shows alternatives to the Bash-style && operator in Windows PowerShell 5 and when PowerShell 7 supports it."
+created: 2026-07-13
+updated: 2026-07-13
+type: howto
 lang: en
 status: draft
+tags: [dev, windows, powershell]
 ---
+
+> Related: [[MOC - Dev Environment]] · [[powershell-v5-v7]] · [[powershell-execution-policy]]
+
 Ah, the classic Windows PowerShell trap!
 
 You are seeing this error because you are likely running the default **Windows PowerShell (version 5.1 or lower)**. The `&&` operator (which runs the second command _only_ if the first one succeeds) wasn't introduced to PowerShell until version 7.0.

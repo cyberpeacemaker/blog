@@ -1,11 +1,16 @@
 ---
-created: 2026-07-13 15:07
-updated: 2026-07-13 15:07
-tags: []
+title: "WSL Network Blocks from Antivirus"
+description: "Explains how Symantec Endpoint Protection SONAR can quarantine dev tools and interfere with WSL networking."
+created: 2026-07-13
+updated: 2026-07-13
 type: reference
 lang: en
 status: draft
+tags: [dev, windows, wsl, security]
 ---
+
+> Related: [[MOC - Dev Environment]] · [[wsl-network-troubleshooting]] · [[conda-install-option]]
+
 **Yes, this is absolutely a problem**, and it is the smoking gun that explains why your setup is breaking.
 
 Your Symantec Endpoint Protection (SEP) **SONAR** system is actively flagging and likely blocking or quarantining your project executable: `c:\users\ydnaa\miniconda3\envs\otex-claw\scripts\otex-claw.exe`.

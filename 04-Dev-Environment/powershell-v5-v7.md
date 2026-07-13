@@ -1,11 +1,16 @@
 ---
-created: 2026-07-13 15:07
-updated: 2026-07-13 15:07
-tags: []
-type: reference
+title: "PowerShell 5 vs PowerShell 7"
+description: "Explains why Windows PowerShell and PowerShell 7 coexist and how to switch VS Code to pwsh."
+created: 2026-07-13
+updated: 2026-07-13
+type: howto
 lang: en
 status: draft
+tags: [dev, windows, powershell]
 ---
+
+> Related: [[MOC - Dev Environment]] · [[powershell-and-operator]] · [[vscode-tips]]
+
 It is completely valid to be confused here, and you probably _did_ install it! This is one of the most frustrating quirks of modern Windows: installing PowerShell 7+ doesn't automatically replace or upgrade the built-in Windows PowerShell (v5.1). Instead, they live side-by-side as two completely different programs.
 
 Windows PowerShell is `powershell.exe`, and PowerShell 7+ is `pwsh.exe`. Right now, your terminal profile (likely inside VS Code) is still opening the old version by default.
