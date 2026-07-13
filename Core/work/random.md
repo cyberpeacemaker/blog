@@ -1,17 +1,17 @@
 來能公司外出，我應該很熟公司流程，另外就是我自己的流程
 公司流程:
 - 人事管理請公假
-- 填寫[國內出差旅費申請單](https://esp.nics.nat.gov.tw/ESP/readdocument.aspx?documentId=114719) (或 [國外出差旅費申請單](https://esp.nics.nat.gov.tw/ESP/readdocument.aspx?documentId=114721))
+- 流程表單填寫 |  BDA-國內出差旅費申請單
 - ---出差---
 - 列印填寫[國內出差旅費結報單](https://esp.nics.nat.gov.tw/ESP/readdocument.aspx?documentId=114720) (或 [國外出差旅費結報單](https://esp.nics.nat.gov.tw/ESP/readdocument.aspx?documentId=114722)|)
 - 列印填寫[支出憑證黏存單](https://esp.nics.nat.gov.tw/ESP/readdocument.aspx?documentId=114723)
 
 我自己的流程:
-- 開資料夾(雲端木且有些步驟會有問題，暫時不建議)
+- 開資料夾(雲端目前有些步驟會有問題，暫時不建議)
 - 擷取出差事由
-- 填寫[國內出差旅費申請單](https://esp.nics.nat.gov.tw/ESP/readdocument.aspx?documentId=114719) (或 [國外出差旅費申請單](https://esp.nics.nat.gov.tw/ESP/readdocument.aspx?documentId=114721))
+- 人事管理請公假
+- 流程表單填寫 |  BDA-國內出差旅費申請單
 - ---出差---
-- 回來後根據情況，人事管理申請公假
 - 回來後實報實銷，填寫
 - 列印
 - 簽名 (上方)
@@ -25,6 +25,9 @@
 - 立刻開始nics claw
 - 稍微統整周末到現在規劃
 
+BEC 還沒包到全部事件？讓我有點訝異
+現在其實真的有一點壓力，周末無法工作真的讓我負擔很大
+我需要跟peipei說，可是可能晚點再說
 # NICS Claw
 目前在(吵雜+缺乏git)的環境下開始
 目前發現action-item應該混砸了我的review
