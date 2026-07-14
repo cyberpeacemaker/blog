@@ -1,6 +1,11 @@
-明天訂票
+Mdm解鎖 還是在鎖我鏡頭
+今天有點趕 相機又被鎖起來 沒拍照記錄
 
 - project-shepherd logo
+- 領錢
+- 
+- cisa派訓
+- signal怎麼加好友
 - nics-claw
 - [git]([Introduction - Training | Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/intro-to-git/0-introduction))
 
@@ -15,6 +20,7 @@ pr test + typo
 - 復現Malcolm GUI上的操作
 - 解釋為什麼這樣操作
 - BEC 還沒包到全部事件？讓我有點訝異
+- 調查完後 想聽別人解法
 
 ---
 
