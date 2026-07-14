@@ -1,11 +1,16 @@
 ---
+title: "Cross-ID Analysis with Zeek and Arkime"
+description: "Explains cross-dataset pivots using Zeek UID and Community ID in network forensics."
 created: 2026-07-14 17:07
 updated: 2026-07-14 17:07
-tags: []
+tags: [threat-hunting, dfir, zeek, arkime]
 type: reference
-lang: en
+lang: zh
 status: draft
 ---
+
+> Related: [[MOC - Threat Hunting]] · [[forensic-remote-control]] · [[zeek-fuid-cuid]]
+
 在大型企業的網路鑑識中，「跨資料集交叉印證」就像是刑事偵探在拼湊拼圖。
 
 很多初階分析師會卡關，是因為他們習慣了「一條日誌講完一個故事」的理想狀態（例如防毒軟體直接跳出一個：_「某檔案是病毒，已被隔離」_）。但在網路流量日誌中，這種好事幾乎不存在。

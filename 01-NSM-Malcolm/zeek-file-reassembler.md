@@ -1,11 +1,16 @@
 ---
+title: "Zeek File Reassembler"
+description: "Explains how clients and Zeek handle ranged downloads, file reassembly, and FUID mapping."
 created: 2026-07-14 20:07
 updated: 2026-07-14 20:07
-tags: []
+tags: [malcolm, nsm, zeek]
 type: reference
-lang: en
+lang: zh
 status: draft
 ---
+
+> Related: [[MOC - Malcolm & NSM]] · [[zeek-fuid-cuid]] · [[arkime-session-splitting]]
+
 沒錯！你的直覺非常準確。這確實是因為用戶端（瀏覽器、下載管理器或 P2P 軟體）「知道」整個檔案的結構，並由它在背後發度、協調與拼湊的。
 
 我們可以從用戶端（瀏覽器）**與**監控端（Zeek）這兩個不同的視角，來看這項技術是怎麼辦到的：

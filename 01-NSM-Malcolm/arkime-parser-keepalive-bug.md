@@ -1,11 +1,16 @@
 ---
+title: "Arkime Parser Keep-Alive Bug"
+description: "Explains Arkime HTTP parser state-reset failures that can drop late keep-alive tasks."
 created: 2026-07-14 20:07
 updated: 2026-07-14 20:07
-tags: []
+tags: [malcolm, nsm, arkime]
 type: reference
-lang: en
+lang: zh
 status: draft
 ---
+
+> Related: [[MOC - Malcolm & NSM]] · [[arkime-session-splitting]] · [[arkime-http-md5]]
+
 ## Part 2：Arkime 解析器 bug 的「狀態未重置」是什麼意思？
 
 這可以用一個「工廠包裝員」的故事來比喻。

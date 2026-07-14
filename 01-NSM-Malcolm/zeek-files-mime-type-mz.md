@@ -1,11 +1,16 @@
 ---
+title: "Zeek MIME Type and MZ Magic Bytes"
+description: "Explains how Zeek identifies Windows executables via MZ magic bytes and MIME labeling."
 created: 2026-07-14 16:07
 updated: 2026-07-14 16:07
-tags: []
+tags: [malcolm, nsm, zeek]
 type: reference
-lang: en
+lang: zh
 status: draft
 ---
+
+> Related: [[MOC - Malcolm & NSM]] · [[mime-http]] · [[http-md5-zeek-mime-type]]
+
 要深入理解為什麼 `application/x-dosexec` 被稱為檔案的「數位 DNA」，我們需要把視角從高階的日誌檔案，切換到計算機底層的**二進位數據（Binary Data）**。
 
 這是一場攻擊者與防守者在網路邊界上的「偽裝與拆穿」賽博攻防戰。以下為你深度拆解這個技術核心：

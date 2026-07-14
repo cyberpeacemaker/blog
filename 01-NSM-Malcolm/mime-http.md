@@ -1,11 +1,16 @@
 ---
+title: "MIME Types in HTTP"
+description: "Explains MIME types and how HTTP and Zeek use them to classify transferred content."
 created: 2026-07-14 20:07
 updated: 2026-07-14 20:07
-tags: []
+tags: [malcolm, nsm]
 type: reference
-lang: en
+lang: zh
 status: draft
 ---
+
+> Related: [[MOC - Malcolm & NSM]] · [[zeek-files-mime-type-mz]] · [[http-md5-zeek-mime-type]]
+
 **MIME** 的全名是 **Multipurpose Internet Mail Extensions**（中文通常翻譯為：**多用途網際網路郵件擴展協定**）。
 
 雖然它的名字裡有「Mail（郵件）」，但它現在早已不只用在郵件中，而是**整個網際網路（包含網頁、下載、網路安全）在辨識檔案類型時的「世界通用標準語言」**。

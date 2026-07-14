@@ -1,11 +1,16 @@
 ---
+title: "Arkime Session Splitting and HTTP MD5 Gaps"
+description: "Explains why Arkime http.md5 carving can miss late keep-alive tasks and when to carve raw PCAP."
 created: 2026-07-14 20:07
 updated: 2026-07-14 20:07
-tags: []
+tags: [malcolm, nsm, arkime, dfir]
 type: reference
-lang: en
+lang: zh
 status: draft
 ---
+
+> Related: [[MOC - Malcolm & NSM]] · [[arkime-parser-keepalive-bug]] · [[arkime-http-md5]]
+
 這是一段在網路鑑識（Network Forensics）或 CTF（奪旗賽）中常見的任務指引。
 
 簡而言之，這句話是要求你：**「透過下載並分析原始封包（PCAP），完整拼湊出攻擊者在 `192.168.65.69` 與 `10.99.40.20:80` 之間傳輸的完整明文攻擊劇本（Playbook），不要偷懶使用 Arkime 自動解析產生的 HTTP MD5 檔案導出功能，因為那個功能會漏掉後半段的資料。」**

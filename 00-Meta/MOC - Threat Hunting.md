@@ -20,6 +20,8 @@ Threat hunting methodology, forensics, CTF, and write-up standards.
 
 ## Forensics & Investigation
 
+- [[cross-id-analysis]] — Zeek UID and Community ID pivots across logs and PCAP
+- [[zeek-seen-bytes]] — volumetric profiling with Zeek `seen_bytes`
 - [[forensic-remote-control]] — C2 forensics (Caldera)
 - [[forensic-same-mac-dhcp]] — same MAC / DHCP forensics
 - [[c2ma]] — C2 malware analysis

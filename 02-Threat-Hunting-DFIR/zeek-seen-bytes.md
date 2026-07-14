@@ -1,11 +1,16 @@
 ---
+title: "Zeek seen_bytes for C2 Payload Profiling"
+description: "Explains how Zeek seen_bytes supports volumetric profiling of Go-based C2 payloads."
 created: 2026-07-14 17:07
 updated: 2026-07-14 17:07
-tags: []
+tags: [threat-hunting, dfir, zeek]
 type: reference
-lang: en
+lang: zh
 status: draft
 ---
+
+> Related: [[MOC - Threat Hunting]] · [[threat-hunting-c2-volume-beacon]] · [[cross-id-analysis]] · [[MOC - Malcolm & NSM]]
+
 把「檔案大小」當成抓駭客的關鍵線索，在威脅獵殺中被稱為**體積特徵分析（Volumetric Profiling）**。這就像偵探在泥地上看到腳印，雖然看不清鞋底花紋，但光看腳印的深淺，就能斷定嫌犯是個體重 90 公斤的壯漢，而不是 50 公斤的瘦子。
 
 要徹底理解為什麼「~6 MB」和 `seen_bytes` 能讓分析師一秒鎖定 Caldera Sandcat，我們需要剖析 **Go 語言的編譯特性** 以及 **網路日誌的底層計數機制**。
