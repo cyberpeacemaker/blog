@@ -1,11 +1,16 @@
 ---
+title: "GitHub PR Collaboration Loop"
+description: "Outlines a lightweight issue, PR review, kanban, and CI workflow for a two-person GitHub team."
 created: 2026-07-14 17:07
 updated: 2026-07-14 17:07
-tags: []
+tags: [dev, git, workflow]
 type: reference
 lang: en
 status: draft
 ---
+
+> Related: [[MOC - Dev Environment]] · [[github-collaboration]] · [[github-action-workflows]]
+
 You are already off to a fantastic start! Using the **Issue $\rightarrow$ Pull Request (PR)** workflow is standard practice for a reason: it keeps your code clean and your history traceable.
 
 Since there are only two of you, you have a massive advantage: **maximum agility and zero corporate bureaucracy.** However, the biggest trap for a two-person team is accidentally stepping on each other's toes or letting communication slide because "there are only two of us."

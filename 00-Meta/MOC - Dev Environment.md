@@ -14,6 +14,7 @@ Developer tooling: Git, Python, VS Code, testing, and environment setup.
 - [[docker-cs-claw-gemini-advice]] — hybrid local development with Docker-managed services
 
 - [[env-setup]] — full dev environment setup (C, AI, cybersecurity)
+- [[npm-node-domexception-deprecation]] — npm `node-domexception` deprecation warning triage
 - [[timezone]] — timezone configuration
 - [[YAML]] — YAML configuration files
 - [[microsoft-store]] — Microsoft Store vs standalone installers for dev tools
@@ -26,6 +27,7 @@ Developer tooling: Git, Python, VS Code, testing, and environment setup.
 - [[vim-permission]] — save root-owned Linux files after Vim E45 readonly errors
 - [[win-linux-crlf]] — convert Windows CRLF line endings before running shell scripts on Linux
 - [[windows-sh-vs-powershell]] — why Linux .sh and systemd scripts do not run natively in PowerShell
+- [[windows-sh-systemd-powershell]] — Linux Bash and systemd scripts versus native Windows PowerShell
 - [[powershell-v5-v7]] — switch VS Code from Windows PowerShell 5 to PowerShell 7
 - [[powershell-and-operator]] — alternatives to && in Windows PowerShell 5
 - [[windows-file-permissions-icacls]] — chmod and icacls equivalents for sensitive file permissions
@@ -41,6 +43,8 @@ Developer tooling: Git, Python, VS Code, testing, and environment setup.
 - [[git-self-experience]] — Git and CI/CD review roadmap
 - [[pr-auto-merge-github-action]] — daily triage PR auto-merge workflow plan
 - [[github-action-flaws]] — Git hooks and GitHub Actions guardrail tradeoffs
+- [[github-actions-sensitive-patterns]] — GitHub Secrets tradeoffs for CI sensitive-pattern scanning
+- [[github-collaboration-pr-loop]] — issue, PR review, kanban, and CI loop for two-person teams
 - [[github-collaboration]] — GitHub collaboration workflow for small teams
 - [[github-collaboration-personal-organization-account]] — personal-account collaboration and organization tradeoffs
 - [[github-hook-action]] — Git hooks vs GitHub Actions
@@ -70,6 +74,7 @@ Developer tooling: Git, Python, VS Code, testing, and environment setup.
 
 ## Python
 - [[conda-install-option]] — choosing yes or no for Conda installer shell initialization
+- [[conda-env-powershell]] — initialize Conda before creating environments from PowerShell
 - [[miniconda-powershell-shortcut]] — dedicated Miniconda PowerShell shortcut
 - [[conda-system-python]] — Conda isolation and system Python guardrails
 - [[conda-uv-pixi]] — Conda, uv, and pixi toolchain tradeoffs

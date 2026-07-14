@@ -1,11 +1,16 @@
 ---
+title: "Windows PowerShell and Linux systemd Scripts"
+description: "Explains why Bash/systemd deployment scripts do not run natively in Windows PowerShell and when to use WSL."
 created: 2026-07-14 17:07
 updated: 2026-07-14 17:07
-tags: []
+tags: [dev, windows, powershell]
 type: reference
 lang: en
 status: draft
 ---
+
+> Related: [[MOC - Dev Environment]] · [[windows-sh-vs-powershell]] · [[env-setup]]
+
 ### The Short Answer: No, you cannot run this natively in Windows 11 PowerShell.
 
 If you try to run it, PowerShell will either throw an error saying it doesn't recognize the command, or it will just open the file in a text editor.

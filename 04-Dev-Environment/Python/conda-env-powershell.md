@@ -1,11 +1,16 @@
 ---
+title: "Conda Env Creation in PowerShell"
+description: "Shows how to initialize Conda for PowerShell before creating an environment from environment.yml."
 created: 2026-07-14 17:07
 updated: 2026-07-14 17:07
-tags: []
+tags: [dev, python]
 type: reference
 lang: en
 status: draft
 ---
+
+> Related: [[MOC - Dev Environment]] · [[conda-powershell]] · [[powershell-execution-policy]]
+
 This error happens because Windows PowerShell doesn't know where `conda` is located yet. Even though you installed it, the command hasn't been registered with your standard PowerShell environment.
 
 Here is the quickest and most reliable way to fix it.

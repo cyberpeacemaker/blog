@@ -1,11 +1,16 @@
 ---
+title: "Node DOMException Deprecation Warning"
+description: "Explains why npm can warn about node-domexception and how to identify the dependency chain."
 created: 2026-07-14 17:07
 updated: 2026-07-14 17:07
-tags: []
+tags: [dev]
 type: reference
 lang: en
 status: draft
 ---
+
+> Related: [[MOC - Dev Environment]] · [[env-setup]]
+
 ### Take a deep breath—your installation didn't crash!
 
 That message is just a **warning**, not a fatal error. Your `npm install` command most likely finished successfully, and you should see a `node_modules` folder in your directory now.
