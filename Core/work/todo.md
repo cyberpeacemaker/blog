@@ -3,10 +3,10 @@
 - PR check
 # Now
 - 上午meeting minutes
-- mdm 重開機測試
-- cisa派訓
 - nics-claw 報告
 - bec ctf 完整報告
+- cisa派訓
+- mdm 重開機測試
 - 桃園出差結報
 - [git 101]([Introduction - Training | Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/intro-to-git/0-introduction))
 

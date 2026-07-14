@@ -1,19 +1,9 @@
-
+我忍不住想看BEC了
+不得不說，現在很有趣，這就是我覺得吸引人 厲害的部分
+這個AI解說的真是太生動了 好想分享
 # Repo名稱
 不過本nics交派給我的任務，加上nics前墜好像不錯？
 其他我自己想做的，就不佳前墜？
-
-看不懂流程表單在幹嘛
-
-來能公司外出，我應該很熟公司流程，另外就是我自己的流程
-
-現在其實真的有一點壓力，周末無法工作真的讓我負擔很大
-我需要跟peipei說，可是可能晚點再說
-# NICS Claw
-這項任務比想像中的難，現在因為周末沒做事，讓我更加痛苦
-
-# 周末
-可以想一下，怎麼增加工作時間
 
 # NICS Claw
 這樣看起來真的很有意思，從我從(三)上午接下nics-claw開始
@@ -63,12 +53,10 @@ The PR automation expects the platform-designated branch `cursor/daily-inbox-tri
 - ci/cd
 - git squash 
 
-
 # BEC CTF完整報告
 
 我希望在周三產出BEC CTF完整報告
 理想順序會是:
-
 - 建構project-scaffold
 - 使用project-scaffold打造新project
 	- playbook-bec-v1
