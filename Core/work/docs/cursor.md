@@ -22,5 +22,3 @@ Keep setup frictionless by default—handle git, structure, and boilerplate with
 ```
 
 ---
-
-- there seems to be a duplicated issue in this ctf. check if these if real and 
