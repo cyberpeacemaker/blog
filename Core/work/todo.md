@@ -12,6 +12,11 @@
 - [git 101]([Introduction - Training | Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/intro-to-git/0-introduction))
 
 # Bec ctf 完整報告
+- cli cyberchef
+```markdown
+- 8 pcaps — no HTTP bodies carved (likely large tool-download pcaps with no small beacon bodies; several are byte-identical duplicates per `manifest.json`).
+- 1 session (`JAS5fnkTcEVHjZ...`) — 9 bodies, all high-entropy binary (multipart upload chunks); no `decoded_text`, so omitted by design.
+```
 - 復現Malcolm GUI上的操作
 - 解釋為什麼這樣操作
 - BEC 還沒包到全部事件？讓我有點訝異
