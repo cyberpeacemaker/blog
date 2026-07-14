@@ -1,34 +1,24 @@
-Mdm解鎖 還是在鎖我鏡頭
-今天有點趕 相機又被鎖起來 沒拍照記錄
-
+# Routine
 - project-shepherd logo
-- 領錢
-- 
+- PR check
+# Now
+- 上午meeting minutes
+- mdm 重開機測試
 - cisa派訓
-- signal怎麼加好友
-- nics-claw
-- [git]([Introduction - Training | Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/intro-to-git/0-introduction))
-
-# NICS Claw
-- collaboration
-- otex-devkit
-# otex-devkit
-
-pr test + typo
+- nics-claw 報告
+- bec ctf 完整報告
+- 桃園出差結報
+- [git 101]([Introduction - Training | Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/intro-to-git/0-introduction))
 
 # Bec ctf 完整報告
 - 復現Malcolm GUI上的操作
 - 解釋為什麼這樣操作
 - BEC 還沒包到全部事件？讓我有點訝異
 - 調查完後 想聽別人解法
-
----
-
-- dhcp review
 poi 這樣看起來很好，加上
-對解法疑惑的點
-Hares的點
-Arkime似乎就夠，沒用到opensearch的優勢
+- 對解法疑惑的點 (忘了這是什麼？)
+- Hares的點 (太簡單，犯人自稱犯人)
+- Arkime似乎就夠，沒用到opensearch的優勢
 - query hints > detailed/rich malcolm playbook (like ctf-walkthrough-maloclm)
 - verdict : verify the result from query playbook, not just infer the result  
 
