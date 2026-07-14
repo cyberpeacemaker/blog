@@ -1,11 +1,16 @@
 ---
-created: 2026-07-13 15:07
-updated: 2026-07-13 15:07
-tags: []
-type: reference
+title: "Windows vs Linux CRLF Line Endings"
+description: "Shows why CRLF line endings break Bash scripts on Linux and how to convert shell files to LF."
+created: 2026-07-13
+updated: 2026-07-13
+type: howto
 lang: en
 status: draft
+tags: [dev, windows, bash]
 ---
+
+> Related: [[MOC - Dev Environment]] · [[git-bash]] · [[vscode-open-view]]
+
 Ah, the classic Windows vs. Linux line-endings trap! That scrambled error message (`: invalid option nameooks.sh...`) is the ultimate smoking gun here.
 
   

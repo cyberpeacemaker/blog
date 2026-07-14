@@ -1,11 +1,16 @@
 ---
-created: 2026-07-13 15:07
-updated: 2026-07-13 15:07
-tags: []
-type: reference
+title: "WSL IPv4 Preference and IPv6 Troubleshooting"
+description: "Shows how to prefer IPv4 in WSL when IPv6 routing causes curl and package-manager timeouts."
+created: 2026-07-13
+updated: 2026-07-13
+type: howto
 lang: en
 status: draft
+tags: [dev, windows, wsl, networking]
 ---
+
+> Related: [[MOC - Dev Environment]] · [[wsl-network-troubleshooting]] · [[vim-permission]]
+
 Since `curl -4` resolved the issue instantly, your WSL environment is running into a common snag: it resolves internet addresses to IPv6, but your host network or ISP isn't routing IPv6 traffic out properly, causing the connection to time out.
 
 Here are the two best ways to fix this permanently.

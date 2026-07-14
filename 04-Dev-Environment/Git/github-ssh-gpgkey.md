@@ -1,11 +1,16 @@
 ---
-created: 2026-07-13 15:07
-updated: 2026-07-13 15:07
-tags: []
-type: reference
+title: "GitHub SSH and HTTPS Authentication in WSL"
+description: "Troubleshoots GitHub clone failures in WSL with SSH keys, HTTPS, PATs, and Git Credential Manager."
+created: 2026-07-13
+updated: 2026-07-13
+type: howto
 lang: en
 status: draft
+tags: [dev, git, wsl]
 ---
+
+> Related: [[MOC - Dev Environment]] · [[github-ssh]] · [[github-authentication]]
+
 Your network setup is working perfectly—your DNS resolved `github.com` without a hitch, and your ping times look great. The issue you are facing isn't a network problem; it's an **authentication roadblock**.
 
 Here is exactly what is happening with both attempts and how to fix them.

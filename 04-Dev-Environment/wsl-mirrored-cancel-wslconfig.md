@@ -1,11 +1,16 @@
 ---
-created: 2026-07-13 15:07
-updated: 2026-07-13 15:07
-tags: []
-type: reference
+title: "WSL Mirrored Networking Rollback"
+description: "Explains how deleting or commenting .wslconfig mirrored networking returns WSL to default NAT mode."
+created: 2026-07-13
+updated: 2026-07-13
+type: howto
 lang: en
 status: draft
+tags: [dev, windows, wsl]
 ---
+
+> Related: [[MOC - Dev Environment]] · [[wsl-network-troubleshooting]] · [[wsl-ipv4-ipv6]]
+
 Yes, absolutely! Deleting the `.wslconfig` file entirely will instantly revert WSL back to its default settings (which is standard NAT mode).
 
 However, just remember the golden rule of WSL configuration: **it won't take effect until you completely restart the WSL subsystem.**

@@ -1,11 +1,16 @@
 ---
-created: 2026-07-13 17:07
-updated: 2026-07-13 17:07
-tags: []
-type: reference
-lang: en
+title: "GitHub Markdown Spacing and Code Fence Fix"
+description: "Explains how non-standard spaces and list indentation can break GitHub Markdown code fences."
+created: 2026-07-13
+updated: 2026-07-13
+type: howto
+lang: zh
 status: draft
+tags: [dev, git, markdown]
 ---
+
+> Related: [[MOC - Dev Environment]] · [[YAML-markdown]] · [[markdown-link-check-github-action]]
+
 這個版面會跑掉，主要是因為 Markdown 的「隱形空白字元」和「清單縮排」在跟 GitHub 的解析器（Parser）鬧脾氣。
 
 從你提供的截圖可以看到，後半段的 `### 產生的問題`、`### 建議修改` 甚至是底下的 ```bash 標籤，**通通都被吞進去變成了同一個程式碼區塊**（右上角還出現了複製按鈕，而且標題沒有成功變大）。

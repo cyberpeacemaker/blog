@@ -1,11 +1,16 @@
 ---
-created: 2026-07-13 15:07
-updated: 2026-07-13 15:07
-tags: []
-type: reference
+title: "WSL Network Troubleshooting"
+description: "Collects WSL2 network fixes for DNS, IPv6, mirrored networking, MTU, firewall, and proxy failures."
+created: 2026-07-13
+updated: 2026-07-13
+type: howto
 lang: en
 status: draft
+tags: [dev, windows, wsl, networking]
 ---
+
+> Related: [[MOC - Dev Environment]] · [[wsl-ipv4-ipv6]] · [[wsl-network-issue-antivirus-possible]]
+
 Ah, the classic WSL2 networking black hole.
 
 Looking at your terminal output, your **DNS is working perfectly**—it successfully resolved `[www.google.com](https://www.google.com)` to its IPv4 addresses. However, the actual TCP handshake (`Trying 142.251...`) is hanging until you're forced to Ctrl+C out of it.

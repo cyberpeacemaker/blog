@@ -1,11 +1,16 @@
 ---
-created: 2026-07-13 15:07
-updated: 2026-07-13 15:07
-tags: []
-type: reference
+title: "Windows File Permissions with icacls"
+description: "Provides a documentation template for Linux chmod and Windows icacls equivalents for sensitive files."
+created: 2026-07-13
+updated: 2026-07-13
+type: howto
 lang: en
 status: draft
+tags: [dev, windows, security]
 ---
+
+> Related: [[MOC - Dev Environment]] · [[win-linux-crlf]] · [[env-setup]]
+
 ## How to Write the Instruction (Documentation Template)
 
   

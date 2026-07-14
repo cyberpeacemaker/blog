@@ -1,11 +1,16 @@
 ---
-created: 2026-07-13 15:07
-updated: 2026-07-13 15:07
-tags: []
+title: "Conda Installer Initialization Choice"
+description: "Explains when to answer yes or no to Conda installer shell initialization prompts."
+created: 2026-07-13
+updated: 2026-07-13
 type: reference
 lang: en
 status: draft
+tags: [dev, python, conda]
 ---
+
+> Related: [[MOC - Dev Environment]] · [[conda-powershell]] · [[conda-miniconda-anaconda]]
+
 For most users, typing **`yes`** is the best and easiest choice. Here is a quick breakdown to help you decide what to do next:
 
 ### Option 1: Type `yes` (Recommended)

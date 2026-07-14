@@ -1,11 +1,16 @@
 ---
-created: 2026-07-13 15:07
-updated: 2026-07-13 15:07
-tags: []
-type: reference
+title: "Save Readonly Vim Files with Sudo"
+description: "Shows how to recover from Vim E45 readonly errors when editing root-owned WSL or Linux files."
+created: 2026-07-13
+updated: 2026-07-13
+type: howto
 lang: en
 status: draft
+tags: [dev, linux, wsl]
 ---
+
+> Related: [[MOC - Dev Environment]] · [[wsl-ipv4-ipv6]] · [[env-setup]]
+
 Ah, the classic Vim permission wall.
 
 The error `E45: 'readonly' option is set` means you're trying to modify a system file (looks like `/etc/gai.conf` for prioritizing IPv4/IPv6) without root (`sudo`) privileges.

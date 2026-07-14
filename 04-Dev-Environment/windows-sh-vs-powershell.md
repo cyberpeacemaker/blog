@@ -1,11 +1,16 @@
 ---
-created: 2026-07-13 17:07
-updated: 2026-07-13 17:07
-tags: []
+title: "Windows Shell Scripts vs PowerShell"
+description: "Explains why Linux .sh and systemd scripts do not run natively in Windows PowerShell."
+created: 2026-07-13
+updated: 2026-07-13
 type: reference
 lang: en
 status: draft
+tags: [dev, windows, powershell]
 ---
+
+> Related: [[MOC - Dev Environment]] · [[powershell-v5-v7]] · [[env-setup]]
+
 ### The Short Answer: No, you cannot run this natively in Windows 11 PowerShell.
 
 If you try to run it, PowerShell will either throw an error saying it doesn't recognize the command, or it will just open the file in a text editor.

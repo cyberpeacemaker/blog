@@ -1,11 +1,16 @@
 ---
-created: 2026-07-13 16:07
-updated: 2026-07-13 16:07
-tags: []
-type: reference
+title: "Move a Git Repository to a New Remote"
+description: "Explains how copying a repo folder and changing origin preserves history while moving to a new GitHub home."
+created: 2026-07-13
+updated: 2026-07-13
+type: howto
 lang: en
 status: draft
+tags: [dev, git]
 ---
+
+> Related: [[MOC - Dev Environment]] · [[github-authentication]] · [[migrate-without-git]]
+
 When you duplicate the folder and change the remote, you are essentially telling Git: _"Hey, I love this entire history, but we have a new home now. Stop talking to the old GitHub project and start talking to this new one."_
 
 Here is exactly what happens under the hood and the exact steps to do it safely for your `A1` to `B1` scenario.
