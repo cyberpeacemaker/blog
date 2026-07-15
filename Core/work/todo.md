@@ -3,7 +3,7 @@
 - PR check
 # Now
 - 桃園meeting minutes
-- nics-claw 報告
+- nics-claw 報告 + 問鴻麟對總監架構意見
 - bec ctf 完整報告護照
 - cisa派訓
 - mdm 重開機測試
@@ -20,6 +20,7 @@
 - 8 pcaps — no HTTP bodies carved (likely large tool-download pcaps with no small beacon bodies; several are byte-identical duplicates per `manifest.json`).
 - 1 session (`JAS5fnkTcEVHjZ...`) — 9 bodies, all high-entropy binary (multipart upload chunks); no `decoded_text`, so omitted by design.
 ```
+- 推估是temp?
 - 復現Malcolm GUI上的操作, - 解釋為什麼這樣操作
 - 調查完後 想聽別人解法
 poi 這樣看起來很好，加上
