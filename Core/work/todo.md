@@ -2,9 +2,9 @@
 - project-shepherd logo
 - PR check
 # Now
-- 上午meeting minutes
+- 桃園meeting minutes
 - nics-claw 報告
-- bec ctf 完整報告
+- bec ctf 完整報告護照
 - cisa派訓
 - mdm 重開機測試
 - 桃園出差結報
