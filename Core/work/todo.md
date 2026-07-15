@@ -10,6 +10,7 @@
 - 桃園出差結報
 - cursor-rule
 - [git 101]([Introduction - Training | Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/intro-to-git/0-introduction))
+- [claude 101](https://www.anthropic.com/learn)
 
 # Bec ctf 完整報告
 - cli cyberchef

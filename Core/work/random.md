@@ -1,3 +1,17 @@
+
+
+- 會議記錄
+- nicsclaw
+然後順利的話，回去調查bec
+
+然後差一下話，理想的順序
+- BEC 報告
+	- ICS, Zeek, Suricata, Malcolm 101
+- AI
+	- Claude 101
+- Claw
+	- Git 101
+
 ### Automation
 - obsidian 日記整理
 - git auto commit?
