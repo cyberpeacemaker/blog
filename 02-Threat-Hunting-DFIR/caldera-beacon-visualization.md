@@ -1,0 +1,61 @@
+---
+title: "Caldera Beacon Visualization"
+description: "Explains how to interpret Caldera beacon visualization artifacts in BEC-style C2 analysis."
+created: 2026-07-15 20:07
+updated: 2026-07-15
+type: reference
+lang: zh
+status: draft
+tags: [threat-hunting, c2, ctf]
+---
+
+> Related: [[MOC - Threat Hunting]] · [[forensic-remote-control]] · [[threat-hunting-ctf-get-started]]
+
+# Caldera Beacon Visualization
+別擔心，這張圖充滿了資安與紅隊演練（Red Teaming）的專業黑話，看不懂是非常正常的！
+
+簡單來說，這是一個 **C2（命令與控制，Command and Control）** 模擬工具的監控畫面，正在記錄黑客（或模擬黑客的資安人員）如何控制一台受害電腦。
+
+以下為您用最直白的方式拆解這些名詞和畫面：
+
+## 1. `peyray` 和 `nnzmel` 是什麼？
+
+它們是 **Agent 的隨機代號（暱稱）**。
+
+這張圖裡使用的是一套名為 **MITRE Caldera** 的開源資安演練平台（上方有寫 _Caldera beacon C2_）。
+
+- 當這套工具在受測試的電腦上植入「後門監控程式」（稱為 Agent 或 Beacon）時，系統會為每個執行中的程式隨機生成一個好讀、好唸的英文代稱，這在 Caldera 系統裡被稱為 **PAW (Platform Agent Word)**。
+
+- 因此，**`peyray`** 和 **`nnzmel`** 只是**兩個不同後門程式（或同個程式的不同連線時段）的「名字」**。
+
+
+## 2. 這張圖的「時間軸」在表達什麼？
+
+上方的灰色與綠色方塊（寫著 `peyray` 和 `nnzmel`）代表它們在什麼時間點與控制台連線：
+
+- **交替連線**：這兩個後門程式在不同的時間點（如 15:30、16:30、18:00 等）輪流或同時向控制台「報到」。
+
+- **綠色與灰色**：綠色代表當時有被指派任務（Tasked），灰色則代表只是單純在掛機、發呆（Idle）。
+
+
+## 3. 下半部的詳細日誌（Log）在寫什麼？
+
+視窗下半部顯示的是代號為 `peyray` 的這個後門在 **17:45 ~ 17:56** 之間的連線細節：
+
+- **受害主機 (`Dist-Win7-001`)**：這是一台 Windows 7 的測試電腦。
+
+- **偽裝的程式 (`SELDownloadHelper.exe`)**：這個後門程式正寄生在一個看似下載輔助工具的執行檔中運行，進程識別碼（PID）是 `2088`。
+
+- **對話過程（右側日誌）**：
+
+    > - **`AGENT ->` (後門發話)**：「我是 `peyray`，我現在用一般權限（User）在 PID 2088 運行中，向長官報到！」
+    >
+    > - **`<- SERVER` (控制台回話)**：「收到！接下來請你先靜默、睡覺 42 秒（`sleep=42`），時間到了再醒來向我報到。」
+    >
+
+
+這就是典型的 **Beaconing（心跳訊號）** 機制。後門程式不會一直跟控制台連線（這樣太容易被防毒軟體發現），而是會每隔幾十秒「醒來」問一次控制台有沒有新任務，沒有的話就繼續睡覺。
+
+### 💡 總結
+
+這張圖是**資安人員在監控「模擬黑客攻擊」的過程**。`peyray` 和 `nnzmel` 是植入在受害 Windows 7 電腦裡的兩個惡意代理程式代號，時間軸則記錄了它們何時醒來跟黑客的控制台連線、拿取指令。

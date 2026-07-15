@@ -1,0 +1,81 @@
+---
+title: "Zeek and RITA"
+description: "Explains how Zeek logs feed RITA analytics for beaconing and C2 threat hunting."
+created: 2026-07-15 10:07
+updated: 2026-07-15
+type: reference
+lang: zh
+status: draft
+tags: [threat-hunting, zeek, rita, c2]
+---
+
+> Related: [[MOC - Threat Hunting]] · [[beacon]] · [[malcolm-rita-integration]]
+
+# Zeek and RITA
+當你開始深入資安威脅獵捕（Threat Hunting）時，**Zeek** 與 **RITA** 絕對是被譽為「黃金雙人組」的開源利器！
+
+如果把網路流量分析比喻成刑事偵查：
+
+- **Zeek** 就是「無所不在的監視錄影機」。它負責默默記錄每一條街道（網路）上所有車輛（封包）的進出與特徵，並整理成整齊的日誌。
+
+- **RITA** 則是「天才行為分析師」。它不看單張超速照片，而是去調閱過去 24 小時的整卷錄影帶，用統計學和演算法找出那些規律、鬼祟、極可能是 C2 通訊的犯罪行為。
+
+
+這兩個工具各司其職，以下為你詳細介紹它們分別在做什麼、以及如何協同運作。
+
+## 1. Zeek 負責做什麼？（資料收集器）
+
+**Zeek**（舊稱 Bro）是一款強大的開源網路安全監控工具。它與一般的入侵偵測系統（如 Snort、Suricata）不同，它**不依賴「特徵碼（Signature）」**，而是將複雜、巨大的原始網路封包（PCAP），轉換成各種**結構化、高可讀性的文字日誌（Logs）**。
+
+Zeek 會自動幫你把網路流量分類成不同的日誌檔（如 TSV 或 JSON 格式）：
+
+- `conn.log`：記錄所有的 TCP/UDP/ICMP 連線資訊（時間、IP、Port、傳輸大小等）。
+
+- `dns.log`：記錄所有的 DNS 查詢與回應。
+
+- `http.log` & `ssl.log`：記錄 HTTP 請求細節與 SSL/TLS 憑證資訊。
+
+
+透過 Zeek，原本好幾 GB 的 PCAP 檔，會縮小成只要幾 MB 且極易分析的文字紀錄。
+
+## 2. RITA 負責做什麼？（行為分析獵手）
+
+**RITA**（Real Intelligence Threat Analytics）是由資安公司 Active Countermeasures 開發的開源威脅分析框架。它的核心價值在於「直接讀取 Zeek 日誌，利用統計學找出隱蔽的 C2 通訊」。
+
+當駭客使用加密連線（HTTPS/TLS）或動態域名時，傳統特徵碼防護（如 IPS）往往會失效。此時，RITA 就會透過分析通訊的「行為特徵」來抓出駭客。
+
+### 🛡️ RITA 的五大核心偵測功能
+
+|**偵測功能**|**英文名稱**|**運作原理**|**專門對付的攻擊**|
+|---|---|---|---|
+|**信標行為檢測**|**Beaconing Detection**|分析內部主機連往外部 IP 的「時間間隔」與「資料大小」。如果間隔極度規律（例如每 30 秒一次，即使有微幅隨機擾動 Jitter），RITA 就會給予接近 `1.0` 的高評分。|**Cobalt Strike 等木馬定期確認指令的心跳包（Beacon）**|
+|**DNS 隧道檢測**|**DNS Tunneling Detection**|偵測內部主機是否對某個特定域名，發送了海量、不重複且雜亂的二級子域名查詢。|**利用 DNS 協議偷傳資料（Data Exfiltration）或繞過防火牆下 C2 指令**|
+|**長連線檢測**|**Long Connections**|找出長時間維持不中斷、且不斷有零星流量交互的 TCP 連線。|**駭客建立的反向 Shell（Reverse Shell）或持久維持的通道**|
+|**外部普遍性分析**|**Target Prevalence**|統計企業內有多少主機曾連往某個外部 IP/Domain。如果全公司只有一兩台電腦連往某個不常見的 IP，該連線會被標記為可疑。|**特定目標的 C2 回連（因為不可能有大量員工同時連往駭客主機）**|
+|**威脅情報比對**|**Threat Intel Checking**|將日誌中的 IP 與 Domain，直接與威脅情報黑名單進行交叉比對。|**已知受污染的惡意 IP、垃圾郵件發送源等**|
+
+## 3. 現代 RITA (v5 版本) 的重大革新 ⚡
+
+近年 RITA 進行了架構性的重寫（RITA v5）：
+
+- **引擎大升級（ClickHouse）**：過去版本使用 MongoDB 儲存數據，v5 改用極其快速的 **ClickHouse** 資料庫，資料匯入速度大幅提升了 2 到 10 倍。
+
+- **一鍵 TUI 儀表板**：提供直觀的文字終端介面（TUI），下達指令後即可快速瀏覽，不用再像以前只能在終端機慢慢解析純文字輸出。
+
+- **綜合威脅評分**：將 IP、SNI、DNS、MIME 類型等通訊不一致的特徵整合，自動將威脅劃分為 Critical（關鍵）、High（高）、Medium（中）、Low（低）四個等級，讓獵捕人員能一目了然最該優先調查哪台主機。
+
+
+## 💡 總結：它們如何協同工作？
+
+在實務上，你的威脅獵捕流程會長這樣：
+
+1. **收集流量**：使用路由器 SPAN/TAP 或 `tcpdump` 側錄企業網路流量（產生 pcap 檔案）。
+
+2. **Zeek 轉換**：使用 Zeek 讀取 pcap（或即時監控），吐出好幾份結構化的 `.log` 文字日誌。
+
+3. **RITA 獵捕**：使用 RITA 匯入這些 Zeek 日誌，RITA 會自動運算數學模型，並呈現出有哪些主機正在以規律的心跳發送 Beaconing，或者正在使用 DNS 偷傳資料。
+
+
+這套開源組合拳，讓預算有限的藍隊（防守方）也能擁有與高價商業流量監控系統（NDR）相似的「威脅獵捕」能力！
+
+你目前有手邊的 pcap 檔案，想要嘗試用 Zeek 轉換出日誌，還是你正在研究如何佈署一套即時監控的實驗環境呢？

@@ -14,8 +14,11 @@ Network Security Monitoring stack: sensors, indexing, PCAP analysis, and Malcolm
 
 - [[zeek-suricata-arkime-opensearch]] — full NSM pipeline overview
 - [[malcolm-orchestration]] — Malcolm deployment and orchestration
+- [[malcolm-rita-integration]] — Malcolm, Zeek, OpenSearch, and RITA integration paths
+- [[malcolm-threat-stack-integration]] — Malcolm, Suricata, Zeek, and RITA stack roles
 - [[nsm]] — NSM fundamentals
 - [[zeek-suricata]] — Zeek and Suricata sensors
+- [[suricata-snort]] — Suricata and Snort IDS comparison
 - [[critial-infrastructure]] — critical infrastructure context
 
 ## Arkime & PCAP
@@ -30,10 +33,15 @@ Network Security Monitoring stack: sensors, indexing, PCAP analysis, and Malcolm
 - [[arkime-query-opensearch]] — Arkime queries via OpenSearch
 - [[arkime-cap-sample]] — PCAP sample analysis
 - [[wireshark-contain]] — Wireshark containment filters
+- [[wireshark-tcp-reassembly]] — TCP reassembly and IP fragmentation distinctions
+- [[wireshark-follow-stream-yaml]] — Follow Stream YAML packet mapping and export fields
+- [[wireshark-pcap-file-extract]] — file extraction limits and payload analysis in PCAPs
+- [[ftp-tcp]] — FTP control and data channels over TCP
 
 ## OpenSearch & Indexing
 
 - [[opensearch-elasticsearch]] — OpenSearch vs Elasticsearch
+- [[opensearch-index-patterns]] — index pattern and dashboard management concepts
 - [[malcolm-opensearch-json-dsl]] — Malcolm GUI to JSON DSL
 - [[metadata-indexing]] — metadata indexing
 - [[duplicated-id]] — duplicated ID issues
@@ -52,6 +60,7 @@ Network Security Monitoring stack: sensors, indexing, PCAP analysis, and Malcolm
 - [[malcolm-timezone]] — Malcolm timezone handling
 - [[zeek-velociraptor-splunk]] — Zeek + Velociraptor + Splunk
 - [[tshark-env-path]] — tshark environment path
+- [[ip-fragmentation-detection]] — Snort, Suricata, Zeek, and Wireshark fragmentation detection
 - [[lldp-tlv]] — LLDP TLV analysis
 
 ## OT / ICS
@@ -62,6 +71,8 @@ Network Security Monitoring stack: sensors, indexing, PCAP analysis, and Malcolm
 ## SOC Tools
 
 - [[soc-tool]] — SOC tooling overview
+- [[velociraptor-wazuh]] — endpoint DFIR and SIEM-style monitoring roles
+- [[malcolm-cyberchef-magic]] — CyberChef Magic constraints in Malcolm automation
 - [[hostname]] — hostname handling
 
 ## Related
