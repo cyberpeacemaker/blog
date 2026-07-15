@@ -13,6 +13,9 @@
 - [claude 101](https://www.anthropic.com/learn)
 
 # Bec ctf 完整報告
+我之前可能用不太適合的角度切入CTF，我偏向抑制/阻止去看明文資料，而是透過threat hunting methodology/encrypted traffic analytics/behavior analysis等角度去切入
+不過實際上這個CTF，可能就是希望我去看C2明文指令，去了解基本的C2指令
+
 ```markdown
 - 8 pcaps — no HTTP bodies carved (likely large tool-download pcaps with no small beacon bodies; several are byte-identical duplicates per `manifest.json`).
 - 1 session (`JAS5fnkTcEVHjZ...`) — 9 bodies, all high-entropy binary (multipart upload chunks); no `decoded_text`, so omitted by design.
