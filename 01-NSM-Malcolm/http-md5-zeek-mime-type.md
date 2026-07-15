@@ -1,11 +1,16 @@
 ---
+title: "Arkime http.md5 vs Zeek MIME Type"
+description: "Compares Arkime http.md5 with Zeek mime_type for file triage and evasion resistance."
 created: 2026-07-14 20:07
 updated: 2026-07-14 20:07
-tags: []
+tags: [malcolm, nsm, arkime, zeek]
 type: reference
-lang: en
+lang: zh
 status: draft
 ---
+
+> Related: [[MOC - Malcolm & NSM]] · [[arkime-http-md5]] · [[zeek-files-mime-type-mz]]
+
 問得太好了！你立刻聯想到另一個在網路安全界地位極高的工具 —— **Zeek**（舊稱 Bro）。
 
 如果說 Arkime 的 `http.md5` 像是一個「比對黑名單的通緝令資料庫」**，那麼 Zeek 的 `mime_type` 就像是一個**「擁有 X 光火眼金睛的海關檢查員」。

@@ -42,6 +42,7 @@ AI agent frameworks, multi-agent systems, context management, and local LLM work
 ## Agent Instructions & Rules
 
 - [[CLAUDE]] — agent instruction template (use for all new agent projects)
+- [[ai-native-devkit-review]] — AI-native devkit flow with draft PRs, CI, and guardrails
 - [[industry-standard-for-ai-human-collaboration]] — draft PR loop, plan-first, atomic commits
 - [[agent-custom-rule-instruction]] — custom rule instructions
 - [[agent-instruction]] — agent instruction patterns

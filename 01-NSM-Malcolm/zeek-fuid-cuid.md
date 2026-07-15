@@ -1,11 +1,16 @@
 ---
+title: "Zeek FUID and CUID"
+description: "Explains Zeek connection UIDs and file FUIDs for pivoting across logs."
 created: 2026-07-14 20:07
 updated: 2026-07-14 20:07
-tags: []
+tags: [malcolm, nsm, zeek]
 type: reference
-lang: en
+lang: zh
 status: draft
 ---
+
+> Related: [[MOC - Malcolm & NSM]] · [[zeek-file-reassembler]] · [[cross-id-analysis]]
+
 在網路安全監控工具 **Zeek**（舊稱 Bro）中，`cuid`（或在日誌中常簡稱為 `uid`）與 `fuid` 是其日誌系統中非常核心的兩個**唯一識別碼（Unique Identifiers）**。
 
 這兩個識別碼的設計，主要是為了解決網路流量分析中的**關聯追蹤、日誌交叉檢索與「一對多」的傳輸關係**。

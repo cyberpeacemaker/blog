@@ -1,11 +1,16 @@
 ---
+title: "GitHub Actions Sensitive Patterns"
+description: "Explains how CI can scan with sensitive-pattern rules via GitHub Secrets and the associated trust tradeoffs."
 created: 2026-07-14 17:07
 updated: 2026-07-14 17:07
-tags: []
+tags: [dev, git, workflow]
 type: reference
-lang: en
+lang: zh
 status: draft
 ---
+
+> Related: [[MOC - Dev Environment]] · [[github-action-flaws]] · [[github-action-workflows]]
+
 簡單直接的答案：**是的，GitHub CI 絕對需要這份 sensitive patterns 才能做檢查。**
 
   

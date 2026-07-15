@@ -1,11 +1,16 @@
 ---
+title: "Arkime HTTP MD5"
+description: "Explains Arkime http.md5 as a fast file triage, deduplication, and threat intel pivot."
 created: 2026-07-14 20:07
 updated: 2026-07-14 20:07
-tags: []
+tags: [malcolm, nsm, arkime]
 type: reference
-lang: en
+lang: zh
 status: draft
 ---
+
+> Related: [[MOC - Malcolm & NSM]] · [[arkime]] · [[arkime-http-md5-bypass]]
+
 既然提到了這個限制，你可能會覺得：「既然這功能在某些情況下會漏，那當初設計它到底有什麼用？」
 
 其實在日常的藍隊（防守方）運維、資安事件調查（Incident Response）與威脅獵捕（Threat Hunting）中，`http.md5` 是一個**極度實用且能幫分析師省下大量時間的「神級功能」**。

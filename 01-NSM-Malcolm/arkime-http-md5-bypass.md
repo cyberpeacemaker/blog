@@ -1,11 +1,16 @@
 ---
+title: "Arkime HTTP MD5 Bypass"
+description: "Explains how attackers bypass hash-only http.md5 detection and why defenders layer controls."
 created: 2026-07-14 20:07
 updated: 2026-07-14 20:07
-tags: []
+tags: [malcolm, nsm, arkime, threat-hunting]
 type: reference
-lang: en
+lang: zh
 status: draft
 ---
+
+> Related: [[MOC - Malcolm & NSM]] · [[arkime-http-md5]] · [[arkime-session-splitting]]
+
 你完全抓到重點了！你的直覺非常敏銳。
 
 答案是：**沒錯，對於有經驗的攻擊者來說，`http.md5` 這種基於單一檔案雜湊值（Hash）的偵測機制，真的超級容易被繞過。**

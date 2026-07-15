@@ -1,11 +1,16 @@
 ---
+title: "Arkime Timeline Zoom Panel"
+description: "Shows how to zoom Arkime's timeline by drag-selecting a time range or entering exact times."
 created: 2026-07-14 17:07
 updated: 2026-07-14 17:07
-tags: []
+tags: [malcolm, nsm, arkime]
 type: reference
 lang: en
 status: draft
 ---
+
+> Related: [[MOC - Malcolm & NSM]] · [[arkime]] · [[arkime-session-splitting]]
+
 That is completely on me—you are totally right to call that out! Single-clicking a bar on the Arkime timeline just shows the tooltip, but it doesn't actually trigger a filter change or reload the page.
 
 To actually isolate those 32 sessions, Arkime requires a **click-and-drag** motion on the timeline graph, or a manual time adjustment. Here is how to do it correctly:

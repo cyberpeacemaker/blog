@@ -21,6 +21,11 @@ Network Security Monitoring stack: sensors, indexing, PCAP analysis, and Malcolm
 ## Arkime & PCAP
 
 - [[arkime]] — Arkime overview
+- [[arkime-http-md5]] — Arkime `http.md5` triage, deduplication, and threat intel pivots
+- [[arkime-http-md5-bypass]] — hash-only detection bypass patterns
+- [[arkime-session-splitting]] — raw PCAP fallback for late keep-alive tasks
+- [[arkime-parser-keepalive-bug]] — HTTP parser state reset failure mode
+- [[arkime-time-zoom-panel]] — timeline zoom workflow
 - [[arkime-api]] — Malcolm `/arkime` API debugging
 - [[arkime-query-opensearch]] — Arkime queries via OpenSearch
 - [[arkime-cap-sample]] — PCAP sample analysis
@@ -36,6 +41,11 @@ Network Security Monitoring stack: sensors, indexing, PCAP analysis, and Malcolm
 
 ## Sensors & Log Sources
 
+- [[mime-http]] — MIME type fundamentals for HTTP and file classification
+- [[http-md5-zeek-mime-type]] — Arkime `http.md5` versus Zeek `mime_type`
+- [[zeek-files-mime-type-mz]] — Zeek MIME labels and Windows MZ magic bytes
+- [[zeek-fuid-cuid]] — Zeek connection UID and file FUID pivots
+- [[zeek-file-reassembler]] — ranged downloads and Zeek file reassembly
 - [[syslog]] — syslog configuration
 - [[filter]] — log filtering
 - [[ecs-translation]] — ECS field translation

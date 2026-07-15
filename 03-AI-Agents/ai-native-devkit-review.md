@@ -1,11 +1,16 @@
 ---
+title: "AI-Native Devkit Review"
+description: "Reviews an AI-native development flow with issues, draft PRs, CI, and secret guardrails."
 created: 2026-07-14 17:07
 updated: 2026-07-14 17:07
-tags: []
+tags: [ai, agents, workflow, git]
 type: reference
-lang: en
+lang: zh
 status: draft
 ---
+
+> Related: [[MOC - AI Agents]] · [[industry-standard-for-ai-human-collaboration]] · [[github-actions-sensitive-patterns]] · [[CLAUDE]]
+
 你的直覺非常敏銳，一眼就抓到了這份 Devkit 最核心的設計亮點。
 
 這份文件展示了一個非常前沿且成熟的 **「AI 原生開發流程（AI-Native Development Flow）」**。它並不是讓人類失業，而是把重複性的 Git 操作、格式化、甚至開 PR 的瑣事，全權委託給 Claude Code，讓人能專注在更高層次的架構與邏輯上。
