@@ -1,12 +1,12 @@
 ---
 title: "Suricata and Snort"
 description: "Compares Suricata and Snort as signature-based network intrusion detection engines."
-created: 2026-07-15 10:07
+created: 2026-07-15
 updated: 2026-07-15
 type: reference
 lang: en
 status: draft
-tags: [nsm, suricata, snort]
+tags: [nsm]
 ---
 
 > Related: [[MOC - Malcolm & NSM]] · [[zeek-suricata]] · [[malcolm-threat-stack-integration]]

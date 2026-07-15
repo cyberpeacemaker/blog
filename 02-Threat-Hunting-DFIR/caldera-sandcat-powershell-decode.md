@@ -1,12 +1,12 @@
 ---
 title: "Caldera Sandcat PowerShell Decode"
 description: "Breaks down Caldera Sandcat PowerShell EncodedCommand examples for C2 investigation storytelling."
-created: 2026-07-15 20:07
+created: 2026-07-15
 updated: 2026-07-15
 type: reference
 lang: zh
 status: draft
-tags: [threat-hunting, c2, powershell]
+tags: [threat-hunting, dfir]
 ---
 
 > Related: [[MOC - Threat Hunting]] · [[powershell-encodedcommand]] · [[beacon]]

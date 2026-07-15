@@ -1,12 +1,12 @@
 ---
 title: "Malcolm Threat Stack Integration"
 description: "Maps how Malcolm, Suricata, Zeek, and RITA complement each other in an NSM and threat hunting stack."
-created: 2026-07-15 10:07
+created: 2026-07-15
 updated: 2026-07-15
 type: reference
 lang: zh
 status: draft
-tags: [malcolm, suricata, zeek, rita]
+tags: [malcolm, nsm, threat-hunting]
 ---
 
 > Related: [[MOC - Malcolm & NSM]] · [[malcolm-rita-integration]] · [[suricata-snort]]

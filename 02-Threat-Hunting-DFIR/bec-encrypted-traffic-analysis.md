@@ -1,12 +1,12 @@
 ---
 title: "BEC Encrypted Traffic Analysis"
 description: "Applies encrypted traffic behavior analysis to BEC and C2 investigation scenarios."
-created: 2026-07-15 21:07
+created: 2026-07-15
 updated: 2026-07-15
 type: reference
 lang: zh
 status: draft
-tags: [threat-hunting, eta, ctf]
+tags: [threat-hunting, dfir]
 ---
 
 > Related: [[MOC - Threat Hunting]] · [[eta-threat-hunting-overview]] · [[threat-hunting-ctf-get-started]]

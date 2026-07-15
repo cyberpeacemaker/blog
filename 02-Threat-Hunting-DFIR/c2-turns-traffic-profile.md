@@ -1,12 +1,12 @@
 ---
 title: "C2 Turns Traffic Profile"
 description: "Connects Wireshark packet and stream turns to C2 traffic profiling for threat hunting."
-created: 2026-07-15 09:07
+created: 2026-07-15
 updated: 2026-07-15
 type: reference
 lang: zh
 status: draft
-tags: [threat-hunting, c2, wireshark]
+tags: [threat-hunting, dfir]
 ---
 
 > Related: [[MOC - Threat Hunting]] · [[beacon]] · [[threat-hunting-c2-volume-beacon]]

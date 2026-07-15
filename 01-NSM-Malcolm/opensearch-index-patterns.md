@@ -1,7 +1,7 @@
 ---
 title: "OpenSearch Index Patterns"
 description: "Explains OpenSearch index pattern and dashboard management concepts in the Malcolm/Kibana workflow."
-created: 2026-07-15 14:07
+created: 2026-07-15
 updated: 2026-07-15
 type: howto
 lang: zh

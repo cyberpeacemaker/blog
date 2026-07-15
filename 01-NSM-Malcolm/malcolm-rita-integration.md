@@ -1,12 +1,12 @@
 ---
 title: "Malcolm RITA Integration"
 description: "Explains Malcolm, Zeek, OpenSearch, and RITA integration paths for beacon analysis."
-created: 2026-07-15 10:07
+created: 2026-07-15
 updated: 2026-07-15
 type: reference
 lang: zh
 status: draft
-tags: [malcolm, zeek, rita, opensearch]
+tags: [malcolm, nsm, opensearch]
 ---
 
 > Related: [[MOC - Malcolm & NSM]] · [[malcolm-orchestration]] · [[zeek-rita]]

@@ -1,12 +1,12 @@
 ---
 title: "Wireshark PCAP File Extract"
 description: "Explains when Wireshark can extract files from PCAPs and why encrypted streams require payload analysis instead."
-created: 2026-07-15 20:07
+created: 2026-07-15
 updated: 2026-07-15
 type: howto
 lang: zh
 status: draft
-tags: [nsm, wireshark, forensics]
+tags: [nsm, dfir]
 ---
 
 > Related: [[MOC - Malcolm & NSM]] · [[wireshark-contain]] · [[arkime]]

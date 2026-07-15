@@ -1,12 +1,12 @@
 ---
 title: "ETA Threat Hunting Overview"
 description: "Introduces encrypted traffic analysis for threat hunting when payloads are unavailable."
-created: 2026-07-15 21:07
+created: 2026-07-15
 updated: 2026-07-15
 type: reference
 lang: zh
 status: draft
-tags: [threat-hunting, eta, c2]
+tags: [threat-hunting, dfir]
 ---
 
 > Related: [[MOC - Threat Hunting]] · [[beacon]] · [[bec-encrypted-traffic-analysis]]

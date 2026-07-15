@@ -1,12 +1,12 @@
 ---
 title: "BEC Lab PCAP Dedup"
 description: "Explains duplicate BEC lab PCAP ingestion and how to reason about repeated sessions during analysis."
-created: 2026-07-15 14:07
+created: 2026-07-15
 updated: 2026-07-15
 type: reference
 lang: zh
 status: draft
-tags: [threat-hunting, dfir, ctf]
+tags: [threat-hunting, dfir]
 ---
 
 > Related: [[MOC - Threat Hunting]] · [[bec-pcap-analysis-summary]] · [[cross-id-analysis]]

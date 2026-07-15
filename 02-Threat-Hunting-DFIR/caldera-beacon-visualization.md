@@ -1,12 +1,12 @@
 ---
 title: "Caldera Beacon Visualization"
 description: "Explains how to interpret Caldera beacon visualization artifacts in BEC-style C2 analysis."
-created: 2026-07-15 20:07
+created: 2026-07-15
 updated: 2026-07-15
 type: reference
 lang: zh
 status: draft
-tags: [threat-hunting, c2, ctf]
+tags: [threat-hunting, dfir]
 ---
 
 > Related: [[MOC - Threat Hunting]] · [[forensic-remote-control]] · [[threat-hunting-ctf-get-started]]

@@ -1,12 +1,12 @@
 ---
 title: "ETA Splunk KQL ALPN"
 description: "Collects Splunk, KQL, and ALPN query ideas for encrypted traffic analysis."
-created: 2026-07-15 21:07
+created: 2026-07-15
 updated: 2026-07-15
 type: reference
 lang: zh
 status: draft
-tags: [threat-hunting, eta, c2]
+tags: [threat-hunting, dfir]
 ---
 
 > Related: [[MOC - Threat Hunting]] · [[eta-threat-hunting-overview]] · [[beacon]]

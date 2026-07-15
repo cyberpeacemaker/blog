@@ -1,12 +1,12 @@
 ---
 title: "Malcolm CyberChef Magic"
 description: "Explains why Malcolm does not expose CyberChef Magic as a server-side decoding API by default."
-created: 2026-07-15 21:07
+created: 2026-07-15
 updated: 2026-07-15
 type: reference
 lang: zh
 status: draft
-tags: [malcolm, nsm, automation]
+tags: [malcolm, nsm]
 ---
 
 > Related: [[MOC - Malcolm & NSM]] · [[malcolm-orchestration]] · [[arkime-api]]

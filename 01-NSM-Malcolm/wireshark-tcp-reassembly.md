@@ -1,12 +1,12 @@
 ---
 title: "Wireshark TCP Reassembly"
 description: "Explains Wireshark TCP reassembly, reassembled PDU packets, and the distinction from IP fragmentation."
-created: 2026-07-15 09:07
+created: 2026-07-15
 updated: 2026-07-15
 type: reference
 lang: zh
 status: draft
-tags: [nsm, wireshark, malcolm]
+tags: [nsm, malcolm]
 ---
 
 > Related: [[MOC - Malcolm & NSM]] · [[wireshark-contain]] · [[ip-fragmentation-evasion]]

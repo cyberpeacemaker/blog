@@ -1,12 +1,12 @@
 ---
 title: "ETA Advanced Scenarios"
 description: "Covers advanced encrypted traffic analysis scenarios for C2 and anomaly hunting."
-created: 2026-07-15 21:07
+created: 2026-07-15
 updated: 2026-07-15
 type: reference
 lang: zh
 status: draft
-tags: [threat-hunting, eta, c2]
+tags: [threat-hunting, dfir]
 ---
 
 > Related: [[MOC - Threat Hunting]] · [[eta-threat-hunting-overview]] · [[beacon]]

@@ -1,12 +1,12 @@
 ---
 title: "Zeek and RITA"
 description: "Explains how Zeek logs feed RITA analytics for beaconing and C2 threat hunting."
-created: 2026-07-15 10:07
+created: 2026-07-15
 updated: 2026-07-15
 type: reference
 lang: zh
 status: draft
-tags: [threat-hunting, zeek, rita, c2]
+tags: [threat-hunting, dfir]
 ---
 
 > Related: [[MOC - Threat Hunting]] · [[beacon]] · [[malcolm-rita-integration]]

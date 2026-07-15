@@ -1,12 +1,12 @@
 ---
 title: "Raw TCP Spoofed HTTP C2"
 description: "Analyzes high-entropy raw TCP traffic on port 80 that masquerades as HTTP during C2 investigation."
-created: 2026-07-15 21:07
+created: 2026-07-15
 updated: 2026-07-15
 type: reference
 lang: zh
 status: draft
-tags: [threat-hunting, dfir, c2, wireshark]
+tags: [threat-hunting, dfir]
 ---
 
 > Related: [[MOC - Threat Hunting]] · [[threat-hunting-c2-volume-beacon]] · [[beacon]]

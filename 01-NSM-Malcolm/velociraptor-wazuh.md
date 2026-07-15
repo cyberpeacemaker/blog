@@ -1,12 +1,12 @@
 ---
 title: "Velociraptor and Wazuh"
 description: "Compares Velociraptor and Wazuh roles across endpoint collection, DFIR, and SIEM-style monitoring."
-created: 2026-07-15 10:07
+created: 2026-07-15
 updated: 2026-07-15
 type: reference
 lang: en
 status: draft
-tags: [nsm, dfir, siem]
+tags: [nsm, dfir]
 ---
 
 > Related: [[MOC - Malcolm & NSM]] · [[zeek-velociraptor-splunk]] · [[soc-tool]]

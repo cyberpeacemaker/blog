@@ -1,12 +1,12 @@
 ---
 title: "PowerShell EncodedCommand"
 description: "Explains PowerShell EncodedCommand behavior, UTF-16LE Base64 decoding, and detection relevance."
-created: 2026-07-15 17:07
+created: 2026-07-15
 updated: 2026-07-15
 type: howto
 lang: zh
 status: draft
-tags: [threat-hunting, dfir, powershell]
+tags: [threat-hunting, dfir]
 ---
 
 > Related: [[MOC - Threat Hunting]] · [[beacon]] · [[powershell-execution-policy]]

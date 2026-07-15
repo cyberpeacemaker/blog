@@ -1,7 +1,7 @@
 ---
 title: "IP Fragmentation Evasion"
 description: "Explains IP fragmentation behavior and how attackers can use fragmentation to evade inspection."
-created: 2026-07-15 10:07
+created: 2026-07-15
 updated: 2026-07-15
 type: reference
 lang: zh

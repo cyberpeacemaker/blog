@@ -1,12 +1,12 @@
 ---
 title: "BEC PCAP Analysis Summary"
 description: "Summarizes a BEC lab with eight PCAPs, one JAS5 session, and related C2 analysis pivots."
-created: 2026-07-15 20:07
+created: 2026-07-15
 updated: 2026-07-15
 type: reference
 lang: zh
 status: draft
-tags: [threat-hunting, dfir, ctf]
+tags: [threat-hunting, dfir]
 ---
 
 > Related: [[MOC - Threat Hunting]] · [[bec-lab-pcap-dedup]] · [[raw-tcp-spoofed-http-c2]]

@@ -1,12 +1,12 @@
 ---
 title: "Wireshark Export Object Multipart Fix"
 description: "Shows how to recover a real payload when Wireshark Export Objects includes MIME multipart boundaries."
-created: 2026-07-15 20:07
+created: 2026-07-15
 updated: 2026-07-15
 type: howto
 lang: zh
 status: draft
-tags: [dfir, wireshark, forensics]
+tags: [threat-hunting, dfir]
 ---
 
 > Related: [[MOC - Threat Hunting]] · [[wireshark-pcap-file-extract]] · [[forensic-remote-control]]

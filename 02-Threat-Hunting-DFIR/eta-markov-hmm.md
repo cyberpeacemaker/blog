@@ -1,12 +1,12 @@
 ---
 title: "ETA Markov HMM"
 description: "Explains Markov and HMM modeling ideas for encrypted traffic behavior analysis."
-created: 2026-07-15 21:07
+created: 2026-07-15
 updated: 2026-07-15
 type: reference
 lang: zh
 status: draft
-tags: [threat-hunting, eta, c2]
+tags: [threat-hunting, dfir]
 ---
 
 > Related: [[MOC - Threat Hunting]] · [[eta-tls13-ech-markov]] · [[eta-threat-hunting-overview]]

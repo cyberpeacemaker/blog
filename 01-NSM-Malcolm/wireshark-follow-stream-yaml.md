@@ -1,12 +1,12 @@
 ---
 title: "Wireshark Follow Stream YAML"
 description: "Documents Wireshark Follow Stream YAML export fields, packet indexing, timestamps, Base64 payloads, and filter limitations."
-created: 2026-07-15 09:07
+created: 2026-07-15
 updated: 2026-07-15
 type: howto
 lang: zh
 status: draft
-tags: [nsm, wireshark]
+tags: [nsm]
 ---
 
 > Related: [[MOC - Malcolm & NSM]] · [[wireshark-contain]] · [[tshark-env-path]]

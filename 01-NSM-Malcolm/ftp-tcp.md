@@ -1,12 +1,12 @@
 ---
 title: "FTP over TCP"
 description: "Summarizes FTP control and data channel behavior over TCP for packet analysis."
-created: 2026-07-15 20:07
+created: 2026-07-15
 updated: 2026-07-15
 type: reference
 lang: en
 status: draft
-tags: [nsm, protocol]
+tags: [nsm]
 ---
 
 > Related: [[MOC - Malcolm & NSM]] · [[wireshark-pcap-file-extract]] · [[wireshark-contain]]

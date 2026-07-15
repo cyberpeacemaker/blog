@@ -1,12 +1,12 @@
 ---
 title: "IP Fragmentation Detection"
 description: "Surveys practical Snort, Suricata, Zeek, and Wireshark methods for detecting IP fragmentation."
-created: 2026-07-15 10:07
+created: 2026-07-15
 updated: 2026-07-15
 type: reference
 lang: zh
 status: draft
-tags: [nsm, suricata, snort, zeek]
+tags: [nsm]
 ---
 
 > Related: [[MOC - Malcolm & NSM]] · [[suricata-snort]] · [[zeek-rita]]
