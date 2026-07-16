@@ -147,6 +147,8 @@ Malcolm threat hunting methodology
 # 不太重要
 - 會議同意書 (經理遇到的問題)
 - google ai studio
+- [gsap](https://gsap.com/docs/v3/Installation/)
+- github profile [readme tool](https://www.readmecodegen.com)
 - PI, Tau
 - claroty
 - 我的第九周雙周會議？
