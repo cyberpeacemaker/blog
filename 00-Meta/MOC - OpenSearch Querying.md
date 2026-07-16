@@ -26,6 +26,7 @@ Lucene syntax, JSON DSL, filters, and query patterns for Malcolm and OpenSearch.
 ## Platform
 
 - [[opensearch-elasticsearch]] — OpenSearch vs Elasticsearch
+- [[opensearch-index-patterns]] — index pattern and dashboard management in Malcolm/OpenSearch
 - [[metadata-indexing]] — metadata indexing
 
 ## Related

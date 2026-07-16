@@ -51,6 +51,7 @@ Developer tooling: Git, Python, VS Code, testing, and environment setup.
 - [[github-private-clone]] — private repo clone over SSH on Windows
 - [[github-ssh]] — GitHub SSH setup on Windows PowerShell
 - [[github-permission-ssh]] — SSH permission troubleshooting
+- [[git-ssh-permission-denied]] — GitHub SSH publickey failures and HTTPS fallback
 - [[git-issue-nuke]] — avoiding Git repository nuclear recovery
 - [[git-recommended-roadmap]] — progressive Git learning roadmap
 - [[git-learn]] — Microsoft Learn Git and GitHub study path

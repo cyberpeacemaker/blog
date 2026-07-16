@@ -1,0 +1,125 @@
+---
+title: "ETA Threat Hunting Overview"
+description: "Introduces encrypted traffic analysis for threat hunting when payloads are unavailable."
+created: 2026-07-15
+updated: 2026-07-15
+type: reference
+lang: zh
+status: draft
+tags: [threat-hunting, dfir]
+---
+
+> Related: [[MOC - Threat Hunting]] · [[beacon]] · [[bec-encrypted-traffic-analysis]]
+
+# ETA Threat Hunting Overview
+在網路流量高達 80%~90% 以上被加密的今天，傳統的「解密後檢測（DPI）」不僅耗費極大硬體資源，也面臨隱私與法規（如 GDPR）的挑戰。**加密流量分析（Encrypted Traffic Analytics, ETA）** 讓威脅獵人（Threat Hunter）無須解密流量，即可透過特徵、行為與中繼資料（Metadata）揪出潛伏的威脅。
+
+以下是 ETA 在威脅狩獵（Threat Hunting）中常見的 5 個核心範例與狩獵邏輯：
+
+### ETA 監控指標快速對照表
+
+|**威脅類型**|**核心 ETA 指標**|**獵捕關鍵**|
+|---|---|---|
+|**C2 惡意通訊 (Beaconing)**|JA3/JA3S/JARM、SPLT|固定的連線頻率與封包大小、惡意客戶端指紋|
+|**DNS-over-HTTPS (DoH)**|SNI、SPLT|內部端點連線公共 DoH、高頻且密集的加密查詢|
+|**SSH 逆向隧道 / 橫向移動**|HASSH、SPLT|非互動式（自動化）流量、方向性異常的長連接|
+|**惡意憑證與釣魚**|憑證中繼資料、SNI、JARM|自簽名憑證、SNI 與憑證主體不符、剛註冊的 CA|
+|**加密資料外洩**|流量不對稱性（Flow Asymmetry）|異常的高上傳/下載比（Outbound >> Inbound）|
+
+### 5 個經典 Threat Hunting 範例
+
+#### 範例 1：狩獵 C2 惡意通訊（Command & Control）
+
+- **獵捕假設：** 內網被感染的端點正在透過 HTTPS (Port 443) 向外部 C2 伺服器進行定期心跳連線（Beaconing）。
+
+- **ETA 偵測特徵：**
+
+    - **SPLT（封包長度與時間序列）：** 正常的網頁瀏覽流量，封包大小與時間間隔非常雜亂；而惡意程式自動化心跳連線會呈現**高度規律性**（例如每 30 秒一次，誤差極小），且每次傳輸的封包大小（Bytes）高度固定。
+
+    - **JA3/JA3S 指紋：** 提取 TLS Client Hello 中的密碼學特徵（JA3）。如果該指紋與已知的惡意軟體（如 Cobalt Strike、Emotet）相符，即可鎖定。
+
+    - **JARM 指紋：** 主動發送多個探針側寫外部伺服器的 TLS 響應，若其 JARM 活性指紋與常見的 C2 框架（如 Metasploit）一致，即為高風險。
+
+- **狩獵邏輯（Splunk/KQL 概念）：**
+
+    > 篩選出目的地為外部非熱門網站、具有低時間熵值（Low Entropy of Time Interval，代表極規律）、且 JA3 指紋與已知威脅情報相符的加密流量。
+
+
+#### 範例 2：狩獵透過 DNS-over-HTTPS (DoH) 的資料外洩或 C2
+
+- **獵捕假設：** 攻擊者為躲避企業內部的 DNS 安全監控，將惡意網域名稱解析或外洩資料封裝在加密的 DoH 請求中。
+
+- **ETA 偵測特徵：**
+
+    - **SNI（伺服器名稱指示）：** TLS 握手中的明文 SNI 顯示目的地為常見的公共 DoH 服務商（如 `cloudflare-dns.com`、`dns.google`），但該連線發起端非企業核准的 DNS 伺服器。
+
+    - **流量行為：** 正常使用者即便啟用 DoH，也是零星的網頁解析；若是 DoH 隧道（Tunneling），則會產生**高頻率、大容量且持續不中斷**的 HTTPS 連線。
+
+- **狩獵邏輯：**
+
+    > 尋找內部非伺服器主機，對已知公共 DoH 網域發起異常高頻率（或持續時間極長）的 SSL 連線，並確認其傳輸封包長度是否呈現特定的重複模式。
+
+
+#### 範例 3：狩獵 SSH 逆向隧道（繞過防火牆/橫向移動）
+
+- **獵捕假設：** 攻擊者在內網主機建立了一條逆向 SSH 隧道（Reverse Tunnel），繞過防火牆將內網主機的控制權交給外部 IP。
+
+- **ETA 偵測特徵：**
+
+    - **SPLT 與行為分析：**
+
+        - _互動式 SSH（人類操作）：_ 封包長度極小（代表鍵盤打字輸入），時間間隔不規律（人在思考與敲鍵盤）。
+
+        - _非互動式 SSH / 逆向隧道：_ 封包呈現大區塊、連續性的傳輸（代表自動化腳本執行或檔案傳輸），且連線方向可能由外部主導。
+
+    - **HASSH 指紋：** 識別到異常的 SSH 客戶端指紋（HASSH），其並非企業標準使用的作業系統或 SSH 工具預設值。
+
+- **狩獵邏輯：**
+
+    > 尋找內網主機向外部連線的 SSH 通道中，存活時間極長（超過數小時）且非互動式（流量分布密集、方向性異常）的連線。
+
+
+#### 範例 4：狩獵惡意與異常 TLS 憑證
+
+- **獵捕假設：** 攻擊者使用臨時搭建的惡意伺服器（通常使用自簽名憑證或由 Let's Encrypt 快速申請的短期憑證）來架設釣魚網站或惡意下載點。
+
+- **ETA 偵測特徵：**
+
+    - **IDP / 憑證分析：**
+
+        - _自簽名憑證（Self-signed）：_ 憑證鏈（Certificate Chain）無效、發行者（Issuer）與主體（Subject）相同，且該 IP 不是已知的內部合法服務。
+
+        - _不匹配的 SNI：_ TLS 握手中的明文 SNI（如 `secure-login-bank.com`）與憑證上的 Common Name（如 `attacker-domain.xyz`）嚴重不符。
+
+        - _憑證有效期限極短：_ 剛申請不到 24-48 小時的憑證（通常由威脅情資判定）。
+
+- **狩獵邏輯：**
+
+    > 統計內部發起的所有 SSL 連線，過濾出「非可信 CA 簽署」、「SNI 與 憑證 Subject 不符」、且目標網域為新註冊網域（Newly Registered Domains）的外部連線。
+
+
+#### 範例 5：狩獵加密流量中的資料外洩（Data Exfiltration）
+
+- **獵捕假設：** 內部惡意員工或已被控主機，正將機密資料透過 HTTPS 上傳至未知的個人雲端空間（如 Mega, Google Drive 或攻擊者自建的 WebDAV 伺服器）。
+
+- **ETA 偵測特徵：**
+
+    - **流量不對稱性 (Flow Asymmetry)：** 正常的網頁瀏覽是「入大於出」（下載多、上傳少）。資料外洩則是「出大於入」（上傳極大、下載極小），兩者比例嚴重失衡。
+
+    - **長連接與高頻寬：** 單一加密連線持續數十分鐘甚至數小時，且持續保持高吞吐量上傳。
+
+- **狩獵邏輯：**
+
+    > 計算 `Sum(Bytes_Out) / Sum(Bytes_In)` 的比例。找出比例大於 10（上傳是下載的 10 倍以上），且目的地 IP 聲譽較低或非企業核准雲端服務的加密連線。
+
+
+### 業界常見的 ETA 狩獵工具
+
+- **Zeek (前身為 Bro)：** 最受威脅獵人喜愛的開源工具，會產生詳細的 `ssl.log`、`ssh.log`、`x509.log`，內建 JA3 與 HASSH 提取。
+
+- **Cisco ETA：** 內嵌於思科交換器與路由器中，能在 NetFlow/IPFIX 中直接帶入 SPLT 與 IDP 資料。
+
+- **NDR (Network Detection and Response) 平台：** 如 Corelight、Vectra AI、ExtraHop，通常內建機器學習模型，直接幫你把上述的異常行為側寫完成並轉化為高可信度警報。
+
+
+你對上述哪一個場景（例如 **C2 心跳檢測**或 **DNS-over-HTTPS 隧道**）最有興趣，想要深入看看其實際的偵測邏輯（如 Zeek 日誌特徵或 Splunk 偵測語法）嗎？
