@@ -38,13 +38,14 @@ poi 這樣看起來很好，加上
 
 # Probationary
 1. 順便整理repo (calander)
-2. ICS_TA TODO 
+2. bookmark
+3. ICS_TA TODO 
 	1. hardware expand
 	2. animation fix
-3. meeting-transcript TODO
-4. arkime contribute
-5. 想工作
-6. 承諾 三個月薪水 不是為了賺錢 
+4. meeting-transcript TODO
+5. arkime contribute
+6. 想工作
+7. 承諾 三個月薪水 不是為了賺錢 
 
 # YAML & OKF
 
