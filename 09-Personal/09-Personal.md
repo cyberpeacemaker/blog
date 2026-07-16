@@ -1,5 +1,8 @@
 ---
+title: "09-Personal"
+description: "Maps personal notes, finance, hobbies, lifestyle, and miscellaneous personal references."
 created: 2026-07-07
+updated: 2026-07-16
 tags: [moc, personal]
 type: hub
 lang: en

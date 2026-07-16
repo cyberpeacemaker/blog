@@ -1,5 +1,8 @@
 ---
+title: "05-Software-Engineering"
+description: "Maps architecture, agile development, MVP, CI/CD, documentation, and software concept notes."
 created: 2026-07-07
+updated: 2026-07-16
 tags: [moc]
 type: hub
 lang: en

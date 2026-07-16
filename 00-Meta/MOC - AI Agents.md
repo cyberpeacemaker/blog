@@ -1,5 +1,8 @@
 ---
+title: "MOC - AI Agents"
+description: "Maps AI agent frameworks, context management, local models, and agent instruction notes."
 created: 2026-07-07
+updated: 2026-07-16
 tags: [ai, agents, moc]
 type: hub
 lang: en

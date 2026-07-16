@@ -1,5 +1,8 @@
 ---
+title: "MOC - Claude & Cursor"
+description: "Maps Claude, Cursor, AI-assisted coding, skills, and design workflow notes."
 created: 2026-07-07
+updated: 2026-07-16
 tags: [claude, cursor, moc]
 type: hub
 lang: en

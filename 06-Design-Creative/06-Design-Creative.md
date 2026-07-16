@@ -1,5 +1,8 @@
 ---
+title: "06-Design-Creative"
+description: "Maps UI/UX, visual design, creative coding, SVG animation, and AI-assisted design notes."
 created: 2026-07-07
+updated: 2026-07-16
 tags: [moc, design]
 type: hub
 lang: en

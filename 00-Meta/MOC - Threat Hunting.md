@@ -1,5 +1,8 @@
 ---
+title: "MOC - Threat Hunting"
+description: "Maps threat hunting methodology, forensics, malware, encrypted traffic analysis, and CTF notes."
 created: 2026-07-07
+updated: 2026-07-16
 tags: [threat-hunting, dfir, mitre, moc]
 type: hub
 lang: en

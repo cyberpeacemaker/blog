@@ -1,5 +1,8 @@
 ---
+title: "MOC - Malcolm & NSM"
+description: "Maps Network Security Monitoring, Malcolm, Arkime, OpenSearch, sensors, and OT/ICS notes."
 created: 2026-07-07
+updated: 2026-07-16
 tags: [malcolm, nsm, opensearch, moc]
 type: hub
 lang: en
