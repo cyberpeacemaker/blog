@@ -11,6 +11,8 @@ status: published
 AI agent frameworks, multi-agent systems, context management, and local LLM workflows.
 
 ## Frameworks & Architecture
+
+- [[cursor-plugin-gsap-neon-postgres]] — AI skill plugins for animation and serverless Postgres workflows in Cursor
 - [[local-cv-yolo-vs-cloud-vision]] — local YOLO vision vs cloud vision models
 - [[ai-new-era-image-identification]] — MCP vision bridge vs local image recognition
 

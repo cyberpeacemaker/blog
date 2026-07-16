@@ -10,6 +10,7 @@ status: published
 
 Personal notes: finance, hobbies, lifestyle. Optional candidate for a separate vault if privacy is needed.
 
+- [[disassemble]] — English usage for disassemble, break down, deconstruct, neutralize, and defuse
 - [[booklist]]
 - [[infra-news]]
 - [[bank]]

@@ -20,6 +20,7 @@ Threat hunting methodology, forensics, CTF, and write-up standards.
 
 ## Forensics & Investigation
 
+- [[malcolm-threat-hunting-poi]] — Malcolm hunt starting points using Suricata, Zeek Notice, Zeek Weird, and LongConnection pivots
 - [[cross-id-analysis]] — Zeek UID and Community ID pivots across logs and PCAP
 - [[zeek-seen-bytes]] — volumetric profiling with Zeek `seen_bytes`
 - [[raw-tcp-spoofed-http-c2]] — high-entropy raw TCP traffic masquerading as HTTP

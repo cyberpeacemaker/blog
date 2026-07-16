@@ -12,6 +12,7 @@ AI-assisted coding: Claude, Cursor IDE, skills, and design workflows.
 
 ## IDE & Workflow Comparison
 
+- [[cursor-plugin-gsap-neon-postgres]] — Cursor plugin skills and MCP integrations for GSAP and Neon Postgres
 - [[cursor-vs-claude]] — Cursor vs Claude Desktop
 - [[claude-desktop-cli]] — Claude Desktop vs Claude Code CLI workflow fit
 - [[cursor-plsu-claude]] — Cursor + Claude combined workflow

@@ -1,0 +1,79 @@
+---
+title: "Canary Pattern for Sensitive-Pattern Guardrails"
+description: "Describes using a harmless canary string to test secret-scanning hooks and CI guardrails without exposing real sensitive patterns."
+created: 2026-07-16
+updated: 2026-07-16
+type: concept
+lang: zh
+status: draft
+tags: [dev, git]
+---
+
+> Related: [[MOC - Dev Environment]] · [[github-actions-sensitive-patterns]] · [[github-hook-action]]
+
+這個「Canary Pattern（金絲雀模式）」的設計概念非常聰明，它的核心邏輯就像礦工帶金絲雀進礦坑一樣——**用一個「刻意設計、死掉也不可惜（無害）」的指標，來測試系統的防禦機制是否正常。**
+
+以下為您拆解這個機制具體要如何運作、以及它如何保障安全性：
+
+## 運作原理說明
+
+這個新機制將運作流程分為「設定」、「測試」與「結果判定」三個階段：
+
+### 1. 設定階段：定義金絲雀
+
+在你們用來偵測敏感資訊的設定檔（例如 `sensitive-patterns`）中，加入一條**專門用來測試、完全無害**的規則。
+
+- **定義規則**：
+    
+    - 名稱：`Canary Bypass Test`
+        
+    - 偵測特徵 (Regex)：`CANARY-OTEX-DO-NOT-PUSH`
+        
+- 此時，偵測系統（閘門）只要看到這串字，就會認定它是「必須攔截的敏感資訊」。
+    
+
+### 2. 測試階段：模擬觸發
+
+在 ONBOARDING §3 的自動化驗證腳本中，不再隨機抓取真實的敏感規則（例如真的 AWS Key 格式或內部 IP 格式），而是**指定只用這條金絲雀字串**來做測試：
+
+1. 測試腳本自動建立一個暫存檔。
+    
+2. 寫入字串：`"My dummy key is CANARY-OTEX-DO-NOT-PUSH"`。
+    
+3. 腳本嘗試執行 `git commit` 或 `git push` 來觸發安全閘門。
+    
+
+## 兩種結果的對比
+
+當測試腳本執行後，會遇到以下兩種情況，不論哪一種，**安全風險都降到了最低**：
+
+### 情況 A：閘門正常運作（成功攔截）
+
+- **過程**：閘門成功偵測到 `CANARY-OTEX-DO-NOT-PUSH`，拒絕了這次的 commit/push。
+    
+- **結果**：驗證通過，代表安全閘門確實有在工作。測試腳本清理暫存檔，收工。
+    
+
+### 情況 B：閘門失效 / 設定錯誤（攔截失敗）
+
+- **過程**：閘門因為設定錯誤根本沒反應，測試檔案順利被推上了 GitHub。
+    
+- **結果**：
+    
+    - **舊做法**：推上去的是長得很像真實機密的字串（例如符合公司內部 API Key 格式的偽特徵），這會暴露公司的金鑰特徵，甚至被外部爬蟲盯上。
+        
+    - **新做法**：推上去的只有 `CANARY-OTEX-DO-NOT-PUSH`。這串字對外人而言毫無意義，既不包含公司內部網址、也沒有真實金鑰的特徵，**完全零洩漏風險**。
+        
+
+## 新舊做法效益對比
+
+|**評比項目**|**舊做法（取第一條真實 Pattern 測試）**|**新做法（使用 Canary Pattern）**|
+|---|---|---|
+|**測試測試字串來源**|從真實敏感規則庫隨機/順序抓取|寫死的、專門公開的無害字串|
+|**閘門正常時**|安全阻擋|安全阻擋|
+|**閘門失效時**|⚠️ **機密外洩風險高**（可能暴露真實金鑰格式、內部命名規則）|**安全無虞**（僅外洩無意義的 `CANARY-...` 標籤）|
+|**偵錯便利性**|較難分辨是哪條規則被觸發|看到 `CANARY-OTEX...` 就知道是 Onboarding 測試|
+
+這個做法本質上就是把「測試閘門用的靶子」跟「保護場域的安全規則」徹底解耦。
+
+您目前正在評估將這個機制實作在特定的工具（例如 Git pre-commit hooks、GitHub Actions，或是像 Gitleaks 這樣的第三方工具）上嗎？

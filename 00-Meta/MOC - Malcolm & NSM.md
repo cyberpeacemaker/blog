@@ -23,6 +23,7 @@ Network Security Monitoring stack: sensors, indexing, PCAP analysis, and Malcolm
 
 ## Arkime & PCAP
 
+- [[arkime-spigraph-connections-node-limit]] — Query Size sampling limits in Arkime Connections graphs
 - [[arkime]] — Arkime overview
 - [[arkime-http-md5]] — Arkime `http.md5` triage, deduplication, and threat intel pivots
 - [[arkime-http-md5-bypass]] — hash-only detection bypass patterns
@@ -40,6 +41,7 @@ Network Security Monitoring stack: sensors, indexing, PCAP analysis, and Malcolm
 
 ## OpenSearch & Indexing
 
+- [[malcolm-it-ot-subnet-filter]] — OpenSearch and Arkime filters for IT/OT subnet traffic boundaries
 - [[opensearch-elasticsearch]] — OpenSearch vs Elasticsearch
 - [[opensearch-index-patterns]] — index pattern and dashboard management concepts
 - [[malcolm-opensearch-json-dsl]] — Malcolm GUI to JSON DSL
@@ -65,6 +67,9 @@ Network Security Monitoring stack: sensors, indexing, PCAP analysis, and Malcolm
 
 ## OT / ICS
 
+- [[scada-rtac-ews]] — SCADA, RTAC, and EWS roles in industrial automation
+- [[modbus-s7comm]] — Modbus and Siemens S7comm protocol comparison
+- [[proprietary-protocol]] — proprietary protocol definition and tradeoffs
 - [[ot-hmi-ews-plc-rtu]] — OT HMI/EWS/PLC/RTU
 - [[ics-historian-jumpbox]] — ICS historian jumpbox
 
