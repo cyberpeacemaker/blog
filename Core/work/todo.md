@@ -5,8 +5,8 @@
 - 總監 anthropic 回復
 - nics claw 回復
 - 桃園meeting minutes
-- nics-claw 報告 + 問鴻麟對總監架構意見
-- bec ctf 完整報告護照
+- bec ctf 完整報告
+- 護照
 - mdm 重開機測試
 - 桃園出差結報
 - vmware
