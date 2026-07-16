@@ -2,6 +2,8 @@
 - project-shepherd logo
 - PR check
 # Now
+- 總監 anthropic 迴護
+- nics claw 回復
 - 桃園meeting minutes
 - nics-claw 報告 + 問鴻麟對總監架構意見
 - bec ctf 完整報告護照
