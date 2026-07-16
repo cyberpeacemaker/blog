@@ -12,6 +12,8 @@
 - cursor-rule
 - [git 101]([Introduction - Training | Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/intro-to-git/0-introduction))
 - [claude 101](https://www.anthropic.com/learn)
+- cycom
+
 
 # Bec ctf 完整報告
 我之前可能用不太適合的角度切入CTF，我偏向抑制/阻止去看明文資料，而是透過threat hunting methodology/encrypted traffic analytics/behavior analysis等角度去切入
