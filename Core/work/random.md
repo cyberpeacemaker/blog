@@ -1,4 +1,4 @@
-睡眠不足有點討厭，現在有點無法思考
+
 ### Automation
 - obsidian 日記整理
 - git auto commit?
