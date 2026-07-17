@@ -113,6 +113,8 @@ Malcolm threat hunting methodology
 - Nebula
 - Goat
 - 黑山羊
+- front matter tmeplate
+- linter, git hhok
 
 # BEC v2 後續收尾
 - MSDefender , Cladue設置
