@@ -14,4 +14,4 @@
 
 # Project Specific
 
-- **Ignore:** `TODO.md`, `DIARY.md`, `temp/`, `archive/`
+- **Ignore:** `TODO.md`, `DIARY.md`, `temp/`, `archive/`, `assets/`
