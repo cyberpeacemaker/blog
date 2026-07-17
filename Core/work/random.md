@@ -1,4 +1,5 @@
-
+我上次的meeting report放哪裡？怎麼會不再這個資料夾？怎麼會這樣！真的詩詩意了
+好像真的睡覺太少，大腦無法最整理思考的內容
 ### Automation
 - obsidian 日記整理
 - git auto commit?
