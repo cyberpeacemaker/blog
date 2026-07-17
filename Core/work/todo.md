@@ -2,11 +2,12 @@
 - project-shepherd logo
 - PR check
 # Now
+1樓 院長感謝卡
 - 總監 anthropic 回復
 - nics claw 回復
 - 桃園meeting minutes
-- nics-claw 報告 + 問鴻麟對總監架構意見
-- bec ctf 完整報告護照
+- bec ctf 完整報告
+- 護照
 - mdm 重開機測試
 - 桃園出差結報
 - vmware
@@ -122,6 +123,7 @@ Malcolm threat hunting methodology
 # 暫時推遲的事情
 
 - cisa派訓
+- cyber storm cisa
 - 耳提面目補充
 - Google Threat Intelligence
 	- 結合總監想做的示意圖？
