@@ -2,7 +2,7 @@
 title: "MOC - Threat Hunting"
 description: "Maps threat hunting methodology, forensics, malware, encrypted traffic analysis, and CTF notes."
 created: 2026-07-07
-updated: 2026-07-16
+updated: 2026-07-17
 tags: [threat-hunting, dfir, mitre, moc]
 type: hub
 lang: en
@@ -15,6 +15,9 @@ Threat hunting methodology, forensics, CTF, and write-up standards.
 
 ## Methodology & Frameworks
 - [[ai-threat-hunting-capabilities]] — AI capabilities in threat hunting detection
+- [[alert-driven-framework-driven]] — SANS, PEAK, TaHiTI, and HMM path from alert-driven to framework-driven hunts
+- [[generate-ticket]] — create MITRE ATT&CK-driven hunting tickets with hypotheses and data sources
+- [[hunting-lead-trigger-entry-point]] — English terms for hunting leads, triggers, pivots, and entry points
 
 - [[threat-hunt-evolution]] — threat hunting maturity model
 - [[mitre]] — MITRE ATT&CK / CTI reference
@@ -42,6 +45,8 @@ Threat hunting methodology, forensics, CTF, and write-up standards.
 - [[c2-turns-traffic-profile]] — packet and stream turns as a C2 behavior profile
 - [[powershell-encodedcommand]] — PowerShell EncodedCommand decoding and detection context
 - [[zeek-rita]] — Zeek logs feeding RITA beacon analytics
+- [[rita-ac-hunter]] — compare RITA and AC-Hunter for network C2 hunting
+- [[rita-ac-hunter-build-choice]] — choose RITA for custom threat hunting integrations
 - [[caldera-beacon-visualization]] — interpret Caldera beacon visualizations
 - [[caldera-sandcat-powershell-decode]] — decode Sandcat PowerShell C2 command examples
 

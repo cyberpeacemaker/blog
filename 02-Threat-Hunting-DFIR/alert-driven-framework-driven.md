@@ -1,11 +1,15 @@
 ---
-created: 2026-07-17 16:07
-updated: 2026-07-17 16:07
-tags: []
+title: "Alert-Driven to Framework-Driven Threat Hunting"
+description: "Summarizes threat hunting workflows and maturity models including SANS, PEAK, TaHiTI, and HMM."
+created: 2026-07-17
+updated: 2026-07-17
 type: reference
-lang: en
+lang: zh
 status: draft
+tags: [threat-hunting, mitre]
 ---
+
+> Related: [[MOC - Threat Hunting]] · [[threat-hunt-evolution]] · [[mitre]]
 在威脅獵捕（Threat Hunting）的世界裡，從單純「憑直覺看有趣的警報（Alert-driven）」走向「系統化、框架化（Framework-driven）」是提升獵捕效率與成熟度的必經之路。
 
 目前業界有幾個非常成熟、被主流 SOC/MDR 團隊廣泛採用的框架、工作流（Workflow）與成熟度評估模型。

@@ -48,4 +48,7 @@ Entry point for the blog vault. Use the MOCs below to navigate by topic.
 - [[writeup-guideline]] — CTF/IR write-up framework
 - [[YAML-markdown]] — frontmatter syntax
 - [[frontmatter-schema]] — Tier 1/2/3 fields, design principles, template index
+- [[frontmatter-benefit-deploy]] — lightweight frontmatter benefits and rollout guidance
+- [[frontmatter-suggestion-okf-template]] — OKF-oriented frontmatter template suggestions
+- [[frontmatter-template-suggestion]] — AI-agent frontmatter field suggestions
 - [[Tag Taxonomy]] — standard tags for this vault

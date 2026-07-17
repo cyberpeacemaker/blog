@@ -1,11 +1,15 @@
 ---
-created: 2026-07-17 21:07
-updated: 2026-07-17 21:07
-tags: []
-type: reference
-lang: en
+title: "Generate Hunting Tickets from MITRE"
+description: "Shows how to turn MITRE ATT&CK techniques into threat hunting tickets with hypotheses, data sources, and outcomes."
+created: 2026-07-17
+updated: 2026-07-17
+type: howto
+lang: zh
 status: draft
+tags: [threat-hunting, mitre]
 ---
+
+> Related: [[MOC - Threat Hunting]] · [[mitre]] · [[zeek-suricata]]
 你完全抓到這些框架的精髓了！
 
   

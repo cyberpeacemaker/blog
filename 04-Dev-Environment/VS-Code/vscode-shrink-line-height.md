@@ -1,11 +1,15 @@
 ---
-created: 2026-07-17 15:07
-updated: 2026-07-17 15:07
-tags: []
+title: "VS Code Empty Line Height Limits"
+description: "Explains why VS Code cannot shrink only blank lines and lists practical Markdown readability workarounds."
+created: 2026-07-17
+updated: 2026-07-17
 type: reference
-lang: en
+lang: zh
 status: draft
+tags: [dev]
 ---
+
+> Related: [[MOC - Dev Environment]] · [[vscode-custom-visual-text]] · [[vscode-custom-visual-template]]
 很遺憾，目前 VS Code **沒辦法**直接分開設定一般文字行與空白行的行高。
 
 ### 為什麼不行？

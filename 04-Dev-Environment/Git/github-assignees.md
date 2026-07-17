@@ -1,11 +1,15 @@
 ---
-created: 2026-07-17 11:07
-updated: 2026-07-17 11:07
-tags: []
+title: "GitHub Assignees"
+description: "Explains how GitHub assignees communicate ownership for issues, templates, notifications, and project boards."
+created: 2026-07-17
+updated: 2026-07-17
 type: reference
 lang: en
 status: draft
+tags: [dev, git]
 ---
+
+> Related: [[MOC - Dev Environment]] · [[github-collaboration-pr-loop]] · [[github-issue-template]]
 In GitHub, an **Assignee** is the person (or team) responsible for working on and resolving that specific issue.
 
 When you are creating an issue (as shown in your screenshot) or setting up an **issue template**, here is exactly what that means:

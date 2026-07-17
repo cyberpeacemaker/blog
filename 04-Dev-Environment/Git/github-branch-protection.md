@@ -1,11 +1,15 @@
 ---
-created: 2026-07-17 11:07
-updated: 2026-07-17 11:07
-tags: []
+title: "GitHub Branch Protection"
+description: "Explains branch protection rules, required pull requests, status checks, force-push blocking, and repository rulesets."
+created: 2026-07-17
+updated: 2026-07-17
 type: reference
 lang: en
 status: draft
+tags: [dev, git]
 ---
+
+> Related: [[MOC - Dev Environment]] · [[github-collaboration-pr-loop]] · [[fix-broken-cicd]]
 # Secure Your Code: A Guide to GitHub Branch Protection
 
 Think of **GitHub Branch Protection** as the digital bouncer for your codebase. Without it, anyone with write access could accidentally (or intentionally) delete your `main` branch, force-push broken code over production, or merge untested features without a single peer review.

@@ -1,11 +1,15 @@
 ---
-created: 2026-07-17 21:07
-updated: 2026-07-17 21:07
-tags: []
+title: "Choose RITA for Threat Hunting Integrations"
+description: "Explains why RITA is a better development integration target than AC-Hunter for custom security dashboards and pipelines."
+created: 2026-07-17
+updated: 2026-07-17
 type: reference
 lang: en
 status: draft
+tags: [threat-hunting, nsm]
 ---
+
+> Related: [[MOC - Threat Hunting]] · [[zeek-rita]] · [[malcolm-rita-integration]]
 If your goal is to build a development project centered around integration—such as tying threat data into a SIEM, automating incident response via SOAR, or building a custom security dashboard—**RITA is unequivocally the better choice.**
 
 While AC-Hunter is a fantastic out-of-the-box solution for security analysts who want a ready-to-use interface, it is ultimately a proprietary tool. RITA, on the other hand, is designed like an open engine meant to be wired into larger systems.

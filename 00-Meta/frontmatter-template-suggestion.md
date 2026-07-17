@@ -1,11 +1,15 @@
 ---
-created: 2026-07-17 21:07
-updated: 2026-07-17 21:07
-tags: []
+title: "Frontmatter Template Fields for AI Agents"
+description: "Suggests frontmatter fields that help AI agents and OKF-style repositories select and trust documentation."
+created: 2026-07-17
+updated: 2026-07-17
 type: reference
 lang: en
 status: draft
+tags: [meta, ai]
 ---
+
+> Related: [[frontmatter-schema]] · [[yaml-okf]] · [[frontmatter-suggestion-okf-template]]
 ## Git vs. Frontmatter: Do You Still Need "Author" and "Created"?
 
 If you are already using Git, you can absolutely streamline these fields. However, there is a subtle difference between **Git metadata** (system-level history) and **Document metadata** (logical intent):

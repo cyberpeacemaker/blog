@@ -2,7 +2,7 @@
 title: "09-Personal"
 description: "Maps personal notes, finance, hobbies, lifestyle, and miscellaneous personal references."
 created: 2026-07-07
-updated: 2026-07-16
+updated: 2026-07-17
 tags: [moc, personal]
 type: hub
 lang: en
@@ -14,6 +14,7 @@ status: published
 Personal notes: finance, hobbies, lifestyle. Optional candidate for a separate vault if privacy is needed.
 
 - [[disassemble]] — English usage for disassemble, break down, deconstruct, neutralize, and defuse
+- [[supplement-add-on-appendix]] — English usage differences among supplement, add-on, and appendix
 - [[booklist]]
 - [[infra-news]]
 - [[bank]]

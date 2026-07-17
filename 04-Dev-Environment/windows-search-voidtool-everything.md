@@ -1,11 +1,15 @@
 ---
-created: 2026-07-17 10:07
-updated: 2026-07-17 10:07
-tags: []
+title: "Voidtools Everything vs Windows Search"
+description: "Explains why Voidtools Everything is faster than Windows Search by using NTFS metadata and in-memory indexing."
+created: 2026-07-17
+updated: 2026-07-17
 type: reference
 lang: en
 status: draft
+tags: [dev]
 ---
+
+> Related: [[MOC - Dev Environment]] · [[microsoft-store]] · [[windows-web-search-voidtool-everything]]
 It honestly feels like absolute sorcery the first time you use it. You can search for a single file out of millions, and it appears before you even finish typing the name—meanwhile, the native Windows Search is often still stuck loading its slow green progress bar.
 
 The secret behind why **Voidtools Everything** vastly outperforms Windows Search isn't magic; it's just brilliant engineering and a fundamentally different design philosophy.

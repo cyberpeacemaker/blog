@@ -1,11 +1,15 @@
 ---
-created: 2026-07-17 14:07
-updated: 2026-07-17 14:07
-tags: []
-type: reference
-lang: en
+title: "Meeting Minutes Technique"
+description: "Summarizes a practical Chinese workflow for preparing, capturing, and delivering useful meeting minutes."
+created: 2026-07-17
+updated: 2026-07-17
+type: howto
+lang: zh
 status: draft
+tags: [workflow]
 ---
+
+> Related: [[07-Productivity-Work]] · [[meeting-minute]] · [[word-changes-tracking]]
 被指派寫會議記錄？先別嘆氣！這雖然看似是繁瑣的行政工作，但其實是**快速掌握公司業務核心、在主管面前展現邏輯能力**的絕佳機會。
 
   

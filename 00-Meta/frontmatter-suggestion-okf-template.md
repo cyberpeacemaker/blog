@@ -1,11 +1,15 @@
 ---
-created: 2026-07-17 14:07
-updated: 2026-07-17 14:07
-tags: []
+title: "Frontmatter Template Suggestions for OKF"
+description: "Connects lightweight documentation frontmatter with OKF-style Markdown for AI-readable knowledge repositories."
+created: 2026-07-17
+updated: 2026-07-17
 type: reference
 lang: en
 status: draft
+tags: [meta, ai]
 ---
+
+> Related: [[frontmatter-schema]] · [[yaml-okf]] · [[MOC - AI Agents]]
 Short answer: **Absolutely, yes.**
 
 If you are managing multiple projects with growing documentation, enforcing a frontmatter template is one of the best preventative measures against "doc rot" (where documents go to die and nobody knows who wrote them, why they exist, or if they are still relevant).

@@ -1,11 +1,15 @@
 ---
-created: 2026-07-17 21:07
-updated: 2026-07-17 21:07
-tags: []
-type: reference
+title: "Extract Excel Data"
+description: "Compares Python, CLI, Node.js, and manual workflows for converting Excel files into CSV, JSON, or Markdown."
+created: 2026-07-17
+updated: 2026-07-17
+type: howto
 lang: en
 status: draft
+tags: [dev, python]
 ---
+
+> Related: [[MOC - Dev Environment]] · [[python-venv]] · [[requirements]]
 Extracting data from Excel and converting it into machine-friendly formats (like CSV, JSON, or Markdown) is a very common task. Depending on your workflow, you can do this using **code**, **command-line tools**, or **built-in Excel features**.
 
 Here is a breakdown of the most efficient ways to get this done.

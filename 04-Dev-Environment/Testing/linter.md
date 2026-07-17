@@ -1,11 +1,15 @@
 ---
-created: 2026-07-17 15:07
-updated: 2026-07-17 15:07
-tags: []
+title: "Linter Basics"
+description: "Explains what linters do, when to use them, and how they fit IDE and command-line development workflows."
+created: 2026-07-17
+updated: 2026-07-17
 type: reference
 lang: en
 status: draft
+tags: [dev]
 ---
+
+> Related: [[MOC - Dev Environment]] · [[github-actions-sensitive-patterns]] · [[dry-run-pytest]]
 Imagine having a ruthlessly organized, slightly pedantic friend sitting next to you while you code, gently tapping your shoulder every time you typo a variable name, forget a closing bracket, or write code that works but looks like a crime scene.
 
 That is a **linter**.

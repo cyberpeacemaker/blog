@@ -2,7 +2,7 @@
 title: "MOC - Claude & Cursor"
 description: "Maps Claude, Cursor, AI-assisted coding, skills, and design workflow notes."
 created: 2026-07-07
-updated: 2026-07-16
+updated: 2026-07-17
 tags: [claude, cursor, moc]
 type: hub
 lang: en
@@ -25,6 +25,7 @@ AI-assisted coding: Claude, Cursor IDE, skills, and design workflows.
 - [[cursor-skip]] — Cursor skip patterns
 - [[cursor-cloud-sandbox-trap]] — scheduled automation sandbox and PR branch workflow
 - [[automation-prompt-suggestion]] — prompt pattern for unattended Cursor inbox triage
+- [[frontmatter-ai-assisted]] — AI-assisted documentation frontmatter rules for Cursor and Claude
 
 ## Claude Skills & Commands
 

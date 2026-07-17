@@ -1,11 +1,15 @@
 ---
-created: 2026-07-17 14:07
-updated: 2026-07-17 14:07
-tags: []
+title: "Gmail Top Picks and Remaining Promotions"
+description: "Explains why Gmail promotions may appear out of time order because Top picks are separated from remaining promotions."
+created: 2026-07-17
+updated: 2026-07-17
 type: reference
-lang: en
+lang: zh
 status: draft
+tags: [workflow]
 ---
+
+> Related: [[07-Productivity-Work]] · [[mail]] · [[email-setting]]
 這是一個好問題！從畫面上來看，確實有一點點「時間錯置」的視覺落差。
 
 其實最關鍵的原因，是因為 Gmail 的**區塊分類機制**和**時間點的判定**：
