@@ -5,7 +5,7 @@
 1樓 院長感謝卡
 - nics claw 回復 (這是要回啥？是要我整理minute嗎?)
 - 桃園meeting minutes
-- bec ctf 完整報告 (unencrypted channel, dnp3異常覆現)
+- bec ctf 完整報告 (unencrypted channel, dnp3異常覆現, cleartext category)
 - 護照
 - mdm 重開機測試
 - 桃園出差結報
