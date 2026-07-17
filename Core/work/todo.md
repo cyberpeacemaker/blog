@@ -2,6 +2,7 @@
 - project-shepherd logo
 - PR check
 # Now
+1樓 院長感謝卡
 - 總監 anthropic 回復
 - nics claw 回復
 - 桃園meeting minutes
@@ -122,6 +123,7 @@ Malcolm threat hunting methodology
 # 暫時推遲的事情
 
 - cisa派訓
+- cyber storm cisa
 - 耳提面目補充
 - Google Threat Intelligence
 	- 結合總監想做的示意圖？
