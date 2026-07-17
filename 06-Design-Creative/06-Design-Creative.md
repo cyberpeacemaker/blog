@@ -25,6 +25,6 @@ UI/UX, p5.js, visual tools, and creative coding.
 - [[asana-figma]]
 - [[visual-feedback]]
 - [[pie-server]]
-- [[claude-design]]
+- [[06-Design-Creative/claude-design]]
 
 See also: [[MOC - Claude & Cursor]]

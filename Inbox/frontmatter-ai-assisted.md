@@ -87,7 +87,6 @@ tags: [core-concept, setup, deployment]
 
 Ensure all fields are filled. Do not leave placeholder text.
 
-```
 
 > 💡 **Using Claude.ai Web Projects?** If you are using the web interface with Claude "Projects", upload this `CLAUDE.md` file into the Project Files, or copy-paste the markdown above directly into the **Project Instructions** panel in the UI.
 
@@ -102,5 +101,4 @@ To tie this all together:
 3. **The "AI Hand-off":** When you tell Cursor, *"Write a guide on how to configure our new Postgres DB,"* the AI will read its own system rules, construct the markdown file, prepopulate the frontmatter with `type: "guide"`, and leave `verified: false` so you know to double-check its work.
 
 Are you hoping to use these YAML fields to eventually build a searchable developer dashboard, or is the main goal right now just keeping the project files clean and searchable?
-```
 

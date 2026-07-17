@@ -2,18 +2,13 @@
 - project-shepherd logo
 - PR check
 # Now
+- mdm 重開機測試
 - nics claw
 - 桃園meeting minutes
 - bec ctf 完整報告 (unencrypted channel, dnp3異常覆現, cleartext category)
-- 護照
-- mdm 重開機測試
+- 護照 > CISA(ESTA) > 開戶
 - 桃園出差結報
-- cursor-rule
-- [git 101]([Introduction - Training | Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/intro-to-git/0-introduction))
-- [claude 101](https://www.anthropic.com/learn)
-- new project template
-	- claude
-	- gitignore
+
 
 
 
@@ -123,9 +118,15 @@ Malcolm threat hunting methodology
 
 # 暫時推遲的事情
 
-- cisa派訓
-- cyber storm cisa
+- cursor-rule
+- [git 101]([Introduction - Training | Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/intro-to-git/0-introduction))
+- [claude 101](https://www.anthropic.com/learn)
+- new project template
+	- claude
+	- gitignore
+
 - 耳提面目補充
+- cyber storm cisa
 - Google Threat Intelligence
 	- 結合總監想做的示意圖？
 	- m-trend

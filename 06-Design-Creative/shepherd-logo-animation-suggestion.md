@@ -9,7 +9,7 @@ status: draft
 tags: [ai, uncategorized]
 ---
 
-> Related: [[06-Design-Creative]] · [[claude-design]] · [[svg-line-drawing]]
+> Related: [[06-Design-Creative]] · [[06-Design-Creative/claude-design]] · [[svg-line-drawing]]
 
 這款 **Project Shepherd** 的 Logo 設計得非常出色！圓形徽章、幾何網格斗篷、守護者與羊群的意象，完美契合了「大隱隱於市（High-end hunters often appear as prey）」與「靜默守護者（INFJ）」的品牌設定。
 

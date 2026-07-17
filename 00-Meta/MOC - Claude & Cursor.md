@@ -35,7 +35,7 @@ AI-assisted coding: Claude, Cursor IDE, skills, and design workflows.
 
 ## Design with AI
 
-- [[claude-design]] — Claude Design workflow
+- [[06-Design-Creative/claude-design]] — Claude Design workflow
 - [[claude-design-toolbar]] — Claude design toolbar
 - [[design-60-30-10]] — 60-30-10 design rule
 
