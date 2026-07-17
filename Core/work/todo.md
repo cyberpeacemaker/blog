@@ -2,7 +2,6 @@
 - project-shepherd logo
 - PR check
 # Now
-1樓 院長感謝卡
 - nics claw 回復 (這是要回啥？是要我整理minute嗎?)
 - 桃園meeting minutes
 - bec ctf 完整報告 (unencrypted channel, dnp3異常覆現, cleartext category)
@@ -11,6 +10,7 @@
 - 桃園出差結報
 - vmware
 - cursor-rule
+- 1樓 院長感謝卡
 - [git 101]([Introduction - Training | Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/intro-to-git/0-introduction))
 - [claude 101](https://www.anthropic.com/learn)
 - new project
