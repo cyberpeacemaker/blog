@@ -3,7 +3,7 @@ title: "MOC - Dev Environment"
 description: "Maps developer tooling, Git, Python, VS Code, testing, Windows, and WSL environment notes."
 created: 2026-07-07
 updated: 2026-07-17
-tags: [dev, environment, moc]
+tags: [dev, moc]
 type: hub
 lang: en
 status: published

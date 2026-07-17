@@ -1,6 +1,9 @@
 ---
+title: "07-Productivity-Work"
+description: "Maps Slack, meetings, Gmail, Google Drive, Obsidian, and work productivity notes."
 created: 2026-07-07
-tags: [moc, productivity]
+updated: 2026-07-17
+tags: [moc, workflow]
 type: hub
 lang: en
 status: published

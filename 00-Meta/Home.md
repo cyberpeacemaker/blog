@@ -1,5 +1,8 @@
 ---
+title: "Knowledge Base"
+description: "Entry point for the blog vault and its topic maps, workflows, core spaces, and templates."
 created: 2026-07-07
+updated: 2026-07-17
 tags: [meta, moc]
 type: hub
 lang: en
