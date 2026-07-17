@@ -1,5 +1,12 @@
-我上次的meeting report放哪裡？怎麼會不再這個資料夾？怎麼會這樣！真的詩詩意了
-好像真的睡覺太少，大腦無法最整理思考的內容
+太棒了，everything很好用，並且幫助我回想
+第零次會議它儲存的位置並不好，照理說還沒有被分類的應該都被放在meeting-note
+
+# 會議記錄
+可以考慮會議範本
+人事時地物
+decision, action item
+
+不過當時我的情況應該是正在打造Project-shepherd，而且應該說我
 ### Automation
 - obsidian 日記整理
 - git auto commit?
