@@ -1,5 +1,8 @@
 ---
+title: "MOC - Dev Environment"
+description: "Maps developer tooling, Git, Python, VS Code, testing, Windows, and WSL environment notes."
 created: 2026-07-07
+updated: 2026-07-16
 tags: [dev, environment, moc]
 type: hub
 lang: en
@@ -20,6 +23,14 @@ Developer tooling: Git, Python, VS Code, testing, and environment setup.
 - [[microsoft-store]] — Microsoft Store vs standalone installers for dev tools
 
 ## Windows, WSL, and Shells
+
+- [[wsl-network-troubleshooting-dns-mirrored]] — Chinese WSL DNS, mirrored networking, proxy, firewall, and GitHub timeout checklist
+- [[wsl-mtu]] — test, calculate, and persist WSL MTU values for VPN and corporate network issues
+- [[wsl-conf-systemd-mtu]] — add an MTU boot command without overwriting WSL systemd support
+- [[wsl-network-troubleshooting-mtu]] — diagnose WSL TCP timeouts when ping and DNS still work
+- [[nics-claw-wsl]] — WSL-native clone, Conda, and VS Code workflow for NICS CLAW setup
+- [[nics-claw-avoid-vmware]] — avoid adding VMware/Kali when WSL2, Docker Desktop, and VS Code match the team environment
+- [[symantec-policy-location]] — verify and refresh Symantec Endpoint Protection policy serial numbers
 - [[wsl-network-troubleshooting]] — WSL2 DNS, IPv6, mirrored networking, MTU, firewall, and proxy fixes
 - [[wsl-ipv4-ipv6]] — prefer IPv4 in WSL when IPv6 routing causes curl and package-manager timeouts
 - [[wsl-mirrored-cancel-wslconfig]] — roll back WSL mirrored networking to default NAT mode
@@ -33,6 +44,8 @@ Developer tooling: Git, Python, VS Code, testing, and environment setup.
 - [[windows-file-permissions-icacls]] — chmod and icacls equivalents for sensitive file permissions
 
 ## Git
+
+- [[canary-pattern]] — harmless secret-scanning canary string for hook and CI guardrail verification
 - [[github-markdown-spacing]] — GitHub Markdown code fence failures from hidden spaces and list indentation
 - [[github-ssh-gpgkey]] — GitHub SSH, HTTPS, PAT, and Credential Manager troubleshooting in WSL
 - [[win11-git-clone-ssh]] — Windows 11 GitHub SSH clone setup with HTTPS fallback
@@ -102,6 +115,12 @@ Developer tooling: Git, Python, VS Code, testing, and environment setup.
 - [[powershell-execution-policy]] — PowerShell execution policy
 
 ## VS Code / Cursor
+
+- [[vscode-custom-visual-text]] — customize VS Code editor typography, Markdown syntax colors, preview CSS, and extensions
+- [[vscode-custom-visual-template]] — language-specific settings for visually separating plaintext and Markdown files
+- [[vscode-close-http-server]] — stop Python HTTP servers cleanly from the VS Code integrated terminal
+- [[vscode-fold-markdown-vs-code]] — Markdown folding behavior versus programming-language folding in VS Code
+- [[vscode-blockquote-lines]] — add Markdown blockquote markers to many lines with regex or multi-cursor editing
 - [[vscode-gitlens-get-started]] — GitLens getting started
 - [[vscode-extensions-starter-pack]] — VS Code extensions starter pack
 - [[git-blame-timeline-gitlens]] — Git blame, Timeline, and GitLens workflows

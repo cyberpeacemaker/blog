@@ -1,5 +1,8 @@
 ---
+title: "06-Design-Creative"
+description: "Maps UI/UX, visual design, creative coding, SVG animation, and AI-assisted design notes."
 created: 2026-07-07
+updated: 2026-07-16
 tags: [moc, design]
 type: hub
 lang: en
@@ -10,6 +13,9 @@ status: published
 
 UI/UX, p5.js, visual tools, and creative coding.
 
+- [[shepherd-logo-animation-suggestion]] — Project Shepherd cyber-thriller logo animation prompts
+- [[svg-line-drawing]] — SVG line drawing and point-to-point animation tools
+- [[svg-animation-survey]] — AI-assisted SVG animation workflows
 - [[design]]
 - [[design-60-30-10]]
 - [[p5js]]

@@ -1,5 +1,8 @@
 ---
+title: "MOC - AI Agents"
+description: "Maps AI agent frameworks, context management, local models, and agent instruction notes."
 created: 2026-07-07
+updated: 2026-07-16
 tags: [ai, agents, moc]
 type: hub
 lang: en
@@ -11,6 +14,8 @@ status: published
 AI agent frameworks, multi-agent systems, context management, and local LLM workflows.
 
 ## Frameworks & Architecture
+
+- [[cursor-plugin-gsap-neon-postgres]] — AI skill plugins for animation and serverless Postgres workflows in Cursor
 - [[local-cv-yolo-vs-cloud-vision]] — local YOLO vision vs cloud vision models
 - [[ai-new-era-image-identification]] — MCP vision bridge vs local image recognition
 
