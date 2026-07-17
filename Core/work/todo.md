@@ -2,21 +2,19 @@
 - project-shepherd logo
 - PR check
 # Now
-- nics claw 回復 (這是要回啥？是要我整理minute嗎?)
+- nics claw
 - 桃園meeting minutes
 - bec ctf 完整報告 (unencrypted channel, dnp3異常覆現, cleartext category)
 - 護照
 - mdm 重開機測試
 - 桃園出差結報
-- vmware
 - cursor-rule
-- 1樓 院長感謝卡
 - [git 101]([Introduction - Training | Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/intro-to-git/0-introduction))
 - [claude 101](https://www.anthropic.com/learn)
-- new project
+- new project template
 	- claude
 	- gitignore
-- cycom
+
 
 
 # Bec ctf 完整報告
@@ -153,6 +151,7 @@ Malcolm threat hunting methodology
 
 # 不太重要
 - 會議同意書 (經理遇到的問題)
+-  vmware
 - google ai studio
 - [gsap](https://gsap.com/docs/v3/Installation/)
 - github profile [readme tool](https://www.readmecodegen.com)
@@ -167,6 +166,7 @@ Malcolm threat hunting methodology
 - 開機startup檢查
 - Slack+Asana+Jira的測試
 - Github action
+- -cycom
 # Hacking AI
 剛剛想到可以測試一下hacking類型的AI，不過帶出幾個話題
  - local llm
