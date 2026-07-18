@@ -14,5 +14,6 @@
 
 # Project Specific
 
-- **Ignore:** `TODO.md`, `DIARY.md`, `temp/`, `archive/`, `assets/`
-- don't take status: draft as rule
+- **Ignore:** 
+	- `TODO.md`, `DIARY.md`, `temp/`, `archive/`, `assets/`
+	- Any files with `status: "draft"` in the frontmatter
