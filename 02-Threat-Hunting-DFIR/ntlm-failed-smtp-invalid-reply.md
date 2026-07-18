@@ -1,11 +1,16 @@
 ---
-created: 2026-07-17 22:07
-updated: 2026-07-17 22:07
-tags: []
+title: "NTLM Failure and SMTP Invalid Reply"
+description: "Connects failed NTLM authentication, Exchange receive connector trust, and Suricata SMTP invalid reply alerts."
+created: 2026-07-17
+updated: 2026-07-18
+tags: [threat-hunting, dfir, malcolm, nsm]
 type: reference
-lang: en
+lang: zh
 status: draft
 ---
+
+> Related: [[MOC - Threat Hunting]] · [[suricata-alert-smtp-invalid-reply]] · [[open-relay-email-spoofing]]
+
 這是一次非常深入且精準的對話！你挑出的這段分析，切中了郵件安全中「內網防禦邊界模糊」的核心痛點。
 
 下面我為你徹底拆解「Exchange 運作機制與漏洞成因」，並詳細分析這起事件與 **Suricata `SMTP invalid reply` 警報**之間極具價值的技術關聯。

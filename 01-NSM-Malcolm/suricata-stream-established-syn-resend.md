@@ -1,11 +1,16 @@
 ---
-created: 2026-07-17 22:07
-updated: 2026-07-17 22:07
-tags: []
+title: "Suricata Stream Established SYN Resend"
+description: "Interprets Suricata established-state SYN resend alerts in CTF, evasion, and packet-reuse contexts."
+created: 2026-07-17
+updated: 2026-07-18
+tags: [malcolm, nsm, threat-hunting]
 type: reference
-lang: en
+lang: zh
 status: draft
 ---
+
+> Related: [[MOC - Malcolm & NSM]] · [[zeek-suricata]] · [[ip-fragmentation-evasion]]
+
 這份 Log 資訊量巨大，而且非常精彩！這是一個典型的 **MSRPC（Microsoft RPC，連接埠 135）上的 NTLM 身分驗證交換**，裡面藏了非常多好玩的 CTF 與攻擊特徵。
 
 我們在解析為什麼它會觸發 **`SURICATA STREAM ESTABLISHED SYN resend`** 之前，先來看看這段 Payload 裡隱藏的「黑客指紋」：

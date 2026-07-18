@@ -2,7 +2,7 @@
 title: "MOC - Threat Hunting"
 description: "Maps threat hunting methodology, forensics, malware, encrypted traffic analysis, and CTF notes."
 created: 2026-07-07
-updated: 2026-07-17
+updated: 2026-07-18
 tags: [threat-hunting, dfir, mitre, moc]
 type: hub
 lang: en
@@ -19,6 +19,7 @@ Threat hunting methodology, forensics, CTF, and write-up standards.
 - [[generate-ticket]] — create MITRE ATT&CK-driven hunting tickets with hypotheses and data sources
 - [[hunting-lead-trigger-entry-point]] — English terms for hunting leads, triggers, pivots, and entry points
 
+- [[threat-hunting-workflow-example]] — hypothesis-driven hunt workflow from Sigma through OpenSearch, Zeek, Arkime, and YARA
 - [[threat-hunt-evolution]] — threat hunting maturity model
 - [[mitre]] — MITRE ATT&CK / CTI reference
 - [[writeup-guideline]] — write-up quality framework (no time-travel analysis)
@@ -29,6 +30,8 @@ Threat hunting methodology, forensics, CTF, and write-up standards.
 - [[malcolm-threat-hunting-poi]] — Malcolm hunt starting points using Suricata, Zeek Notice, Zeek Weird, and LongConnection pivots
 - [[cross-id-analysis]] — Zeek UID and Community ID pivots across logs and PCAP
 - [[zeek-seen-bytes]] — volumetric profiling with Zeek `seen_bytes`
+- [[open-relay-email-spoofing]] — distinguish inbound spoofing from true open relay behavior in SMTP evidence
+- [[ntlm-failed-smtp-invalid-reply]] — Exchange NTLM failure and Suricata SMTP invalid reply correlation
 - [[raw-tcp-spoofed-http-c2]] — high-entropy raw TCP traffic masquerading as HTTP
 - [[wireshark-export-object-multipart-fix]] — recover payloads from multipart Export Objects output
 - [[bec-lab-pcap-dedup]] — duplicate BEC lab PCAP ingestion and session reasoning
@@ -43,6 +46,8 @@ Threat hunting methodology, forensics, CTF, and write-up standards.
 ## Malware & Offense
 - [[threat-hunting-c2-volume-beacon]] — C2 volume beacon traffic profile
 - [[c2-turns-traffic-profile]] — packet and stream turns as a C2 behavior profile
+- [[c2-dual-beacon]] — low- and high-privilege C2 beacon redundancy pattern
+- [[c2-command-example]] — Caldera-like UAC bypass command staging and cleanup walkthrough
 - [[powershell-encodedcommand]] — PowerShell EncodedCommand decoding and detection context
 - [[zeek-rita]] — Zeek logs feeding RITA beacon analytics
 - [[rita-ac-hunter]] — compare RITA and AC-Hunter for network C2 hunting
@@ -72,6 +77,7 @@ Threat hunting methodology, forensics, CTF, and write-up standards.
 ## Threat Intel
 
 - [[google-threat-intelligence]] — Google Threat Intelligence
+- [[fully-undetected]] — phishing FUD as fully undetected infrastructure and fear/uncertainty/doubt social engineering
 
 ## CTF
 

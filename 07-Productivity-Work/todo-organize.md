@@ -1,11 +1,16 @@
 ---
-created: 2026-07-18 11:07
-updated: 2026-07-18 11:07
-tags: []
+title: "To-Do List Categories"
+description: "Summarizes Eisenhower, Kanban, priority, and task-energy categories for organizing work."
+created: 2026-07-18
+updated: 2026-07-18
+tags: [workflow]
 type: reference
-lang: en
+lang: zh
 status: draft
 ---
+
+> Related: [[07-Productivity-Work]] · [[business-productive-tool]] · [[adhoc-request]]
+
 你目前想到用 **Urgent（緊急）** 是非常好的開始！在職場與日常時間管理中，「緊急程度」確實是最常見的分類標準。
 
 延續我們前面討論的職場與商務情境，針對 To-Do List（待辦清單），歐美職場最流行幾種分類框架，以下幫你整理出最實用的分類法以及對應的**專業英文說法**：

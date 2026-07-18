@@ -1,11 +1,16 @@
 ---
-created: 2026-07-18 21:07
-updated: 2026-07-18 21:07
-tags: []
+title: "C2 UAC Bypass Command Example"
+description: "Breaks down a Caldera-like PowerShell command that stages UAC bypass, elevated agent execution, and cleanup."
+created: 2026-07-18
+updated: 2026-07-18
+tags: [threat-hunting, dfir, mitre]
 type: reference
-lang: en
+lang: zh
 status: draft
 ---
+
+> Related: [[MOC - Threat Hunting]] · [[caldera-sandcat-powershell-decode]] · [[powershell-encodedcommand]]
+
 這段截圖顯示的是一個 **C2（Command and Control，命令與控制）** 伺服器（從介面風格來看非常像是 **MITRE Caldera** 框架）向受控端主機（Agent）下達的一段 PowerShell 指令（`executor='psh'`）。
 
 這個指令的核心目的非常明確：**利用 UAC 繞過（UAC Bypass）工具提升權限，並在背景執行一個高權限的惡意程式（或後門），最後刪除工具以隱匿痕跡。**

@@ -1,11 +1,16 @@
 ---
-created: 2026-07-18 21:07
-updated: 2026-07-18 21:07
-tags: []
-type: reference
+title: "Zeek Weird SYN Inside Connection"
+description: "Explains Zeek SYN_inside_connection weird.log events and Malcolm triage pivots for repeated TCP SYNs."
+created: 2026-07-18
+updated: 2026-07-18
+tags: [malcolm, nsm]
+type: howto
 lang: en
 status: draft
 ---
+
+> Related: [[MOC - Malcolm & NSM]] · [[zeek-suricata]] · [[malcolm-threat-hunting-poi]]
+
 ## What is `SYN_inside_connection`?
 
 In Zeek (the network analysis engine inside Malcolm), `SYN_inside_connection` is an event generated in the **`weird.log`**. It means Zeek's TCP state machine observed a packet with the `SYN` flag set on a connection tuple (a specific source/destination IP and port combo) that it _already_ considers active, established, or mid-stream.

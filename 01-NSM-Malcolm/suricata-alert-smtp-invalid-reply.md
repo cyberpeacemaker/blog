@@ -1,11 +1,16 @@
 ---
-created: 2026-07-17 22:07
-updated: 2026-07-17 22:07
-tags: []
-type: reference
-lang: en
+title: "Suricata SMTP Invalid Reply Alert"
+description: "Explains the Suricata smtp.invalid_reply event and how to triage protocol anomalies."
+created: 2026-07-17
+updated: 2026-07-18
+tags: [malcolm, nsm, threat-hunting]
+type: howto
+lang: zh
 status: draft
 ---
+
+> Related: [[MOC - Malcolm & NSM]] · [[MOC - Threat Hunting]] · [[malcolm-threat-hunting-poi]]
+
 ### **`SURICATA SMTP invalid reply` 警報解析**
 
 這個警報是由 Suricata 的 **應用層解碼器（App-layer decoder）** 所觸發的內建事件。當 Suricata 監控網路流量時，發現某個 **SMTP 伺服器回傳給用戶端（Client）的響應（Reply）不符合 SMTP 協定標準**，就會觸發此警報。

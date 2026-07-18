@@ -20,6 +20,7 @@ Lucene syntax, JSON DSL, filters, and query patterns for Malcolm and OpenSearch.
 
 - [[opensearch-query-and]] — AND query patterns
 - [[opensearch-must-filter]] — must/filter clauses
+- [[threat-lead-filter-example-smtp]] — broaden SMTP Suricata leads with OpenSearch filters and Lucene queries
 - [[opensearch-request]] — OpenSearch request structure
 - [[arkime-query-opensearch]] — Arkime-specific queries
 
