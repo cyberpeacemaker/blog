@@ -14,4 +14,6 @@
 
 # Project Specific
 
-- **Ignore:** `TODO.md`, `DIARY.md`, `temp/`, `archive/`, `assets/`
+- **Ignore:** 
+	- `TODO.md`, `DIARY.md`, `temp/`, `archive/`, `assets/`
+	- Any files with `status: "draft"` in the frontmatter

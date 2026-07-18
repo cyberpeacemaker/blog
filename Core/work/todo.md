@@ -3,8 +3,9 @@
 - PR check
 # Now
 - mdm 重開機測試
-- nics claw
 - 桃園meeting minutes
+- nics-anthropic
+- nics claw
 - bec ctf 完整報告 (unencrypted channel, dnp3異常覆現, cleartext category)
 - 護照 > CISA(ESTA) > 開戶
 - 桃園出差結報
@@ -43,10 +44,10 @@ poi 這樣看起來很好，加上
 8. 承諾 三個月薪水 不是為了賺錢 
 9. appendix
 
-# YAML & OKF
+# frontmatter & OKF
 
-automated updated with git control
-add [doc,survey] 自動摘要yaml, kof
+- automated updated with git control
+- add [doc,survey] 自動摘要yaml, kof
 
 ```yaml
 ---
