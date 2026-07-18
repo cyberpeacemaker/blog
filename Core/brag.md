@@ -7,6 +7,10 @@ visibility: private
 tags: [workflow, career]
 ---
 
+- nics-anthropic
+- meetin-transcription
+- 
+
 > Related: [[Core]] · [[self-report-retro]] · [[08-Career-Presentations]]
 
 # 新人三月
