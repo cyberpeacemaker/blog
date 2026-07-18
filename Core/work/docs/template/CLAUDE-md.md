@@ -15,3 +15,4 @@
 # Project Specific
 
 - **Ignore:** `TODO.md`, `DIARY.md`, `temp/`, `archive/`, `assets/`
+- don't take status: draft as rule

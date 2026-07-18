@@ -1,4 +1,9 @@
 
+```YAML
+---
+status: "draft" 
+---
+```
 
 
 ```YAML
