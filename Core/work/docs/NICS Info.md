@@ -11,6 +11,7 @@ Address: 106, Taipei City, Da’an District, Fanghe Village, 和平東路三段1
 |---|---|---|
 |助理級|助理工程師|不定期契約|
 
+# 電池
 沒電池可以跟中間 橋姐 要
 
 # Duo
