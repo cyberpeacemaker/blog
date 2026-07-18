@@ -1,3 +1,6 @@
+---
+alwaysApply: true
+---
 # Pillar
 
 - **Workflow:** Plan → break into sub-tasks → implement (parallel when independent, sequential when dependent) → verify before moving on.
