@@ -1,3 +1,6 @@
+- check @CLAUDE.md , is it sounded?
+- check @frontmatter-guide.md , is it sounded? polish it.
+- add rule in @CLAUDE.md to follow @frontmatter-guide.md adding frontmatter when creating a new file. (is this a sounded plan?)
 
 # 搬遷
 - todo
