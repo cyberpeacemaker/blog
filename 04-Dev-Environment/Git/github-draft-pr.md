@@ -1,11 +1,15 @@
 ---
-created: 2026-07-17 11:07
-updated: 2026-07-17 11:07
-tags: []
+title: "Draft Pull Request"
+description: "Explains when draft pull requests help share work-in-progress code, run CI, and prevent accidental merges."
+created: 2026-07-17
+updated: 2026-07-17
 type: reference
 lang: en
 status: draft
+tags: [dev, git]
 ---
+
+> Related: [[MOC - Dev Environment]] · [[github-collaboration-pr-loop]] · [[git-pr-example]]
 # Draft Pull Request (Software Development)
 
 In software development, a **Draft Pull Request** is a feature (on GitHub, GitLab, etc.) that allows you to open a PR to show your progress without triggering formal reviews or allowing it to be accidentally merged.

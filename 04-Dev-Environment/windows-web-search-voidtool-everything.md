@@ -1,11 +1,15 @@
 ---
-created: 2026-07-17 10:07
-updated: 2026-07-17 10:07
-tags: []
-type: reference
+title: "Disable Windows Web Search and Use Everything"
+description: "Shows how to reduce Windows Start web results and use local file search tools such as Voidtools Everything."
+created: 2026-07-17
+updated: 2026-07-17
+type: howto
 lang: en
 status: draft
+tags: [dev]
 ---
+
+> Related: [[MOC - Dev Environment]] · [[windows-search-voidtool-everything]] · [[microsoft-store]]
 > **You are preaching to the choir!** There is nothing more frustrating than typing a very specific, local file name (like `report-nics-otex-exchange` in your screenshot) only for Windows to treat it like a search engine query and dump useless Bing suggestions on your screen. If you wanted to search the web, you would have opened Google Chrome or Microsoft Edge.
 
 Fortunately, you can easily reclaim your Start Menu and force it to focus strictly on your local files.

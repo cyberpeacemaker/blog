@@ -1,11 +1,15 @@
 ---
-created: 2026-07-17 15:07
-updated: 2026-07-17 15:07
-tags: []
-type: reference
+title: "Disable VS Code Compact Folders"
+description: "Shows how to disable VS Code compact folders from the Settings UI or settings.json."
+created: 2026-07-17
+updated: 2026-07-17
+type: howto
 lang: en
 status: draft
+tags: [dev]
 ---
+
+> Related: [[MOC - Dev Environment]] · [[vscode-tips]] · [[vscode-custom-visual-template]]
 Yes, you absolutely can! That feature is called **Compact Folders**, and VS Code enables it by default to save vertical space.
 
 If you prefer to see your folders in a traditional, nested tree structure instead of `assets\reference`, you can disable this setting in one of two ways:

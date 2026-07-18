@@ -2,7 +2,7 @@
 title: "MOC - AI Agents"
 description: "Maps AI agent frameworks, context management, local models, and agent instruction notes."
 created: 2026-07-07
-updated: 2026-07-16
+updated: 2026-07-17
 tags: [ai, agents, moc]
 type: hub
 lang: en
@@ -40,6 +40,7 @@ AI agent frameworks, multi-agent systems, context management, and local LLM work
 - [[frontmatter-ai-a2a-mcp-rag-okf]] — AI/RAG/MCP/A2A rationale for frontmatter design
 - [[rag-tree-okf-graph]] — folder namespaces and MOC graph links for agent-readable RAG/OKF navigation
 - [[frontmatter-update-cursor-plan]] — Cursor plan for frontmatter schema and template alignment
+- [[frontmatter-ai-assisted]] — Cursor and CLAUDE.md rules for AI-assisted documentation frontmatter
 - [[dynamic-context-injection]] — dynamic context injection
 - [[03-AI-Agents/claude-session.context-window|claude-session.context-window]] — Claude context window management
 - [[ai-artifacts]] — AI artifact handling

@@ -1,11 +1,15 @@
 ---
-created: 2026-07-17 21:07
-updated: 2026-07-17 21:07
-tags: []
+title: "RITA and AC-Hunter"
+description: "Compares RITA and AC-Hunter as network threat hunting tools for C2 and beacon detection."
+created: 2026-07-17
+updated: 2026-07-17
 type: reference
 lang: en
 status: draft
+tags: [threat-hunting, nsm]
 ---
+
+> Related: [[MOC - Threat Hunting]] · [[zeek-rita]] · [[MOC - Malcolm & NSM]]
 **RITA** and **AC-Hunter** are closely related network threat hunting tools developed by the cybersecurity firm **Active Countermeasures**. They are specifically designed to analyze network traffic and uncover hidden **Command and Control (C2)** communication channels used by attackers who have bypassed traditional security perimeters.
 
 While they share the same core underlying detection capabilities, they serve different user preferences and operational environments.

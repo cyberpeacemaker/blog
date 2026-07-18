@@ -1,11 +1,15 @@
 ---
-created: 2026-07-17 14:07
-updated: 2026-07-17 14:07
-tags: []
+title: "Google Drive General Access and Ownership"
+description: "Explains why organization-wide Google Drive edit access does not transfer ownership of uploaded files."
+created: 2026-07-17
+updated: 2026-07-17
 type: reference
 lang: en
 status: draft
+tags: [workflow]
 ---
+
+> Related: [[07-Productivity-Work]] · [[obsidian-supported-files]] · [[mail]]
 This is a classic Google Drive permissions puzzle! It looks confusing at first glance, but there is a very logical reason why **史賀文** owns that file even though they aren't explicitly named in the folder's direct "People with access" list.
 
 This happens due to two core Google Drive features working together:

@@ -1,11 +1,15 @@
 ---
-created: 2026-07-17 08:07
-updated: 2026-07-17 08:07
-tags: []
-type: reference
+title: "GitHub Pull Request Templates"
+description: "Explains why pull request templates improve review context and how to configure them in GitHub repositories."
+created: 2026-07-17
+updated: 2026-07-17
+type: howto
 lang: en
 status: draft
+tags: [dev, git]
 ---
+
+> Related: [[MOC - Dev Environment]] · [[github-collaboration-pr-loop]] · [[github-draft-pr]]
 We’ve all been there: you open a pull request (PR) to review a colleague's code, and the description is either completely blank or says something incredibly descriptive like _"fixed some stuff."_
 
 Enter the **Pull Request Template**. It is a developer's best friend for keeping sanity intact during code reviews. Let’s dive into what they are, why they exist, and how you can start using them.

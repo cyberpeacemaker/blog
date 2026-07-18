@@ -1,11 +1,15 @@
 ---
-created: 2026-07-17 11:07
-updated: 2026-07-17 11:07
-tags: []
-type: reference
+title: "GitHub Issue Templates"
+description: "Explains how GitHub issue templates standardize bug and feature reports for maintainers."
+created: 2026-07-17
+updated: 2026-07-17
+type: howto
 lang: en
 status: draft
+tags: [dev, git]
 ---
+
+> Related: [[MOC - Dev Environment]] · [[github-collaboration-pr-loop]] · [[github-pr-template]]
 If Pull Request templates save the _reviewers'_ sanity, **Issue Templates** save the _maintainers'_ sanity.
 
 If you've ever received a ticket from a user or stakeholder that just says, _"The login button is broken,"_ with absolutely no context, screenshots, or error logs, then you already know exactly why Issue Templates are a lifesaver.

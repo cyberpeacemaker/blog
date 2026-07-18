@@ -1,11 +1,15 @@
 ---
-created: 2026-07-17 21:07
-updated: 2026-07-17 21:07
-tags: []
-type: reference
+title: "Git Hooks"
+description: "Explains client-side and server-side Git hooks, common quality-control uses, and a pre-commit conflict-marker example."
+created: 2026-07-17
+updated: 2026-07-17
+type: howto
 lang: en
 status: draft
+tags: [dev, git]
 ---
+
+> Related: [[MOC - Dev Environment]] · [[git-hook-serverside-github-action]] · [[github-hook-action]]
 Think of Git hooks as your personal, automated quality-control guards. They are custom scripts that Git fires off automatically whenever a major action happens—like committing, pushing, or merging.
 
 If your code doesn't meet the standards you've set, these guards will politely (or not-so-politely) stop you in your tracks before you push mistakes to production.

@@ -1,11 +1,15 @@
 ---
-created: 2026-07-17 15:07
-updated: 2026-07-17 15:07
-tags: []
-type: reference
+title: "AI-Assisted Documentation Frontmatter Rules"
+description: "Explains how Cursor rules and CLAUDE.md can enforce documentation frontmatter in AI-assisted engineering workflows."
+created: 2026-07-17
+updated: 2026-07-17
+type: howto
 lang: en
 status: draft
+tags: [ai, cursor]
 ---
+
+> Related: [[MOC - AI Agents]] · [[MOC - Claude & Cursor]] · [[CLAUDE]]
 In the modern AI-assisted engineering stack, **your documentation rules should live directly inside your project repository.** This is often called a "Git-First" or "In-Repo" context strategy.
 
 Because you are primarily using **Cursor** and **Claude**, you have a massive advantage: both of these tools are designed to read project-level markdown configuration files to guide their behavior.

@@ -1,11 +1,15 @@
 ---
-created: 2026-07-17 21:07
-updated: 2026-07-17 21:07
-tags: []
+title: "Frontmatter Benefits and Deployment"
+description: "Explains why lightweight frontmatter improves documentation quality, searchability, and automation."
+created: 2026-07-17
+updated: 2026-07-17
 type: reference
 lang: en
 status: draft
+tags: [meta, workflow]
 ---
+
+> Related: [[frontmatter-schema]] · [[Tag Taxonomy]] · [[YAML-markdown]]
 Short answer: **Absolutely, yes.**
 
 If you are managing multiple projects with growing documentation, enforcing a frontmatter template is one of the best preventative measures against "doc rot" (where documents go to die and nobody knows who wrote them, why they exist, or if they are still relevant).

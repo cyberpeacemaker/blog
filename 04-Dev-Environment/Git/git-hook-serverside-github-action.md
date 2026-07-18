@@ -1,11 +1,15 @@
 ---
-created: 2026-07-17 21:07
-updated: 2026-07-17 21:07
-tags: []
+title: "Server-Side Git Hooks vs GitHub Actions"
+description: "Compares remote Git hooks and GitHub Actions by timing, enforcement power, hosting model, and branch protection role."
+created: 2026-07-17
+updated: 2026-07-17
 type: reference
 lang: en
 status: draft
+tags: [dev, git]
 ---
+
+> Related: [[MOC - Dev Environment]] · [[github-hook-action]] · [[github-action-flaws]]
 It is easy to see why these two get confused: both are automated scripts that run on the cloud side of your git workflow.
 
 However, the fundamental difference comes down to **timing** and **control**—specifically, whether the code is allowed into the repository _before_ or _after_ the automation runs.

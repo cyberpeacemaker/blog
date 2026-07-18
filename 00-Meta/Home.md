@@ -1,5 +1,8 @@
 ---
+title: "Knowledge Base"
+description: "Entry point for the blog vault and its topic maps, workflows, core spaces, and templates."
 created: 2026-07-07
+updated: 2026-07-17
 tags: [meta, moc]
 type: hub
 lang: en
@@ -48,4 +51,7 @@ Entry point for the blog vault. Use the MOCs below to navigate by topic.
 - [[writeup-guideline]] — CTF/IR write-up framework
 - [[YAML-markdown]] — frontmatter syntax
 - [[frontmatter-schema]] — Tier 1/2/3 fields, design principles, template index
+- [[frontmatter-benefit-deploy]] — lightweight frontmatter benefits and rollout guidance
+- [[frontmatter-suggestion-okf-template]] — OKF-oriented frontmatter template suggestions
+- [[frontmatter-template-suggestion]] — AI-agent frontmatter field suggestions
 - [[Tag Taxonomy]] — standard tags for this vault

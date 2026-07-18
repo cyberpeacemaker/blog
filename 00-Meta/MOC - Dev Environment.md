@@ -2,8 +2,8 @@
 title: "MOC - Dev Environment"
 description: "Maps developer tooling, Git, Python, VS Code, testing, Windows, and WSL environment notes."
 created: 2026-07-07
-updated: 2026-07-16
-tags: [dev, environment, moc]
+updated: 2026-07-17
+tags: [dev, moc]
 type: hub
 lang: en
 status: published
@@ -42,11 +42,18 @@ Developer tooling: Git, Python, VS Code, testing, and environment setup.
 - [[powershell-v5-v7]] — switch VS Code from Windows PowerShell 5 to PowerShell 7
 - [[powershell-and-operator]] — alternatives to && in Windows PowerShell 5
 - [[windows-file-permissions-icacls]] — chmod and icacls equivalents for sensitive file permissions
+- [[windows-search-voidtool-everything]] — why Voidtools Everything is faster than Windows Search
+- [[windows-web-search-voidtool-everything]] — disable Windows web results and use local file search
 
 ## Git
 
 - [[canary-pattern]] — harmless secret-scanning canary string for hook and CI guardrail verification
 - [[github-markdown-spacing]] — GitHub Markdown code fence failures from hidden spaces and list indentation
+- [[github-assignees]] — GitHub issue ownership and template assignee routing
+- [[github-branch-protection]] — branch protection rules, required PRs, checks, and rulesets
+- [[github-draft-pr]] — draft pull request use cases for WIP feedback and CI
+- [[github-issue-template]] — issue templates for structured bug and feature reports
+- [[github-pr-template]] — pull request templates for review context and checklists
 - [[github-ssh-gpgkey]] — GitHub SSH, HTTPS, PAT, and Credential Manager troubleshooting in WSL
 - [[win11-git-clone-ssh]] — Windows 11 GitHub SSH clone setup with HTTPS fallback
 - [[git-new-home]] — move an existing Git repo to a new GitHub remote while keeping history
@@ -61,6 +68,9 @@ Developer tooling: Git, Python, VS Code, testing, and environment setup.
 - [[github-collaboration]] — GitHub collaboration workflow for small teams
 - [[github-collaboration-personal-organization-account]] — personal-account collaboration and organization tradeoffs
 - [[github-hook-action]] — Git hooks vs GitHub Actions
+- [[git-hook]] — client-side and server-side Git hook basics
+- [[git-hook-serverside-github-action]] — remote Git hooks versus GitHub Actions enforcement timing
+- [[trusted-path-checker]] — Git safe.directory, trusted publishers, and path checker concepts
 - [[github-private-clone]] — private repo clone over SSH on Windows
 - [[github-ssh]] — GitHub SSH setup on Windows PowerShell
 - [[github-permission-ssh]] — SSH permission troubleshooting
@@ -97,6 +107,7 @@ Developer tooling: Git, Python, VS Code, testing, and environment setup.
 - [[conda-powershell]] — Conda in PowerShell on Windows
 
 - [[pyproject]] — pyproject.toml setup
+- [[extract-excel]] — convert Excel data to CSV, JSON, or Markdown with Python and CLI tools
 - [[python-import]] — Python import patterns
 - [[python-venv]] — Python venv
 - [[python-venv-v2]] — Python venv (updated)
@@ -117,6 +128,8 @@ Developer tooling: Git, Python, VS Code, testing, and environment setup.
 ## VS Code / Cursor
 
 - [[vscode-custom-visual-text]] — customize VS Code editor typography, Markdown syntax colors, preview CSS, and extensions
+- [[vscode-compact-folder]] — disable compact folders in VS Code Explorer
+- [[vscode-shrink-line-height]] — VS Code empty-line height limitations and Markdown display workarounds
 - [[vscode-custom-visual-template]] — language-specific settings for visually separating plaintext and Markdown files
 - [[vscode-close-http-server]] — stop Python HTTP servers cleanly from the VS Code integrated terminal
 - [[vscode-fold-markdown-vs-code]] — Markdown folding behavior versus programming-language folding in VS Code
@@ -139,6 +152,7 @@ Developer tooling: Git, Python, VS Code, testing, and environment setup.
 ## Testing
 
 - [[playwright]] — Playwright E2E testing
+- [[linter]] — static analysis basics and IDE/CLI lint workflows
 - [[jest]] — Jest unit testing
 - [[smoke]] — smoke testing
 - [[boundary-edge]] — boundary/edge testing

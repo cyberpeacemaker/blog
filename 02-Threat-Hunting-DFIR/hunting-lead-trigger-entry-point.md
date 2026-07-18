@@ -1,12 +1,15 @@
 ---
-created: 2026-07-17 16:07
-updated: 2026-07-17 16:07
-tags: []
+title: "Hunting Lead, Trigger, and Entry Point"
+description: "Clarifies threat hunting English terms for pivots, leads, triggers, entry points, and points of interest."
+created: 2026-07-17
+updated: 2026-07-17
 type: reference
-lang: en
+lang: zh
 status: draft
+tags: [threat-hunting, dfir]
 ---
 
+> Related: [[MOC - Threat Hunting]] · [[malcolm-threat-hunting-poi]] · [[cross-id-analysis]]
 在 Cyber Threat Hunting（威脅獵捕）的領域中，你直覺想到的 **Pivot** 和 **POI** 都非常貼近，但在英文的專業資安術語中，它們的用法與情境有些微的差異。
 
 以下為你整理最道地、最常在威脅獵捕報告或日常工作（Standup, Handover）中使用的英文說法：

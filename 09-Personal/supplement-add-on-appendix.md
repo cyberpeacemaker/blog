@@ -1,11 +1,15 @@
 ---
-created: 2026-07-17 10:07
-updated: 2026-07-17 10:07
-tags: []
+title: "Supplement, Add-on, and Appendix"
+description: "Clarifies Chinese-to-English usage differences among supplement, add-on, appendix, replenish, refill, and related terms."
+created: 2026-07-17
+updated: 2026-07-17
 type: reference
-lang: en
+lang: zh
 status: draft
+tags: [uncategorized]
 ---
+
+> Related: [[09-Personal]] · [[disassemble]] · [[mail]]
 「補充」在英文裡會根據你**到底在補充什麼**（是補充話語、水分、還是營養？）而有完全不同的字。我幫你整理了最常見的四大情境，讓你出牌不出錯：
 
 ### 1. 說話、開會時的「補充說明 / 多說幾句」

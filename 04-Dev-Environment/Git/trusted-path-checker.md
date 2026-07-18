@@ -1,11 +1,15 @@
 ---
-created: 2026-07-17 11:07
-updated: 2026-07-17 11:07
-tags: []
+title: "Trusted Path Checker Concepts"
+description: "Distinguishes Git safe.directory checks, OIDC trusted publishers, CodeQL path checks, and path-checker actions."
+created: 2026-07-17
+updated: 2026-07-17
 type: reference
 lang: en
 status: draft
+tags: [dev, git]
 ---
+
+> Related: [[MOC - Dev Environment]] · [[github-actions-sensitive-patterns]] · [[canary-pattern]]
 While there isn't a single, official tool by GitHub explicitly branded as the **"trusted-path checker,"** that phrase is commonly used to describe several crucial security and automation concepts in the Git and GitHub ecosystem.
 
 Depending on where you encountered the term, you are likely looking at one of the following security mechanisms:
