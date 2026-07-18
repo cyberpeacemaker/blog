@@ -3,6 +3,11 @@
 - 稍微理解自己的workflow，方便規畫更適合自己/有效率的架構/workflow
 - 可用info
 
+前墜
+- nics
+- playbook
+- 101
+
 第零次會議它儲存的位置並不好，照理說還沒有被分類的應該都被放在meeting-note
 
 # 會議記錄

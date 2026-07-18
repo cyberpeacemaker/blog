@@ -1,6 +1,5 @@
 #
-fidelity
-scaffold
+start with low-fidelity scaffold, then high-detailed rich version.
 
 Content is mostly Traditional Chinese stubs with typos, broken links, and inconsistent terminology.
 
