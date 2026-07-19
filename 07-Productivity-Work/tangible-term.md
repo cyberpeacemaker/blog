@@ -1,11 +1,16 @@
 ---
-created: 2026-07-18 09:07
-updated: 2026-07-18 09:07
-tags: []
+title: "Tangible and Intangible Support"
+description: "Compares English phrases for concrete, practical, abstract, and moral support in work contexts."
+created: 2026-07-18
+updated: 2026-07-18
+tags: [workflow]
 type: reference
-lang: en
+lang: zh
 status: draft
 ---
+
+> Related: [[07-Productivity-Work]] · [[business-productive-tool]]
+
 要表達「抽象/形式上的幫助」與「具體/實際/實質上的幫助」這兩種對比，英文會根據你的**使用情境**（是商務、學術還是日常對話）而有幾種非常道地的配對方式。
 
 以下為你整理最常用的三組對比表達：

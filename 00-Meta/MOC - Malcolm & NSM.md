@@ -2,7 +2,7 @@
 title: "MOC - Malcolm & NSM"
 description: "Maps Network Security Monitoring, Malcolm, Arkime, OpenSearch, sensors, and OT/ICS notes."
 created: 2026-07-07
-updated: 2026-07-16
+updated: 2026-07-18
 tags: [malcolm, nsm, opensearch, moc]
 type: hub
 lang: en
@@ -48,6 +48,7 @@ Network Security Monitoring stack: sensors, indexing, PCAP analysis, and Malcolm
 - [[opensearch-elasticsearch]] — OpenSearch vs Elasticsearch
 - [[opensearch-index-patterns]] — index pattern and dashboard management concepts
 - [[malcolm-opensearch-json-dsl]] — Malcolm GUI to JSON DSL
+- [[threat-lead-filter-example-smtp]] — OpenSearch filters for broad SMTP Suricata lead expansion
 - [[metadata-indexing]] — metadata indexing
 - [[duplicated-id]] — duplicated ID issues
 - See also: [[MOC - OpenSearch Querying]]
@@ -56,6 +57,9 @@ Network Security Monitoring stack: sensors, indexing, PCAP analysis, and Malcolm
 
 - [[mime-http]] — MIME type fundamentals for HTTP and file classification
 - [[http-md5-zeek-mime-type]] — Arkime `http.md5` versus Zeek `mime_type`
+- [[zeek-weird-syn-inside-connection]] — Zeek `SYN_inside_connection` causes and Malcolm triage pivots
+- [[suricata-alert-smtp-invalid-reply]] — Suricata SMTP invalid reply parser event triage
+- [[suricata-stream-established-syn-resend]] — Suricata established-state SYN resend anomaly contexts
 - [[zeek-files-mime-type-mz]] — Zeek MIME labels and Windows MZ magic bytes
 - [[zeek-fuid-cuid]] — Zeek connection UID and file FUID pivots
 - [[zeek-file-reassembler]] — ranged downloads and Zeek file reassembly

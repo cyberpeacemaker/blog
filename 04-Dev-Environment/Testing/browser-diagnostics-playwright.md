@@ -1,11 +1,16 @@
 ---
-created: 2026-07-18 11:07
-updated: 2026-07-18 11:07
-tags: []
+title: "Browser Diagnostics with Playwright"
+description: "Explains how Playwright dependencies and test viewer scripts support automated browser diagnostics."
+created: 2026-07-18
+updated: 2026-07-18
+tags: [dev]
 type: reference
 lang: en
 status: draft
 ---
+
+> Related: [[MOC - Dev Environment]] · [[playwright]] · [[browser-diagnostics]]
+
 Moving from manual browser diagnostics to **Playwright** is like upgrading from a magnifying glass to a fully automated laboratory.
 
 When you see a project utilizing Playwright as a `devDependency` alongside a custom script like `npm run test:viewer`, you are looking at an automated browser testing setup. Here is exactly what those two components mean and how they work together.

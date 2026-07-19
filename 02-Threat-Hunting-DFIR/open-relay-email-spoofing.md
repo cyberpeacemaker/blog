@@ -1,11 +1,16 @@
 ---
-created: 2026-07-17 22:07
-updated: 2026-07-17 22:07
-tags: []
+title: "SMTP Spoofing vs Open Relay"
+description: "Uses an NTLM Type 3 decode to distinguish inbound email spoofing from true open relay behavior."
+created: 2026-07-17
+updated: 2026-07-18
+tags: [threat-hunting, dfir]
 type: reference
-lang: en
+lang: zh
 status: draft
 ---
+
+> Related: [[MOC - Threat Hunting]] · [[fully-undetected]] · [[ntlm-failed-smtp-invalid-reply]]
+
 Python
 
 ```

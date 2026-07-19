@@ -1,11 +1,16 @@
 ---
-created: 2026-07-18 11:07
-updated: 2026-07-18 11:07
-tags: []
+title: "Browser Diagnostics"
+description: "Maps built-in browser diagnostics, DevTools, Lighthouse, and privacy/security audit tools."
+created: 2026-07-18
+updated: 2026-07-18
+tags: [dev]
 type: reference
 lang: en
 status: draft
 ---
+
+> Related: [[MOC - Dev Environment]] · [[playwright]] · [[browser-diagnostics-playwright]]
+
 Depending on whether you are trying to fix a crashing browser, figure out why a website isn't loading, or debug code you just wrote, **browser diagnostics** can mean a few different things.
 
 Modern browsers come packed with built-in diagnostic environments, and there are several excellent third-party tools used to audit them. Here is a breakdown of how browser diagnostics work across different scenarios.

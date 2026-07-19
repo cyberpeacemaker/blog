@@ -1,11 +1,16 @@
 ---
-created: 2026-07-18 11:07
-updated: 2026-07-18 11:07
-tags: []
-type: reference
-lang: en
+title: "Transcribe Transcript Transcription"
+description: "Clarifies the verbs and nouns for transcription workflows in meeting and AI-tool contexts."
+created: 2026-07-18
+updated: 2026-07-18
+tags: [workflow]
+type: concept
+lang: zh
 status: draft
 ---
+
+> Related: [[07-Productivity-Work]] · [[meeting-minute-tech]] · [[business-productive-tool]]
+
 這三個字長得很像，因為它們來自同一個字根（**trans-** 轉換 + **scribe** 寫）。你提到的第三個字拼法拼錯了一個字母，正確是 **transcribe** 喔！
 
 要分清它們其實非常簡單，只要搞懂它們的詞性（動詞、名詞）**以及是代表**「動作」**還是**「成品」即可。

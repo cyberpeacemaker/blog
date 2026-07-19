@@ -1,11 +1,16 @@
 ---
-created: 2026-07-17 22:07
-updated: 2026-07-17 22:07
-tags: []
+title: "C2 Dual Beacon Redundancy"
+description: "Explains why attackers keep low- and high-privilege C2 beacons active during post-exploitation."
+created: 2026-07-17
+updated: 2026-07-18
+tags: [threat-hunting, dfir]
 type: reference
 lang: en
 status: draft
 ---
+
+> Related: [[MOC - Threat Hunting]] · [[beacon]] · [[caldera-beacon-visualization]]
+
 This is textbook Command and Control (C2) tradecraft. What you're looking at is a classic example of **session redundancy and privilege isolation**—the "don't put all your eggs in one basket" approach to maintaining access.
 
 Here is a quick breakdown of why this pattern is so common and what the mechanics in your snippet imply:

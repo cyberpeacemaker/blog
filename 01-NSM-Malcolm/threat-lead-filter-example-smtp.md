@@ -1,11 +1,16 @@
 ---
-created: 2026-07-18 18:07
-updated: 2026-07-18 18:07
-tags: []
-type: reference
+title: "OpenSearch SMTP Threat Lead Filters"
+description: "Shows broad OpenSearch filters for finding SMTP-related Suricata alerts during threat hunting."
+created: 2026-07-18
+updated: 2026-07-18
+tags: [malcolm, nsm, opensearch, threat-hunting]
+type: howto
 lang: en
 status: draft
 ---
+
+> Related: [[MOC - OpenSearch Querying]] · [[MOC - Malcolm & NSM]] · [[opensearch-query-and]]
+
 To find other Suricata alerts related to SMTP without locking yourself into a single exact signature, you can leverage OpenSearch's flexible filtering options.
 
 Based on the interface you are currently using, here are the best filters you can apply:

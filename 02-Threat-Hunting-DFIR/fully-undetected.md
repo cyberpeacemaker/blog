@@ -1,11 +1,16 @@
 ---
-created: 2026-07-17 22:07
-updated: 2026-07-17 22:07
-tags: []
-type: reference
+title: "FUD in Phishing"
+description: "Contrasts fully undetected phishing infrastructure with fear, uncertainty, and doubt social engineering."
+created: 2026-07-17
+updated: 2026-07-18
+tags: [threat-hunting, dfir]
+type: concept
 lang: en
 status: draft
 ---
+
+> Related: [[MOC - Threat Hunting]] · [[open-relay-email-spoofing]] · [[ntlm-failed-smtp-invalid-reply]]
+
 In the world of phishing, **FUD** actually has two entirely different meanings depending on whether you are looking at the **technical setup** of the attack or the **psychological trick** used to manipulate the victim.
 
 Here is the breakdown of both:

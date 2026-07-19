@@ -1,11 +1,15 @@
 ---
-created: 2026-07-18 10:07
-updated: 2026-07-18 10:07
-tags: []
-type: reference
+title: "Threat Hunting Workflow Example"
+description: "Walks through a hypothesis-driven DNS tunneling hunt from Sigma to OpenSearch, Zeek, Arkime, and YARA."
+created: 2026-07-18
+updated: 2026-07-18
+tags: [threat-hunting, dfir, opensearch]
+type: howto
 lang: en
 status: draft
 ---
+
+> Related: [[MOC - Threat Hunting]] · [[MOC - Malcolm & NSM]] · [[YARA]]
 
 ## A Practical Threat Hunting Workflow Example
 
