@@ -1,11 +1,20 @@
 ---
-created: 2026-07-19 16:07
-updated: 2026-07-19 16:07
-tags: []
-type: reference
+title: "CJK and Latin Regex Spacing"
+description: "Compares Unicode-property and hex-range regex patterns for inserting spaces between CJK and Latin text."
+created: 2026-07-19
+updated: 2026-07-19
+tags: [dev, python]
+type: howto
 lang: en
 status: draft
+prerequisites: [vscode-blockquote-lines, vscode-custom-visual-text]
+summary:
+  - "Use Unicode property escapes where supported for clearer CJK/Latin boundary matching."
+  - "Use explicit Unicode hex ranges when the runtime lacks `\\p{...}` support, such as Python's built-in `re` module."
 ---
+
+> Related: [[MOC - Dev Environment]] · [[vscode-blockquote-lines]] · [[vscode-custom-visual-text]]
+
 When dealing with **CJK (Chinese, Japanese, Korean) <-> Latin** regex, the most common goal is to find the boundary between these character sets to insert a space (often called "Pangu spacing" or "autospacing") to improve typography.
 
 Because different programming languages handle Unicode differently, here are the two best ways to write this regex: using **Modern Unicode Properties** (cleaner) and **Traditional Hex Ranges** (more compatible).

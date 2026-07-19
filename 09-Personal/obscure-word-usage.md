@@ -1,11 +1,16 @@
 ---
-created: 2026-07-19 13:07
-updated: 2026-07-19 13:07
-tags: []
+title: "Obscure Word Usage"
+description: "Compares English verbs for 遮擋 across blocking, obscuring, shielding, obstructing, and screening."
+created: 2026-07-19
+updated: 2026-07-19
+tags: [uncategorized]
 type: reference
-lang: en
+lang: zh
 status: draft
 ---
+
+> Related: [[09-Personal]] · [[respective-respectively]] · [[disassemble]]
+
 「遮擋」的英文會根據你**遮擋的是什麼**（視線、光線還是物體）而有不同的表達方式。以下是幾個最常見的單字與用法：
 
 ### 1. Block (最常用)
