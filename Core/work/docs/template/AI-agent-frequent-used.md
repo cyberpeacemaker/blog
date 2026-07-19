@@ -1,7 +1,17 @@
-#
+# Claude Design
 start with low-fidelity scaffold, then high-detailed rich version.
 
+# Frontmatter
+- *frontmatter.md*
+```yaml
+---
+status: draft
+---
+```
+
+# Polish
 Content is mostly Traditional Chinese stubs with typos, broken links, and inconsistent terminology.
+
 
 ---
 
