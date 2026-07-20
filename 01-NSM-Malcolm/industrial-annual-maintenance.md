@@ -1,11 +1,16 @@
 ---
-created: 2026-07-19 17:07
-updated: 2026-07-19 17:07
-tags: []
+title: "Industrial Annual Maintenance"
+description: "Defines the Chinese OT maintenance term 歲修 and the operational risk of short maintenance windows."
+created: 2026-07-19
+updated: 2026-07-19
+tags: [malcolm, nsm]
 type: reference
-lang: en
+lang: zh
 status: draft
 ---
+
+> Related: [[MOC - Malcolm & NSM]] · [[scada-rtac-ews]] · [[ot-hmi-ews-plc-rtu]]
+
 這句話使用的是「歲修」。
 
 - **歲修（正確）：** 指的是廠區或設備「定期、年度」的大規模整體檢修（「歲」字有年度的意思）。這是工業與工程上的標準專有名詞。

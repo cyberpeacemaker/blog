@@ -2,7 +2,7 @@
 title: "MOC - Dev Environment"
 description: "Maps developer tooling, Git, Python, VS Code, testing, Windows, and WSL environment notes."
 created: 2026-07-07
-updated: 2026-07-18
+updated: 2026-07-19
 tags: [dev, moc]
 type: hub
 lang: en
@@ -16,6 +16,7 @@ Developer tooling: Git, Python, VS Code, testing, and environment setup.
 ## Setup
 - [[docker-cs-claw-gemini-advice]] — hybrid local development with Docker-managed services
 
+- [[regex-cjk-latin]] — regex patterns for CJK and Latin autospacing in code and editors
 - [[browser-diagnostics]] — browser hidden pages, DevTools, Lighthouse, and security diagnostics
 - [[env-setup]] — full dev environment setup (C, AI, cybersecurity)
 - [[npm-node-domexception-deprecation]] — npm `node-domexception` deprecation warning triage

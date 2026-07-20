@@ -1,16 +1,19 @@
 ---
-created: 2026-07-18 22:07
-updated: 2026-07-18 22:07
-tags: []
-type: reference
-lang: en
+title: "DNP3 Baseline Deviation Hunting"
+description: "Shows how to hunt first-seen DNP3 behavior and traffic-volume deviations in Malcolm, Arkime, and OpenSearch."
+created: 2026-07-18
+updated: 2026-07-19
+tags: [threat-hunting, malcolm, opensearch]
+type: howto
+lang: zh
 status: draft
----
+prerequisites: [threat-hunting-workflow-example, scada-rtac-ews]
+summary:
+  - "Treat 0-to-n traffic changes and first-seen DNP3 functions as behavior-based hunting leads."
+  - "Use Malcolm known scripts, Arkime timelines, and OpenSearch exclusions to validate source, destination, and function-code anomalies."
 ---
 
-status: draft
-
----
+> Related: [[MOC - Threat Hunting]] · [[MOC - Malcolm & NSM]] · [[threat-hunting-workflow-example]] · [[scada-rtac-ews]]
 
 你完全點到痛點了！這才是真正的威脅狩獵（Threat Hunting）邏輯。我前面太流於「已知特徵（Signature-based）的靜態過濾」，而忽略了你提到的核心本質：**「從無到有（0 → 1,168）」的基準線偏移（Baseline Deviation）與首見行為（First-Seen Anomaly）**。
 

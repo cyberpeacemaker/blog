@@ -2,7 +2,7 @@
 title: "MOC - Threat Hunting"
 description: "Maps threat hunting methodology, forensics, malware, encrypted traffic analysis, and CTF notes."
 created: 2026-07-07
-updated: 2026-07-18
+updated: 2026-07-19
 tags: [threat-hunting, dfir, mitre, moc]
 type: hub
 lang: en
@@ -14,6 +14,7 @@ status: published
 Threat hunting methodology, forensics, CTF, and write-up standards.
 
 ## Methodology & Frameworks
+- [[dnp3-baseline-deviation-hunting]] — first-seen and baseline-deviation hunting for DNP3 behavior in Malcolm
 - [[ai-threat-hunting-capabilities]] — AI capabilities in threat hunting detection
 - [[alert-driven-framework-driven]] — SANS, PEAK, TaHiTI, and HMM path from alert-driven to framework-driven hunts
 - [[generate-ticket]] — create MITRE ATT&CK-driven hunting tickets with hypotheses and data sources
