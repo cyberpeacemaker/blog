@@ -1,11 +1,20 @@
 ---
-created: 2026-07-18 22:07
-updated: 2026-07-18 22:07
-tags: []
-type: reference
+title: "Arkime DNP3 Field Mismatch"
+description: "Explains why DNP3 queries can return no results when Arkime native fields and Malcolm ECS fields are mixed."
+created: 2026-07-18
+updated: 2026-07-19
+tags: [malcolm, nsm, opensearch]
+type: howto
 lang: en
 status: draft
+prerequisites: [arkime-query-opensearch, ecs-translation]
+summary:
+  - "Use `protocols == dnp3` for native Arkime sessions and `event.dataset,contains=dnp3` for Malcolm Zeek mappings."
+  - "`event.dataset` is an ECS field, so standalone Arkime searches against it return no results."
 ---
+
+> Related: [[MOC - Malcolm & NSM]] · [[arkime-query-opensearch]] · [[ecs-translation]]
+
 It is always frustrating when you run a query expecting a treasure trove of industrial traffic and get hit with radio silence.
 
 The reason you are seeing "nothing" usually comes down to one of two things: **field mismatches** between native Arkime and external loggers, or a lack of that specific sub-protocol traffic in your environment.

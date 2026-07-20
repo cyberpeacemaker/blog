@@ -2,7 +2,7 @@
 title: "MOC - Malcolm & NSM"
 description: "Maps Network Security Monitoring, Malcolm, Arkime, OpenSearch, sensors, and OT/ICS notes."
 created: 2026-07-07
-updated: 2026-07-18
+updated: 2026-07-19
 tags: [malcolm, nsm, opensearch, moc]
 type: hub
 lang: en
@@ -26,6 +26,7 @@ Network Security Monitoring stack: sensors, indexing, PCAP analysis, and Malcolm
 
 ## Arkime & PCAP
 
+- [[arkime-dnp3-field-mismatch]] — DNP3 query pivots across native Arkime fields and Malcolm ECS datasets
 - [[arkime-spigraph-connections-node-limit]] — Query Size sampling limits in Arkime Connections graphs
 - [[arkime]] — Arkime overview
 - [[arkime-http-md5]] — Arkime `http.md5` triage, deduplication, and threat intel pivots
@@ -74,6 +75,7 @@ Network Security Monitoring stack: sensors, indexing, PCAP analysis, and Malcolm
 
 ## OT / ICS
 
+- [[industrial-annual-maintenance]] — Chinese annual maintenance term and high-risk OT maintenance windows
 - [[scada-rtac-ews]] — SCADA, RTAC, and EWS roles in industrial automation
 - [[modbus-s7comm]] — Modbus and Siemens S7comm protocol comparison
 - [[proprietary-protocol]] — proprietary protocol definition and tradeoffs

@@ -1,11 +1,16 @@
 ---
-created: 2026-07-19 13:07
-updated: 2026-07-19 13:07
-tags: []
+title: "Rough Notes and Jottings"
+description: "Compares English terms for quick, fragmented, and unpolished notes."
+created: 2026-07-19
+updated: 2026-07-19
+tags: [uncategorized]
 type: reference
-lang: en
+lang: zh
 status: draft
 ---
+
+> Related: [[09-Personal]] · [[disassemble]] · [[supplement-add-on-appendix]]
+
 這種在活動、會議當下「**為了追求速度而隨手記下、支離破碎且沒有系統**」的筆記，在英文裡有幾種非常傳神的說法，依據你想強調的重點來選擇：
 
 ### 1. Rough notes (最常用、最自然的說法)

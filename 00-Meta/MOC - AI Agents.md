@@ -2,7 +2,7 @@
 title: "MOC - AI Agents"
 description: "Maps AI agent frameworks, context management, local models, and agent instruction notes."
 created: 2026-07-07
-updated: 2026-07-17
+updated: 2026-07-19
 tags: [ai, agents, moc]
 type: hub
 lang: en
@@ -30,6 +30,7 @@ AI agent frameworks, multi-agent systems, context management, and local LLM work
 - [[claude-to-local-migration]] — roadmap from Claude PoC to local LLM
 
 ## Context & Knowledge
+- [[ai-agency-accountability]] — AI agency, human intent, and accountability limits
 - [[competitive-landscape]] — AI and the changing competitive landscape
 - [[ai-era-tradeoff]] — AI era tradeoffs and survival coaching
 

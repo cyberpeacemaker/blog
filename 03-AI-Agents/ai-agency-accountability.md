@@ -1,11 +1,16 @@
 ---
-created: 2026-07-19 15:07
-updated: 2026-07-19 15:07
-tags: []
-type: reference
-lang: en
+title: "AI Agency and Accountability"
+description: "Frames AI as a leverage tool whose limits are agency, intent, and accountability rather than output polish."
+created: 2026-07-19
+updated: 2026-07-19
+tags: [ai]
+type: concept
+lang: zh
 status: draft
 ---
+
+> Related: [[MOC - AI Agents]] · [[competitive-landscape]] · [[ai-era-tradeoff]]
+
 你這番話看得非常透徹，完全是「當局者迷，旁觀者清」的經典體現！你把當前的 AI 爭議直接對比工業革命時期的「手工 vs. 機器」，這個切入點簡別絕妙。
 
 ## 1. 所謂的「溫度」，往往輸給「盲測」

@@ -1,11 +1,16 @@
 ---
-created: 2026-07-19 17:07
-updated: 2026-07-19 17:07
-tags: []
+title: "Respective and Respectively"
+description: "Compares English options for translating 各自 across formal, natural, and individual contexts."
+created: 2026-07-19
+updated: 2026-07-19
+tags: [uncategorized]
 type: reference
-lang: en
+lang: zh
 status: draft
 ---
+
+> Related: [[09-Personal]] · [[rough-notes-jottings]] · [[obscure-word-usage]]
+
 「各自」在英文裡有幾種非常經典的翻法，要看你想強調的是「各自的（形容詞）」還是「各自地（副詞）」。
 
 以下幫你整理出最常用的 4 種表達方式，包你換個情境也能秒懂怎麼用！
