@@ -48,10 +48,10 @@ status: draft
 
 ### 快速情境對照表
 
-|**想表達的情境**|**推薦用字**|**常見搭配範例**|
-|---|---|---|
-|**網站流量／行銷**|**Unique**|Unique visitors (不重複訪客／獨立訪客)|
-|**數據分析／SQL**|**Distinct**|Distinct values (不重複的值)|
-|**密碼／抽獎號碼**|**Non-repeating**|Non-repeating numbers (不重複的數字)|
-|**Excel／名單整理**|**Deduplicated**|Deduplicated data (去重後的資料)|
+| **想表達的情境**     | **推薦用字**          | **常見搭配範例**                     |
+| -------------- | ----------------- | ------------------------------ |
+| **網站流量／行銷**    | **Unique**        | Unique visitors (不重複訪客／獨立訪客)   |
+| **數據分析／SQL**   | **Distinct**      | Distinct values (不重複的值)        |
+| **密碼／抽獎號碼**    | **Non-repeating** | Non-repeating numbers (不重複的數字) |
+| **Excel／名單整理** | **Deduplicated**  | Deduplicated data (去重後的資料)     |
 
