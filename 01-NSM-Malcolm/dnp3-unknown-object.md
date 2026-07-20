@@ -1,11 +1,16 @@
 ---
-created: 2026-07-20 15:07
-updated: 2026-07-20 15:07
-tags: []
+title: "DNP3 Unknown Object Alert Triage"
+description: "Explains Suricata DNP3 unknown object alerts and how packet-level object and variation evidence distinguishes benign extensions from attacks."
+created: 2026-07-20
+updated: 2026-07-20
+tags: [malcolm, nsm, threat-hunting]
 type: reference
-lang: en
+lang: zh
 status: draft
 ---
+
+> Related: [[MOC - Malcolm & NSM]] · [[arkime-dnp3-field-mismatch]] · [[dnp3-baseline-deviation-hunting]]
+
 這個資安警報（Rule ID: 2270004）屬於工控系統（ICS/SCADA）網路安全領域。簡單來說，**Suricata 在監聽網路流量時，發現了 DNP3 協定中「查不到字典」的神秘代碼。**
 
 為了讓你完全理解，我們把這個警報拆解成「通訊機制」、「觸發原因」與「排查步驟」來細說：

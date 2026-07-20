@@ -1,11 +1,16 @@
 ---
-created: 2026-07-20 15:07
-updated: 2026-07-20 15:07
-tags: []
+title: "Suricata Engine Events During Scans and Large Transfers"
+description: "Interprets invalid checksum and established-state SYN resend events as scan artifacts or sensor overload clues during large transfers."
+created: 2026-07-20
+updated: 2026-07-20
+tags: [malcolm, nsm, threat-hunting]
 type: reference
 lang: en
 status: draft
 ---
+
+> Related: [[MOC - Malcolm & NSM]] · [[suricata-stream-established-syn-resend]] · [[ip-fragmentation-detection]]
+
 These two entries are **Suricata Engine Events** (specifically from the decoder and stream reassembly layers) rather than traditional, signature-based exploit alerts. They indicate low-level TCP/IP stack anomalies.
 
 Given your previous context of **network-wide scans** and a **large file transfer**, these alerts provide highly relevant technical context about what is happening on the wire.

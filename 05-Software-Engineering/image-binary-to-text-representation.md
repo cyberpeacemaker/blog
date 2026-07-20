@@ -1,11 +1,16 @@
 ---
-created: 2026-07-20 09:07
-updated: 2026-07-20 09:07
-tags: []
+title: "Representing Binary Images as Text"
+description: "Explains how image data can be represented with text formats such as PPM, SVG, or Base64 and why binary formats remain more efficient."
+created: 2026-07-20
+updated: 2026-07-20
+tags: [dev]
 type: reference
 lang: en
 status: draft
 ---
+
+> Related: [[05-Software-Engineering]] · [[binary-vs-text-files]] · [[text-protocol-base64]]
+
 You just anticipated a massive concept in computer science. **Yes, absolutely.** Every single binary file can theoretically (and practically) be rewritten or represented entirely as a text file.
 
 In fact, your exact example of writing out pixel coordinates and RGB values (`[255, 0, 135]`) isn't just a theory—it is exactly how several real-world technologies work!

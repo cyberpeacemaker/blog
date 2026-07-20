@@ -1,11 +1,21 @@
 ---
-created: 2026-07-20 15:07
-updated: 2026-07-20 15:07
-tags: []
-type: reference
+title: "Arkime HTTP POST File Carving"
+description: "Provides a workflow for exporting split Arkime sessions as one PCAP and carving an uploaded file from HTTP multipart data."
+created: 2026-07-20
+updated: 2026-07-20
+tags: [malcolm, nsm, dfir]
+type: howto
 lang: en
 status: draft
+prerequisites: [arkime-split-session-large-upload, wireshark-pcap-file-extract]
+summary:
+  - Export related Arkime sessions together so the PCAP is chronologically reassembled before carving.
+  - Use tcpflow, Wireshark Follow Stream, binwalk, or manual byte offsets to extract the uploaded payload.
+  - HTTP multipart headers and trailing boundaries must be removed or ignored depending on the file format.
 ---
+
+> Related: [[MOC - Malcolm & NSM]] · [[arkime-split-session-large-upload]] · [[wireshark-pcap-file-extract]]
+
 Because the file is split across three separate session logs in Arkime, the absolute best approach is to let Arkime handle the reassembly first, and then use standard forensic tools to carve out the payload.
 
 Here is the most efficient, step-by-step workflow to get that file back.

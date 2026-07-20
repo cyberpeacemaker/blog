@@ -1,11 +1,16 @@
 ---
-created: 2026-07-20 10:07
-updated: 2026-07-20 10:07
-tags: []
+title: "Distinct, Unique, Non-Repeating, and Deduplicated"
+description: "Compares English terms for non-duplicated items across general usage, data analysis, sequences, and deduplicated datasets."
+created: 2026-07-20
+updated: 2026-07-20
+tags: [uncategorized]
 type: reference
-lang: en
+lang: zh
 status: draft
 ---
+
+> Related: [[09-Personal]] · [[rough-notes-jottings]] · [[respective-respectively]]
+
 「不重複的」在英文中會根據你使用的**情境**（例如：數據、號碼、個人特質或資料處理）而有不同的精準寫法。以下為你整理最常見的幾個單字：
 
 ## 常見的「不重複」英文單字

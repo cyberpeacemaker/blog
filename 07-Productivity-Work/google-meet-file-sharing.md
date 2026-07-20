@@ -1,11 +1,16 @@
 ---
-created: 2026-07-20 18:07
-updated: 2026-07-20 18:07
-tags: []
-type: reference
-lang: en
+title: "Google Meet File Sharing"
+description: "Summarizes ways to share files during or before a Google Meet session through chat, Calendar attachments, and presentation prompts."
+created: 2026-07-20
+updated: 2026-07-20
+tags: [workflow]
+type: howto
+lang: zh
 status: draft
 ---
+
+> Related: [[07-Productivity-Work]] · [[google-drive-general-access]] · [[meeting-minute-tech]]
+
 在 Google Meet 中分享檔案非常簡單，你可以根據「會議中臨時分享」還是「會議前提前準備」來選擇以下幾種最方便的方法：
 
 ## 1. 透過「會議聊天室」分享（最即時、常用）

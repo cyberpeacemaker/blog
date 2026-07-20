@@ -1,11 +1,16 @@
 ---
-created: 2026-07-20 09:07
-updated: 2026-07-20 09:07
-tags: []
+title: "Binary vs Text Files"
+description: "Explains the practical distinction between human-readable text files and application-specific binary files even though all data is stored as bits."
+created: 2026-07-20
+updated: 2026-07-20
+tags: [dev]
 type: reference
-lang: en
+lang: zh
 status: draft
 ---
+
+> Related: [[05-Software-Engineering]] · [[text-protocol-base64]] · [[image-binary-to-text-representation]]
+
 You just hit the nail on the head. Technically speaking, **yes, every single file on your computer is a binary file.**
 
 At the lowest level, your hard drive or SSD doesn't care if it's saving a Shakespearean sonnet or a 4K video game—it’s all just billions of 1s and 0s (bits) grouped into 8-bit chunks (bytes).

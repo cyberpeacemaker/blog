@@ -1,5 +1,6 @@
 ---
 created: 2026-07-07
+updated: 2026-07-20
 tags: [opensearch, lucene, moc]
 type: hub
 lang: en
@@ -14,6 +15,7 @@ Lucene syntax, JSON DSL, filters, and query patterns for Malcolm and OpenSearch.
 
 - [[lucene-dql-json-dsl]] — Lucene DQL to JSON DSL translation
 - [[lucene-power-usage]] — advanced Lucene usage
+- [[opensearch-lucene-quoted-wildcards]] — quoted wildcard pitfalls in Lucene query syntax
 - [[malcolm-opensearch-json-dsl]] — Malcolm GUI to JSON DSL
 
 ## Query Patterns
@@ -26,6 +28,7 @@ Lucene syntax, JSON DSL, filters, and query patterns for Malcolm and OpenSearch.
 
 ## Platform
 
+- [[opensearch-api-dsl-dev-tools]] — OpenSearch API, Query DSL, and Dev Tools relationship
 - [[opensearch-elasticsearch]] — OpenSearch vs Elasticsearch
 - [[opensearch-index-patterns]] — index pattern and dashboard management in Malcolm/OpenSearch
 - [[metadata-indexing]] — metadata indexing

@@ -2,7 +2,7 @@
 title: "Knowledge Base"
 description: "Entry point for the blog vault and its topic maps, workflows, core spaces, and templates."
 created: 2026-07-07
-updated: 2026-07-17
+updated: 2026-07-20
 tags: [meta, moc]
 type: hub
 lang: en
@@ -26,6 +26,7 @@ Entry point for the blog vault. Use the MOCs below to navigate by topic.
 - [[MOC - Claude & Cursor]]
 - [[MOC - Dev Environment]]
 - [[Daily Workflow]]
+- [[repo-migration-workflow]]
 
 ## Core
 
