@@ -43,7 +43,10 @@ poi 這樣看起來很好，加上
 6. arkime contribute
 7. 想工作
 8. 承諾 三個月薪水 不是為了賺錢 
-9. appendix
+9. 工作環境太差，來這邊根本無法工作
+	1. 空間太少，雙螢幕困難，別說三螢幕
+	2. 太吵，無法專心
+10. appendix
 
 # frontmatter & OKF
 
