@@ -3,7 +3,6 @@
 - PR check
 # Now
 - mdm 重開機測試
-- 桃園meeting minutes (確認資策會人名，給經理)
 - nics-anthropic
 - nics claw
 - CJA
