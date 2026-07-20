@@ -46,7 +46,8 @@ poi 這樣看起來很好，加上
 9. 工作環境太差，來這邊根本無法工作
 	1. 空間太少，雙螢幕困難，別說三螢幕
 	2. 太吵，無法專心
-10. appendix
+10. https://aicyberchallenge.com/overview/
+11. appendix
 
 # frontmatter & OKF
 
@@ -124,6 +125,7 @@ Malcolm threat hunting methodology
 # 暫時推遲的事情
 
 - cursor-rule
+- [AIxCC](https://aicyberchallenge.com/overview/)
 - [git 101]([Introduction - Training | Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/intro-to-git/0-introduction))
 - [claude 101](https://www.anthropic.com/learn)
 - new project template
