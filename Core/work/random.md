@@ -1,8 +1,5 @@
 
-# 搬遷
-- todo
-- 稍微理解自己的workflow，方便規畫更適合自己/有效率的架構/workflow
-- 可用info
+
 
 前墜
 - nics
