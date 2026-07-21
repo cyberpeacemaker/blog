@@ -1,11 +1,16 @@
 ---
-created: 2026-07-21 14:07
-updated: 2026-07-21 14:07
-tags: []
+title: "YAML String Quoting"
+description: "Explains when YAML strings can stay unquoted and when quotes prevent parsing surprises."
+created: 2026-07-21
+updated: 2026-07-21
+tags: [dev]
 type: reference
 lang: en
 status: draft
 ---
+
+> Related: [[MOC - Dev Environment]] · [[YAML]] · [[yaml-timestamp-timezone]]
+
 In short: **Usually no, but sometimes you must.**
 
 In YAML, strings are unquoted by default. However, double quotes are necessary—or at least strongly recommended—in specific situations.

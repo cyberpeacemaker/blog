@@ -1,11 +1,16 @@
 ---
-created: 2026-07-21 16:07
-updated: 2026-07-21 16:07
-tags: []
-type: reference
+title: "Switch Between WSL Distros"
+description: "PowerShell commands for stopping Kali, launching Ubuntu, and setting Ubuntu as the default WSL distribution."
+created: 2026-07-21
+updated: 2026-07-21
+tags: [dev]
+type: howto
 lang: en
 status: draft
 ---
+
+> Related: [[MOC - Dev Environment]] · [[wsl-distro-choice]] · [[default-wsl-distro-dev-containers]]
+
 Here are the commands to run in your PowerShell terminal:
 
 ## 1. Stop Kali Linux

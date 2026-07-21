@@ -1,11 +1,16 @@
 ---
-created: 2026-07-21 17:07
-updated: 2026-07-21 17:07
-tags: []
+title: "Docker Desktop WSL Integration Options"
+description: "Compares default-distro and per-distro Docker Desktop WSL integration switches."
+created: 2026-07-21
+updated: 2026-07-21
+tags: [dev]
 type: reference
 lang: en
 status: draft
 ---
+
+> Related: [[MOC - Dev Environment]] · [[docker-desktop-wsl-integration]] · [[wsl-distro-choice]]
+
 Here is the breakdown of what each setting actually does under the hood and what happens when you turn them on or off individually.
 
 ## The Core Difference

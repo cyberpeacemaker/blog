@@ -1,11 +1,16 @@
 ---
-created: 2026-07-21 14:07
-updated: 2026-07-21 14:07
-tags: []
+title: "YAML Timestamps and Taipei Time"
+description: "Explains ISO 8601 UTC timestamps, UTC+8 conversion, and YAML timestamp versus string syntax."
+created: 2026-07-21
+updated: 2026-07-21
+tags: [dev]
 type: reference
 lang: en
 status: draft
 ---
+
+> Related: [[MOC - Dev Environment]] · [[YAML]] · [[timezone]]
+
 Here is what that timestamp means, along with how to write it for Taipei time in YAML.
 
 ## 1. What `2026-07-18T07:16:00Z` Means

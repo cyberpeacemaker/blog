@@ -2,7 +2,7 @@
 title: "MOC - Dev Environment"
 description: "Maps developer tooling, Git, Python, VS Code, testing, Windows, and WSL environment notes."
 created: 2026-07-07
-updated: 2026-07-19
+updated: 2026-07-21
 tags: [dev, moc]
 type: hub
 lang: en
@@ -14,6 +14,11 @@ status: published
 Developer tooling: Git, Python, VS Code, testing, and environment setup.
 
 ## Setup
+
+- [[docker-wsl-integration-options]] — default-distro versus per-distro Docker Desktop WSL integration switches
+- [[docker-desktop-wsl-integration]] — enable Docker Desktop integration for a selected WSL2 distribution
+- [[yaml-string-quoting]] — when YAML strings need quotes to avoid parser surprises
+- [[yaml-timestamp-timezone]] — ISO 8601 UTC timestamps, UTC+8 conversion, and YAML timestamp syntax
 - [[docker-cs-claw-gemini-advice]] — hybrid local development with Docker-managed services
 
 - [[regex-cjk-latin]] — regex patterns for CJK and Latin autospacing in code and editors
@@ -26,6 +31,10 @@ Developer tooling: Git, Python, VS Code, testing, and environment setup.
 
 ## Windows, WSL, and Shells
 
+- [[default-wsl-distro-dev-containers]] — fix VS Code Dev Containers selecting the wrong default WSL distro
+- [[wsl-distro-choice]] — list, launch, and set default WSL distributions from PowerShell
+- [[wsl-distro-switch]] — stop Kali, launch Ubuntu, and set Ubuntu as the default WSL distro
+- [[wsl-distro]] — WSL distribution concept and multi-distro use cases
 - [[wsl-network-troubleshooting-dns-mirrored]] — Chinese WSL DNS, mirrored networking, proxy, firewall, and GitHub timeout checklist
 - [[wsl-mtu]] — test, calculate, and persist WSL MTU values for VPN and corporate network issues
 - [[wsl-conf-systemd-mtu]] — add an MTU boot command without overwriting WSL systemd support

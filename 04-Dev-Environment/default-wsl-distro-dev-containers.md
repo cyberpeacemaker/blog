@@ -1,11 +1,16 @@
 ---
-created: 2026-07-21 17:07
-updated: 2026-07-21 17:07
-tags: []
-type: reference
-lang: en
+title: "Set Default WSL Distro for Dev Containers"
+description: "Explains how VS Code Dev Containers can select the wrong WSL distro and how to point it back to Ubuntu."
+created: 2026-07-21
+updated: 2026-07-21
+tags: [dev]
+type: howto
+lang: zh
 status: draft
 ---
+
+> Related: [[MOC - Dev Environment]] · [[wsl-distro-switch]] · [[docker-desktop-wsl-integration]]
+
 你的判斷對了：**不是 Ubuntu 的 Docker 壞掉，是 VS Code 打錯 distro。**
 
 ## 根因
