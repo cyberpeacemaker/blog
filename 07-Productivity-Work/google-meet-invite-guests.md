@@ -1,11 +1,16 @@
 ---
-created: 2026-07-20 10:07
-updated: 2026-07-20 10:07
-tags: []
-type: reference
+title: "Google Meet Guest Invitation Permissions"
+description: "Explains how to check whether a Google Calendar event allows adding guests to a Google Meet invitation."
+created: 2026-07-20
+updated: 2026-07-20
+tags: [workflow]
+type: howto
 lang: en
 status: draft
 ---
+
+> Related: [[07-Productivity-Work]] · [[google-meet-file-sharing]] · [[meeting-minute]]
+
 Whether you can invite others to an event depends on the settings configured by the event organizer. Generally, if the "Guests can modify event" or "Invite others" setting is enabled, you will be able to add more people.
 
 You can check if you have the permission and try to invite others by following these steps:

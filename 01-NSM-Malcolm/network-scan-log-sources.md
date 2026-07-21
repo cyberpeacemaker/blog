@@ -1,11 +1,16 @@
 ---
-created: 2026-07-20 11:07
-updated: 2026-07-20 11:07
-tags: []
+title: "Network Scan Log Sources"
+description: "Maps horizontal network scanning behavior to Zeek Notice, Suricata ET SCAN alerts, and Zeek weird logs."
+created: 2026-07-20
+updated: 2026-07-20
+tags: [malcolm, nsm, threat-hunting]
 type: reference
 lang: en
 status: draft
 ---
+
+> Related: [[MOC - Malcolm & NSM]] · [[zeek-suricata]] · [[malcolm-threat-hunting-poi]]
+
 Based on the scenario of attacker IPs performing a horizontal, network-wide scan to map out an environment, here is how each log type handles and categorizes this activity:
 
 ### 1. Zeek Notice (The Exact Match)

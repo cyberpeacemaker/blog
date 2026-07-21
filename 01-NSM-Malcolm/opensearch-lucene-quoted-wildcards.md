@@ -1,11 +1,16 @@
 ---
-created: 2026-07-20 11:07
-updated: 2026-07-20 11:07
-tags: []
+title: "Lucene Quoted Wildcards"
+description: "Explains why wildcard terms inside quotes become literal phrase queries and can make OpenSearch or Malcolm queries return zero results."
+created: 2026-07-20
+updated: 2026-07-20
+tags: [opensearch, malcolm]
 type: reference
 lang: en
 status: draft
 ---
+
+> Related: [[MOC - OpenSearch Querying]] · [[lucene-dql-json-dsl]] · [[lucene-power-usage]]
+
 Ah, the classic Lucene quote trap! It happens to the best of us.
 
 Here is exactly why your log count dropped from over 2.6 million to a flat **0**:

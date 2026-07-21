@@ -2,7 +2,7 @@
 title: "07-Productivity-Work"
 description: "Maps Slack, meetings, Gmail, Google Drive, Obsidian, and work productivity notes."
 created: 2026-07-07
-updated: 2026-07-18
+updated: 2026-07-20
 tags: [moc, workflow]
 type: hub
 lang: en
@@ -25,6 +25,8 @@ Slack, meetings, and work productivity tools.
 - [[transcribe-transcript-transcription]] — transcribe, transcript, and transcription usage in meeting workflows
 - [[meeting-minute]]
 - [[meeting-minute-tech]] — Chinese workflow for preparing, recording, and sending meeting minutes
+- [[google-meet-file-sharing]] — share files before or during Google Meet sessions
+- [[google-meet-invite-guests]] — check Google Calendar permissions before inviting guests
 - [[word-changes-tracking]]
 - [[adhoc-request]]
 - [[obsidian]] — Obsidian Sync vs Git, Canvas, MOC, Metadata

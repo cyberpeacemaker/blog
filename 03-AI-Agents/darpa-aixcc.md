@@ -1,11 +1,16 @@
 ---
-created: 2026-07-20 15:07
-updated: 2026-07-20 15:07
-tags: []
+title: "DARPA AIxCC Open-Source Ecosystem"
+description: "Explains how to participate after the AI Cyber Challenge through open-source CRSs, standards work, and future DARPA opportunities."
+created: 2026-07-20
+updated: 2026-07-20
+tags: [ai, agents, threat-hunting]
 type: reference
 lang: en
 status: draft
 ---
+
+> Related: [[MOC - AI Agents]] · [[agent-framework]] · [[MOC - Threat Hunting]]
+
 The formal **DARPA AI Cyber Challenge (AIxCC)** was a two-year, $29.5 million tournament that officially **concluded in August 2025** at DEF CON 33 (where Team Atlanta took first place).
 
 Because the primary tournament is over, **active registration for the live prize competition is currently closed**. However, because the core goal of the challenge was to secure critical infrastructure at scale, the ecosystem remains highly active.

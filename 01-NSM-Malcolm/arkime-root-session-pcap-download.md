@@ -1,11 +1,16 @@
 ---
-created: 2026-07-20 10:07
-updated: 2026-07-20 10:07
-tags: []
+title: "Arkime Root Session PCAP Downloads"
+description: "Explains why segment session IDs can download empty PCAPs and why root session IDs should be selected for packet export."
+created: 2026-07-20
+updated: 2026-07-20
+tags: [malcolm, nsm, dfir]
 type: reference
-lang: en
+lang: zh
 status: draft
 ---
+
+> Related: [[MOC - Malcolm & NSM]] · [[arkime-session-splitting]] · [[arkime-api]]
+
 這段話是針對某種**網路封包分析或流量側錄系統**（例如 Wireshark 相關工具、流量側錄設備或雲端流量鏡像日誌）的操作指南。
 
 簡單來說，它的核心警告是：**「別浪費時間去下載分段（Segment）的 ID，因為那些檔案是空的；只有下載根會話（Root Session）的 ID 才能拿到真正的封包資料。」**
