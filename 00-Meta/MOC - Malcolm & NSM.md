@@ -2,7 +2,7 @@
 title: "MOC - Malcolm & NSM"
 description: "Maps Network Security Monitoring, Malcolm, Arkime, OpenSearch, sensors, and OT/ICS notes."
 created: 2026-07-07
-updated: 2026-07-19
+updated: 2026-07-20
 tags: [malcolm, nsm, opensearch, moc]
 type: hub
 lang: en
@@ -32,6 +32,9 @@ Network Security Monitoring stack: sensors, indexing, PCAP analysis, and Malcolm
 - [[arkime-http-md5]] — Arkime `http.md5` triage, deduplication, and threat intel pivots
 - [[arkime-http-md5-bypass]] — hash-only detection bypass patterns
 - [[arkime-session-splitting]] — raw PCAP fallback for late keep-alive tasks
+- [[arkime-split-session-large-upload]] — interpret split Arkime rows as one high-volume upload flow
+- [[arkime-root-session-pcap-download]] — prefer root session IDs when exporting PCAPs
+- [[arkime-http-post-file-carving]] — export split sessions and carve HTTP POST payloads
 - [[arkime-parser-keepalive-bug]] — HTTP parser state reset failure mode
 - [[arkime-time-zoom-panel]] — timeline zoom workflow
 - [[arkime-api]] — Malcolm `/arkime` API debugging
@@ -49,6 +52,8 @@ Network Security Monitoring stack: sensors, indexing, PCAP analysis, and Malcolm
 - [[opensearch-elasticsearch]] — OpenSearch vs Elasticsearch
 - [[opensearch-index-patterns]] — index pattern and dashboard management concepts
 - [[malcolm-opensearch-json-dsl]] — Malcolm GUI to JSON DSL
+- [[opensearch-api-dsl-dev-tools]] — relationship between OpenSearch APIs, Query DSL, and Dev Tools
+- [[opensearch-lucene-quoted-wildcards]] — why quoted Lucene wildcards return zero matches
 - [[threat-lead-filter-example-smtp]] — OpenSearch filters for broad SMTP Suricata lead expansion
 - [[metadata-indexing]] — metadata indexing
 - [[duplicated-id]] — duplicated ID issues
@@ -60,7 +65,9 @@ Network Security Monitoring stack: sensors, indexing, PCAP analysis, and Malcolm
 - [[http-md5-zeek-mime-type]] — Arkime `http.md5` versus Zeek `mime_type`
 - [[zeek-weird-syn-inside-connection]] — Zeek `SYN_inside_connection` causes and Malcolm triage pivots
 - [[suricata-alert-smtp-invalid-reply]] — Suricata SMTP invalid reply parser event triage
+- [[suricata-large-transfer-engine-events]] — scan and large-transfer context for Suricata engine events
 - [[suricata-stream-established-syn-resend]] — Suricata established-state SYN resend anomaly contexts
+- [[network-scan-log-sources]] — map scan behavior to Zeek Notice, Suricata, and Zeek weird logs
 - [[zeek-files-mime-type-mz]] — Zeek MIME labels and Windows MZ magic bytes
 - [[zeek-fuid-cuid]] — Zeek connection UID and file FUID pivots
 - [[zeek-file-reassembler]] — ranged downloads and Zeek file reassembly
@@ -79,6 +86,8 @@ Network Security Monitoring stack: sensors, indexing, PCAP analysis, and Malcolm
 - [[scada-rtac-ews]] — SCADA, RTAC, and EWS roles in industrial automation
 - [[modbus-s7comm]] — Modbus and Siemens S7comm protocol comparison
 - [[proprietary-protocol]] — proprietary protocol definition and tradeoffs
+- [[plc-security-logs]] — PLC telemetry versus security log constraints and OT cost tradeoffs
+- [[dnp3-unknown-object]] — triage Suricata DNP3 unknown object alerts with packet evidence
 - [[ot-hmi-ews-plc-rtu]] — OT HMI/EWS/PLC/RTU
 - [[ics-historian-jumpbox]] — ICS historian jumpbox
 

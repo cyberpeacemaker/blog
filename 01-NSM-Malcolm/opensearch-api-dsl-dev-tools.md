@@ -1,11 +1,16 @@
 ---
-created: 2026-07-20 21:07
-updated: 2026-07-20 21:07
-tags: []
+title: "OpenSearch API, Query DSL, and Dev Tools"
+description: "Clarifies how OpenSearch REST APIs, JSON Query DSL payloads, and the Dev Tools console work together."
+created: 2026-07-20
+updated: 2026-07-20
+tags: [opensearch, malcolm]
 type: reference
 lang: en
 status: draft
 ---
+
+> Related: [[MOC - OpenSearch Querying]] · [[lucene-dql-json-dsl]] · [[opensearch-request]]
+
 These three concepts represent different layers of the same ecosystem, working together to let you communicate with OpenSearch.
 
 The relationship between them can be explained through a simple communication analogy:

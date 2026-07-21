@@ -1,11 +1,16 @@
 ---
-created: 2026-07-20 10:07
-updated: 2026-07-20 10:07
-tags: []
+title: "Base64 for Text-Only Protocols"
+description: "Explains how Base64 represents binary bytes as safe text for email, HTML, APIs, and other text-only channels."
+created: 2026-07-20
+updated: 2026-07-20
+tags: [dev]
 type: reference
 lang: en
 status: draft
 ---
+
+> Related: [[05-Software-Engineering]] · [[binary-vs-text-files]] · [[image-binary-to-text-representation]]
+
 The description you provided is spot on! At its core, **Base64 encoding** is like a universal translator for computers. It bridges the gap between systems that only understand text and files that are purely binary.
 
 Here is a breakdown of how it works, why we use it, and when it actually makes sense to deploy it.

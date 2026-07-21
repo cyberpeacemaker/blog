@@ -1,11 +1,16 @@
 ---
-created: 2026-07-20 15:07
-updated: 2026-07-20 15:07
-tags: []
+title: "PLC Security Logs and OT Cost Tradeoffs"
+description: "Explains why small PLCs often expose telemetry instead of security logs and why OT security requirements push controls to network layers."
+created: 2026-07-20
+updated: 2026-07-20
+tags: [nsm, threat-hunting]
 type: reference
-lang: en
+lang: zh
 status: draft
 ---
+
+> Related: [[MOC - Malcolm & NSM]] · [[ot-hmi-ews-plc-rtu]] · [[critial-infrastructure]]
+
 你的這個比喻非常精準，完全點出了**IT（資訊技術）思維**與**OT（營運技術）現實**之間最大的鴻溝！
 
 「電腦 100 $\rightarrow$ 110」大家覺得理所當然，因為電腦本來就是通用運算設備，多花 10% 買安全合情合理。但「PLC 10 $\rightarrow$ 20」是**成本直接翻倍**，在講求毛利與量產的工業自動化領域，這對廠商和採用者來說都是巨大的衝擊。

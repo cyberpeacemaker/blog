@@ -2,7 +2,7 @@
 title: "05-Software-Engineering"
 description: "Maps architecture, agile development, MVP, CI/CD, documentation, and software concept notes."
 created: 2026-07-07
-updated: 2026-07-16
+updated: 2026-07-20
 tags: [moc]
 type: hub
 lang: en
@@ -31,5 +31,8 @@ Architecture, agile development, MVP, and software concepts.
 - [[cicd-get-started]] — CI/CD roadmap for small teams
 - [[github-action-workflows]] — GitHub Actions workflow fundamentals
 - [[project-reorganization-challenge]]
+- [[binary-vs-text-files]] — practical distinction between text and binary file formats
+- [[image-binary-to-text-representation]] — text representations of image data and their efficiency costs
+- [[text-protocol-base64]] — Base64 as a bridge for binary data over text-only protocols
 - [[trading-bot-ad-bidding]]
 - [[blue-sky]]

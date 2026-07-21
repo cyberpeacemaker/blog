@@ -1,11 +1,16 @@
 ---
-created: 2026-07-20 15:07
-updated: 2026-07-20 15:07
-tags: []
+title: "Arkime Split Sessions for Large Uploads"
+description: "Explains how Arkime packet thresholds split one high-volume HTTP upload into multiple rows that share the same Community ID."
+created: 2026-07-20
+updated: 2026-07-20
+tags: [malcolm, nsm, dfir]
 type: reference
 lang: en
 status: draft
 ---
+
+> Related: [[MOC - Malcolm & NSM]] · [[arkime-session-splitting]] · [[arkime-http-post-file-carving]]
+
 You hit the nail on the head with your observation. While they appear as three separate rows in Arkime, **they are actually segments of the exact same network connection.**
 
 Here is exactly how to interpret what you are seeing and why Arkime split them up.
