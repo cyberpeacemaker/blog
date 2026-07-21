@@ -2,6 +2,8 @@
 - project-shepherd logo
 - PR check
 # Now
+
+- 長USB對USB線
 - mdm 重開機測試
 - nics claw
 - bec ctf 完整報告 (unencrypted channel, dnp3異常覆現, cleartext category)

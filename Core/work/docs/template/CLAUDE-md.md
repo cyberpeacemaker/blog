@@ -19,5 +19,5 @@ alwaysApply: true
 # Project Specific
 
 - **Ignore:** 
-	- `TODO.md`, `DIARY.md`, `archive/`, `assets/`
+	- `TODO.md`, `DIARY.md`, `archive/`
 	- Any files with `status: "draft"` in the frontmatter
