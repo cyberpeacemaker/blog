@@ -9,6 +9,7 @@
 - bec ctf 完整報告 (unencrypted channel, dnp3異常覆現, cleartext category)
 - 護照 > CISA(ESTA) > 開戶
 - 桃園出差結報
+- 台鐵準備
 
 
 
