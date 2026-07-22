@@ -8,6 +8,7 @@
 - nics claw
 - bec ctf 完整報告 (unencrypted channel, dnp3異常覆現, cleartext category)
 - 桃園出差結報
+- opensearch api + agent skill
 - CJA
 - 護照 > CISA(ESTA) > 開戶
 - 台鐵準備
