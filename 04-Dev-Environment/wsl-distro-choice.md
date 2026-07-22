@@ -1,11 +1,16 @@
 ---
-created: 2026-07-21 15:07
-updated: 2026-07-21 15:07
-tags: []
-type: reference
+title: "Choose and Launch WSL Distros"
+description: "PowerShell commands for listing WSL distributions, launching a specific distro, and changing the default distro."
+created: 2026-07-21
+updated: 2026-07-21
+tags: [dev]
+type: howto
 lang: en
 status: draft
 ---
+
+> Related: [[MOC - Dev Environment]] · [[wsl-distro]] · [[wsl-distro-switch]]
+
 Now that you have both Ubuntu and Kali installed, typing just `wsl` will launch whichever one is set as your **default**.
 
 Here are the easiest ways to check your installed distros, launch specific ones, or change your default.

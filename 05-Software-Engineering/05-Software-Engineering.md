@@ -2,7 +2,7 @@
 title: "05-Software-Engineering"
 description: "Maps architecture, agile development, MVP, CI/CD, documentation, and software concept notes."
 created: 2026-07-07
-updated: 2026-07-20
+updated: 2026-07-21
 tags: [moc]
 type: hub
 lang: en
@@ -17,6 +17,7 @@ Architecture, agile development, MVP, and software concepts.
 - [[todo-location-suggestion]] — root versus localized TODO strategy
 - [[folder-structure-auto-generate]] — automate README folder tree updates
 - [[folder-by-feature-type]] — folder-by-type versus folder-by-feature organization
+- [[reference-input-folder-naming]] — naming folders for reference materials, specs, raw inputs, and provided files
 - [[folder-structure]] — tools and minimal patterns for README folder maps
 - [[readme-location-suggestion]] — root README versus localized README strategy
 - [[ascii-tree-practical-maintenance-issue]] — why annotated ASCII trees drift and alternatives

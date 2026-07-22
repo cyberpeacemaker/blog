@@ -1,11 +1,16 @@
 ---
-created: 2026-07-21 15:07
-updated: 2026-07-21 15:07
-tags: []
-type: reference
+title: "WSL Distro"
+description: "Defines what a WSL distribution is and why multiple distros can serve different development and security workflows."
+created: 2026-07-21
+updated: 2026-07-21
+tags: [dev]
+type: concept
 lang: en
 status: draft
 ---
+
+> Related: [[MOC - Dev Environment]] · [[wsl-distro-choice]] · [[wsl-distro-switch]]
+
 A **WSL Distro** (short for _Linux Distribution on WSL_) is a specific flavor of the Linux operating system—like Ubuntu, Kali, or Debian—packaged to run directly inside Windows using Microsoft's Windows Subsystem for Linux.
 
 While Windows handles the background virtualization and Linux kernel, the **distro** provides the actual user environment, files, and tools you interact with.

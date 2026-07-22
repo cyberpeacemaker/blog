@@ -1,11 +1,16 @@
 ---
-created: 2026-07-21 16:07
-updated: 2026-07-21 16:07
-tags: []
-type: reference
+title: "Search Suricata Alerts in OpenSearch"
+description: "Shows Lucene and Query DSL patterns for finding Suricata alert signatures or categories when fields are uncertain."
+created: 2026-07-21
+updated: 2026-07-21
+tags: [malcolm, nsm, opensearch]
+type: howto
 lang: en
 status: draft
 ---
+
+> Related: [[MOC - Malcolm & NSM]] · [[MOC - OpenSearch Querying]] · [[opensearch-lucene-quoted-wildcards]]
+
 To find Suricata alerts in OpenSearch when you don't know the exact field name or full alert title, you can use **wildcards** and **phrase matching**.
 
 Depending on whether you are using the **OpenSearch Dashboards UI** or the **OpenSearch REST API (Query DSL)**, here is how to construct your search.

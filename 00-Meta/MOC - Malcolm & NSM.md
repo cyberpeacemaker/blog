@@ -2,7 +2,7 @@
 title: "MOC - Malcolm & NSM"
 description: "Maps Network Security Monitoring, Malcolm, Arkime, OpenSearch, sensors, and OT/ICS notes."
 created: 2026-07-07
-updated: 2026-07-20
+updated: 2026-07-21
 tags: [malcolm, nsm, opensearch, moc]
 type: hub
 lang: en
@@ -48,6 +48,7 @@ Network Security Monitoring stack: sensors, indexing, PCAP analysis, and Malcolm
 
 ## OpenSearch & Indexing
 
+- [[suricata-opensearch-alert-search]] — wildcard and Query DSL patterns for uncertain Suricata alert fields
 - [[malcolm-it-ot-subnet-filter]] — OpenSearch and Arkime filters for IT/OT subnet traffic boundaries
 - [[opensearch-elasticsearch]] — OpenSearch vs Elasticsearch
 - [[opensearch-index-patterns]] — index pattern and dashboard management concepts

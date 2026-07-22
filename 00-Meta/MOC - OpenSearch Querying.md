@@ -1,6 +1,6 @@
 ---
 created: 2026-07-07
-updated: 2026-07-20
+updated: 2026-07-21
 tags: [opensearch, lucene, moc]
 type: hub
 lang: en
@@ -20,6 +20,7 @@ Lucene syntax, JSON DSL, filters, and query patterns for Malcolm and OpenSearch.
 
 ## Query Patterns
 
+- [[suricata-opensearch-alert-search]] — wildcard and Query DSL patterns for uncertain Suricata alert fields
 - [[opensearch-query-and]] — AND query patterns
 - [[opensearch-must-filter]] — must/filter clauses
 - [[threat-lead-filter-example-smtp]] — broaden SMTP Suricata leads with OpenSearch filters and Lucene queries

@@ -1,11 +1,16 @@
 ---
-created: 2026-07-21 17:07
-updated: 2026-07-21 17:07
-tags: []
-type: reference
+title: "Enable Docker Desktop WSL Integration"
+description: "Steps to expose the Docker command inside a selected WSL2 distribution through Docker Desktop integration."
+created: 2026-07-21
+updated: 2026-07-21
+tags: [dev]
+type: howto
 lang: en
 status: draft
 ---
+
+> Related: [[MOC - Dev Environment]] · [[docker-wsl-integration-options]] · [[default-wsl-distro-dev-containers]]
+
 This error occurs because the WSL 2 distribution you are using does not have Docker Desktop integration enabled, meaning the `docker` command cannot be found inside that specific Linux environment.
 
 To fix this, follow these steps:

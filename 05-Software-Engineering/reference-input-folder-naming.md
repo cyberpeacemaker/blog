@@ -1,11 +1,16 @@
 ---
-created: 2026-07-21 14:07
-updated: 2026-07-21 14:07
-tags: []
+title: "Reference and Input Folder Naming"
+description: "Compares asset, data, reference, specs, inputs, raw, and provided folder names for project materials."
+created: 2026-07-21
+updated: 2026-07-21
+tags: [dev, workflow]
 type: reference
 lang: en
 status: draft
 ---
+
+> Related: [[05-Software-Engineering]] · [[unsorted-folder-naming]] · [[folder-structure]]
+
 Neither `asset` nor `data` is inherently wrong, but they both carry specific conventions in software development that might lead to confusion depending on what you're putting in there.
 
 Here is a quick breakdown of how those terms are usually interpreted, followed by stronger alternatives based on your exact use case.
