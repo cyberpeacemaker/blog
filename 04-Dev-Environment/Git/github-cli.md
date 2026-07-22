@@ -1,11 +1,16 @@
 ---
-created: 2026-07-22 09:07
-updated: 2026-07-22 09:07
-tags: []
+title: "GitHub CLI"
+description: "Explains what the GitHub CLI is and how it differs from Git for repository hosting workflows."
+created: 2026-07-22
+updated: 2026-07-22
+tags: [dev, git]
 type: reference
 lang: en
 status: draft
 ---
+
+> Related: [[MOC - Dev Environment]] · [[github-authentication]] · [[git-config]]
+
 **`gh`** stands for the **GitHub CLI** (Command Line Interface).
 
 It is the official command-line tool built by GitHub that lets you manage your GitHub workflow—like pull requests, issues, and releases—directly inside your terminal.

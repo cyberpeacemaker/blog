@@ -1,11 +1,16 @@
 ---
-created: 2026-07-22 11:07
-updated: 2026-07-22 11:07
-tags: []
+title: "VS Code Command Palette Fuzzy Search"
+description: "Explains why the VS Code Command Palette filters commands with fuzzy search instead of inline text autocomplete."
+created: 2026-07-22
+updated: 2026-07-22
+tags: [dev]
 type: reference
 lang: en
 status: draft
 ---
+
+> Related: [[MOC - Dev Environment]] · [[vscode-tips]] · [[vscode-toggle-view]]
+
 **No**, the VS Code Command Palette does not have traditional "inline text autocomplete" (like pressing `Tab` to fill in the rest of a word like in a terminal shell or code editor).
 
 Instead, it relies on **Fuzzy Search Filtering**.

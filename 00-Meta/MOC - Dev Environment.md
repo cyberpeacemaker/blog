@@ -2,7 +2,7 @@
 title: "MOC - Dev Environment"
 description: "Maps developer tooling, Git, Python, VS Code, testing, Windows, and WSL environment notes."
 created: 2026-07-07
-updated: 2026-07-21
+updated: 2026-07-22
 tags: [dev, moc]
 type: hub
 lang: en
@@ -15,6 +15,7 @@ Developer tooling: Git, Python, VS Code, testing, and environment setup.
 
 ## Setup
 
+- [[dev-container-volume-workflow]] — working from VS Code attached to Docker-backed Dev Container volumes
 - [[docker-wsl-integration-options]] — default-distro versus per-distro Docker Desktop WSL integration switches
 - [[docker-desktop-wsl-integration]] — enable Docker Desktop integration for a selected WSL2 distribution
 - [[yaml-string-quoting]] — when YAML strings need quotes to avoid parser surprises
@@ -58,6 +59,9 @@ Developer tooling: Git, Python, VS Code, testing, and environment setup.
 
 ## Git
 
+- [[wsl-ubuntu-windows-git-credential-manager]] — connect WSL Ubuntu Git authentication to Windows Git Credential Manager
+- [[github-cli]] — GitHub CLI role compared with Git
+- [[git-config]] — verify configured Git user name and email
 - [[canary-pattern]] — harmless secret-scanning canary string for hook and CI guardrail verification
 - [[github-markdown-spacing]] — GitHub Markdown code fence failures from hidden spaces and list indentation
 - [[github-assignees]] — GitHub issue ownership and template assignee routing
@@ -138,6 +142,7 @@ Developer tooling: Git, Python, VS Code, testing, and environment setup.
 
 ## VS Code / Cursor
 
+- [[vscode-command-palette-fuzzy-search]] — Command Palette fuzzy search behavior and shortcuts
 - [[vscode-custom-visual-text]] — customize VS Code editor typography, Markdown syntax colors, preview CSS, and extensions
 - [[vscode-compact-folder]] — disable compact folders in VS Code Explorer
 - [[vscode-shrink-line-height]] — VS Code empty-line height limitations and Markdown display workarounds

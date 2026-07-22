@@ -1,11 +1,15 @@
 ---
-created: 2026-07-22 14:07
-updated: 2026-07-22 14:07
-tags: []
-type: reference
+title: "Dev Container Volume Workflow"
+description: "Explains how VS Code Dev Containers store project files in Docker volumes and how to work from the attached container instead of WSL home."
+created: 2026-07-22
+updated: 2026-07-22
+tags: [dev]
+type: howto
 lang: en
 status: draft
 ---
+
+> Related: [[MOC - Dev Environment]] · [[default-wsl-distro-dev-containers]] · [[docker-wsl-integration-options]]
 
 ## Old workflow vs Dev Container
 
@@ -153,3 +157,4 @@ Cursor and VS Code both attach to the **same container git repo**. Empty Source 
 ---
 
 **Bottom line:** With Dev Container Volume, your “workspace” is **VS Code while connected to the container**, not WSL home and not Win11 Explorer. If the bottom-left badge says `Dev Container: otex-claw`, you are already inside the right environment — the Explorer and terminal in that window are the interface.
+
