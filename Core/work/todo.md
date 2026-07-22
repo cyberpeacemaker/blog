@@ -4,6 +4,7 @@
 # Now
 
 - mdm 裝另一台，解除現有
+- 流程管理混亂，事情分不清緩急
 - nics claw
 - bec ctf 完整報告 (unencrypted channel, dnp3異常覆現, cleartext category)
 - 桃園出差結報
