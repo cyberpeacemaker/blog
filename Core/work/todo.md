@@ -86,6 +86,8 @@ knowledge/
 ```
 
 # AI
+- 101 claude
+- 101 cursor, vscode agent
 - `finish-ai-task.sh`
 - auto ai categorize 'blog' (fills tags/lang)
 - atuo ai syn/commite/push 'github repo'
