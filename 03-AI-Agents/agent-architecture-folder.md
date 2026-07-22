@@ -1,11 +1,16 @@
 ---
-created: 2026-07-22 11:07
-updated: 2026-07-22 11:07
-tags: []
+title: "Agent Architecture Folder Placement"
+description: "Explains when to keep agent scripts inside skill folders versus shared repository-level scripts or GitHub templates."
+created: 2026-07-22
+updated: 2026-07-22
+tags: [ai, agents, dev]
 type: reference
 lang: en
 status: draft
 ---
+
+> Related: [[MOC - AI Agents]] · [[MOC - Claude & Cursor]] · [[agent-architecture-suggestion]] · [[deterministic-tooling-pattern]]
+
 The best choice depends on **portability** vs. **standard developer conventions**.
 
 In practice, a **hybrid approach** is the industry standard: keep AI-exclusive helpers inside the skill folder, and keep standard/shared tools at the root level.

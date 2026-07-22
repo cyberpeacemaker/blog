@@ -2,7 +2,7 @@
 title: "MOC - AI Agents"
 description: "Maps AI agent frameworks, context management, local models, and agent instruction notes."
 created: 2026-07-07
-updated: 2026-07-20
+updated: 2026-07-22
 tags: [ai, agents, moc]
 type: hub
 lang: en
@@ -15,6 +15,9 @@ AI agent frameworks, multi-agent systems, context management, and local LLM work
 
 ## Frameworks & Architecture
 
+- [[agent-architecture-suggestion]] — split in-repo agent artifacts from environment-side capabilities like MCP and authenticated CLIs
+- [[agent-architecture-folder]] — choose between skill-local assets and shared repository scripts/templates
+- [[cursor-vscode-agent]] — Cursor AI-first IDE architecture versus VS Code Copilot Agent Mode
 - [[cursor-plugin-gsap-neon-postgres]] — AI skill plugins for animation and serverless Postgres workflows in Cursor
 - [[local-cv-yolo-vs-cloud-vision]] — local YOLO vision vs cloud vision models
 - [[ai-new-era-image-identification]] — MCP vision bridge vs local image recognition
@@ -49,6 +52,9 @@ AI agent frameworks, multi-agent systems, context management, and local LLM work
 
 ## Agent Instructions & Rules
 
+- [[ai-agent-core-skills]] — compact starting set of reusable AI engineering skills
+- [[deterministic-tooling-pattern]] — pair agent reasoning with deterministic scripts for repeatable execution
+- [[skill-template-script-pattern]] — combine skills, templates, and scripts to avoid workflow drift
 - [[CLAUDE]] — agent instruction template (use for all new agent projects)
 - [[ai-native-devkit-review]] — AI-native devkit flow with draft PRs, CI, and guardrails
 - [[industry-standard-for-ai-human-collaboration]] — draft PR loop, plan-first, atomic commits

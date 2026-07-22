@@ -1,11 +1,16 @@
 ---
-created: 2026-07-22 09:07
-updated: 2026-07-22 09:07
-tags: []
-type: reference
+title: "Deterministic Tooling Pattern"
+description: "Explains why agents should delegate repeatable execution to scripts while skills decide when and how to invoke them."
+created: 2026-07-22
+updated: 2026-07-22
+tags: [ai, agents, workflow]
+type: concept
 lang: en
 status: draft
 ---
+
+> Related: [[MOC - AI Agents]] · [[MOC - Claude & Cursor]] · [[ai-agent-core-skills]] · [[skill-template-script-pattern]]
+
 Your plan doesn't just make sense—it is actually considered **the gold standard best practice** for building reliable AI agent systems (often called the **"Deterministic Tooling Pattern"**).
 
 It is definitely **not redundant or inefficient**. In fact, doing it this way fixes the biggest flaws of AI agents: randomness and context bloat.
