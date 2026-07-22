@@ -3,8 +3,7 @@
 - PR check
 # Now
 
-- 長USB對USB線
-- mdm 重開機測試
+- mdm 裝另一台，解除現有
 - nics claw
 - bec ctf 完整報告 (unencrypted channel, dnp3異常覆現, cleartext category)
 - 桃園出差結報
