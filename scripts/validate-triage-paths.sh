@@ -18,7 +18,7 @@ HAS_CHANGES=0
 while IFS= read -r -d '' path; do
   HAS_CHANGES=1
   case "$path" in
-    Inbox/*.md|00-Meta/*.md|00-Meta/*.canvas|01-NSM-Malcolm/*.md|02-Threat-Hunting-DFIR/*.md|03-AI-Agents/*.md|03-AI-Agents/*/*.md|04-Dev-Environment/*.md|04-Dev-Environment/*/*.md|05-Software-Engineering/*.md|06-Design-Creative/*.md|07-Productivity-Work/*.md|08-Career-Presentations/*.md|09-Personal/*.md|scripts/build-vault-canvas.py|scripts/vault-graph.json|scripts/finish-ai-task.sh|scripts/validate-triage-paths.sh|.github/workflows/triage-validation.yml|.github/PULL_REQUEST_TEMPLATE.md)
+    Inbox/*.md|00-Meta/*.md|00-Meta/*.canvas|01-NSM-Malcolm/*.md|02-Threat-Hunting-DFIR/*.md|03-AI-Agents/*.md|03-AI-Agents/*/*.md|04-Dev-Environment/*.md|04-Dev-Environment/*/*.md|05-Software-Engineering/*.md|06-Design-Creative/*.md|07-Productivity-Work/*.md|08-Career-Presentations/*.md|09-Personal/*.md|scripts/vault-graph.json|scripts/finish-ai-task.sh|scripts/validate-triage-paths.sh|.github/workflows/triage-validation.yml|.github/PULL_REQUEST_TEMPLATE.md)
       ;;
     *)
       echo "Error: File outside trusted triage paths: $path"
