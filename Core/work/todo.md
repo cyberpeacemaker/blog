@@ -13,10 +13,15 @@
 - 測otex-claw 前端 + 現場
 - 新光醫院保密，不用填申請日期
 - 護照 > CISA(ESTA) > 開戶
-- 台鐵準備
-- 自動bot 審查 github
 
-
+# 台鐵檢測
+- 要帶網卡
+- 0830台北車站東三門全家
+- 網路架構圖似乎沒有 (對方似乎弄丟切結書)
+- PM叮嚀
+	- 熟練BEC
+	- Youtrack
+	- AAR會議紀錄
 
 # Bec ctf 完整報告
 我之前可能用不太適合的角度切入CTF，我偏向抑制/阻止去看明文資料，而是透過threat hunting methodology/encrypted traffic analytics/behavior analysis等角度去切入
