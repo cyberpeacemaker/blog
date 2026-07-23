@@ -13,11 +13,5 @@ alwaysApply: true
 - **State assumptions and tradeoffs** before implementing. If a simpler or safer approach exists, propose it and push back when warranted.
 - **Define frozen success criteria** before each task, and loop until strictly met. Do not alter the criteria post-hoc to justify the results.
 - **Stronger verify:** For complex tasks or when the user specifies — verify yourself first, then use an independent adversarial review to challenge the result.
-- **Frontmatter:** When creating a file in a format that natively supports YAML frontmatter, follow [`frontmatter.md`](rules/frontmatter.md). Default new, ready-to-use documents to `status: active`.
+- **Frontmatter:** When creating a file in a format that natively supports YAML frontmatter, follow [`frontmatter.md`](rules/frontmatter.md). Default new, ready-to-use documents to `status: active`. Ignore any files with `status: "draft"` in the frontmatter.
 
-
-# Project Specific
-
-- **Ignore:** 
-	- `TODO.md`, `DIARY.md`, `archive/`, `reference/`
-	- Any files with `status: "draft"` in the frontmatter

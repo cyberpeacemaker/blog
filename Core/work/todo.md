@@ -14,7 +14,7 @@
 - CJA
 - 護照 > CISA(ESTA) > 開戶
 - 台鐵準備
-
+- 自動bot 審查 github
 
 
 
