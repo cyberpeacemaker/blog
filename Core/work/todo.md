@@ -10,13 +10,8 @@
 
 # 暫時推遲
 
-- 測otex-claw
+- 測otex-claw 前端 + 現場
 - 新光醫院保密，不用填申請日期
-- 流程管理混亂，事情分不清緩急
-- nics claw (Claude 參與部分)
--  (ul, dnp3異常覆現, clea)
-
-- opensearch api + agent skill
 - 護照 > CISA(ESTA) > 開戶
 - 台鐵準備
 - 自動bot 審查 github
@@ -143,6 +138,7 @@ Malcolm threat hunting methodology
 	- claude
 	- gitignore
 
+- opensearch api + agent skill
 - 耳提面目補充
 - cyber storm cisa
 - Google Threat Intelligence
