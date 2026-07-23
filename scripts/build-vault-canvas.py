@@ -133,7 +133,7 @@ def stable_id(seed: str) -> str:
 def scan_vault() -> tuple[dict[str, Note], list[tuple[str, str, str]]]:
     """Return canonical notes by id and raw broken link triples (source_id, target, source_path)."""
     raw_files: list[Path] = []
-    for path in ROOT.rglob("*.md"):
+    for path in sorted(ROOT.rglob("*.md")):
         if should_skip(path):
             continue
         raw_files.append(path)
@@ -244,7 +244,7 @@ def build_hub_graph(notes: dict[str, Note]) -> dict:
         })
     edges = []
     seen_edges: set[tuple[str, str]] = set()
-    for nid in hub_ids:
+    for nid in sorted(hub_ids):
         for target in notes[nid].outbound:
             if target in hub_ids:
                 key = (nid, target)
@@ -258,7 +258,7 @@ def build_hub_graph(notes: dict[str, Note]) -> dict:
                 if key not in seen_edges:
                     seen_edges.add(key)
                     edges.append({"from": home_id, "to": target})
-    return {"nodes": nodes, "edges": edges}
+    return {"nodes": nodes, "edges": sorted(edges, key=lambda e: (e["from"], e["to"]))}
 
 
 def build_metrics(notes: dict[str, Note], broken: list[tuple[str, str, str]]) -> dict:
