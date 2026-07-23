@@ -1,3 +1,6 @@
+
+**agent-friendly + deterministic where possible**
+
 # Claude Design
 start with low-fidelity scaffold, then high-detailed rich version.
 
