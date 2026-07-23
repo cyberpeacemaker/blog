@@ -4,6 +4,7 @@
 # Now
 
 - mdm 裝另一台，解除現有
+- 測otex-claw
 - 新光醫院保密，不用填申請日期
 - 流程管理混亂，事情分不清緩急
 - nics claw (Claude 參與部分)
