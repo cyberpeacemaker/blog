@@ -4,14 +4,19 @@
 # Now
 
 - mdm 裝另一台，解除現有
+- 桃園出差結報
+- nics-probationary
+- bec report
+
+# 暫時推遲
+
 - 測otex-claw
 - 新光醫院保密，不用填申請日期
 - 流程管理混亂，事情分不清緩急
 - nics claw (Claude 參與部分)
-- bec ctf 完整報告 (unencrypted channel, dnp3異常覆現, cleartext category)
-- 桃園出差結報
+-  (ul, dnp3異常覆現, clea)
+
 - opensearch api + agent skill
-- CJA
 - 護照 > CISA(ESTA) > 開戶
 - 台鐵準備
 - 自動bot 審查 github
