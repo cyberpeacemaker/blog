@@ -1,12 +1,16 @@
 ---
-created: 2026-07-22 10:07
-updated: 2026-07-22 10:07
-tags: []
+title: "AI Agent Architecture: Repository Artifacts and Environment Capabilities"
+description: "Separates shared in-repository agent artifacts from local or CI capabilities such as authenticated CLIs and MCP servers."
+created: 2026-07-22
+updated: 2026-07-22
+tags: [ai, agents]
 type: reference
 lang: en
 status: draft
 ---
-  
+
+> Related: [[MOC - AI Agents]] · [[MOC - Claude & Cursor]] · [[agent-architecture-folder]] · [[CLAUDE]]
+
   
 
 ## 2. Industry Architecture: How Teams Set This Up

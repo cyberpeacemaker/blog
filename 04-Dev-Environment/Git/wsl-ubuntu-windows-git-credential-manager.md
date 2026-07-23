@@ -1,11 +1,16 @@
 ---
-created: 2026-07-22 10:07
-updated: 2026-07-22 10:07
-tags: []
-type: reference
+title: "WSL Ubuntu Windows Git Credential Manager"
+description: "Shows how to connect WSL Ubuntu Git authentication to Windows Git Credential Manager so Git operations and Dev Containers do not hang on credentials."
+created: 2026-07-22
+updated: 2026-07-22
+tags: [dev, git]
+type: howto
 lang: en
 status: draft
 ---
+
+> Related: [[MOC - Dev Environment]] · [[github-ssh-gpgkey]] · [[dev-container-volume-workflow]]
+
 Yes, you can absolutely wire WSL Ubuntu to use the **Windows Git Credential Manager (GCM)**!
 
 When `git ls-remote` hangs, it’s usually because Git is silently waiting for user input or authentication that it can't prompt for in a non-interactive shell. Wiring WSL to Windows GCM allows WSL (and Dev Containers) to leverage Windows' GUI popups for authentication and share saved credentials seamlessly.

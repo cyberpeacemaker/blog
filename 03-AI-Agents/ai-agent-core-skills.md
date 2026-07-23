@@ -1,11 +1,16 @@
 ---
-created: 2026-07-22 10:07
-updated: 2026-07-22 10:07
-tags: []
+title: "AI Agent Core Skills"
+description: "Recommends a compact set of reusable skills for daily AI-assisted engineering workflows."
+created: 2026-07-22
+updated: 2026-07-22
+tags: [ai, agents, claude]
 type: reference
 lang: en
 status: draft
 ---
+
+> Related: [[MOC - Claude & Cursor]] · [[MOC - AI Agents]] · [[claude-skills]] · [[deterministic-tooling-pattern]]
+
 You are spot-on. The **Skill + Template + Script** pattern has quickly become the standard architecture in modern AI-assisted engineering.
 
   

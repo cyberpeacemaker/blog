@@ -1,11 +1,16 @@
 ---
-created: 2026-07-22 11:07
-updated: 2026-07-22 11:07
-tags: []
-type: reference
+title: "Check Git Config User Identity"
+description: "Lists quick Git config commands for verifying the configured user name and email."
+created: 2026-07-22
+updated: 2026-07-22
+tags: [dev, git]
+type: howto
 lang: en
 status: draft
 ---
+
+> Related: [[MOC - Dev Environment]] · [[git-best-practice]] · [[github-cli]]
+
 You set those up perfectly! To quickly verify that Git saved your name and email correctly, run this command in your terminal:
 
 Bash

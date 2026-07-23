@@ -1,11 +1,16 @@
 ---
-created: 2026-07-22 11:07
-updated: 2026-07-22 11:07
-tags: []
+title: "JPG to BMP CDR and Threat Hunting"
+description: "Explains why image conversion can work as CDR for defense but can destroy forensic evidence during threat hunting."
+created: 2026-07-22
+updated: 2026-07-22
+tags: [threat-hunting, dfir]
 type: reference
-lang: en
+lang: zh
 status: draft
 ---
+
+> Related: [[MOC - Threat Hunting]] · [[YARA]] · [[writeup-guideline]]
+
 你的直覺非常敏銳！你一眼就抓到了關鍵：**因為 JPG 是有損壓縮，丟失的資料永遠回不來了。**
 
 不過，這裡有一個關於 **CDR（Content Disarmament and Reconstruction，內容消毒與重構）** 最常見的觀念誤區：

@@ -2,7 +2,7 @@
 title: "MOC - Claude & Cursor"
 description: "Maps Claude, Cursor, AI-assisted coding, skills, and design workflow notes."
 created: 2026-07-07
-updated: 2026-07-17
+updated: 2026-07-22
 tags: [claude, cursor, moc]
 type: hub
 lang: en
@@ -15,6 +15,7 @@ AI-assisted coding: Claude, Cursor IDE, skills, and design workflows.
 
 ## IDE & Workflow Comparison
 
+- [[cursor-vscode-agent]] — Cursor versus VS Code Copilot Agent Mode architecture and tradeoffs
 - [[cursor-plugin-gsap-neon-postgres]] — Cursor plugin skills and MCP integrations for GSAP and Neon Postgres
 - [[cursor-vs-claude]] — Cursor vs Claude Desktop
 - [[claude-desktop-cli]] — Claude Desktop vs Claude Code CLI workflow fit
@@ -29,6 +30,11 @@ AI-assisted coding: Claude, Cursor IDE, skills, and design workflows.
 
 ## Claude Skills & Commands
 
+- [[ai-agent-core-skills]] — core reusable skill set for AI-assisted engineering
+- [[deterministic-tooling-pattern]] — scripts as deterministic execution engines for agent workflows
+- [[skill-template-script-pattern]] — skill, template, and script pattern for stable generated outputs
+- [[agent-architecture-suggestion]] — in-repo artifacts, skill folders, and environment-side MCP capabilities
+- [[agent-architecture-folder]] — where to place skill-specific versus shared repository scripts
 - [[claude-skills]] — Claude skills overview
 - [[claude-skills-example]] — skills examples
 - [[claude-skill-command]] — skill commands

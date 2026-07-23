@@ -1,11 +1,16 @@
 ---
-created: 2026-07-22 11:07
-updated: 2026-07-22 11:07
-tags: []
+title: "Cursor vs VS Code Agent"
+description: "Compares Cursor's AI-first editor architecture with VS Code Copilot Agent Mode and MCP-based extensibility."
+created: 2026-07-22
+updated: 2026-07-22
+tags: [ai, agents, cursor]
 type: reference
 lang: en
 status: draft
 ---
+
+> Related: [[MOC - Claude & Cursor]] · [[MOC - AI Agents]] · [[ai-coding]] · [[cursor-vs-claude]]
+
 The battle between **Cursor** and **VS Code (with its native Agent Mode / Copilot Agent)** represents one of the most exciting shifts in software development.
 
 Cursor forced the entire industry to rethink what an IDE looks like when AI isn't just a sidebar plugin, but built directly into the text buffer and terminal. Microsoft responded by turning VS Code into an agentic powerhouse through GitHub Copilot's Agent Mode and Model Context Protocol (MCP) support.

@@ -1,11 +1,16 @@
 ---
-created: 2026-07-22 09:07
-updated: 2026-07-22 09:07
-tags: []
+title: "Skill Template Script Pattern"
+description: "Describes the three-part agent workflow pattern that combines skills, templates, and deterministic scripts."
+created: 2026-07-22
+updated: 2026-07-22
+tags: [ai, agents, workflow]
 type: reference
 lang: en
 status: draft
 ---
+
+> Related: [[MOC - Claude & Cursor]] · [[MOC - AI Agents]] · [[deterministic-tooling-pattern]] · [[agent-architecture-folder]]
+
 Yes, absolutely! Incorporating templates completes the architecture. Combining **Templates + Scripts + Skills** creates a robust, production-grade AI workflow pattern.
 
 Adding templates solves the last major problem with AI-generated text: **formatting drift**. Without templates, an AI might structure a PR description beautifully one day, and completely omit key sections (like testing steps or breaking changes) the next.
