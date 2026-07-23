@@ -2,7 +2,7 @@
 title: "MOC - Dev Environment"
 description: "Maps developer tooling, Git, Python, VS Code, testing, Windows, and WSL environment notes."
 created: 2026-07-07
-updated: 2026-07-22
+updated: 2026-07-23
 tags: [dev, moc]
 type: hub
 lang: en
@@ -45,6 +45,7 @@ Developer tooling: Git, Python, VS Code, testing, and environment setup.
 - [[symantec-policy-location]] — verify and refresh Symantec Endpoint Protection policy serial numbers
 - [[wsl-network-troubleshooting]] — WSL2 DNS, IPv6, mirrored networking, MTU, firewall, and proxy fixes
 - [[wsl-ipv4-ipv6]] — prefer IPv4 in WSL when IPv6 routing causes curl and package-manager timeouts
+- [[link-local-apipa-169]] — APIPA 169.254.x.x link-local addresses and basic DHCP troubleshooting
 - [[wsl-mirrored-cancel-wslconfig]] — roll back WSL mirrored networking to default NAT mode
 - [[wsl-network-issue-antivirus-possible]] — Symantec SONAR and enterprise antivirus interference with WSL/dev tools
 - [[vim-permission]] — save root-owned Linux files after Vim E45 readonly errors
@@ -152,6 +153,7 @@ Developer tooling: Git, Python, VS Code, testing, and environment setup.
 - [[vscode-blockquote-lines]] — add Markdown blockquote markers to many lines with regex or multi-cursor editing
 - [[vscode-gitlens-get-started]] — GitLens getting started
 - [[vscode-extensions-starter-pack]] — VS Code extensions starter pack
+- [[vscode-dev-container]] — VS Code Dev Containers and Docker-backed development environments
 - [[git-blame-timeline-gitlens]] — Git blame, Timeline, and GitLens workflows
 
 - [[vscode-tips]] — VS Code tips
@@ -173,6 +175,7 @@ Developer tooling: Git, Python, VS Code, testing, and environment setup.
 - [[jest]] — Jest unit testing
 - [[smoke]] — smoke testing
 - [[boundary-edge]] — boundary/edge testing
+- [[tdd]] — TDD line coverage expectations for new code
 
 ## Related
 

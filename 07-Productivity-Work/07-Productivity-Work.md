@@ -2,7 +2,7 @@
 title: "07-Productivity-Work"
 description: "Maps Slack, meetings, Gmail, Google Drive, Obsidian, and work productivity notes."
 created: 2026-07-07
-updated: 2026-07-20
+updated: 2026-07-23
 tags: [moc, workflow]
 type: hub
 lang: en
@@ -21,6 +21,7 @@ Slack, meetings, and work productivity tools.
 - [[slack-discord]]
 - [[business-productive-tool]]
 - [[todo-organize]] — Eisenhower, Kanban, priority, and task-energy categories for work lists
+- [[handbook-playbook]] — handbook versus playbook terminology for work documentation
 - [[tangible-term]] — English pairs for tangible, intangible, concrete, and practical support
 - [[transcribe-transcript-transcription]] — transcribe, transcript, and transcription usage in meeting workflows
 - [[meeting-minute]]
