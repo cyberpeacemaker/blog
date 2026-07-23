@@ -1,4 +1,4 @@
-我找不到我的hypothest driven workflow當初構思的過程 😭
+我找不到我的hypothest driven workflow當初構思的過程 😭LLM training data 可以融入爬全部
 # 國外出差
 這表單不會自己加總 [交通費、生活費、辦公費]?
 otex耳提面目標號跟nics不依樣
