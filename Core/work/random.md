@@ -44,16 +44,7 @@ The PR automation expects the platform-designated branch `cursor/daily-inbox-tri
 - - Ran requested finish script, but it failed with:
     - `Error: Refusing to finish unexpected branch: cursor/inbox-rule-application-efec`
 
-### Git 101
-預計上課考照
-- 單純main
-- branch, pr
-- post-merge commit
-- some git issue fix
-- github action
-- automaticlly cli verification
-- ci/cd
-- git squash 
+
 
 # BEC CTF完整報告
 

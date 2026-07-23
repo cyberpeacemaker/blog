@@ -3,6 +3,7 @@
 - PR check
 # Now
 
+- aaa
 - mdm 裝另一台，解除現有
 - 桃園出差結報
 - nics-probationary
@@ -14,49 +15,6 @@
 - 新光醫院保密，不用填申請日期
 - 護照 > CISA(ESTA) > 開戶
 
-# 台鐵檢測
-- 要帶網卡
-- 0830台北車站東三門全家
-- 網路架構圖似乎沒有 (對方似乎弄丟切結書)
-- PM叮嚀
-	- 熟練BEC
-	- Youtrack
-	- AAR會議紀錄
-
-# Bec ctf 完整報告
-我之前可能用不太適合的角度切入CTF，我偏向抑制/阻止去看明文資料，而是透過threat hunting methodology/encrypted traffic analytics/behavior analysis等角度去切入
-不過實際上這個CTF，可能就是希望我去看C2明文指令，去了解基本的C2指令
-
-```markdown
-- 8 pcaps — no HTTP bodies carved (likely large tool-download pcaps with no small beacon bodies; several are byte-identical duplicates per `manifest.json`).
-- 1 session (`JAS5fnkTcEVHjZ...`) — 9 bodies, all high-entropy binary (multipart upload chunks); no `decoded_text`, so omitted by design.
-```
-- 推估是temp?
-- 復現Malcolm GUI上的操作, - 解釋為什麼這樣操作
-- 調查完後 想聽別人解法
-poi 這樣看起來很好，加上
-- 對解法疑惑的點 (忘了這是什麼？)
-- Hares的點 (太簡單，犯人自稱犯人)
-- Arkime似乎就夠，沒用到opensearch的優勢
-- query hints > detailed/rich malcolm playbook (like ctf-walkthrough-maloclm)
-- verdict : verify the result from query playbook, not just infer the result  
-
-# Probationary
-1. 順便整理repo (calander)
-2. bookmark
-3. asana
-4. ICS_TA TODO 
-	1. hardware expand
-	2. animation fix
-5. meeting-transcript TODO
-6. arkime contribute
-7. 想工作
-8. 承諾 三個月薪水 不是為了賺錢 
-9. 工作環境太差，來這邊根本無法工作
-	1. 空間太少，雙螢幕困難，別說三螢幕
-	2. 太吵，無法專心
-10. https://aicyberchallenge.com/overview/
-11. appendix
 
 # frontmatter & OKF
 
@@ -104,27 +62,7 @@ knowledge/
 - cursor 使用 (至少先setting, 在automation)
 - claude (基本功能看看)
 
-# Obsidian
-- obsidian vault organize
-- obsidian vault merge
-- [Obsidian+Claude](https://www.youtube.com/watch?v=_ERp82MIj9Q)
-- daily note + calander
-- frontmatter (OKF, AI, Automation)
 
-# Project Shepherd
-- project-scaffold in @project-shepherd/docs | session in cursour/proeject-shepherd/Project   
-Malcolm threat hunting methodology 
-- lamb: 需要靠CTF題目引導 (CTF題目本身就是線索)
-- rabbit: 基本調查能力 (MITRE框架, 兩種方式)
-- 長耳兔: 進階調查能力 (擴充rabbit能力)
-	- phising mail detection
-	- beacon detection
-- turtle: offline
-- Nebula
-- Goat
-- 黑山羊
-- front matter tmeplate
-- linter, git hhok
 
 # BEC v2 後續收尾
 - MSDefender , Cladue設置
