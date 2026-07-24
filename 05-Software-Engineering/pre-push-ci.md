@@ -1,11 +1,16 @@
 ---
-created: 2026-07-23 11:07
-updated: 2026-07-23 11:07
-tags: []
-type: reference
-lang: en
+title: "Pre-push vs CI Checks"
+description: "Explains how local pre-push checks and server-side CI checks should split scope and terminology."
+created: 2026-07-23
+updated: 2026-07-23
+tags: [dev, git, workflow]
+type: concept
+lang: zh
 status: draft
 ---
+
+> Related: [[05-Software-Engineering]] · [[cicd-get-started]] · [[github-action-workflows]]
+
 這句話常見於工程團隊的任務清單（JIRA / Issue）、開發規範文件或 PR 討論中。
 
 一句話總結它的意思就是：**「明確劃分『程式碼上傳前（本地端）』與『自動測試（伺服器端）』分別要檢查哪些項目，並統一這兩者的溝通名詞與規範。」**
@@ -38,6 +43,4 @@ status: draft
 ### 3. 為什麼要釐清「用語」？
 
 團隊內部常常名詞混用（例如有人把 Lint 叫 Code Review，把 Type-check 叫 Build）。釐清用語是為了**讓大家講同某種語言**，例如統一把管道節點命名為 `lint`、`test`、`build`，或是統一 Commit Message 與 PR 狀態的描述方式。
-
-你是在看團隊的 JIRA / Task 描述，還是正在打算為專案規劃這套流程呢？
 

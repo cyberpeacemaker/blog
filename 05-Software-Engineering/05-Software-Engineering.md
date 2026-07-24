@@ -2,7 +2,7 @@
 title: "05-Software-Engineering"
 description: "Maps architecture, agile development, MVP, CI/CD, documentation, and software concept notes."
 created: 2026-07-07
-updated: 2026-07-21
+updated: 2026-07-23
 tags: [moc]
 type: hub
 lang: en
@@ -30,6 +30,7 @@ Architecture, agile development, MVP, and software concepts.
 - [[mvp]]
 - [[dev-workflow]]
 - [[cicd-get-started]] — CI/CD roadmap for small teams
+- [[pre-push-ci]] — split local pre-push checks from server-side CI checks
 - [[github-action-workflows]] — GitHub Actions workflow fundamentals
 - [[project-reorganization-challenge]]
 - [[binary-vs-text-files]] — practical distinction between text and binary file formats

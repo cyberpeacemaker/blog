@@ -1,11 +1,16 @@
 ---
-created: 2026-07-23 12:07
-updated: 2026-07-23 12:07
-tags: []
-type: reference
-lang: en
+title: "Handbook vs Playbook"
+description: "Compares handbook and playbook documents by purpose so work documentation can choose the right format."
+created: 2026-07-23
+updated: 2026-07-23
+tags: [workflow]
+type: concept
+lang: zh
 status: draft
 ---
+
+> Related: [[07-Productivity-Work]] · [[word-changes-tracking]] · [[meeting-minute]]
+
 選用 **Handbook** 還是 **Playbook**，關鍵在於**文件的目的**：是為了「規範與說明」，還是為了「實戰與執行」？
 
 一句話記住差異：
@@ -46,7 +51,4 @@ status: draft
 - **危機處理劇本 (Crisis Management Playbook)：** 公關危機發生時，1 小時內要通知誰？聲明稿發布流程是什麼？
     
 - **行銷活動 Playbook (Marketing Playbook)：** 新產品上市時，跨部門合作的具體執行時間軸與各階段 SOP。
-    
-
-如果你正在準備編寫一份文件，可以分享一下**文件的主要對象與用途**嗎？我可以幫你選擇最適合的名稱並規劃架構！
 
