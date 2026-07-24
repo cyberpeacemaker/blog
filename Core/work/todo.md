@@ -12,7 +12,8 @@
 - 測otex-claw 前端 + 現場
 - 新光醫院保密，不用填申請日期
 - 護照 > CISA(ESTA) > 開戶
-- ac-hunter
+- ac-hunter CTF
+- GTI CTF
 
 
 # frontmatter & OKF
