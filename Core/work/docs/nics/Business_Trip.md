@@ -10,6 +10,9 @@
 - 列印填寫[支出憑證黏存單](https://esp.nics.nat.gov.tw/ESP/readdocument.aspx?documentId=114723) (不要用google sheet)
 	- 收據在空白處簽名
 	- 黏存單簽名簽在**經辦單位**格子上方處(簽名+日期8碼)
+	- 費用是總經額(收據+雜費等)
+- google日曆可以列印
+
 
 ---
 # 耳提面命

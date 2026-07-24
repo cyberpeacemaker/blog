@@ -3,8 +3,6 @@
 - PR check
 # Now
 
-- mdm 裝另一台，解除現有
-- 桃園出差結報
 - nics-probationary
 - bec report
 - template (markdown, skill, minute additional instruction)
