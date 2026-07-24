@@ -2,6 +2,10 @@
 - **agent-friendly + deterministic where possible**
 	- skill-hook-script-template
 - seperate agent/machine file (type, concise) and human file (detailed info doc) 
+
+
+
+
 # Claude Design
 Instruction:  
 Start with low-fidelity scaffold/wireframe, propose structural candidates prompt user to decide. Only create high-detailed rich version when user decision is made. 

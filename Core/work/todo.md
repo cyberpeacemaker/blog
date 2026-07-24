@@ -65,6 +65,7 @@ knowledge/
 
 
 # BEC v2 後續收尾
+- malcolm 製作lab 製作封包 製作poc
 - MSDefender , Cladue設置
 - pivot issue fix:
 	- we have fix the opensearch-arkime-pivot issue, which might be the reason why you can't correctly retrieve the raw packet. can you try again to see if you can solve 
