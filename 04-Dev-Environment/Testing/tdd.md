@@ -1,11 +1,16 @@
 ---
-created: 2026-07-23 00:07
-updated: 2026-07-23 00:07
-tags: []
-type: reference
-lang: en
+title: "TDD Coverage Requirement"
+description: "Clarifies that an 80 percent line-coverage target measures test execution of new code, not whether AI can write code."
+created: 2026-07-23
+updated: 2026-07-23
+tags: [dev]
+type: concept
+lang: zh
 status: draft
 ---
+
+> Related: [[MOC - Dev Environment]] · [[dry-run-pytest]] · [[boundary-edge]]
+
 完全**不是**「不能用 AI 寫程式」的意思！別擔心，AI 依然是你的好夥伴。
 
 這句話指的是軟體開發中的 **「測試覆蓋率（Code / Line Coverage）」**。

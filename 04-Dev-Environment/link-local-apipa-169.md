@@ -1,11 +1,16 @@
 ---
-created: 2026-07-23 22:07
-updated: 2026-07-23 22:07
-tags: []
+title: "Link-Local APIPA 169.254 Addresses"
+description: "Explains when 169.x.x.x addresses are link-local APIPA addresses and what DHCP troubleshooting steps to try."
+created: 2026-07-23
+updated: 2026-07-23
+tags: [dev]
 type: reference
 lang: en
 status: draft
 ---
+
+> Related: [[MOC - Dev Environment]] · [[wsl-network-troubleshooting]] · [[wsl-ipv4-ipv6]]
+
 An IP address starting with **`169.`** usually depends on the second number (octet):
 
 ## 1. If it's `169.254.x.x`: Link-Local / APIPA

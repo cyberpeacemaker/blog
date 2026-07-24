@@ -1,11 +1,16 @@
 ---
-created: 2026-07-23 22:07
-updated: 2026-07-23 22:07
-tags: []
-type: reference
+title: "VS Code Dev Container"
+description: "Introduces VS Code Dev Containers and how they isolate project tools, extensions, and runtimes inside Docker."
+created: 2026-07-23
+updated: 2026-07-23
+tags: [dev]
+type: concept
 lang: en
 status: draft
 ---
+
+> Related: [[MOC - Dev Environment]] · [[dev-container-volume-workflow]] · [[default-wsl-distro-dev-containers]]
+
 A **VS Code Dev Container** (Development Container) lets you use a Docker container as a fully featured development environment.
 
 Instead of installing programming languages, runtime environments, databases, and CLI tools directly onto your personal machine, everything runs inside an isolated container. You still get the full, snappy VS Code editor experience on your desktop, but your code, terminal, extensions, and tools live inside the container.
@@ -57,7 +62,4 @@ Dev containers are defined using a `.devcontainer` folder at the root of your pr
 - **Keeps Your Host OS Clean:** No need to clutter your machine with multiple incompatible versions of Python, Node, Java, or system libraries.
     
 - **Isolated Tooling:** VS Code extensions installed inside the container don't pollute your global VS Code setup.
-    
-
-Are you looking to set up a Dev Container for a specific stack (like Python, Node.js, or Go), or do you want help configuring one for an existing project?
 
