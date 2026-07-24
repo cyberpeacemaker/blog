@@ -1,4 +1,7 @@
-
+我現在又想定調
+nics-malcolm-bec 包含指引 (我如何自己打CTF, 我如何創造工具打CTF)
+- 101 : 包含學習過程
+- ctf: 包含解題過程
 
 # AI
 - "Agents rarely auto-discover templates unless told
