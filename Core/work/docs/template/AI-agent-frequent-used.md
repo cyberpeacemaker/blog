@@ -4,7 +4,7 @@
 # Claude Design
 Instruction:  
 Start with low-fidelity scaffold/wireframe, propose structural candidates prompt user to decide. Only create high-detailed rich version when user decision is made. 
-No heavy loading font package embedded, use live font if online / system font if not. The fix is to inject the font `<link>` at **runtime via JS** instead of a static `<link>` tag, so the bundler has nothing to inline.
+Don't use heavy loading font package embedded, use live font if online / system font if not. The fix is to inject the font `<link>` at **runtime via JS** instead of a static `<link>` tag, so the bundler has nothing to inline.
 # Frontmatter
 - *frontmatter.md*
 ```yaml
