@@ -4,6 +4,8 @@
 # Claude Design
 start with low-fidelity scaffold, then high-detailed rich version.
 
+No heavy loading font package embedded, use live font if online / system font if not.
+The fix is to inject the font `<link>` at **runtime via JS** instead of a static `<link>` tag, so the bundler has nothing to inline.
 # Frontmatter
 - *frontmatter.md*
 ```yaml
