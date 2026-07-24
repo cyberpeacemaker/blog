@@ -1,11 +1,16 @@
 ---
-created: 2026-07-24 08:07
-updated: 2026-07-24 08:07
-tags: []
-type: reference
-lang: en
+title: "WSL Node.js Setup with NVM"
+description: "Shows how to install Node.js in WSL with NVM and avoid Conda path conflicts during project testing."
+created: 2026-07-24
+updated: 2026-07-24
+tags: [dev]
+type: howto
+lang: zh
 status: draft
 ---
+
+> Related: [[MOC - Dev Environment]] · [[wsl-distro]] · [[conda-uv-pixi]]
+
   
 在 WSL (Linux) 環境下，安裝 Node.js 的**大忌**是直接使用 `sudo apt install nodejs`（這會裝到舊版，而且往後常遇到權限錯誤）。
 
@@ -221,4 +226,3 @@ which node
 >
 
 >
-

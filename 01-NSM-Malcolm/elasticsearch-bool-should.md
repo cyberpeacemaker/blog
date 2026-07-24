@@ -1,11 +1,16 @@
 ---
-created: 2026-07-23 22:07
-updated: 2026-07-23 22:07
-tags: []
+title: "Elasticsearch Bool Should Clause"
+description: "Explains why should clauses must be nested inside a bool query in Elasticsearch and OpenSearch filters."
+created: 2026-07-23
+updated: 2026-07-24
+tags: [opensearch, nsm]
 type: reference
 lang: en
 status: draft
 ---
+
+> Related: [[MOC - Malcolm & NSM]] · [[MOC - OpenSearch Querying]] · [[opensearch-must-filter]]
+
 **No, this will not work.** Elasticsearch will throw a syntax/parsing error.
 
 Here is why it fails and how to fix it:
@@ -41,4 +46,3 @@ JSON
 - **Query Clauses** (What kind of search?): `term`, `range`, `match`, `bool`
     
 - **Boolean Parameters** (How to evaluate?): `must`, `must_not`, `filter`, `should` _(these must always sit inside a `bool`)_
-

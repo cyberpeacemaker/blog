@@ -2,7 +2,7 @@
 title: "09-Personal"
 description: "Maps personal notes, finance, hobbies, lifestyle, and miscellaneous personal references."
 created: 2026-07-07
-updated: 2026-07-20
+updated: 2026-07-24
 tags: [moc]
 type: hub
 lang: en
@@ -14,6 +14,8 @@ status: published
 Personal notes: finance, hobbies, lifestyle. Optional candidate for a separate vault if privacy is needed.
 
 - [[rough-notes-jottings]] — English usage for rough notes, jottings, scratch notes, and raw notes
+- [[distilled-core-nugget]] — English usage for distilled knowledge, core insights, key takeaways, and nuggets of wisdom
+- [[mediocre]] — English usage for mediocre, mediocrity, ordinary, and run-of-the-mill
 - [[respective-respectively]] — English usage for respective, respectively, each, and their own
 - [[distinct-unique-deduplicated]] — English usage for distinct, unique, non-repeating, and deduplicated
 - [[obscure-word-usage]] — English usage for block, obscure, shield, obstruct, and screen

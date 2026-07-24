@@ -1,11 +1,16 @@
 ---
-created: 2026-07-24 10:07
-updated: 2026-07-24 10:07
-tags: []
-type: reference
+title: "Remove Ink from PowerPoint Presentations"
+description: "Shows how to save a clean PowerPoint copy and remove highlighter or ink annotations."
+created: 2026-07-24
+updated: 2026-07-24
+tags: [uncategorized]
+type: howto
 lang: en
 status: draft
 ---
+
+> Related: [[08-Career-Presentations]] · [[presentation-talk]] · [[project-presentation]]
+
 **Yes, absolutely!** You can easily save a clean duplicate of your presentation without the highlighter/ink mark.
 
 Here is the best way to do it:
@@ -51,4 +56,3 @@ Choose whichever method is easiest for you:
     
 
 Once you've removed the mark, hit **Ctrl + S** (or **Cmd + S** on Mac) to save your clean copy!
-

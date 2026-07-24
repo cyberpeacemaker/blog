@@ -2,7 +2,7 @@
 title: "MOC - Dev Environment"
 description: "Maps developer tooling, Git, Python, VS Code, testing, Windows, and WSL environment notes."
 created: 2026-07-07
-updated: 2026-07-23
+updated: 2026-07-24
 tags: [dev, moc]
 type: hub
 lang: en
@@ -36,6 +36,7 @@ Developer tooling: Git, Python, VS Code, testing, and environment setup.
 - [[wsl-distro-choice]] — list, launch, and set default WSL distributions from PowerShell
 - [[wsl-distro-switch]] — stop Kali, launch Ubuntu, and set Ubuntu as the default WSL distro
 - [[wsl-distro]] — WSL distribution concept and multi-distro use cases
+- [[wsl-node-nvm]] — install Node.js in WSL with NVM and avoid Conda path conflicts
 - [[wsl-network-troubleshooting-dns-mirrored]] — Chinese WSL DNS, mirrored networking, proxy, firewall, and GitHub timeout checklist
 - [[wsl-mtu]] — test, calculate, and persist WSL MTU values for VPN and corporate network issues
 - [[wsl-conf-systemd-mtu]] — add an MTU boot command without overwriting WSL systemd support
@@ -154,6 +155,7 @@ Developer tooling: Git, Python, VS Code, testing, and environment setup.
 - [[vscode-gitlens-get-started]] — GitLens getting started
 - [[vscode-extensions-starter-pack]] — VS Code extensions starter pack
 - [[vscode-dev-container]] — VS Code Dev Containers and Docker-backed development environments
+- [[vscode-open-dev-container]] — reopen repositories cloned into Dev Container Docker volumes
 - [[git-blame-timeline-gitlens]] — Git blame, Timeline, and GitLens workflows
 
 - [[vscode-tips]] — VS Code tips
