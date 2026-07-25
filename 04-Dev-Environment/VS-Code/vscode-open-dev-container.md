@@ -1,11 +1,16 @@
 ---
-created: 2026-07-24 14:07
-updated: 2026-07-24 14:07
-tags: []
-type: reference
+title: "Reopen VS Code Dev Container Volume Repositories"
+description: "Explains how to find and reopen repositories cloned into VS Code Dev Container Docker volumes."
+created: 2026-07-24
+updated: 2026-07-24
+tags: [dev]
+type: howto
 lang: en
 status: draft
 ---
+
+> Related: [[MOC - Dev Environment]] · [[dev-container-volume-workflow]] · [[vscode-dev-container]]
+
 Yes, you were totally right to use **`Dev Containers: Clone Repository in Container Volume`**! That command is designed for high-performance development, especially on macOS or Windows, because it clones your repository directly into a **Docker named volume** rather than sharing files from your local hard drive.
 
 The reason you can't find it using standard `File > Open Folder...` is that the files don't live in your computer's normal folder structure (`C:\Users\...` or `~/Documents/...`)—they live inside Docker's isolated storage system.
@@ -53,4 +58,3 @@ Developers generally choose between two workflows depending on their needs:
 |**Option B: Local Bind Mount**<br><br>  <br><br>_(Most common)_|You `git clone` the repo to your local drive first, open that local folder in VS Code, and choose **`Dev Containers: Reopen in Container`**.|**Ease of access**. Your files are on your normal computer drive, so local Git tools, terminal apps, and back-ups can access them easily.|
 
 Were you able to reconnect to your volume using the re-clone trick or the Remote Explorer?
-

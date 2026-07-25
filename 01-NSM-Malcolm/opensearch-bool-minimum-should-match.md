@@ -1,11 +1,16 @@
 ---
-created: 2026-07-23 22:07
-updated: 2026-07-23 22:07
-tags: []
+title: "OpenSearch Bool Minimum Should Match"
+description: "Explains how minimum_should_match makes should clauses behave as a required logical OR in OpenSearch bool queries."
+created: 2026-07-23
+updated: 2026-07-24
+tags: [opensearch, nsm]
 type: reference
 lang: en
 status: draft
 ---
+
+> Related: [[MOC - OpenSearch Querying]] · [[opensearch-must-filter]] · [[elasticsearch-bool-should]]
+
 You're building a great mental model! Spotting the JSON structure like that is half the battle with Elasticsearch queries.
 
 Here is the breakdown of those specific terms to help everything click.
@@ -48,4 +53,3 @@ Think of `minimum_should_match: 1` as **"The Strict Enforcer."**
     
 
 This guarantees that the block behaves as a strict **logical OR**: `Range 1` **OR** `Range 2` **OR** `Range 3`.
-

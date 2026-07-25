@@ -1,11 +1,16 @@
 ---
-created: 2026-07-23 22:07
-updated: 2026-07-23 22:07
-tags: []
+title: "WinRM and SMB Admin Share Lateral Movement"
+description: "Explains why WinRM remote execution and SMB admin-share drops require valid credentials or equivalent hashes/tickets."
+created: 2026-07-23
+updated: 2026-07-24
+tags: [threat-hunting, dfir, mitre]
 type: reference
-lang: en
+lang: zh
 status: draft
 ---
+
+> Related: [[MOC - Threat Hunting]] · [[bec-encrypted-traffic-analysis]] · [[windows-user-determine]]
+
 **是的，這種攻擊路徑基本上需要預先取得有效的帳號密碼（或等效的認證憑證）。**
 
 在這段描述中，攻擊者使用了 **WinRM 遠端執行** 與 **SMB 管理員共享（Admin Shares）** 來進行橫向移動（Lateral Movement），這兩個服務在 Windows 預設定位中都有嚴格的身份驗證機制。
@@ -46,4 +51,3 @@ status: draft
 ## 總結
 
 這段描述展示的是典型的**取得憑證後的橫向移動（Post-Exploitation Lateral Movement）**，而不是利用無須認證的遠端程式碼執行漏洞（Unauthenticated RCE）。攻擊者必然已經在先前的步驟中，取得了能代表 `Dist-EWS` 管理員權限的憑證或 Hash。
-

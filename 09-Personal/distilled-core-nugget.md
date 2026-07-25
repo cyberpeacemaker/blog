@@ -1,12 +1,15 @@
 ---
-created: 2026-07-24 19:07
-updated: 2026-07-24 19:07
-tags: []
+title: "Distilled Knowledge and Wisdom Nuggets"
+description: "Compares English expressions for distilled knowledge, core insights, key takeaways, and nuggets of wisdom."
+created: 2026-07-24
+updated: 2026-07-24
+tags: [uncategorized]
 type: reference
-lang: en
+lang: zh
 status: draft
 ---
 
+> Related: [[09-Personal]] · [[rough-notes-jottings]] · [[tangible-term]]
 
 根據使用的語境與口吻，「萃取出的知識結晶／精華」在英文中有幾種非常地道的表達方式：
 

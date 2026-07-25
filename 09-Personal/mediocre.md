@@ -1,11 +1,16 @@
 ---
-created: 2026-07-24 11:07
-updated: 2026-07-24 11:07
-tags: []
+title: "Mediocre and Mediocrity"
+description: "Compares English words for mediocre, ordinary, unremarkable, run-of-the-mill, and pedestrian."
+created: 2026-07-24
+updated: 2026-07-24
+tags: [uncategorized]
 type: reference
-lang: en
+lang: zh
 status: draft
 ---
+
+> Related: [[09-Personal]] · [[obscure-word-usage]] · [[distinct-unique-deduplicated]]
+
 「平庸」最直接、最常用的英文單字是 **Mediocre**，如果是名詞「平庸」則是 **Mediocrity**。
 
 根據不同的情境與語氣，也可以使用以下幾種替換表達：
@@ -50,4 +55,3 @@ status: draft
 | **拒絕平庸** | Refuse to accept **mediocrity** |
 | **平庸之惡** | The banality of evil            |
 | **甘於平庸** | Settle for **mediocrity**       |
-

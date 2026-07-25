@@ -1,11 +1,16 @@
 ---
-created: 2026-07-23 22:07
-updated: 2026-07-23 22:07
-tags: []
+title: "OpenSearch Query Aggregations and Returned Results"
+description: "Explains OpenSearch search endpoints, size zero responses, and aggregations for grouped summary results."
+created: 2026-07-23
+updated: 2026-07-24
+tags: [opensearch, nsm]
 type: reference
 lang: en
 status: draft
 ---
+
+> Related: [[MOC - OpenSearch Querying]] · [[opensearch-request]] · [[arkime-query-opensearch]]
+
 Now that you have the **`query`** (the filter logic) down, you are looking at the overall **Search & Aggregation structure**.
 
 In SQL terms, the `query` part is your `WHERE` clause, while this outer part controls **how many raw rows you return** and **how you perform a `GROUP BY`** on the filtered results.
@@ -60,4 +65,3 @@ The `"aggs"` block allows you to group data and compute metrics. Think of it lik
 This entire query tells OpenSearch:
 
 > _"Look across all `arkime_sessions3-*` log indices. Filter for logs tagged **BEC** from **April 25–26, 2024**, targeting **internal private IPs** (excluding the specified subnets). **Don't show me the individual log entries** (`size: 0`). Instead, **group the results by destination IP** and give me the **top 200 most frequent target IPs**, sorted from highest count to lowest."_
-

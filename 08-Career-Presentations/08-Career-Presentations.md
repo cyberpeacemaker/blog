@@ -1,5 +1,6 @@
 ---
 created: 2026-07-07
+updated: 2026-07-24
 tags: [moc, career]
 type: hub
 lang: en
@@ -12,6 +13,7 @@ Talks, transcripts, scripts, and career notes.
 
 - [[presentation-talk]]
 - [[project-presentation]]
+- [[ppt-ink-stripped]] — remove highlighter or ink annotations from PowerPoint copies
 - [[presentaion-transcription]]
 - [[transcription-ideas]]
 - [[draft-a-script]]

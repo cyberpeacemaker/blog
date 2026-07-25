@@ -2,7 +2,7 @@
 title: "MOC - Malcolm & NSM"
 description: "Maps Network Security Monitoring, Malcolm, Arkime, OpenSearch, sensors, and OT/ICS notes."
 created: 2026-07-07
-updated: 2026-07-21
+updated: 2026-07-24
 tags: [malcolm, nsm, opensearch, moc]
 type: hub
 lang: en
@@ -55,6 +55,10 @@ Network Security Monitoring stack: sensors, indexing, PCAP analysis, and Malcolm
 - [[malcolm-opensearch-json-dsl]] — Malcolm GUI to JSON DSL
 - [[opensearch-api-dsl-dev-tools]] — relationship between OpenSearch APIs, Query DSL, and Dev Tools
 - [[opensearch-lucene-quoted-wildcards]] — why quoted Lucene wildcards return zero matches
+- [[elasticsearch-bool-should]] — why `should` must live inside a bool query wrapper
+- [[opensearch-bool-minimum-should-match]] — force bool `should` clauses to behave as required OR filters
+- [[opensearch-term-range-match]] — compare term, range, and match query clauses
+- [[opensearch-query-aggs-return-result]] — combine search endpoints, `size: 0`, and aggregations for grouped results
 - [[threat-lead-filter-example-smtp]] — OpenSearch filters for broad SMTP Suricata lead expansion
 - [[metadata-indexing]] — metadata indexing
 - [[duplicated-id]] — duplicated ID issues

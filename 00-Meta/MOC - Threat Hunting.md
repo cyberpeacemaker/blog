@@ -2,7 +2,7 @@
 title: "MOC - Threat Hunting"
 description: "Maps threat hunting methodology, forensics, malware, encrypted traffic analysis, and CTF notes."
 created: 2026-07-07
-updated: 2026-07-22
+updated: 2026-07-24
 tags: [threat-hunting, dfir, mitre, moc]
 type: hub
 lang: en
@@ -75,6 +75,7 @@ Threat hunting methodology, forensics, CTF, and write-up standards.
 - [[eta-markov-hmm]] — Markov and HMM modeling for encrypted traffic
 - [[eta-ja4-ja4l-session-resumption]] — JA4, JA4L, and session resumption fingerprints
 - [[bec-encrypted-traffic-analysis]] — BEC case study for encrypted traffic behavior analysis
+- [[lateral-movement-winrm-smb-share]] — WinRM and SMB admin-share lateral movement credential requirements
 
 ## Threat Intel
 

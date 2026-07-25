@@ -1,6 +1,6 @@
 ---
 created: 2026-07-07
-updated: 2026-07-21
+updated: 2026-07-24
 tags: [opensearch, lucene, moc]
 type: hub
 lang: en
@@ -23,6 +23,10 @@ Lucene syntax, JSON DSL, filters, and query patterns for Malcolm and OpenSearch.
 - [[suricata-opensearch-alert-search]] — wildcard and Query DSL patterns for uncertain Suricata alert fields
 - [[opensearch-query-and]] — AND query patterns
 - [[opensearch-must-filter]] — must/filter clauses
+- [[elasticsearch-bool-should]] — why `should` must be nested under `bool`
+- [[opensearch-bool-minimum-should-match]] — make `should` arrays mandatory with `minimum_should_match`
+- [[opensearch-term-range-match]] — exact, range, and full-text query clause comparison
+- [[opensearch-query-aggs-return-result]] — aggregation response structure and top bucket results
 - [[threat-lead-filter-example-smtp]] — broaden SMTP Suricata leads with OpenSearch filters and Lucene queries
 - [[opensearch-request]] — OpenSearch request structure
 - [[arkime-query-opensearch]] — Arkime-specific queries

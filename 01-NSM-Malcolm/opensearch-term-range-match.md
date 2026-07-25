@@ -1,11 +1,16 @@
 ---
-created: 2026-07-23 22:07
-updated: 2026-07-23 22:07
-tags: []
+title: "OpenSearch Term Range and Match Queries"
+description: "Compares term, range, and match query clauses and when to use exact, boundary, or full-text search."
+created: 2026-07-23
+updated: 2026-07-24
+tags: [opensearch, nsm]
 type: reference
 lang: en
 status: draft
 ---
+
+> Related: [[MOC - OpenSearch Querying]] · [[opensearch-request]] · [[opensearch-must-filter]]
+
 ## Is "term" an Abbreviation?
 
 **No, `term` is the full name.**
@@ -85,4 +90,3 @@ JSON
 | **`term`**  | Exact value match                 | **No**             | `keyword`, `integer`   | User ID (`1234`), Status (`"SUCCESS"`), Tag (`"BEC"`) |
 | **`range`** | Values between upper/lower bounds | **No**             | `long`, `date`, `ip`   | Timestamps, price ranges, IP subnets                  |
 | **`match`** | Human text (words, phrases)       | **Yes**            | `text`                 | Searching article content or email bodies             |
-
