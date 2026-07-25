@@ -1,4 +1,6 @@
 
+預計成果要可以本地部署，表現(品質、速度)超過現有檢測團隊
+
 (agents framework, sub-agents) > rules, instruction > skills >  (tools, mcp) > script, hook
 
 ---
