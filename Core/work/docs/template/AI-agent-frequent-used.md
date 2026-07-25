@@ -11,6 +11,13 @@
 # Claude Design
 Instruction:  
 Start with low-fidelity scaffold/wireframe, propose structural candidates prompt user to decide. Only create high-detailed rich version when user decision is made. 
+
+# Final Reports
+Design a modern **floating sticky pill navigation bar** centered at the top. Use a **segmented control** style to switch between 3 views. Make it an **auto-hiding smart header**: hide it on scroll-down, show it on scroll-up, and animate the slide-in/slide-out smoothly.
+### inbox
+- - Left sidebar + timeline nav — dates/phases listed vertically as a stepper (05/28 → 06/25 → 06/30 → ...), better than tabs once you have many phases, and reads naturally as a career/growth timeline for a probationary review.
+- - Horizontal milestone roadmap — a visual timeline strip across the top (assigned → briefing → event → conclusion) with clickable milestones instead of plain tabs; nice for storytelling.
+# Heavy Font Strip
 Don't use heavy loading font package embedded, use live font if online / system font if not. The fix is to inject the font `<link>` at **runtime via JS** instead of a static `<link>` tag, so the bundler has nothing to inline.
 # Frontmatter
 - *frontmatter.md*
