@@ -12,6 +12,29 @@
 Instruction:  
 Start with low-fidelity scaffold/wireframe, propose structural candidates prompt user to decide. Only create high-detailed rich version when user decision is made. 
 
+- all 6 html reports [07-03
+
+交流
+
+07-08
+
+任務1
+
+07-13
+
+環境測試
+
+07-15
+
+審閱報告
+
+07-16
+
+回饋
+
+07-22
+
+任務2報告] base64-encoded and stored
 # Final Reports
 Design a modern **floating sticky pill navigation bar** centered at the top. Use a **segmented control** style to switch between 3 views. Make it an **auto-hiding smart header**: hide it on scroll-down, show it on scroll-up, and animate the slide-in/slide-out smoothly.
 ### inbox
