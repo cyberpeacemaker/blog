@@ -1,11 +1,16 @@
 ---
-created: 2026-07-25 09:07
-updated: 2026-07-25 09:07
-tags: []
+title: "Back and Forth, Push Back, and Push and Pull"
+description: "Clarifies Chinese workplace-English usage for push back, back and forth, and push and pull."
+created: 2026-07-25
+updated: 2026-07-25
+tags: [workflow]
 type: reference
-lang: en
+lang: zh
 status: draft
 ---
+
+> Related: [[07-Productivity-Work]] · [[tangible-term]] · [[adhoc-request]]
+
 您指的可能是職場或商務英文中常混用的 **"push back"**、**"back and forth"** 或 **"push and pull"**。
 
 在職場溝通中，大家常說的「來回 push back」，通常是由以下幾個常見說法組合或延伸而來的：

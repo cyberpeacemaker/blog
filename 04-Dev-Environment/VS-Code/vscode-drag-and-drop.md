@@ -1,11 +1,16 @@
 ---
-created: 2026-07-25 09:07
-updated: 2026-07-25 09:07
-tags: []
-type: reference
+title: "VS Code Drag and Drop Explorer Settings"
+description: "Explains VS Code Explorer drag-and-drop auto-expansion behavior and safer file-moving alternatives."
+created: 2026-07-25
+updated: 2026-07-25
+tags: [dev]
+type: howto
 lang: en
 status: draft
 ---
+
+> Related: [[MOC - Dev Environment]] · [[vscode-tips]] · [[vscode-single-click-folder-expand-setting]]
+
 Currently, Visual Studio Code **does not have a setting** to disable or adjust the hover delay for auto-expanding folders while dragging and dropping files. This behavior is built directly into VS Code’s tree widget component.
 
 However, you can use several settings and alternative methods to manage this behavior and prevent accidental moves.

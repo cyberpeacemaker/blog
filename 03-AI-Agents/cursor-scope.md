@@ -1,11 +1,16 @@
 ---
-created: 2026-07-25 09:07
-updated: 2026-07-25 09:07
-tags: []
+title: "Cursor Workspace Scope"
+description: "Explains how Cursor agent scope usually covers the current workspace plus explicit user-level configuration, not unrelated repos."
+created: 2026-07-25
+updated: 2026-07-25
+tags: [ai, cursor]
 type: reference
 lang: en
 status: draft
 ---
+
+> Related: [[MOC - Claude & Cursor]] · [[MOC - AI Agents]] · [[cursor-vscode-agent]] · [[CLAUDE]]
+
 Your mental model is mostly right. Here is how scope actually works in this session.
 
 ## Primary scope: this workspace

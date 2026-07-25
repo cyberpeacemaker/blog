@@ -2,7 +2,7 @@
 title: "MOC - Dev Environment"
 description: "Maps developer tooling, Git, Python, VS Code, testing, Windows, and WSL environment notes."
 created: 2026-07-07
-updated: 2026-07-24
+updated: 2026-07-25
 tags: [dev, moc]
 type: hub
 lang: en
@@ -147,6 +147,9 @@ Developer tooling: Git, Python, VS Code, testing, and environment setup.
 - [[vscode-command-palette-fuzzy-search]] — Command Palette fuzzy search behavior and shortcuts
 - [[vscode-custom-visual-text]] — customize VS Code editor typography, Markdown syntax colors, preview CSS, and extensions
 - [[vscode-compact-folder]] — disable compact folders in VS Code Explorer
+- [[vscode-drag-and-drop]] — VS Code Explorer drag-and-drop auto-expansion behavior and safer move settings
+- [[vscode-collapse-folder-shortcut]] — collapse expanded VS Code Explorer folders after paste or via a custom shortcut
+- [[vscode-single-click-folder-expand-setting]] — use double-click folder expansion to select Explorer folders without opening them
 - [[vscode-shrink-line-height]] — VS Code empty-line height limitations and Markdown display workarounds
 - [[vscode-custom-visual-template]] — language-specific settings for visually separating plaintext and Markdown files
 - [[vscode-close-http-server]] — stop Python HTTP servers cleanly from the VS Code integrated terminal

@@ -2,7 +2,7 @@
 title: "06-Design-Creative"
 description: "Maps UI/UX, visual design, creative coding, SVG animation, and AI-assisted design notes."
 created: 2026-07-07
-updated: 2026-07-16
+updated: 2026-07-25
 tags: [moc, design]
 type: hub
 lang: en
@@ -13,6 +13,8 @@ status: published
 
 UI/UX, p5.js, visual tools, and creative coding.
 
+- [[sticky-floating-tab-bar]] — terminology for pill-shaped sticky tab navigation and segmented controls
+- [[auto-hiding-sticky-header]] — hide-on-scroll, reveal-on-scroll, and Headroom-style header terminology
 - [[shepherd-logo-animation-suggestion]] — Project Shepherd cyber-thriller logo animation prompts
 - [[svg-line-drawing]] — SVG line drawing and point-to-point animation tools
 - [[svg-animation-survey]] — AI-assisted SVG animation workflows

@@ -1,11 +1,16 @@
 ---
-created: 2026-07-25 09:07
-updated: 2026-07-25 09:07
-tags: []
-type: reference
+title: "VS Code Double-Click Folder Expansion"
+description: "Shows how to make VS Code Explorer folders expand only on double-click so single-click can select paste targets."
+created: 2026-07-25
+updated: 2026-07-25
+tags: [dev]
+type: howto
 lang: en
 status: draft
 ---
+
+> Related: [[MOC - Dev Environment]] · [[vscode-drag-and-drop]] · [[vscode-compact-folder]]
+
 **Yes, you can!** You can change VS Code's behavior so folders only expand when double-clicked, allowing you to single-click a folder to select it (for pasting, renaming, or copying) without expanding its contents.
 
 ## Method 1: Using the Settings UI

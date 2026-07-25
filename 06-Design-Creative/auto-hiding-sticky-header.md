@@ -1,11 +1,16 @@
 ---
-created: 2026-07-25 10:07
-updated: 2026-07-25 10:07
-tags: []
-type: reference
+title: "Auto-Hiding Sticky Header Terminology"
+description: "Defines hide-on-scroll header, smart navbar, and Headroom-style behavior for UI prompts."
+created: 2026-07-25
+updated: 2026-07-25
+tags: [dev]
+type: concept
 lang: en
 status: draft
 ---
+
+> Related: [[06-Design-Creative]] · [[sticky-floating-tab-bar]] · [[visual-feedback]]
+
 ## 2. What to Call the Auto-Hiding Scroll Behavior
 
 The animation where the navbar hides when scrolling down and reappears when scrolling up (or hovering) is a classic UX pattern.
