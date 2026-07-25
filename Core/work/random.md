@@ -1,4 +1,5 @@
-我先
+
+(agents framework, sub-agents) > rules, instruction > skills >  (tools, mcp) > script, hook
 
 ---
 會議記錄
