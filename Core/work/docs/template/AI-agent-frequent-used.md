@@ -4,7 +4,9 @@
 - seperate agent/machine file (type, concise) and human file (detailed info doc) 
 
 
-
+# term
+- What you're calling the "upper band/panel" is a sticky tab bar (a row of pill-style buttons in a fixed header)
+- entire separate HTML reports, base64-encoded and stored in a `<script type="application/json" id="embed-pages">` blob. When clicked, JS does `atob()` → `Blob` → `URL.createObjectURL()` → sets that as an `<iframe>`'s `src`.
 
 # Claude Design
 Instruction:  
