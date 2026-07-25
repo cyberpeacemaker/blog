@@ -14,6 +14,7 @@
 - 護照 > CISA(ESTA) > 開戶
 - ac-hunter CTF
 - GTI CTF
+- git control for demo (different version)
 
 
 # frontmatter & OKF
