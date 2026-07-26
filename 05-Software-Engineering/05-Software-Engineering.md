@@ -2,7 +2,7 @@
 title: "05-Software-Engineering"
 description: "Maps architecture, agile development, MVP, CI/CD, documentation, and software concept notes."
 created: 2026-07-07
-updated: 2026-07-25
+updated: 2026-07-26
 tags: [moc]
 type: hub
 lang: en
@@ -25,6 +25,7 @@ Architecture, agile development, MVP, and software concepts.
 - [[software-concept]]
 - [[software-mindset-basic]]
 - [[agile-development]]
+- [[kpi]] — Chinese definition of key performance indicators for goal and progress measurement
 - [[fan-in-directed-acyclic-graph]]
 - [[self-extracting-architecture]]
 - [[mvp]]

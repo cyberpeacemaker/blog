@@ -1,11 +1,15 @@
 ---
-created: 2026-07-26 17:07
-updated: 2026-07-26 17:07
-tags: []
+title: "Siemens Delta Port Config"
+description: "解釋 Siemens 與 Delta 工控演練箱網口配置可能相反的拓撲與設備原因。"
+created: 2026-07-26
+updated: 2026-07-26
+tags: [malcolm, nsm]
 type: reference
-lang: en
+lang: zh
 status: draft
 ---
+
+> Related: [[MOC - Malcolm & NSM]] · [[modbus-s7comm]] · [[ot-hmi-ews-plc-rtu]]
 
 你**很可能沒有寫錯**。這兩個接法看起來相反，是因為**工業設備本身的網卡屬性**以及**演練箱內部的網路拓撲規劃**不同，工控領域並沒有「Port 1 必定是外網」這種統一規定。
 

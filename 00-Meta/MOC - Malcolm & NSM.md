@@ -2,7 +2,7 @@
 title: "MOC - Malcolm & NSM"
 description: "Maps Network Security Monitoring, Malcolm, Arkime, OpenSearch, sensors, and OT/ICS notes."
 created: 2026-07-07
-updated: 2026-07-24
+updated: 2026-07-26
 tags: [malcolm, nsm, opensearch, moc]
 type: hub
 lang: en
@@ -92,6 +92,7 @@ Network Security Monitoring stack: sensors, indexing, PCAP analysis, and Malcolm
 - [[modbus-s7comm]] — Modbus and Siemens S7comm protocol comparison
 - [[proprietary-protocol]] — proprietary protocol definition and tradeoffs
 - [[plc-security-logs]] — PLC telemetry versus security log constraints and OT cost tradeoffs
+- [[siemens-delta-port-config]] — Chinese notes on Siemens and Delta OT lab box port mapping differences
 - [[dnp3-unknown-object]] — triage Suricata DNP3 unknown object alerts with packet evidence
 - [[ot-hmi-ews-plc-rtu]] — OT HMI/EWS/PLC/RTU
 - [[ics-historian-jumpbox]] — ICS historian jumpbox

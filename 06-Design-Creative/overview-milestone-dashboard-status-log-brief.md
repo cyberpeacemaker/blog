@@ -1,11 +1,16 @@
 ---
-created: 2026-07-26 10:07
-updated: 2026-07-26 10:07
-tags: []
+title: "Overview Milestone Dashboard Status Log Brief"
+description: "整理專案報告中總覽、儀表板、里程碑與進度簡報區塊的命名選項。"
+created: 2026-07-26
+updated: 2026-07-26
+tags: [uncategorized]
 type: reference
-lang: en
+lang: zh
 status: draft
 ---
+
+> Related: [[06-Design-Creative]] · [[visual-feedback]] · [[design]]
+
 這份介面的字體選擇與顏色搭配非常有質感！你提出的方向（總結/儀表板、進度 Brief）完全抓住了這兩個區塊的核心功能。
 
 根據這個頁面呈現的內容——第一個區塊是**高階的「已完成 vs. 進行中」卡片**，第二個區塊是**按時間順序展開的「詳細事件與文字說明」**——以下為你整理幾組不同風格的替換建議：

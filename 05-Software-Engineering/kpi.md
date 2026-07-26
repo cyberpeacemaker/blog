@@ -1,11 +1,16 @@
 ---
-created: 2026-07-26 19:07
-updated: 2026-07-26 19:07
-tags: []
-type: reference
-lang: en
+title: "KPI"
+description: "定義關鍵績效指標，以及它如何衡量目標達成進度與成果。"
+created: 2026-07-26
+updated: 2026-07-26
+tags: [uncategorized]
+type: concept
+lang: zh
 status: draft
 ---
+
+> Related: [[05-Software-Engineering]] · [[agile-development]] · [[mvp]]
+
 KPI 的中文是**關鍵績效指標**（英文全名為 **Key Performance Indicator**）。
 
 它是企業、團隊或個人用來衡量特定目標達成進度與成果的可量化指標。簡單來說，就是用來評估「事情做得好不好、有沒有達到預期目標」的標準。
