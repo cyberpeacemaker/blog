@@ -4,9 +4,13 @@
 
 - .工作目標管理考核表請務必於**時限日2026/7/31(五)_中午12:00前完成單位初評**，並將正本送交人力資源組。?
 # Probationary
+- malcolm report
+- word
+- shepherd
+---
 - 檔案文件大小 (font package) & links
 - kpi-1.
-- kpi-2-1. ta-cja: 
+- kpi-2-1. ta-cja: 80%
 - kpi-2-2. ta-ics: 90%
 - kpi-3. iii-interview: 90%
 - kpi-4-1. nics-claw: 90%
