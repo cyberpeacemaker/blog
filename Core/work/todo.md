@@ -2,6 +2,7 @@
 - project-shepherd logo
 - PR check
 
+- .工作目標管理考核表請務必於**時限日2026/7/31(五)_中午12:00前完成單位初評**，並將正本送交人力資源組。?
 # Probationary
 - 檔案文件大小 (font package)
 - kpi-1.
