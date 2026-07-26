@@ -3,6 +3,7 @@
 - PR check
 
 # Probationary
+- 檔案文件大小 (font package)
 - kpi-1.
 - kpi-2-1. ta-cja: 
 - kpi-2-2. ta-ics: 
