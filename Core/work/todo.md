@@ -6,10 +6,10 @@
 - 檔案文件大小 (font package)
 - kpi-1.
 - kpi-2-1. ta-cja: 
-- kpi-2-2. ta-ics: 
+- kpi-2-2. ta-ics: 70%
 - kpi-3. iii-interview: 90%
 - kpi-4-1. nics-claw: 90%
-- kpi-4-2. nics-anthropic: 
+- kpi-4-2. nics-anthropic: 80%
 
 # Now
 
