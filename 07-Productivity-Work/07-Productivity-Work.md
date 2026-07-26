@@ -2,7 +2,7 @@
 title: "07-Productivity-Work"
 description: "Maps Slack, meetings, Gmail, Google Drive, Obsidian, and work productivity notes."
 created: 2026-07-07
-updated: 2026-07-23
+updated: 2026-07-25
 tags: [moc, workflow]
 type: hub
 lang: en
@@ -23,6 +23,8 @@ Slack, meetings, and work productivity tools.
 - [[todo-organize]] — Eisenhower, Kanban, priority, and task-energy categories for work lists
 - [[handbook-playbook]] — handbook versus playbook terminology for work documentation
 - [[tangible-term]] — English pairs for tangible, intangible, concrete, and practical support
+- [[back-and-forth-push-and-pull]] — Chinese workplace-English distinction between push back, back and forth, and push and pull
+- [[interfere-affected-impacted]] — Chinese workplace-English distinctions among interfere, bother, affected, impacted, and influenced
 - [[transcribe-transcript-transcription]] — transcribe, transcript, and transcription usage in meeting workflows
 - [[meeting-minute]]
 - [[meeting-minute-tech]] — Chinese workflow for preparing, recording, and sending meeting minutes

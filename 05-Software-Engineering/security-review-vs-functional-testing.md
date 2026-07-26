@@ -1,11 +1,16 @@
 ---
-created: 2026-07-25 11:07
-updated: 2026-07-25 11:07
-tags: []
-type: reference
+title: "Security Review vs Functional Testing"
+description: "Contrasts functional tests with security reviews and summarizes shift-left, DevSecOps, SAST, DAST, SCA, and IAST terms."
+created: 2026-07-25
+updated: 2026-07-25
+tags: [dev, workflow]
+type: concept
 lang: en
 status: draft
 ---
+
+> Related: [[05-Software-Engineering]] · [[cicd-get-started]] · [[pre-push-ci]] · [[03-AI-Agents/Harness-DevSecOps/DevSecOps|DevSecOps]]
+
 You’ve hit the nail on the head. Your observation is spot on!
 
 Historically, software engineering focused primarily on **functional correctness**—making sure the software actually worked as expected using unit tests, integration tests, and QA cycles. Security was usually an afterthought, left for a rushed "penetration test" right before launch.

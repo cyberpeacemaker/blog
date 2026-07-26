@@ -1,11 +1,16 @@
 ---
-created: 2026-07-25 09:07
-updated: 2026-07-25 09:07
-tags: []
+title: "Interfere, Bother, Affected, and Impacted"
+description: "Clarifies Chinese workplace-English differences among interfere, disturb, interrupt, affected, impacted, and influenced."
+created: 2026-07-25
+updated: 2026-07-25
+tags: [workflow]
 type: reference
-lang: en
+lang: zh
 status: draft
 ---
+
+> Related: [[07-Productivity-Work]] · [[tangible-term]] · [[back-and-forth-push-and-pull]]
+
 這三個詞在英文中會根據「情境」與「動作性質」選擇不同的詞彙：
 
 ## 1. 干擾 (Interfere / Disrupt)

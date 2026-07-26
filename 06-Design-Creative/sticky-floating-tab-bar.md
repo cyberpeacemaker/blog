@@ -1,11 +1,16 @@
 ---
-created: 2026-07-25 10:07
-updated: 2026-07-25 10:07
-tags: []
-type: reference
+title: "Sticky Floating Tab Bar Terminology"
+description: "Defines UI terms for pill-shaped sticky tab navigation and segmented controls."
+created: 2026-07-25
+updated: 2026-07-25
+tags: [dev]
+type: concept
 lang: en
 status: draft
 ---
+
+> Related: [[06-Design-Creative]] · [[visual-feedback]] · [[design]]
+
 ## 1. What to Call the Component in Your Screenshot
 
 In your screenshots, the top navigation consists of pill-shaped buttons floating over content to toggle between different views (`TA 報告`, `SIEMENS 解答`, `DELTA 解答`).

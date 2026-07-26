@@ -1,11 +1,16 @@
 ---
-created: 2026-07-25 09:07
-updated: 2026-07-25 09:07
-tags: []
-type: reference
+title: "VS Code Collapse Folder Shortcut"
+description: "Shows shortcuts for collapsing VS Code Explorer folders after paste operations."
+created: 2026-07-25
+updated: 2026-07-25
+tags: [dev]
+type: howto
 lang: en
 status: draft
 ---
+
+> Related: [[MOC - Dev Environment]] · [[vscode-tips]] · [[vscode-compact-folder]]
+
 Unfortunately, **there is currently no setting in VS Code to disable folder expansion when pasting a file.**
 
 When you paste a file into a folder, VS Code automatically selects and focuses the newly pasted item in the Explorer tree view. To highlight the new file inside the directory, VS Code is hardcoded to expand the target folder.
