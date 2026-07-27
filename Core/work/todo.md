@@ -6,7 +6,6 @@
 # Probationary
 - malcolm report
 - word
-- shepherd
 ---
 - 檔案文件大小 (font package) & links
 - kpi-1.
@@ -15,6 +14,8 @@
 - kpi-3. iii-interview: 90%
 - kpi-4-1. nics-claw: 90%
 - kpi-4-2. nics-anthropic: 90%
+---
+- shepherd
 
 # Now
 
