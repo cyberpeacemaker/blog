@@ -6,6 +6,7 @@
 # Probationary
 - malcolm report
 - word
+- ppt rehersal
 ---
 - 檔案文件大小 (font package) & links
 - kpi-1.
