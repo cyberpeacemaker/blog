@@ -13,6 +13,7 @@
 - 清除/整理一些todo
 ---
 - 目前time window是個有點複雜的話題
+- input feed: GTI, Youtrack ticket
 #
 預計成果要可以本地部署，表現(品質、速度)超過現有檢測團隊
 
