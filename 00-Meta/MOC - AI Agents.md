@@ -69,6 +69,7 @@ AI agent frameworks, multi-agent systems, context management, and local LLM work
 - [[03-AI-Agents/claude.-hermes|claude.-hermes]] — Claude + Hermes notes
 - [[local-ai]] — local LLM model families and deployment tools
 - [[ollama-get-started]] — start, stop, and verify Ollama on Windows for local LLM workflows
+- [[local-llm-poc]] — Ollama and Continue PoC for local threat-hunting rule generation
 
 ## Harness.io / DevSecOps
 

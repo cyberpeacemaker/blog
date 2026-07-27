@@ -1,11 +1,16 @@
 ---
-created: 2026-07-27 13:07
-updated: 2026-07-27 13:07
-tags: []
-type: reference
+title: "Local LLM PoC"
+description: "Walks through an Ollama and Continue setup for validating a local LLM threat-hunting rule-generation workflow."
+created: 2026-07-27
+updated: 2026-07-27
+tags: [ai, agents, dev, threat-hunting]
+type: howto
 lang: en
 status: draft
 ---
+
+> Related: [[MOC - AI Agents]] · [[ollama-get-started]] · [[local-ai]] · [[claude-to-local-migration]]
+
 Here is your step-by-step setup playbook. Because you have 32 GB of system RAM, your CPU will comfortably handle up to 7B or 8B parameter models. We will start with a tiny 135M model to verify the plumbing in under 60 seconds, then switch to `qwen2.5-coder:7b` for actual threat hunting rule generation.
 
 ### Phase 1: Verify & Spin Up Ollama
