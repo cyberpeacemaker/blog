@@ -1,14 +1,22 @@
 
 # OTEX
-目前prefligh準備，有些讓我不確定的
+- 判定敏感資料確實有點不容易，目前我只是單純想走前半部理論上，理論上是絕對安全的公開情資處理，不過當我想要選擇一個範本來當作參考的時候，這個範本本身應該是敏感的？
+- 那我可能需要寫個script來(A無介入I)來脫敏
+- 關鍵:禁止資料丟上雲端AI這條規則，意義不是很大。沒有什麼好處，卻帶來很多不必要的限制。
+- 我目前的proposal，應該可以盡可能最大限度的去發揮雲端LLM的優勢，在處理真實資料的時候責切回地端。但就讓我忍不住想，整個的丟上雲端多好。
+---
+- 目前prefligh準備，有些讓我不確定的
+	- milestone檢查
+		- 我們訂了一個基本的流程藍圖，接下在正式執行前，我們先審視一些還沒處理的gap，並添加額外強化
+	- hunt template (should propose couple hypothesis)
+---
+- 清除/整理一些todo
+---
 - 目前time window是個有點複雜的話題
-- milestone檢查
-- hunt template (should propose couple hypothesis)
-
 #
-
 預計成果要可以本地部署，表現(品質、速度)超過現有檢測團隊
 
+# AI 規劃
 (agents framework, sub-agents) > rules, instruction > skills >  (tools, mcp) > script, hook
 
 ---
