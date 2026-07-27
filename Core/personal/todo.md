@@ -1,5 +1,7 @@
 # 重要
 - aaa
+- human agent doc
+- TP-Link 也不允許. 台灣 dlink
 - 訂蛋糕
 - otex
 - 台鐵場域檢測 第一個大小
