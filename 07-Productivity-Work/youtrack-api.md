@@ -1,11 +1,16 @@
 ---
-created: 2026-07-27 15:07
-updated: 2026-07-27 15:07
-tags: []
+title: "YouTrack API"
+description: "Summarizes JetBrains YouTrack REST API capabilities, authentication, endpoints, and getting-started resources."
+created: 2026-07-27
+updated: 2026-07-27
+tags: [workflow, dev]
 type: reference
 lang: en
 status: draft
 ---
+
+> Related: [[07-Productivity-Work]] · [[slack-asana-jira]] · [[business-productive-tool]]
+
 Short answer: **yes, JetBrains YouTrack has a comprehensive, built-in REST API.**
 
 The API is enabled by default across all YouTrack installations (both Cloud and Server/Standalone).

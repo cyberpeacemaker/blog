@@ -2,7 +2,7 @@
 title: "MOC - AI Agents"
 description: "Maps AI agent frameworks, context management, local models, and agent instruction notes."
 created: 2026-07-07
-updated: 2026-07-22
+updated: 2026-07-27
 tags: [ai, agents, moc]
 type: hub
 lang: en
@@ -68,6 +68,7 @@ AI agent frameworks, multi-agent systems, context management, and local LLM work
 - [[hermes-claude]] — Hermes + Claude integration
 - [[03-AI-Agents/claude.-hermes|claude.-hermes]] — Claude + Hermes notes
 - [[local-ai]] — local LLM model families and deployment tools
+- [[ollama-get-started]] — start, stop, and verify Ollama on Windows for local LLM workflows
 
 ## Harness.io / DevSecOps
 

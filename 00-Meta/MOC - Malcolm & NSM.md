@@ -2,7 +2,7 @@
 title: "MOC - Malcolm & NSM"
 description: "Maps Network Security Monitoring, Malcolm, Arkime, OpenSearch, sensors, and OT/ICS notes."
 created: 2026-07-07
-updated: 2026-07-26
+updated: 2026-07-27
 tags: [malcolm, nsm, opensearch, moc]
 type: hub
 lang: en
@@ -38,6 +38,7 @@ Network Security Monitoring stack: sensors, indexing, PCAP analysis, and Malcolm
 - [[arkime-parser-keepalive-bug]] — HTTP parser state reset failure mode
 - [[arkime-time-zoom-panel]] — timeline zoom workflow
 - [[arkime-api]] — Malcolm `/arkime` API debugging
+- [[malcolm-api-example]] — scripting options for Arkime, OpenSearch, and upload APIs behind Malcolm
 - [[arkime-query-opensearch]] — Arkime queries via OpenSearch
 - [[arkime-cap-sample]] — PCAP sample analysis
 - [[wireshark-contain]] — Wireshark containment filters

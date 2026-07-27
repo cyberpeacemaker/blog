@@ -1,11 +1,16 @@
 ---
-created: 2026-07-27 15:07
-updated: 2026-07-27 15:07
-tags: []
+title: "Compromise, Middle Ground, and Trade-Off"
+description: "Compares English terms and phrases for translating 折衷 across compromise, middle ground, trade-off, and balance contexts."
+created: 2026-07-27
+updated: 2026-07-27
+tags: [uncategorized]
 type: reference
-lang: en
+lang: zh
 status: draft
 ---
+
+> Related: [[09-Personal]] · [[respective-respectively]] · [[distinct-unique-deduplicated]]
+
 「折衷」在英文中可以根據是表達**名詞（折衷方案/平衡點）**還是**動詞（各退一步/取得平衡）**，選擇最符合情境的詞彙：
 
 ## 1. 作為名詞（折衷方案、中間點）

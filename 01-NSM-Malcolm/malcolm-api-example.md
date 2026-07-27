@@ -1,11 +1,16 @@
 ---
-created: 2026-07-27 13:07
-updated: 2026-07-27 13:07
-tags: []
-type: reference
+title: "Malcolm API Example"
+description: "Compares Arkime, OpenSearch, and upload API approaches for scripting against Malcolm."
+created: 2026-07-27
+updated: 2026-07-27
+tags: [malcolm, nsm, opensearch, python]
+type: howto
 lang: en
 status: draft
 ---
+
+> Related: [[MOC - Malcolm & NSM]] · [[arkime-api]] · [[opensearch-api-dsl-dev-tools]] · [[MOC - Threat Hunting]]
+
 Here's my recommendation: the best API approach depends on whether you are querying high-level network session data, fetching raw log documents, or uploading files programmatically.
 
 Because Malcolm bundles Arkime and OpenSearch behind an NGINX reverse proxy, you have three primary ways to interact with it via scripts.

@@ -1,11 +1,16 @@
 ---
-created: 2026-07-27 14:07
-updated: 2026-07-27 14:07
-tags: []
+title: "Threat Hunt Plan Feedback"
+description: "Reviews an air-gapped AI-assisted Malcolm hunt architecture and highlights metadata feedback, network scope, and schema alignment risks."
+created: 2026-07-27
+updated: 2026-07-27
+tags: [threat-hunting, malcolm, opensearch, ai, agents, mitre]
 type: reference
 lang: en
 status: draft
 ---
+
+> Related: [[MOC - Threat Hunting]] · [[threat-hunt-plan]] · [[ai-threat-hunting-capabilities]] · [[MOC - Malcolm & NSM]]
+
 Here's my take: **This is a brilliant, security-conscious architecture.**
 
 By keeping the LLM entirely out of the actual telemetry data path, you bypass the biggest roadblock holding AI back in SOCs: data privacy and compliance risks. You are using the AI where it excels—structuring ideas, cross-referencing frameworks, and writing query syntax—while leaving the actual data inspection and threat triage to human analysts.
