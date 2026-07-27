@@ -1,11 +1,16 @@
 ---
-created: 2026-07-26 21:07
-updated: 2026-07-26 21:07
-tags: []
+title: "Work Pod"
+description: "說明辦公隔音艙的常見中英文名稱，以及向公司提案採購的切入點。"
+created: 2026-07-26
+updated: 2026-07-26
+tags: [workflow]
 type: reference
-lang: en
+lang: zh
 status: draft
 ---
+
+> Related: [[07-Productivity-Work]] · [[business-productive-tool]] · [[meeting-minute-tech]]
+
 這類設施在現代辦公室規劃中，最常見的稱呼是「辦公隔音艙」**或**「個人靜音艙」。
 
 如果你要搜尋廠商或向公司採購/提案，可以使用以下幾組關鍵字：

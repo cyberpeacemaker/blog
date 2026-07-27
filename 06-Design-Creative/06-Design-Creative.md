@@ -2,7 +2,7 @@
 title: "06-Design-Creative"
 description: "Maps UI/UX, visual design, creative coding, SVG animation, and AI-assisted design notes."
 created: 2026-07-07
-updated: 2026-07-25
+updated: 2026-07-26
 tags: [moc, design]
 type: hub
 lang: en
@@ -26,6 +26,7 @@ UI/UX, p5.js, visual tools, and creative coding.
 - [[unpack-and-rebuild]]
 - [[asana-figma]]
 - [[visual-feedback]]
+- [[overview-milestone-dashboard-status-log-brief]] — Chinese naming options for project overview, dashboard, milestone, and brief sections
 - [[pie-server]]
 - [[06-Design-Creative/claude-design]]
 
