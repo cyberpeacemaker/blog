@@ -2,8 +2,6 @@
 - project-shepherd logo
 - PR check
 
-- .工作目標管理考核表請務必於**時限日2026/7/31(五)_中午12:00前完成單位初評**，並將正本送交人力資源組。?
-
 # Threat hunting
 - 自動threat hunting
 - 自動產生ticket
@@ -15,7 +13,6 @@
 	- 做完在搬遷到`nics-malcolm-bec`
 	- hunt lead
 	- 69跟AD互動 鎖定兩台受害者 是因為DNS反向查詢有回傳
-- word
 - ppt rehersal
 	- 中文題目link失效？
 ---
@@ -29,10 +26,10 @@
 ---
 - shepherd
 
-- new bec project standard of process
 # Now
 
-- CISA出差申請
+- new bec project standard of process
+- C
 - nics-probationary
 - bec report
 - template (markdown, skill, minute additional instruction)
