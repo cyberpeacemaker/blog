@@ -1,11 +1,16 @@
 ---
-created: 2026-07-28 21:07
-updated: 2026-07-28 21:07
-tags: []
+title: "Arkime and OpenSearch Roles in Malcolm"
+description: "Compares Arkime Viewer and OpenSearch Dashboards roles across session inspection and macro analytics."
+created: 2026-07-28
+updated: 2026-07-28
+tags: [malcolm, nsm, opensearch]
 type: reference
 lang: en
 status: draft
 ---
+
+> Related: [[MOC - Malcolm & NSM]] · [[zeek-suricata-arkime-opensearch]] · [[arkime-query-opensearch]]
+
 Here's my take: **Not quite — Arkime UI doesn't replace OpenSearch, because OpenSearch is actually the backend engine powering Arkime.**
 
 In Malcolm, OpenSearch serves two distinct roles: it acts as the **central database storage**, and it provides **OpenSearch Dashboards** as a complementary visualization tool.

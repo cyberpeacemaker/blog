@@ -1,11 +1,16 @@
 ---
-created: 2026-07-28 20:07
-updated: 2026-07-28 20:07
-tags: []
+title: "Assertion, Assessment, and Guesstimate"
+description: "Compares English terms for claims, assumptions, rough estimates, and assessments."
+created: 2026-07-28
+updated: 2026-07-28
+tags: [uncategorized]
 type: reference
-lang: en
+lang: zh
 status: draft
 ---
+
+> Related: [[09-Personal]] · [[compromise-trade-off]] · [[distinct-unique-deduplicated]]
+
 你可能在找以下這幾個字之一！根據「宣稱」、「估算」或是發音/用法相似的特徵，最常見的有這幾種可能：
 
 ### 1. 意思包含「估計 + 猜測/宣稱」的組合字

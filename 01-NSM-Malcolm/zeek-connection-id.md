@@ -1,11 +1,16 @@
 ---
-created: 2026-07-28 20:07
-updated: 2026-07-28 20:07
-tags: []
+title: "Zeek Connection ID"
+description: "Explains Zeek's `id` connection tuple and how it differs from `uid` during log correlation."
+created: 2026-07-28
+updated: 2026-07-28
+tags: [malcolm, nsm]
 type: reference
 lang: en
 status: draft
 ---
+
+> Related: [[MOC - Malcolm & NSM]] · [[zeek-fuid-cuid]] · [[zeek-arkime-opensearch-id-pivots]]
+
 In Zeek (formerly Bro), **`id`** refers to the **`conn_id`** record type—the core data structure Zeek uses to represent the endpoints of a network connection.
 
 Instead of traditional "source" and "destination," Zeek uses the concepts of **Originator** (the party initiating the flow) and **Responder** (the party accepting/replying to the flow).

@@ -1,11 +1,16 @@
 ---
-created: 2026-07-28 21:07
-updated: 2026-07-28 21:07
-tags: []
+title: "Zeek Notice Hunt Lead Severity"
+description: "Explains why high raw severity should drive Zeek Notice triage ordering before event count."
+created: 2026-07-28
+updated: 2026-07-28
+tags: [malcolm, nsm, threat-hunting]
 type: reference
 lang: en
 status: draft
 ---
+
+> Related: [[MOC - Malcolm & NSM]] · [[MOC - Threat Hunting]] · [[zeek-notice-hunt-lead-algorithm]]
+
 Short answer: Yes, absolutely — sorting this table by **High Raw Severity in descending order** makes much more sense for security triage.
 
 Here is why the current order is counterproductive for threat hunting:

@@ -1,11 +1,16 @@
 ---
-created: 2026-07-28 20:07
-updated: 2026-07-28 20:07
-tags: []
+title: "Malcolm Common Fields"
+description: "Explains why Malcolm adds unified Zeek and Suricata fields to Arkime sessions and how to interpret them."
+created: 2026-07-28
+updated: 2026-07-28
+tags: [malcolm, nsm]
 type: reference
 lang: en
 status: draft
 ---
+
+> Related: [[MOC - Malcolm & NSM]] · [[zeek-arkime-opensearch-id-pivots]] · [[ecs-translation]]
+
 Spot on—standalone Arkime can run completely on its own, but the **Malcolm Common Fields** panel appears because you are using Malcolm's unified stack.
 
 In a default, standalone setup, Arkime only processes raw PCAP files and displays its own native session fields. However, Malcolm uses Logstash to ingest non-PCAP logs (like Zeek logs and Suricata alerts), normalizes them into a unified schema, and pushes them into OpenSearch. Malcolm then customizes Arkime's UI configuration so that these extra Zeek/Suricata metadata fields—grouped under **Malcolm Common Fields**—render directly inside Arkime's Sessions view.

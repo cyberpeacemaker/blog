@@ -2,7 +2,7 @@
 title: "MOC - AI Agents"
 description: "Maps AI agent frameworks, context management, local models, and agent instruction notes."
 created: 2026-07-07
-updated: 2026-07-27
+updated: 2026-07-28
 tags: [ai, agents, moc]
 type: hub
 lang: en
@@ -37,6 +37,7 @@ AI agent frameworks, multi-agent systems, context management, and local LLM work
 - [[ai-agency-accountability]] — AI agency, human intent, and accountability limits
 - [[competitive-landscape]] — AI and the changing competitive landscape
 - [[ai-era-tradeoff]] — AI era tradeoffs and survival coaching
+- [[ai-knowledge-compression-terms]] — terminology for condensing, pruning, mining, embedding, and structuring AI knowledge
 
 - [[context-management]] — RAG vs dynamic context injection
 - [[rag-okf-wiki]] — OKF wiki vs RAG knowledge bases
