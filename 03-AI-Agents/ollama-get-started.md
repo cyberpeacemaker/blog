@@ -1,11 +1,16 @@
 ---
-created: 2026-07-27 15:07
-updated: 2026-07-27 15:07
-tags: []
-type: reference
+title: "Ollama Get Started"
+description: "Shows how to stop, start, and verify the Ollama service on Windows for local LLM workflows."
+created: 2026-07-27
+updated: 2026-07-27
+tags: [ai, agents, dev]
+type: howto
 lang: en
 status: draft
 ---
+
+> Related: [[MOC - AI Agents]] · [[local-ai]] · [[claude-to-local-migration]] · [[My Stack]]
+
 Here's the quick breakdown for controlling Ollama on Windows 11.
 
 ### How to Turn OFF Ollama

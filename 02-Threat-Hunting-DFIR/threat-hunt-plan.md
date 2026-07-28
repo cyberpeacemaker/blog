@@ -1,11 +1,16 @@
 ---
-created: 2026-07-27 14:07
-updated: 2026-07-27 14:07
-tags: []
+title: "Threat Hunt Plan"
+description: "Outlines an air-gapped AI-assisted Malcolm hunt workflow from OSINT and MITRE mapping through query execution and human review."
+created: 2026-07-27
+updated: 2026-07-27
+tags: [threat-hunting, malcolm, opensearch, ai, agents, mitre]
 type: reference
 lang: en
 status: draft
 ---
+
+> Related: [[MOC - Threat Hunting]] · [[threat-hunt-plan-feedback]] · [[threat-hunting-workflow-example]] · [[MOC - Malcolm & NSM]]
+
 Here is your updated, streamlined threat hunting plan incorporating your refinements:
 
 ### Refined Threat Hunting Plan

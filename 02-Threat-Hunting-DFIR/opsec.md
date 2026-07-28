@@ -1,11 +1,16 @@
 ---
-created: 2026-07-27 13:07
-updated: 2026-07-27 13:07
-tags: []
-type: reference
-lang: en
+title: "OPSEC"
+description: "Explains operations security as a five-step practice for identifying critical information, threats, vulnerabilities, risks, and countermeasures."
+created: 2026-07-27
+updated: 2026-07-27
+tags: [threat-hunting, dfir, uncategorized]
+type: concept
+lang: zh
 status: draft
 ---
+
+> Related: [[MOC - Threat Hunting]] · [[data-sensitive-opsec]] · [[writeup-guideline]]
+
 OPSEC 是 **Operations Security**（**行動安全** 或 **作業安全**）的縮寫。簡單來說，它的核心概念就是：**透過控管看似不起眼的日常細節，防止敵方或有心人士拼湊出你的關鍵秘密或行動意圖。**
 
 這個概念最早源於美軍在越戰期間的「紫龍計畫」（Project Purple Dragon）。當時美軍發現，敵軍不需要滲透最高機密，只要透過蒐集美軍公開的例行行程、補給清單、酒吧裡的閒聊等「非機密資訊」，就能精準預測美軍的作戰行動。

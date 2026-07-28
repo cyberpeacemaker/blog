@@ -1,11 +1,16 @@
 ---
-created: 2026-07-27 13:07
-updated: 2026-07-27 13:07
-tags: []
+title: "Data-Sensitive OPSEC"
+description: "Summarizes OPSEC guidance for sanitizing sensitive OT/CI threat-hunting data before sharing or AI-assisted analysis."
+created: 2026-07-27
+updated: 2026-07-27
+tags: [threat-hunting, dfir, nsm, ai]
 type: reference
-lang: en
+lang: zh
 status: draft
 ---
+
+> Related: [[MOC - Threat Hunting]] · [[opsec]] · [[ai-threat-hunting-capabilities]] · [[MOC - AI Agents]]
+
 這個規則的方向非常正確且必要。關鍵基礎設施（OT/CI）的威脅獵捕最忌諱「獵捕過程本身成為洩密管道（OPSEC Failure）」。你列出的規則已經涵蓋了最核心的實體標識（IP、主機名、廠區名），但實務上還需要進一步補齊「隱性特徵」與「自動化脫敏」的機制。
 
 ## 針對現有規則的補充與強化建議
