@@ -13,6 +13,8 @@
 	- 目前最新技術在台鐵
 	- 目前撰寫環境先回到(BEC_v2)，可能需要搬部分資料回來(nics-malcolm-bec)
 	- 做完在搬遷到`nics-malcolm-bec`
+	- hunt lead
+	- 69跟AD互動 鎖定兩台受害者 是因為DNS反向查詢有回傳
 - word
 - ppt rehersal
 	- 中文題目link失效？
