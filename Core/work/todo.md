@@ -43,6 +43,7 @@
 - ac-hunter CTF
 - GTI CTF
 - git control for demo (different version)
+- human agent audience doc
 
 
 # frontmatter & OKF
