@@ -10,6 +10,9 @@
 - 自動產生資庫庫
 # Probationary
 - malcolm report
+	- 目前最新技術在台鐵
+	- 目前撰寫環境先回到(BEC_v2)，可能需要搬部分資料回來(nics-malcolm-bec)
+	- 做完在搬遷到`nics-malcolm-bec`
 - word
 - ppt rehersal
 	- 中文題目link失效？
@@ -26,6 +29,7 @@
 
 # Now
 
+- CISA出差申請
 - nics-probationary
 - bec report
 - template (markdown, skill, minute additional instruction)
