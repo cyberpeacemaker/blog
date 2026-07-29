@@ -7,6 +7,7 @@
 - 自動產生ticket
 - 自動產生資庫庫
 # Probationary
+- 醫院保密切結書
 - ppt
 	- 貢獻
 	- 技術細節
@@ -32,7 +33,6 @@
 # Now
 
 - new bec project standard of process
-- C
 - nics-probationary
 - bec report
 - template (markdown, skill, minute additional instruction)
@@ -42,8 +42,8 @@
 - 測otex-claw 前端 + 現場
 - 新光醫院保密，不用填申請日期
 - 護照 > CISA(ESTA) > 開戶
-- ac-hunter CTF
 - GTI CTF
+- ac-hunter CTF
 - git control for demo (different version)
 - human agent audience doc
 

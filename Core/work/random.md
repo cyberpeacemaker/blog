@@ -1,16 +1,27 @@
-這個日記, log, config流程還不錯，不過主要問題應該會是現實情況更複雜一點，理論上很有可能事先有跑起來的東西，才有milestone紀錄，不過這種promote機制確實不錯
-我先刪掉吧
-看起來這個流程應該會是經隨
-survey，**審核確認**，留下要採用的方案
+
+# OTEX
+## 流程開發/測試
 做這種類似algo開發的工作，真的很有趣
 目前來說
 - 第一階段大體可以，剩下小細節的確認/調整/優化
 - 第二階段，看起來總體也是可以，不過接下來大概就要想，怎麼規劃配置了。目前有種想法，目標是可以用在malcolm上調查的hypothesis/approach，然後應該會想確認隨著MITRE, GTI資訊增加，是否能生成更好的優化
-目前來說，有幾個想做的
-- 直接跑，這應該是最有可呈現進度的
-- repo設計調整，這應該是最累，同時成果也最不容易看到，但應該是最重要的。目前來說，目前repo體系我的直覺是可以再調整，部過什麼地方要調整、怎麼調整，可能還要思考
-	- 第一點，目前
-# Threat hunting
+
+## Repo 架構設計調整/整理
+- 第一點，目前
+
+# MISC
+- 判定敏感資料確實有點不容易，目前我只是單純想走前半部理論上，理論上是絕對安全的公開情資處理，不過當我想要選擇一個範本來當作參考的時候，這個範本本身應該是敏感的？
+- 我可能需要寫個script來(A無介入I)來脫敏
+- hunt template (should propose couple hypothesis)
+- 目前time window是個有點複雜的話題
+
+
+
+---
+
+# Shepherd
+- 預計成果要可以本地部署，表現(品質、速度)超過現有檢測團隊
+## Threat hunting
 目前有己的survey的資料， 希望能最為起點
 - AI Framework Architecture
 	- 我自己構思的
@@ -30,24 +41,9 @@ survey，**審核確認**，留下要採用的方案
 	- how to correctly correlate / pivot between these components
 - MITRE
 - GTI
-- uTrack
-# OTEX
-- 判定敏感資料確實有點不容易，目前我只是單純想走前半部理論上，理論上是絕對安全的公開情資處理，不過當我想要選擇一個範本來當作參考的時候，這個範本本身應該是敏感的？
-- 那我可能需要寫個script來(A無介入I)來脫敏
-- 關鍵:禁止資料丟上雲端AI這條規則，意義不是很大。沒有什麼好處，卻帶來很多不必要的限制。
-- 我目前的proposal，應該可以盡可能最大限度的去發揮雲端LLM的優勢，在處理真實資料的時候責切回地端。但就讓我忍不住想，整個的丟上雲端多好。
+- YouTrack
+
 ---
-- 目前prefligh準備，有些讓我不確定的
-	- milestone檢查
-		- 我們訂了一個基本的流程藍圖，接下在正式執行前，我們先審視一些還沒處理的gap，並添加額外強化
-	- hunt template (should propose couple hypothesis)
----
-- 清除/整理一些todo
----
-- 目前time window是個有點複雜的話題
-- input feed: GTI, Youtrack ticket
-#
-預計成果要可以本地部署，表現(品質、速度)超過現有檢測團隊
 
 # AI 規劃
 (agents framework, sub-agents) > rules, instruction > skills >  (tools, mcp) > script, hook
