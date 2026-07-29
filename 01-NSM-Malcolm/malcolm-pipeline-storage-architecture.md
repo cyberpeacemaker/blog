@@ -1,11 +1,16 @@
 ---
-created: 2026-07-28 21:07
-updated: 2026-07-28 21:07
-tags: []
+title: "Malcolm Pipeline and Storage Architecture"
+description: "Shows how Arkime, Zeek, Suricata, Logstash, OpenSearch, and disk PCAP storage fit together in Malcolm."
+created: 2026-07-28
+updated: 2026-07-28
+tags: [malcolm, nsm, opensearch]
 type: reference
 lang: en
 status: draft
 ---
+
+> Related: [[MOC - Malcolm & NSM]] · [[zeek-suricata-arkime-opensearch]] · [[malcolm-orchestration]]
+
 Spot on — your diagram accurately shows how Arkime interacts with the storage and database layer inside Malcolm. Arkime queries OpenSearch for indexed metadata and reaches out directly to disk whenever you need to view raw packet payloads.
 
 To see the complete picture, we just need to add the **ingestion and analysis pipeline** that sits upstream of storage.

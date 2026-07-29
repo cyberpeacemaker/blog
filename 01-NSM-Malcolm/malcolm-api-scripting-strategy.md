@@ -1,11 +1,16 @@
 ---
-created: 2026-07-28 20:07
-updated: 2026-07-28 20:07
-tags: []
+title: "Malcolm API Scripting Strategy"
+description: "Splits Malcolm automation between OpenSearch APIs for aggregations and Arkime APIs for packet-level evidence."
+created: 2026-07-28
+updated: 2026-07-28
+tags: [malcolm, nsm, opensearch]
 type: reference
 lang: en
 status: draft
 ---
+
+> Related: [[MOC - Malcolm & NSM]] · [[malcolm-api-example]] · [[arkime-api]] · [[opensearch-api-dsl-dev-tools]]
+
 Here is my recommendation: **Split your API strategy based on the task.** Use the **Arkime Viewer API** when your script needs raw PCAPs or packet-level payloads, but query the **OpenSearch REST API** directly when automating macro analytics, aggregations, or reports.
 
 Even though you _can_ hit Arkime’s underlying aggregation endpoints (like `/spiview.json`), OpenSearch is vastly superior for scripting macro views.

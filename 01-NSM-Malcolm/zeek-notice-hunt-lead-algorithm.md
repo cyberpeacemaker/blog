@@ -1,11 +1,16 @@
 ---
-created: 2026-07-28 21:07
-updated: 2026-07-28 21:07
-tags: []
+title: "Zeek Notice Hunt Lead Algorithm"
+description: "Interprets a Zeek Notice summary row as a prioritized threat-hunting lead with MITRE context."
+created: 2026-07-28
+updated: 2026-07-28
+tags: [malcolm, nsm, threat-hunting, mitre]
 type: reference
 lang: en
 status: draft
 ---
+
+> Related: [[MOC - Malcolm & NSM]] · [[MOC - Threat Hunting]] · [[zeek-notice-hunt-lead-severity]]
+
 Here's how to interpret this summary panel from your security dashboard (commonly seen in Network Detection and Response tools like Corelight/Zeek or SIEMs like Splunk):
 
 ### **Overview**

@@ -2,7 +2,7 @@
 title: "09-Personal"
 description: "Maps personal notes, finance, hobbies, lifestyle, and miscellaneous personal references."
 created: 2026-07-07
-updated: 2026-07-27
+updated: 2026-07-28
 tags: [moc]
 type: hub
 lang: en
@@ -15,6 +15,7 @@ Personal notes: finance, hobbies, lifestyle. Optional candidate for a separate v
 
 - [[rough-notes-jottings]] — English usage for rough notes, jottings, scratch notes, and raw notes
 - [[compromise-trade-off]] — English usage for compromise, middle ground, trade-off, and related phrases
+- [[assertion-assessment]] — English usage for assertion, allegation, assumption, assessment, and guesstimate
 - [[distilled-core-nugget]] — English usage for distilled knowledge, core insights, key takeaways, and nuggets of wisdom
 - [[mediocre]] — English usage for mediocre, mediocrity, ordinary, and run-of-the-mill
 - [[respective-respectively]] — English usage for respective, respectively, each, and their own

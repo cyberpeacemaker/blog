@@ -2,7 +2,7 @@
 title: "MOC - Malcolm & NSM"
 description: "Maps Network Security Monitoring, Malcolm, Arkime, OpenSearch, sensors, and OT/ICS notes."
 created: 2026-07-07
-updated: 2026-07-27
+updated: 2026-07-28
 tags: [malcolm, nsm, opensearch, moc]
 type: hub
 lang: en
@@ -16,6 +16,7 @@ Network Security Monitoring stack: sensors, indexing, PCAP analysis, and Malcolm
 ## Pipeline & Architecture
 
 - [[zeek-suricata-arkime-opensearch]] — full NSM pipeline overview
+- [[malcolm-pipeline-storage-architecture]] — Arkime, Zeek, Suricata, Logstash, OpenSearch, and disk PCAP storage flow
 - [[malcolm-orchestration]] — Malcolm deployment and orchestration
 - [[malcolm-rita-integration]] — Malcolm, Zeek, OpenSearch, and RITA integration paths
 - [[malcolm-threat-stack-integration]] — Malcolm, Suricata, Zeek, and RITA stack roles
@@ -39,6 +40,9 @@ Network Security Monitoring stack: sensors, indexing, PCAP analysis, and Malcolm
 - [[arkime-time-zoom-panel]] — timeline zoom workflow
 - [[arkime-api]] — Malcolm `/arkime` API debugging
 - [[malcolm-api-example]] — scripting options for Arkime, OpenSearch, and upload APIs behind Malcolm
+- [[malcolm-api-scripting-strategy]] — choose OpenSearch APIs for aggregations and Arkime APIs for packet evidence
+- [[arkime-opensearch-roles]] — Arkime Viewer versus OpenSearch Dashboards in Malcolm analysis workflows
+- [[zeek-arkime-opensearch-id-pivots]] — pivot among OpenSearch `_id`, Zeek UID, endpoints, and Arkime evidence
 - [[arkime-query-opensearch]] — Arkime queries via OpenSearch
 - [[arkime-cap-sample]] — PCAP sample analysis
 - [[wireshark-contain]] — Wireshark containment filters
@@ -76,6 +80,10 @@ Network Security Monitoring stack: sensors, indexing, PCAP analysis, and Malcolm
 - [[network-scan-log-sources]] — map scan behavior to Zeek Notice, Suricata, and Zeek weird logs
 - [[zeek-files-mime-type-mz]] — Zeek MIME labels and Windows MZ magic bytes
 - [[zeek-fuid-cuid]] — Zeek connection UID and file FUID pivots
+- [[zeek-connection-id]] — Zeek `id` tuple fields and `uid` distinction for log correlation
+- [[malcolm-common-fields]] — unified Malcolm fields in Arkime session views
+- [[zeek-notice-hunt-lead-algorithm]] — interpret Zeek Notice summary rows as MITRE hunt leads
+- [[zeek-notice-hunt-lead-severity]] — prioritize Zeek Notice triage by high raw severity before count
 - [[zeek-file-reassembler]] — ranged downloads and Zeek file reassembly
 - [[syslog]] — syslog configuration
 - [[filter]] — log filtering

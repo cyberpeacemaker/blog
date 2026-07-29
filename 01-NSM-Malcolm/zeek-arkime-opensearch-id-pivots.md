@@ -1,11 +1,15 @@
 ---
-created: 2026-07-28 21:07
-updated: 2026-07-28 21:07
-tags: []
+title: "Zeek, Arkime, and OpenSearch ID Pivots"
+description: "Maps OpenSearch document IDs, Zeek UIDs, and network endpoints for pivoting from Malcolm alerts into session evidence."
+created: 2026-07-28
+updated: 2026-07-28
+tags: [malcolm, nsm, opensearch]
 type: reference
 lang: en
 status: draft
 ---
+
+> Related: [[MOC - Malcolm & NSM]] · [[zeek-connection-id]] · [[zeek-fuid-cuid]] · [[arkime-opensearch-roles]]
 
 
 This image shows a **Zeek Notice alert** indexed into OpenSearch via **Arkime** (formerly Moloch, indicated by the index name `arkime_sessions3-240425`).

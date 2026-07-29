@@ -1,11 +1,16 @@
 ---
-created: 2026-07-28 20:07
-updated: 2026-07-28 20:07
-tags: []
+title: "AI Knowledge Compression Terms"
+description: "Organizes English terms for condensing, pruning, mining, embedding, and structuring knowledge in AI contexts."
+created: 2026-07-28
+updated: 2026-07-28
+tags: [ai]
 type: reference
-lang: en
+lang: zh
 status: draft
 ---
+
+> Related: [[MOC - AI Agents]] · [[edge-ai-terms]] · [[context-management]]
+
 原來你是在找更多關於「知識提煉、萃取、濃縮」相關的英文技術詞彙！
 
 在 AI、機器學習與資料科學中，除了 Distill、Extract、Core、CapNet 之外，還有許多精準描述「將雜亂/龐大的資訊或模型，結晶為高價值精華」的關鍵詞。我幫你按技術情境分類整理如下：
