@@ -7,8 +7,9 @@
 - 自動產生ticket
 - 自動產生資庫庫
 # Probationary
+- CISA
 - 醫院保密切結書
-- 拿
+- 拿貼紙
 - ppt
 	- 貢獻
 	- 技術細節
