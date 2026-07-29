@@ -7,6 +7,9 @@
 - 自動產生ticket
 - 自動產生資庫庫
 # Probationary
+- ppt
+	- 貢獻
+	- 技術細節
 - malcolm report
 	- 目前最新技術在台鐵
 	- 目前撰寫環境先回到(BEC_v2)，可能需要搬部分資料回來(nics-malcolm-bec)

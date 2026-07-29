@@ -1,5 +1,29 @@
-- 貢獻
-- 技術細節
+
+我正在找之前蒐集的兩個threat hunting methodology
+理論上我會希望它被存放在project shepherd
+- 首先不再 inf-project-shepherd 我覺得合理 這才剛創
+- 找到了，隨然沒辦法立刻想到在這，但確實可以接受
+# Threat hunting
+目前有己的survey的資料， 希望能最為起點
+- AI Framework Architecture
+	- 我自己構思的
+	- 市面上現存的
+- AI Agent
+	- skill, hook, etc
+	- template
+	- frontmatter
+- Threat Hunting Methodology
+	- 我自己構思的
+	- 市面上現存的
+- Malcolm Related DOCs
+	- ZEEK, Suricate, OpenSearch, ARKIME
+	- how they got integrated in Malcolm
+	- correct fields
+	- correct query syntax
+	- how to correctly correlate / pivot between these components
+- MITRE
+- GTI
+- uTrack
 # OTEX
 - 判定敏感資料確實有點不容易，目前我只是單純想走前半部理論上，理論上是絕對安全的公開情資處理，不過當我想要選擇一個範本來當作參考的時候，這個範本本身應該是敏感的？
 - 那我可能需要寫個script來(A無介入I)來脫敏
