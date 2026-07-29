@@ -1,8 +1,7 @@
-
-我正在找之前蒐集的兩個threat hunting methodology
-理論上我會希望它被存放在project shepherd
-- 首先不再 inf-project-shepherd 我覺得合理 這才剛創
-- 找到了，隨然沒辦法立刻想到在這，但確實可以接受
+目前來說，有幾個想做的
+- 直接跑，這應該是最有可呈現進度的
+- repo設計調整，這應該是最累，同時成果也最不容易看到，但應該是最重要的。目前來說，目前repo體系我的直覺是可以再調整，部過什麼地方要調整、怎麼調整，可能還要思考
+	- 第一點，目前
 # Threat hunting
 目前有己的survey的資料， 希望能最為起點
 - AI Framework Architecture
