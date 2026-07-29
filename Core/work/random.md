@@ -1,4 +1,9 @@
+Otex冷靜一下，目前頂多就是youtrack以前的例子沒那麼理想，對嗎？
+- GTI是很寶貴的資源，如果我想，我完全可以用自己的方式來利用GTI
+- YouTrack管理系統也還可以，頂多是目前使用的情況有點怪怪的？理論上每張ticket下，應該會根據GTI情資，產生多個hypothesis獵捕。目前卻是sub-tech ticket直接忽略，所有的都放在parent-tech ticket。
+- 最慘烈的就是hypothesis的形成，跟GTI一點關係也沒有？
 
+子霖的看起來很棒
 # OTEX
 ## 公司YouTrack等制度
 一坨大便
