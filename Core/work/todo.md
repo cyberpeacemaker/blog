@@ -2,6 +2,9 @@
 - project-shepherd logo
 - PR check
 
+房租
+# 出國準備
+- 房租
 # Threat hunting
 - 自動threat hunting
 - 自動產生ticket
