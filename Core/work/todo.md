@@ -2,27 +2,16 @@
 - project-shepherd logo
 - PR check
 
-房租
 # 出國準備
-- 房租
-# Threat hunting
-- 自動threat hunting
-- 自動產生ticket
-- 自動產生資庫庫
-
 
 # Probationary
 我有一個想找，統計數值分析，照理來說我應該收到狗麼threat hunting的vault中，但是我找步道存在哪 (Obsidian有備份 "## Encrypted Traffic Analysis")
 怎麼院內文件書寫指南也不見了？我記得我是為了新人評核去找的吧？诶我是特別找，還是什麼時候遇到的？
 ?我的金絲雀認證 怎麼不再？
 
-我的CTF通關資訊怎麼一職部件？我認為合理的出現地方
-- shepherd: 用來解釋目前進度
-- rabbit: 作為背景介紹
-- probationary: 用來炫耀
-- bec_v2: 成果報告
 
-
+# Probationary
+- p.25 推斷證 修改多餘字
 ---
 
 
