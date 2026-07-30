@@ -11,11 +11,8 @@ Otex冷靜一下，目前頂多就是youtrack以前的例子沒那麼理想，�
 - GTI是很寶貴的資源，如果我想，我完全可以用自己的方式來利用GTI
 - YouTrack管理系統也還可以，頂多是目前使用的情況有點怪怪的？理論上每張ticket下，應該會根據GTI情資，產生多個hypothesis獵捕。目前卻是sub-tech ticket直接忽略，所有的都放在parent-tech ticket。
 - 最慘烈的就是hypothesis的形成，跟GTI一點關係也沒有？
-
-子霖的看起來很棒
+- 子霖的看起來很棒
 # OTEX
-## 公司YouTrack等制度
-一坨大便
 
 ## 流程開發/測試
 做這種類似algo開發的工作，真的很有趣
@@ -31,39 +28,6 @@ Otex冷靜一下，目前頂多就是youtrack以前的例子沒那麼理想，�
 - 我可能需要寫個script來(A無介入I)來脫敏
 - hunt template (should propose couple hypothesis)
 - 目前time window是個有點複雜的話題
-
-
-
----
-
-# Shepherd
-- 預計成果要可以本地部署，表現(品質、速度)超過現有檢測團隊
-## Threat hunting
-目前有己的survey的資料， 希望能最為起點
-- AI Framework Architecture
-	- 我自己構思的
-	- 市面上現存的
-- AI Agent
-	- skill, hook, etc
-	- template
-	- frontmatter
-- Threat Hunting Methodology
-	- 我自己構思的
-	- 市面上現存的
-- Malcolm Related DOCs
-	- ZEEK, Suricate, OpenSearch, ARKIME
-	- how they got integrated in Malcolm
-	- correct fields
-	- correct query syntax
-	- how to correctly correlate / pivot between these components
-- MITRE
-- GTI
-- YouTrack
-
----
-
-# AI 規劃
-(agents framework, sub-agents) > rules, instruction > skills >  (tools, mcp) > script, hook
 
 ---
 會議記錄
@@ -86,19 +50,12 @@ Otex冷靜一下，目前頂多就是youtrack以前的例子沒那麼理想，�
 
 ---
 
-我現在又想定調
-nics-malcolm-bec 包含指引 (我如何自己打CTF, 我如何創造工具打CTF)
-- 101 : 包含學習過程
-- ctf: 包含解題過程
-
 # AI
 - "Agents rarely auto-discover templates unless told
 - script-skill-rule-framework
 - hook
-- adopt more deterministic method/approach
 
 # 國外出差
-這表單不會自己加總 [交通費、生活費、辦公費]?
 otex耳提面目標號跟nics不依樣
 - todo:修改trip文件 (詳細指引，錯誤編號修改...)
 - todo: 試算表自己不會加總錢？
@@ -106,9 +63,6 @@ otex耳提面目標號跟nics不依樣
 - 有空再來確認明細內容
 ---
 
-另外也可以弄這些無聊的公務
-- 火獅的考驗
-- 桃園
 
 nicscclaw第零次會議它儲存的位置並不好，照理說還沒有被分類的應該都被放在meeting-note
 
@@ -152,13 +106,6 @@ The PR automation expects the platform-designated branch `cursor/daily-inbox-tri
 - 使用sn-01-rabbit-v1 挑戰 BEC ，並使用report，製作playbook-bec-v1
 - 製作完playbook-bec-v1後，製作我的BEC完整報告
 
-## Progress
-- writeup範本
-- 需要補足的知識
-- 需要持續改寫的方向
-- rabbit淺在可能很大的改進空間 (CTF太簡單)
-- threat hunting tool 跟 CTF write up 分開
-
 ---
 
 # CTF Playbook 
@@ -175,9 +122,6 @@ The PR automation expects the platform-designated branch `cursor/daily-inbox-tri
 - 解法我一看就不滿意，j似乎無法套用到真實情況
 
 # Obsidian 
-剛剛立刻注意到一件事
-personal [work, todo]雖然不算機密，不過感覺還是分開好了
-blog還是篇比較公開，主要應該是demo展示的話，不會希望這個出現
 
 驚喜
 - git + obsidian sync
