@@ -11,7 +11,7 @@
 - 自動產生ticket
 - 自動產生資庫庫
 # Probationary
-我有一個想找，統計數值分析，照理來說我應該收到狗麼threat hunting的vault中，但是我找步道
+我有一個想找，統計數值分析，照理來說我應該收到狗麼threat hunting的vault中，但是我找步道存在哪 (Obsidian有備份 "## Encrypted Traffic Analysis")
 
 - 字多詳細、提供技術細節、同時顧慮他人能看懂
 - 描述背景、遇到什麼困難解決什麼問題、工作上做出什麼貢獻，帶來什麼效益，before/after
