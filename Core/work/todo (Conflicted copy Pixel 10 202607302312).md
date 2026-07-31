@@ -2,17 +2,16 @@
 - project-shepherd logo
 - PR check
 
-# 出國準備
-- 拿護照 身分證 esta
-- 跟爸媽借錢 辦附卡
-- 開戶
-
+# Threat hunting
+- 自動threat hunting
+- 自動產生ticket
+- 自動產生資庫庫
 # Probationary
-- p.25 推斷證 修改多餘字
-
-# EmergenCY
-
-- 護照 > CISA(ESTA) > 開戶
+- 醫院保密切結書
+- 拿貼紙
+- ppt
+	- 貢獻
+	- 技術細節
 - malcolm report
 	- 目前最新技術在台鐵
 	- 目前撰寫環境先回到(BEC_v2)，可能需要搬部分資料回來(nics-malcolm-bec)
@@ -21,6 +20,14 @@
 	- 69跟AD互動 鎖定兩台受害者 是因為DNS反向查詢有回傳
 - ppt rehersal
 	- 中文題目link失效？
+---
+- 檔案文件大小 (font package) & links
+- kpi-1.
+- kpi-2-1. ta-cja: 80%
+- kpi-2-2. ta-ics: 90%
+- kpi-3. iii-interview: 90%
+- kpi-4-1. nics-claw: 90%
+- kpi-4-2. nics-anthropic: 90%
 ---
 - shepherd
 
@@ -34,6 +41,8 @@
 # 暫時推遲
 
 - 測otex-claw 前端 + 現場
+- 新光醫院保密，不用填申請日期
+- 護照 > CISA(ESTA) > 開戶
 - GTI CTF
 - ac-hunter CTF
 - git control for demo (different version)
