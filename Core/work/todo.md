@@ -24,6 +24,8 @@
 - git control for demo (different version)
 - human agent audience doc
 - new bec project standard of process
+- bookmark
+- asana
 - template (markdown, skill, minute additional instruction)
 - 玉山信用卡開卡、綁卡
 - 看信
