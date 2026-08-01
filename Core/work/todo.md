@@ -3,7 +3,7 @@
 - PR check
 
 # Emergency
-- ppt
+- ppt | nics-probationary
 - local llm
 - 出國準備
 	- ESTA
@@ -23,30 +23,11 @@
 - 回八里家
 	- 帶手機殼
 
-
-# Threat hunting
-- 自動threat hunting
-- 自動產生ticket
-- 自動產生資庫庫
-
 # Probationary
 - p.25 推斷證 修改多餘字
-- 醫院保密切結書
-- 拿貼紙
-- ppt
-	- 貢獻
-	- 技術細節
-- malcolm report
-	- 目前最新技術在台鐵
-	- 目前撰寫環境先回到(BEC_v2)，可能需要搬部分資料回來(nics-malcolm-bec)
-	- 做完在搬遷到`nics-malcolm-bec`
-	- hunt lead
-	- 69跟AD互動 鎖定兩台受害者 是因為DNS反向查詢有回傳
 - ppt rehersal
-	- 中文題目link失效？
-- 半年報告 AI
----
-- 檔案文件大小 (font package) & links
+- 中文題目link失效？
+- - 檔案文件大小 (font package) & links
 - kpi-1.
 - kpi-2-1. ta-cja: 80%
 - kpi-2-2. ta-ics: 90%
@@ -55,11 +36,23 @@
 - kpi-4-2. nics-anthropic: 90%
 ---
 - shepherd
+# malcolm report
+- 目前最新技術在台鐵
+- 目前撰寫環境先回到(BEC_v2)，可能需要搬部分資料回來(nics-malcolm-bec)
+- 做完在搬遷到`nics-malcolm-bec`
+- hunt lead
+- 69跟AD互動 鎖定兩台受害者 是因為DNS反向查詢有回傳
+- 半年報告 AI
 
+# BEC v2 後續收尾
+- malcolm 製作lab 製作封包 製作poc
+- MSDefender , Cladue設置
+- pivot issue fix:
+	- we have fix the opensearch-arkime-pivot issue, which might be the reason why you can't correctly retrieve the raw packet. can you try again to see if you can solve 
+---
 # Now
 
 - new bec project standard of process
-- nics-probationary
 - bec report
 - template (markdown, skill, minute additional instruction)
 
@@ -122,11 +115,6 @@ knowledge/
 
 
 
-# BEC v2 後續收尾
-- malcolm 製作lab 製作封包 製作poc
-- MSDefender , Cladue設置
-- pivot issue fix:
-	- we have fix the opensearch-arkime-pivot issue, which might be the reason why you can't correctly retrieve the raw packet. can you try again to see if you can solve 
 	
 ---
 
