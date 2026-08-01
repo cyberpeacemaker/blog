@@ -6,6 +6,9 @@
 - 執行官(黑): 針對執行官(白)執行的主觀調查和推論，進行主觀的挑戰
 - 見證者: 紀錄and Report
 
+  
+One caution: aggregations can still leak identity if buckets are too fine (e.g. rare OT protocol + firmware-specific port combos). Judicator queries need coarse bins and minimum-count thresholds — same spirit as k-anonymity.
+
 - 總監
 - 宏林 測試
 - 經理
