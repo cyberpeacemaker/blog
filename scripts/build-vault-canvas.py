@@ -244,7 +244,7 @@ def build_hub_graph(notes: dict[str, Note]) -> dict:
         })
     edges = []
     seen_edges: set[tuple[str, str]] = set()
-    for nid in sorted(hub_ids):
+    for nid in hub_ids:
         for target in notes[nid].outbound:
             if target in hub_ids:
                 key = (nid, target)
