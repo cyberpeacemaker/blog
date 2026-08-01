@@ -4,6 +4,7 @@
 
 # Emergency
 - ppt | nics-probationary
+	- meeting-note > nics-meeting-minute
 - local llm
 - 出國準備
 	- ESTA
