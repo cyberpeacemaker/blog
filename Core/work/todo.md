@@ -21,6 +21,7 @@
 	- 69跟AD互動 鎖定兩台受害者 是因為DNS反向查詢有回傳
 - ppt rehersal
 	- 中文題目link失效？
+- 半年報告 AI
 ---
 - shepherd
 
