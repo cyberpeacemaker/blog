@@ -1,11 +1,16 @@
 ---
-created: 2026-07-30 09:07
-updated: 2026-07-30 09:07
-tags: []
+title: "SlideDoc and Read-deck"
+description: "Explains why dense readable presentation decks are common and how to make them usable."
+created: 2026-07-30
+updated: 2026-08-01
+tags: [workflow]
 type: reference
-lang: en
+lang: zh
 status: draft
 ---
+
+> Related: [[08-Career-Presentations]] · [[project-presentation]] · [[presentation-talk]]
+
 這非常常見，甚至可以說是許多企業、管顧公司與公部門的常態。
 
 這類簡報在業界常被稱為 **SlideDoc（文件型簡報）** 或 **Read-deck（閱讀型簡報）**。之所以會有這種要求，主要有幾個現實原因：

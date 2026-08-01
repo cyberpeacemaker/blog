@@ -1,11 +1,16 @@
 ---
-created: 2026-07-31 16:07
-updated: 2026-07-31 16:07
-tags: []
+title: "Best Judgment and Discretion"
+description: "English phrases for respectfully leaving a suggestion to someone else's judgment or discretion."
+created: 2026-07-31
+updated: 2026-08-01
+tags: [workflow]
 type: reference
-lang: en
+lang: zh
 status: draft
 ---
+
+> Related: [[07-Productivity-Work]] · [[adhoc-request]] · [[back-and-forth-push-and-pull]]
+
 最自然且常見的表達方式是 **"Feel free to use your best judgment on this."** 或 **"I'll leave it to your discretion."**
 
 根據你講話的場合與語氣，可以選擇最適合的句型：

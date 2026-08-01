@@ -1,11 +1,16 @@
 ---
-created: 2026-07-29 15:07
-updated: 2026-07-29 15:07
-tags: []
+title: "Deliverables, Work Products, and Artifacts"
+description: "Compares English terms for work outputs across project management, contracts, agile, UX, and daily reporting."
+created: 2026-07-29
+updated: 2026-08-01
+tags: [workflow]
 type: reference
-lang: en
+lang: zh
 status: draft
 ---
+
+> Related: [[07-Productivity-Work]] · [[handbook-playbook]] · [[agile-development]]
+
 「工作交付物」最標準、最常用的英文是 **Deliverables**（或 **Work Deliverables**）。
 
 根據具體的職場情境與產業特性，還有幾種非常地道的說法：

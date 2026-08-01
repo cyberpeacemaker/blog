@@ -2,7 +2,7 @@
 title: "07-Productivity-Work"
 description: "Maps Slack, meetings, Gmail, Google Drive, Obsidian, and work productivity notes."
 created: 2026-07-07
-updated: 2026-07-27
+updated: 2026-08-01
 tags: [moc, workflow]
 type: hub
 lang: en
@@ -24,6 +24,9 @@ Slack, meetings, and work productivity tools.
 - [[work-pod]] — Chinese terms and proposal framing for office acoustic booths
 - [[todo-organize]] — Eisenhower, Kanban, priority, and task-energy categories for work lists
 - [[handbook-playbook]] — handbook versus playbook terminology for work documentation
+- [[deliverables-artifacts]] — English terms for work deliverables, work products, artifacts, outputs, and outcomes
+- [[distill-pruning-cut-the-fat]] — English phrases for slimming data, filtering noise, and pruning redundant details
+- [[judgement-consider-discretion]] — English phrases for leaving a suggestion to someone's judgment or discretion
 - [[tangible-term]] — English pairs for tangible, intangible, concrete, and practical support
 - [[back-and-forth-push-and-pull]] — Chinese workplace-English distinction between push back, back and forth, and push and pull
 - [[interfere-affected-impacted]] — Chinese workplace-English distinctions among interfere, bother, affected, impacted, and influenced
