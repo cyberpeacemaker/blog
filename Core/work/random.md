@@ -1,29 +1,10 @@
-效率
-繳房租
-烏龜
-- 審判長: 在只見識到去識別化資料(或無法辨識身分)的情況下，盡可能做出主觀的判斷、計畫，供執行官執行
-- 執行官(白): 依照審判長盡可能客觀的計畫，接觸PII(Personally Identifiable Information)，執行涉及主觀的調查
-- 執行官(黑): 針對執行官(白)執行的主觀調查和推論，進行主觀的挑戰
-- 見證者: 紀錄and Report
-
-  
-One caution: aggregations can still leak identity if buckets are too fine (e.g. rare OT protocol + firmware-specific port combos). Judicator queries need coarse bins and minimum-count thresholds — same spirit as k-anonymity.
-
-- 總監
-- 宏林 測試
-- 經理
-
-#1、向 
-><><><><
-
 #
-
 - ax: 有必要做這個嗎、有價值嗎
 - cp: 做的出來嗎？AI做不到啦
 - xt: 表現好嗎？會有幻覺吧
 - xd: 這困難嗎？這沒有技術含量
 
-
+我的threat hunting心得
 # OTEX
 
 ## 流程開發/測試

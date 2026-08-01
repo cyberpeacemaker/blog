@@ -17,25 +17,18 @@
 - 手機充電
 
 # Appending
+- 護照 > CISA(ESTA) > 開戶
+- GTI CTF
+- ac-hunter CTF
+- git control for demo (different version)
+- human agent audience doc
+- new bec project standard of process
+- template (markdown, skill, minute additional instruction)
 - 玉山信用卡開卡、綁卡
 - 看信
 - 安全帽
 - 回八里家
 	- 帶手機殼
-
-# Probationary
-- p.25 推斷證 修改多餘字
-- ppt rehersal
-- 中文題目link失效？
-- - 檔案文件大小 (font package) & links
-- kpi-1.
-- kpi-2-1. ta-cja: 80%
-- kpi-2-2. ta-ics: 90%
-- kpi-3. iii-interview: 90%
-- kpi-4-1. nics-claw: 90%
-- kpi-4-2. nics-anthropic: 90%
----
-- shepherd
 # malcolm report
 - 目前最新技術在台鐵
 - 目前撰寫環境先回到(BEC_v2)，可能需要搬部分資料回來(nics-malcolm-bec)
@@ -50,22 +43,6 @@
 - pivot issue fix:
 	- we have fix the opensearch-arkime-pivot issue, which might be the reason why you can't correctly retrieve the raw packet. can you try again to see if you can solve 
 ---
-# Now
-
-- new bec project standard of process
-- bec report
-- template (markdown, skill, minute additional instruction)
-
-# 暫時推遲
-
-- 測otex-claw 前端 + 現場
-- 新光醫院保密，不用填申請日期
-- 護照 > CISA(ESTA) > 開戶
-- GTI CTF
-- ac-hunter CTF
-- git control for demo (different version)
-- human agent audience doc
-
 
 # frontmatter & OKF
 
@@ -112,9 +89,6 @@ knowledge/
 - cursor-setup
 - cursor 使用 (至少先setting, 在automation)
 - claude (基本功能看看)
-
-
-
 	
 ---
 
