@@ -2,6 +2,10 @@
 - project-shepherd logo
 - PR check
 
+超電錶 給手機殼 拿身分證護照信 安全帽
+餅蛋糕伴手禮
+
+
 # 出國準備
 - 拿護照 身分證 esta
 - 跟爸媽借錢 辦附卡
