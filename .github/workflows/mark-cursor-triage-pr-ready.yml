@@ -1,0 +1,30 @@
+name: Mark Cursor Triage PR Ready
+
+on:
+  pull_request_target:
+    types: [opened, reopened, synchronize]
+    branches: [main]
+
+permissions:
+  pull-requests: write
+
+jobs:
+  mark-ready:
+    name: Mark matching automation PRs ready
+    if: >-
+      github.event.pull_request.draft &&
+      github.event.pull_request.head.repo.full_name == github.repository &&
+      (
+        startsWith(github.event.pull_request.head.ref, 'cursor/daily-inbox-triage') ||
+        startsWith(github.event.pull_request.head.ref, 'automation/daily-inbox-triage') ||
+        startsWith(github.event.pull_request.head.ref, 'cursor/inbox-rule-application') ||
+        startsWith(github.event.pull_request.head.ref, 'automation/inbox-rule-application')
+      )
+    runs-on: ubuntu-latest
+    steps:
+      - name: Mark PR ready for review
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: gh pr ready "$PR_NUMBER" --repo "$GH_REPO"
