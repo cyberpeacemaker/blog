@@ -2,6 +2,12 @@
 - project-shepherd logo
 - PR check
 
+# Local llm
+- poc 
+- hardware check
+- suggested model
+- ollama + docker?
+- check (continue + ollama) v.s  | git (report的部分很可惜)
 # Emergency
 - ppt | nics-probationary
 	- meeting-note > nics-meeting-minute
