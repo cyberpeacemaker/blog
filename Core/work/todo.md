@@ -2,8 +2,20 @@
 - project-shepherd logo
 - PR check
 
-超電錶 給手機殼 拿身分證護照信 安全帽
-餅蛋糕伴手禮
+# Emergency
+- ppt
+- local llm
+- mics
+	- 水電費
+- 給peipei伴手禮, 手機殼
+- 手機充電
+
+# Appending
+- 看信
+- 安全帽
+- 回八里家
+	- 帶手機殼
+
 
 
 # 出國準備
