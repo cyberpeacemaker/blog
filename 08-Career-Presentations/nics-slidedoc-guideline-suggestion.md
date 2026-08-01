@@ -1,11 +1,16 @@
 ---
-created: 2026-07-30 11:07
-updated: 2026-07-30 11:07
-tags: []
+title: "NICS SlideDoc Guideline Suggestion"
+description: "Guidelines for dense public-sector SlideDocs that explain background, actions, benefits, and technical detail."
+created: 2026-07-30
+updated: 2026-08-01
+tags: [workflow]
 type: reference
-lang: en
+lang: zh
 status: draft
 ---
+
+> Related: [[08-Career-Presentations]] · [[slidedoc-read-deck]] · [[project-presentation]]
+
 # 大方向
 - 方向可能是**SlideDoc（文件型簡報）** 或 **Read-deck（閱讀型簡報）**，文件能自己說話，而不是演講型獎報，作後演講人後的背景螢幕
 - 字多詳細、提供技術細節、同時顧慮他人能看懂

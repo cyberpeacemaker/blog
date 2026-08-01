@@ -1,11 +1,16 @@
 ---
-created: 2026-07-29 16:07
-updated: 2026-07-29 16:07
-tags: []
+title: "Distill, Prune, and Cut the Fat"
+description: "Workplace English options for describing data slimming, filtering noise, condensing, and pruning."
+created: 2026-07-29
+updated: 2026-08-01
+tags: [workflow]
 type: reference
-lang: en
+lang: zh
 status: draft
 ---
+
+> Related: [[07-Productivity-Work]] · [[tangible-term]] · [[ai-knowledge-compression-terms]]
+
 針對龐大資料進行「瘦身、精簡、去蕪存菁」，英文會根據你偏向**口語/比喻**、**商業簡報**還是**技術/資料分析**情境而有不同的道地表達：
 
 ### 1. 表達「瘦身、減重、剪除贅肉」

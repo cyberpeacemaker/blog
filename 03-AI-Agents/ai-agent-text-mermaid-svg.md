@@ -1,11 +1,16 @@
 ---
-created: 2026-07-29 10:07
-updated: 2026-07-29 10:07
-tags: []
+title: "Text, Mermaid, and SVG for Agent-Readable Docs"
+description: "Compares text, Mermaid, and SVG for human-readable but agent-parseable documentation flows."
+created: 2026-07-29
+updated: 2026-08-01
+tags: [ai, agents]
 type: reference
 lang: en
 status: draft
 ---
+
+> Related: [[MOC - AI Agents]] · [[agent-instruction]] · [[deterministic-tooling-pattern]]
+
 ## Survey: text vs diagram for DIARY promotion
 
   
