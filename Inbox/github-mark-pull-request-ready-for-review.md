@@ -1,11 +1,18 @@
 ---
-created: 2026-08-02 12:08
-updated: 2026-08-02 12:08
-tags: []
-type: reference
+title: "Fix GitHub markPullRequestReadyForReview Permission Errors"
+description: "Explains why GitHub Actions may fail to mark draft pull requests ready for review and how to grant the required permissions."
+created: 2026-08-02
+updated: 2026-08-02
+tags: [dev, git]
+type: howto
 lang: en
 status: draft
 ---
+
+> Related: [[MOC - Dev Environment]] · [[github-draft-pr]] · [[automation-pr-merge-policy]]
+
+# Fix GitHub markPullRequestReadyForReview Permission Errors
+
 ## Cause of the Error
 
 The error `GraphQL: Resource not accessible by integration (markPullRequestReadyForReview)` occurs because the default `GITHUB_TOKEN` running the workflow lacks **write permissions** to modify Pull Requests, or repository-level security settings are blocking Actions from altering PR states.
@@ -16,11 +23,9 @@ The error `GraphQL: Resource not accessible by integration (markPullRequestReady
 
 In your workflow file (located in `.github/workflows/`), explicitly grant the workflow job write access to pull requests.
 
-Add the `permissions` block to your job (or top-level workflow file):
+Add the `permissions` block to your job or top-level workflow file:
 
-YAML
-
-```
+```yaml
 jobs:
   mark-pr-ready:
     runs-on: ubuntu-latest
@@ -37,7 +42,7 @@ jobs:
           gh pr ready "$PR_NUMBER" --repo "$GH_REPO"
 ```
 
-> **Important:** Ensure `GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}` is defined under `env` for the step so the `gh` CLI receives proper authentication credentials.
+> Important: Ensure `GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}` is defined under `env` for the step so the `gh` CLI receives proper authentication credentials.
 
 ### Solution 2: Update Repository Workflow Permissions
 
@@ -62,5 +67,5 @@ If this workflow triggers on PRs originating from a **forked repository**:
 
 - GitHub automatically forces `GITHUB_TOKEN` to **read-only** mode for safety reasons.
     
-- **Fix:** Change the trigger event from `pull_request` to `pull_request_target` (which runs in the base repository context with write access), or pass a dedicated **Personal Access Token (PAT)** / **GitHub App token** via repository Secrets.
+- **Fix:** Change the trigger event from `pull_request` to `pull_request_target` (which runs in the base repository context with write access), or pass a dedicated **Personal Access Token (PAT)** / **GitHub App token** via repository secrets.
 
