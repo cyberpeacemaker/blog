@@ -7,9 +7,11 @@
 - 回NICS-CLAW 
 - ppt | nics-probationary | 這三個月的整理(BEC , porject-shepherd, misc)
 	- meeting-note > nics-meeting-minute
+- 菜瓜布
 - 出國準備
 	- ESTA
 	- 訂飯店
+	- 行李箱
 - 匯豐
 	- 08/07(五)12:00開戶
 	- 信用卡 + 附卡
