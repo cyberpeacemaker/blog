@@ -33,8 +33,4 @@ jobs:
             exit 1
           fi
 
-          if [[ "$IS_DRAFT" == "true" ]]; then
-            gh pr ready "$PR_NUMBER" --repo "$GH_REPO"
-          fi
-
           gh pr merge "$PR_NUMBER" --repo "$GH_REPO" --auto --squash --delete-branch
