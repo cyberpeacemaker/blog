@@ -69,6 +69,9 @@ Developer tooling: Git, Python, VS Code, testing, and environment setup.
 - [[github-assignees]] — GitHub issue ownership and template assignee routing
 - [[github-branch-protection]] — branch protection rules, required PRs, checks, and rulesets
 - [[github-draft-pr]] — draft pull request use cases for WIP feedback and CI
+- [[github-mark-pull-request-ready-for-review]] — GITHUB_TOKEN permissions for marking draft pull requests ready in Actions
+- [[github-personal-access-token-secret]] — PAT or GitHub App token fallback for PR automation permission limits
+- [[github-merge-conflict-gui-solved]] — keep current branch changes when resolving GitHub web UI merge conflicts
 - [[github-issue-template]] — issue templates for structured bug and feature reports
 - [[github-pr-template]] — pull request templates for review context and checklists
 - [[github-ssh-gpgkey]] — GitHub SSH, HTTPS, PAT, and Credential Manager troubleshooting in WSL
