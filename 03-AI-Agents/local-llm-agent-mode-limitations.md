@@ -1,11 +1,16 @@
 ---
-created: 2026-08-01 19:08
-updated: 2026-08-01 19:08
-tags: []
-type: reference
+title: "Local LLM Agent Mode Limitations"
+description: "Explains why small local Ollama models can fail in Continue Agent mode and when to switch to tool-capable models."
+created: 2026-08-01
+updated: 2026-08-02
+type: howto
 lang: en
 status: draft
+tags: [ai, agents, dev]
 ---
+
+> Related: [[MOC - AI Agents]] · [[local-llm-poc]] · [[ollama-get-started]]
+
 The error occurs because **Agent mode** is currently toggled on in Continue, but `smollm2:135m` does not support **tool/function calling** in Ollama.
 
 ## 🔍 What's Going On

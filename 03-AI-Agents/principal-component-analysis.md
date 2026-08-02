@@ -1,11 +1,16 @@
 ---
-created: 2026-08-01 15:08
-updated: 2026-08-01 15:08
-tags: []
-type: reference
-lang: en
+title: "Principal Component Analysis"
+description: "Explains PCA as a dimensionality-reduction technique, including geometry, eigenvectors, variance, and limitations."
+created: 2026-08-01
+updated: 2026-08-02
+type: concept
+lang: zh
 status: draft
+tags: [ai]
 ---
+
+> Related: [[MOC - AI Agents]] · [[local-ai]] · [[ai-knowledge-compression-terms]]
+
 > **主成分分析（Principal Component Analysis, 簡稱 PCA）** 是機器學習中最經典的**無監督降維（Unsupervised Dimensionality Reduction）**演算法。
 > 
 > 它的核心目的：**用最少的新特徵（維度），保留原始資料最多的資訊（變異數）。**

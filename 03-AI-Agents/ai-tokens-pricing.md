@@ -1,11 +1,15 @@
 ---
-created: 2026-08-01 14:08
-updated: 2026-08-01 14:08
-tags: []
-type: reference
+title: "AI Tokens and Pricing"
+description: "Explains tokens, tokenizers, input and output token pricing, streaming, and token usage optimization."
+created: 2026-08-01
+updated: 2026-08-02
+type: concept
 lang: en
 status: draft
+tags: [ai, cursor]
 ---
+
+> Related: [[MOC - AI Agents]] · [[context-management]] · [[03-AI-Agents/claude-session.context-window|claude-session.context-window]]
 
 - what is token | tokenizer
 - input 

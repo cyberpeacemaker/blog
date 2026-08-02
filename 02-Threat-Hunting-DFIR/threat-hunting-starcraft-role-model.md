@@ -1,11 +1,16 @@
 ---
-created: 2026-08-01 14:08
-updated: 2026-08-01 14:08
-tags: []
-type: reference
+title: "Threat Hunting StarCraft Role Model"
+description: "Maps StarCraft-inspired Arbiter, Executor, and Witness roles to threat-hunting governance and peer review."
+created: 2026-08-01
+updated: 2026-08-02
+type: concept
 lang: en
 status: draft
+tags: [threat-hunting, dfir, workflow]
 ---
+
+> Related: [[MOC - Threat Hunting]] · [[data-sensitive-opsec]] · [[threat-hunting-arbiter-executor-roles]]
+
 Ah, Protoss lore! That makes the structure click instantly. You're drawing directly from the **Judicator Caste**, the **Executors**, and units like **Observers/Witnesses**.
 
 Using StarCraft as a structural metaphor actually works surprisingly well for cybersecurity. It gives you a clean way to maintain **Separation of Duties (SoD)** and **privacy compliance (GDPR/PII)** while introducing built-in peer review.

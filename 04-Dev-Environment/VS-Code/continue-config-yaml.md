@@ -1,11 +1,16 @@
 ---
-created: 2026-08-01 19:08
-updated: 2026-08-01 19:08
-tags: []
-type: reference
+title: "Continue Config YAML"
+description: "Shows how to convert legacy Continue config.json model settings into the current config.yaml schema."
+created: 2026-08-01
+updated: 2026-08-02
+type: howto
 lang: en
 status: draft
+tags: [dev, ai]
 ---
+
+> Related: [[MOC - Dev Environment]] · [[local-llm-poc]] · [[ollama-get-started]]
+
 AI models often output the legacy **`config.json`** format because older documentation used JSON. Modern versions of Continue have transitioned to **`config.yaml`**.
 
 ### The Converted `config.yaml` Format

@@ -1,11 +1,15 @@
 ---
-created: 2026-08-01 14:08
-updated: 2026-08-01 14:08
-tags: []
+title: "Consensus, Common Ground, and Alignment"
+description: "Clarifies English terms for consensus, agreement, common ground, common understanding, and alignment."
+created: 2026-08-01
+updated: 2026-08-02
 type: reference
-lang: en
+lang: zh
 status: draft
+tags: [workflow]
 ---
+
+> Related: [[07-Productivity-Work]] · [[back-and-forth-push-and-pull]] · [[meeting-minute]]
 
 
 「共識」在英文中會根據**情境**（正式會議、日常溝通、化解分歧、法律條文）而有不同的對應單字與片語。

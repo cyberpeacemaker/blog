@@ -1,11 +1,15 @@
 ---
-created: 2026-08-01 19:08
-updated: 2026-08-01 19:08
-tags: []
+title: "Local AI Coding Model Selection"
+description: "Compares Qwen, DeepSeek, Llama, Phi, CodeGemma, and Codestral options for local AI coding in Continue."
+created: 2026-08-01
+updated: 2026-08-02
 type: reference
 lang: en
 status: draft
+tags: [ai, agents, dev]
 ---
+
+> Related: [[MOC - AI Agents]] · [[local-llm-poc]] · [[local-ai]]
 
 The rumor that "Chinese models aren't good" is actually outdated when it comes to open-source coding models.
 

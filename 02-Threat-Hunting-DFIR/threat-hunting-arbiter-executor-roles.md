@@ -1,12 +1,15 @@
 ---
-created: 2026-08-01 19:08
-updated: 2026-08-01 19:08
-tags: []
+title: "Threat Hunting Arbiter and Executor Roles"
+description: "Translates a threat-hunting governance model into Chief Arbiter, Operator, challenger, and Witness role terms."
+created: 2026-08-01
+updated: 2026-08-02
 type: reference
 lang: en
 status: draft
+tags: [threat-hunting, dfir, workflow]
 ---
 
+> Related: [[MOC - Threat Hunting]] · [[data-sensitive-opsec]] · [[threat-hunting-starcraft-role-model]]
 
 Here are two ways to translate your framework text into English, depending on how formal or natural you want the cybersecurity documentation to sound.
 

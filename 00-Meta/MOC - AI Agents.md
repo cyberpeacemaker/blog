@@ -2,7 +2,7 @@
 title: "MOC - AI Agents"
 description: "Maps AI agent frameworks, context management, local models, and agent instruction notes."
 created: 2026-07-07
-updated: 2026-08-01
+updated: 2026-08-02
 tags: [ai, agents, moc]
 type: hub
 lang: en
@@ -37,6 +37,8 @@ AI agent frameworks, multi-agent systems, context management, and local LLM work
 - [[ai-agency-accountability]] — AI agency, human intent, and accountability limits
 - [[competitive-landscape]] — AI and the changing competitive landscape
 - [[ai-era-tradeoff]] — AI era tradeoffs and survival coaching
+- [[ai-tokens-pricing]] — tokenization, input/output token pricing, streaming, and token usage optimization
+- [[principal-component-analysis]] — Chinese PCA concept note covering variance, eigenvectors, and dimensionality reduction limits
 - [[ai-knowledge-compression-terms]] — terminology for condensing, pruning, mining, embedding, and structuring AI knowledge
 
 - [[context-management]] — RAG vs dynamic context injection
@@ -72,6 +74,8 @@ AI agent frameworks, multi-agent systems, context management, and local LLM work
 - [[local-ai]] — local LLM model families and deployment tools
 - [[ollama-get-started]] — start, stop, and verify Ollama on Windows for local LLM workflows
 - [[local-llm-poc]] — Ollama and Continue PoC for local threat-hunting rule generation
+- [[local-llm-agent-mode-limitations]] — Continue Agent mode failures when local Ollama models lack tool calling
+- [[local-ai-coding-model-selection]] — local AI coding model choices for Continue autocomplete, chat, and edit roles
 
 ## Harness.io / DevSecOps
 
