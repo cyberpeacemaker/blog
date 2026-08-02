@@ -2,30 +2,23 @@
 - project-shepherd logo
 - PR check
 
-# Local llm
-- https://gemini.google.com/app/29926a3451b99030
-- poc 
-- hardware check
-- suggested model
-- ollama + docker?
-- check (continue + ollama) v.s  | git (report的部分很可惜)
+
 # Emergency
 - ppt | nics-probationary
 	- meeting-note > nics-meeting-minute
-- local llm
 - 出國準備
 	- ESTA
+	- 訂飯店
 - 匯豐
 	- 08/07(五)12:00開戶
 	- 信用卡 + 附卡
 	- 綁卡
 	- 從別的帳戶轉錢
 	- 別的銀行賣商品
-- 給peipei伴手禮, 手機殼
-- 手機充電
 
 # Appending
-- 護照 > CISA(ESTA) > 開戶
+- daily auto git pr
+- 整理repo (sync, gitignore)
 - GTI CTF
 - ac-hunter CTF
 - git control for demo (different version)
