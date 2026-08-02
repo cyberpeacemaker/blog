@@ -5,7 +5,7 @@
 
 # Emergency
 - 回NICS-CLAW 
-- ppt | nics-probationary | 這三個用的整理
+- ppt | nics-probationary | 這三個月的整理(BEC , porject-shepherd, misc)
 	- meeting-note > nics-meeting-minute
 - 出國準備
 	- ESTA
