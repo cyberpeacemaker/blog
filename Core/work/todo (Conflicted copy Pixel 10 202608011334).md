@@ -2,58 +2,48 @@
 - project-shepherd logo
 - PR check
 
-# Local llm
-- https://gemini.google.com/app/29926a3451b99030
-- poc 
-- hardware check
-- suggested model
-- ollama + docker?
-- check (continue + ollama) v.s  | git (report的部分很可惜)
-# Emergency
-- ppt | nics-probationary
-	- meeting-note > nics-meeting-minute
-- local llm
-- 出國準備
-	- ESTA
-- 匯豐
-	- 08/07(五)12:00開戶
-	- 信用卡 + 附卡
-	- 綁卡
-	- 從別的帳戶轉錢
-	- 別的銀行賣商品
-- 給peipei伴手禮, 手機殼
-- 手機充電
+超電錶 給手機殼 拿身分證護照信 安全帽
+餅蛋糕伴手禮
+執政官 效能
 
-# Appending
+# 出國準備
+- 拿護照 身分證 esta
+- 跟爸媽借錢 辦附卡
+- 開戶
+
+# Probationary
+- p.25 推斷證 修改多餘字
+
+# EmergenCY
+
 - 護照 > CISA(ESTA) > 開戶
+- malcolm report
+	- 目前最新技術在台鐵
+	- 目前撰寫環境先回到(BEC_v2)，可能需要搬部分資料回來(nics-malcolm-bec)
+	- 做完在搬遷到`nics-malcolm-bec`
+	- hunt lead
+	- 69跟AD互動 鎖定兩台受害者 是因為DNS反向查詢有回傳
+- ppt rehersal
+	- 中文題目link失效？
+- 雙周
+---
+- shepherd
+
+# Now
+
+- new bec project standard of process
+- nics-probationary
+- bec report
+- template (markdown, skill, minute additional instruction)
+
+# 暫時推遲
+
+- 測otex-claw 前端 + 現場
 - GTI CTF
 - ac-hunter CTF
 - git control for demo (different version)
 - human agent audience doc
-- new bec project standard of process
-- bookmark
-- asana
-- template (markdown, skill, minute additional instruction)
-- 玉山信用卡開卡、綁卡
-- 看信
-- 安全帽
-- 回八里家
-	- 帶手機殼
-	- 拿美金
-# malcolm report
-- 目前最新技術在台鐵
-- 目前撰寫環境先回到(BEC_v2)，可能需要搬部分資料回來(nics-malcolm-bec)
-- 做完在搬遷到`nics-malcolm-bec`
-- hunt lead
-- 69跟AD互動 鎖定兩台受害者 是因為DNS反向查詢有回傳
-- 半年報告 AI
 
-# BEC v2 後續收尾
-- malcolm 製作lab 製作封包 製作poc
-- MSDefender , Cladue設置
-- pivot issue fix:
-	- we have fix the opensearch-arkime-pivot issue, which might be the reason why you can't correctly retrieve the raw packet. can you try again to see if you can solve 
----
 
 # frontmatter & OKF
 
@@ -100,6 +90,14 @@ knowledge/
 - cursor-setup
 - cursor 使用 (至少先setting, 在automation)
 - claude (基本功能看看)
+
+
+
+# BEC v2 後續收尾
+- malcolm 製作lab 製作封包 製作poc
+- MSDefender , Cladue設置
+- pivot issue fix:
+	- we have fix the opensearch-arkime-pivot issue, which might be the reason why you can't correctly retrieve the raw packet. can you try again to see if you can solve 
 	
 ---
 
