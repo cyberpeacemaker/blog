@@ -1,8 +1,8 @@
 ---
 title: "Automation Prompt Suggestion"
-description: "Draft prompt pattern for Cursor inbox triage using cloud-branch commits, PR creation, manual review, and CI validation."
+description: "Draft prompt pattern for unattended Cursor inbox triage using cloud-branch commits, PR auto-merge, and CI validation."
 created: 2026-07-09
-updated: 2026-08-02
+updated: 2026-07-09
 tags: [ai, agents, cursor, workflow]
 type: reference
 lang: en
@@ -11,7 +11,7 @@ status: draft
 
 > Related: [[MOC - Claude & Cursor]] · [[cursor-cloud-sandbox-trap]] · [[inbox-triage-rules]] · [[automation-pr-merge-policy]]
 
-### 1. How Cursor Cloud Branch + Manual-Review PR Works
+### 1. How Cursor Cloud Branch + PR Auto-Merge Works
 
 Because you selected `main` as the target branch in your automation settings, Cursor clones `main` but the agent works on an ephemeral cloud branch (e.g. `cursor/daily-inbox-triage-9370`). The process looks like this:
 
@@ -25,19 +25,25 @@ Because you selected `main` as the target branch in your automation settings, Cu
                     [Commits changes by phase]
                              │
                              ▼
-               [Push branch + open PR]
+                    [finish-ai-task.sh]
                              │
+              ┌──────────────┴──────────────┐
+              ▼                             ▼
+    [Push branch + open PR]      [Enable auto-merge]
+              │                             │
+              └──────────────┬──────────────┘
+                             ▼
               [CI triage-validation passes]
                              │
                              ▼
-                 [Human reviews and merges]
+              [GitHub auto-merges squash to main]
 ```
 
-You wake up to a PR that shows exactly what changed. If CI fails, the PR stays open for correction; if CI passes, you still review and merge manually.
+You wake up to organized files on `main` without manually clicking Merge. If CI fails, the PR stays open for review.
 
-### 2. Cloud-branch prompt: phase commits + manual-review PR
+### 2. Cloud-branch prompt: phase commits + PR auto-merge
 
-Configure the Cursor Automation target branch as `main` (base to clone), let the agent commit by phase on the cloud branch, validate, push the branch, and open a PR. The agent should stop there so a human can review and merge manually.
+Since this automation runs completely unattended, do not make it wait for manual PR review. Configure the Cursor Automation target branch as `main` (base to clone), let the agent commit by phase on the cloud branch, validate, then run the finish script.
 
 Here is a production-grade prompt you can copy and paste directly into your **Agent Instructions**:
 
@@ -53,18 +59,18 @@ Here is a production-grade prompt you can copy and paste directly into your **Ag
 >
 > 3. **Verify:** Confirm the working tree is clean, only trusted vault-triage paths changed, and validation commands pass.
 >
-> 4. **Wrap Up:** When all phases are fully completed and committed:
+> 4. **Wrap Up:** When all phases are fully completed and committed, run:
 >
 >    ```bash
->    git push -u origin <current-branch>
+>    bash scripts/finish-ai-task.sh
 >    ```
 >
->    Open or update a pull request from the current cloud branch to `main` using the configured PR automation tool. Do **not** enable auto-merge and do **not** run `scripts/finish-ai-task.sh`; a human will review and merge manually.
+>    The finish script pushes the branch, opens a PR, and enables auto-merge after CI checks pass. It does not merge immediately or use `--admin`.
 ```
 
 ### Why this setup works
 
 - **Cursor-compatible:** Works with Cursor Cloud's ephemeral branch model; no direct push to `main` required.
-- **Manual review:** GitHub shows the exact diff before anything lands on `main`.
-- **Phase rollback:** If the AI misclassifies a file, inspect phase commits in the PR and ask for a correction before merging.
-- **CI gate:** `triage-validation` still checks trusted paths and vault map generation before review.
+- **No PR fatigue:** Auto-merge completes the PR after CI passes; you just pull the latest vault changes.
+- **Phase rollback:** If the AI misclassifies a file, revert the squash commit on `main` or inspect phase commits in the PR.
+- **Guarded finish:** `scripts/finish-ai-task.sh` refuses to run on `main`, with a dirty tree, with a stale branch, or with changes outside trusted triage paths.

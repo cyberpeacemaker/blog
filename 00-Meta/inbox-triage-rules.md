@@ -126,9 +126,13 @@ Do not duplicate MOC entries if the note is already listed.
 
 Manual triage: **organize only.** Do not run `git add`, `git commit`, or `git push`; leave changes unstaged for human review.
 
-Cursor Automation daily triage: follow [[automation-prompt-suggestion]] and [[automation-pr-merge-policy]]. The automation may commit by phase on the cloud branch, verify the result, push the branch, and open a PR for human review.
+Cursor Automation daily triage: follow [[automation-prompt-suggestion]] and [[automation-pr-merge-policy]]. The automation may commit by phase on the cloud branch, verify the result, then run:
 
-Do **not** enable auto-merge for inbox triage PRs. A human should review and merge the PR manually.
+```bash
+bash scripts/finish-ai-task.sh
+```
+
+The finish script pushes the cloud branch, opens a PR, and enables auto-merge after CI checks pass.
 
 ## Summary format
 

@@ -2,7 +2,7 @@
 set -euo pipefail
 
 # Intended for trusted daily inbox triage on Cursor cloud branches.
-# Pushes the branch and opens a PR for manual review.
+# Pushes the branch, opens a PR, and enables auto-merge after CI passes.
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 BRANCH_NAME="$(git branch --show-current)"
@@ -55,5 +55,7 @@ if [[ -z "$PR_URL" ]]; then
     --body "Automated daily inbox triage. Squash commit preserves phase-by-phase history in PR commits.")"
 fi
 
-echo "PR opened for manual review: $PR_URL"
-echo "Auto-merge is intentionally not enabled; review and merge the PR manually."
+gh pr merge "$PR_URL" --auto --squash --delete-branch
+
+echo "PR opened and auto-merge enabled: $PR_URL"
+echo "Merge completes after triage-validation CI checks pass."

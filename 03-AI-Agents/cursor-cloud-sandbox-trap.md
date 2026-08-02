@@ -2,7 +2,7 @@
 title: "Cursor Cloud Sandbox Trap"
 description: "Explains why scheduled Cursor automations need committed branch or PR output instead of leaving changes inside ephemeral cloud runs."
 created: 2026-07-09
-updated: 2026-08-02
+updated: 2026-07-09
 tags: [ai, agents, cursor, workflow]
 type: reference
 lang: en
@@ -21,14 +21,14 @@ Because this automation is triggered automatically **every day at 07:00** (as se
 
 But because you told it **"no commit/push"**, it drops the tools and shuts down. Those changes stay stuck in that specific run's cloud branch. The next morning at 7:00 AM, it pulls your _still-unorganized_ `main` branch and does the exact same thing again. Your actual local repo or remote GitHub `main` branch will never actually change.
 
-## The Fix: PR for Manual Review (Recommended for Cursor Automation)
+## The Fix: PR + Auto-Merge (Recommended for Cursor Automation)
 
 Cursor Cloud scheduled automations always work on an ephemeral cloud branch — they cannot reliably push directly to `main`. The correct unattended pattern is:
 
 1. Agent commits by phase on the cloud branch
-2. Agent pushes the branch and opens a PR
+2. `bash scripts/finish-ai-task.sh` pushes the branch, opens a PR, and enables auto-merge
 3. GitHub Actions CI validates the changes
-4. Human reviews and merges manually
+4. GitHub auto-merges to `main` after checks pass
 
 See [[automation-prompt-suggestion]] for the full prompt and [[automation-pr-merge-policy]] for repo settings.
 
@@ -38,8 +38,8 @@ Plaintext
 1. Read rules from 'inbox-triage-rules.md' and 'Daily Workflow.md'.
 2. Organize the files in the 'Inbox/' directory accordingly.
 3. Commit by phase on the current cloud branch (do NOT checkout main).
-4. Push the current branch and open a PR to main.
-   Do not enable auto-merge; wait for manual review.
+4. Run: bash scripts/finish-ai-task.sh
+   (pushes branch, opens PR, enables auto-merge after CI passes)
 ```
 
 ### Alternative: Direct Push to Main (Non-Cursor Contexts Only)
