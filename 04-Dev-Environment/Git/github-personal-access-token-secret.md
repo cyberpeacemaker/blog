@@ -1,11 +1,18 @@
 ---
-created: 2026-08-02 12:08
-updated: 2026-08-02 12:08
-tags: []
-type: reference
+title: "GitHub Personal Access Token Secret for PR Automation"
+description: "Shows when a GitHub PAT or App token can bypass GITHUB_TOKEN limits for pull request automation."
+created: 2026-08-02
+updated: 2026-08-02
+tags: [dev, git]
+type: howto
 lang: en
 status: draft
 ---
+
+> Related: [[MOC - Dev Environment]] · [[github-mark-pull-request-ready-for-review]] · [[github-actions-sensitive-patterns]]
+
+# GitHub Personal Access Token Secret for PR Automation
+
 That AI suggestion is **spot on**.
 
 While granting permissions in YAML usually works, `GITHUB_TOKEN` frequently hits a wall on `markPullRequestReadyForReview` under three common scenarios:
@@ -17,7 +24,7 @@ While granting permissions in YAML usually works, `GITHUB_TOKEN` frequently hits
 3. **Branch protection rules:** The target branch might restrict PR modifications to specific users or apps.
     
 
-Using a custom **Personal Access Token (PAT)** or a **GitHub App token** bypasses these `GITHUB_TOKEN` limitations entirely.
+Using a custom **Personal Access Token (PAT)** or a **GitHub App token** can bypass these `GITHUB_TOKEN` limitations.
 
 ## How to Verify It (Quick PAT Test)
 
@@ -25,7 +32,7 @@ The fastest way to test if `GITHUB_TOKEN` restrictions are the culprit is to tem
 
 ### Step 1: Create a Personal Access Token
 
-1. Go to your GitHub profile **Settings** $\rightarrow$ **Developer settings** $\rightarrow$ **Personal access tokens** $\rightarrow$ **Fine-grained tokens** (or Tokens Classic).
+1. Go to your GitHub profile **Settings** -> **Developer settings** -> **Personal access tokens** -> **Fine-grained tokens** (or Tokens Classic).
     
 2. Click **Generate new token**.
     
@@ -42,7 +49,7 @@ The fastest way to test if `GITHUB_TOKEN` restrictions are the culprit is to tem
 
 ### Step 2: Add the Token to Repository Secrets
 
-1. Go to your repository's **Settings** $\rightarrow$ **Secrets and variables** $\rightarrow$ **Actions**.
+1. Go to your repository's **Settings** -> **Secrets and variables** -> **Actions**.
     
 2. Click **New repository secret**.
     
@@ -51,11 +58,9 @@ The fastest way to test if `GITHUB_TOKEN` restrictions are the culprit is to tem
 
 ### Step 3: Update Your Workflow File
 
-Update the step in your `.github/workflows/` file to use `secrets.PAT_TOKEN` instead of the default `GITHUB_TOKEN`:
+Update the step in your `.github/workflows/` file to use a repository secret instead of the default `GITHUB_TOKEN`:
 
-YAML
-
-```
+```yaml
 - name: Mark PR ready for review
   env:
     GH_TOKEN: ${{ secrets.PAT_TOKEN }}  # Swapped from GITHUB_TOKEN
@@ -67,11 +72,11 @@ YAML
 
 ### Step 4: Re-run the Workflow
 
-Trigger or re-run the failed GitHub Action:
+Trigger or rerun the failed GitHub Action:
 
-- **If it succeeds:** You’ve confirmed that `GITHUB_TOKEN` permission restrictions were indeed the issue.
+- **If it succeeds:** You have confirmed that `GITHUB_TOKEN` permission restrictions were the issue.
     
-- **If it fails with a new error:** Look at the exact output—it will tell you if the PAT is missing a specific scope or if a branch rule is blocking it.
+- **If it fails with a new error:** Look at the exact output. It will tell you if the PAT is missing a specific scope or if a branch rule is blocking it.
     
 
 ## Next Steps: Production Best Practice
