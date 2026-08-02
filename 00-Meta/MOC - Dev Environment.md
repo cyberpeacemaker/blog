@@ -78,7 +78,7 @@ Developer tooling: Git, Python, VS Code, testing, and environment setup.
 - [[fix-broken-cicd]] — handling broken CI/CD required checks
 - [[git-squash-merge]] — GitHub squash merge review safety
 - [[git-self-experience]] — Git and CI/CD review roadmap
-- [[pr-auto-merge-github-action]] — daily triage PR auto-merge workflow plan
+- [[pr-auto-merge-github-action]] — daily triage PR manual-review workflow plan
 - [[github-action-flaws]] — Git hooks and GitHub Actions guardrail tradeoffs
 - [[github-actions-sensitive-patterns]] — GitHub Secrets tradeoffs for CI sensitive-pattern scanning
 - [[github-collaboration-pr-loop]] — issue, PR review, kanban, and CI loop for two-person teams
@@ -98,11 +98,11 @@ Developer tooling: Git, Python, VS Code, testing, and environment setup.
 
 - [[git-best-practice]] — Git best practices
 - [[git-pr-example]] — PR workflow example
-- [[automation-pr-merge-policy]] — PR auto-merge, direct-to-main, and review-first automation patterns
-- [[pr-auto-merge-policy-gh-pr-create]] — PR + auto-merge verdict for daily inbox triage automation
+- [[automation-pr-merge-policy]] — direct-to-main, auto-merge, and review-first automation patterns
+- [[pr-auto-merge-policy-gh-pr-create]] — PR + manual-review verdict for daily inbox triage automation
 - [[git-post-merge-work-issue]] — recover commits pushed after a PR has already merged
 - [[git-squash-and-merge]] — iterative commits with squash merge workflow
-- [[agent-pr-squash-and-merge]] — PR auto-merge finish script for trusted daily inbox triage
+- [[agent-pr-squash-and-merge]] — manual-review PR finish script for daily inbox triage
 - [[github-authentication]] — GitHub authentication
 - [[github-organization]] — GitHub repo organization
 - [[github-share-repo]] — sharing repos and collaborator access

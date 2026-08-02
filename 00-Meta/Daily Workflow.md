@@ -90,7 +90,7 @@ If auto-trigger still fails after reload, use step 3 when creating inbox notes u
 
 1. **Obsidian Git** auto-commits every 30 minutes (configurable in Settings → Obsidian Git)
 2. Or commit manually: `git add . && git commit -m "2026-07-07"` then `git push`
-3. **Cursor daily inbox triage automation** clones `main`, commits by phase on the cloud branch, validates, then runs `bash scripts/finish-ai-task.sh` to open a PR with auto-merge after CI passes (see [[automation-prompt-suggestion]] and [[automation-pr-merge-policy]])
+3. **Cursor daily inbox triage automation** clones `main`, commits by phase on the cloud branch, validates, pushes the branch, and opens a PR for manual review (see [[automation-prompt-suggestion]] and [[automation-pr-merge-policy]])
 4. **Git is source of truth** — pull before editing on another machine
 
 ## Review (Weekly)

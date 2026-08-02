@@ -1,8 +1,8 @@
 ---
-title: "PR Auto-Merge Daily Triage Script"
-description: "Shell workflow for trusted daily inbox triage that validates phase commits, opens a PR, and enables auto-merge after CI."
+title: "Manual-Review Daily Triage PR Script"
+description: "Shell workflow for daily inbox triage that validates phase commits, opens a PR, and stops for human review."
 created: 2026-07-09
-updated: 2026-07-09
+updated: 2026-08-02
 tags: [dev, git, ai, workflow]
 type: howto
 lang: en
@@ -15,13 +15,13 @@ You are completely right. Committing every single file move is overkill and crea
 
 Instead of thinking in _files_, we want the AI to think in _milestones_ (e.g., Phase 1: Moving/Sorting, Phase 2: Content polishing, Phase 3: Index/MOC updates).
 
-For trusted daily inbox triage in this personal vault, use the Cursor Cloud branch + PR auto-merge pattern. The Cursor Automation should target `main` (base branch), commit local phase changes on the cloud branch, validate them, then run the finish script.
+For daily inbox triage in this personal vault, use the Cursor Cloud branch + manual-review PR pattern. The Cursor Automation should target `main` (base branch), commit local phase changes on the cloud branch, validate them, then push the branch and open a PR.
 
-## 1. The PR Auto-Merge "Finish Task" Script
+## 1. The Manual-Review "Finish Task" Script
 
 Save this script as something generic, like `scripts/finish-ai-task.sh`.
 
-It pushes the cloud branch, opens a PR if one does not exist, and enables auto-merge so GitHub merges after CI passes.
+It pushes the cloud branch and opens a PR if one does not exist. It intentionally does **not** enable auto-merge.
 
 Current implementation: [`scripts/finish-ai-task.sh`](../../scripts/finish-ai-task.sh).
 
@@ -32,8 +32,8 @@ Key safeguards:
 - require a clean working tree
 - fetch `origin/main` and fail if the branch is behind
 - validate trusted vault-triage paths via [`validate-triage-paths.sh`](../../scripts/validate-triage-paths.sh)
-- push branch, open PR, enable auto-merge (`gh pr merge --auto --squash --delete-branch`)
-- avoid immediate merge and `--admin`
+- push branch and open PR
+- avoid auto-merge, immediate merge, and `--admin`
 - do not `git checkout main` at the end
 
 ## 2. The Daily Triage Prompt Blueprint
@@ -50,7 +50,7 @@ Now, your prompt structure becomes modular for trusted daily triage. For larger 
 >         
 > 3. **Verify:** Confirm the working tree is clean, only trusted vault-triage paths changed, and validation commands pass.
 >
-> 4. **Wrap Up:** When all phases are fully completed and committed, run: `bash scripts/finish-ai-task.sh`
+> 4. **Wrap Up:** When all phases are fully completed and committed, push the current branch and open or update a PR to `main`. Do **not** enable auto-merge.
 >     
 
 ## Why this hits the sweet spot
@@ -63,7 +63,7 @@ Now, your prompt structure becomes modular for trusted daily triage. For larger 
                 
     - `mocs: appended new links to Index MOC`
         
-- **Low Friction:** The AI handles the logical grouping based on its workflow phases, and the script handles push + PR + auto-merge.
+- **Review-first:** The AI handles the logical grouping based on its workflow phases, and the PR shows the exact diff for human review.
 - **CI gate:** [`.github/workflows/triage-validation.yml`](../../.github/workflows/triage-validation.yml) validates paths and rebuilds the vault map before merge.
 
-Use manual-review PR workflows (Mode 3) when the task is no longer a trusted daily vault chore.
+Use this manual-review PR workflow for daily triage and any task where the diff should be checked before merge.
