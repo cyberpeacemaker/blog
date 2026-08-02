@@ -2,7 +2,7 @@
 title: "MOC - Threat Hunting"
 description: "Maps threat hunting methodology, forensics, malware, encrypted traffic analysis, and CTF notes."
 created: 2026-07-07
-updated: 2026-07-27
+updated: 2026-08-02
 tags: [threat-hunting, dfir, mitre, moc]
 type: hub
 lang: en
@@ -18,6 +18,8 @@ Threat hunting methodology, forensics, CTF, and write-up standards.
 - [[ai-threat-hunting-capabilities]] — AI capabilities in threat hunting detection
 - [[threat-hunt-plan]] — air-gapped AI-assisted Malcolm hunt workflow from OSINT and MITRE mapping to human review
 - [[threat-hunt-plan-feedback]] — design critique for metadata-only agent feedback and network-observable TTP constraints
+- [[threat-hunting-starcraft-role-model]] — StarCraft-inspired Arbiter, Executor, and Witness model for hunting governance
+- [[threat-hunting-arbiter-executor-roles]] — professional English role terms for Arbiter, Operator, challenger, and Witness responsibilities
 - [[data-sensitive-opsec]] — Chinese OPSEC guidance for sanitizing OT/CI hunting data before sharing or AI-assisted analysis
 - [[opsec]] — Chinese overview of operations security concepts and risk-control steps
 - [[alert-driven-framework-driven]] — SANS, PEAK, TaHiTI, and HMM path from alert-driven to framework-driven hunts
@@ -83,6 +85,7 @@ Threat hunting methodology, forensics, CTF, and write-up standards.
 
 ## Threat Intel
 
+- [[cve-cvss-nvd]] — Chinese overview of CVE identifiers, CVSS scoring, and NVD vulnerability records
 - [[google-threat-intelligence]] — Google Threat Intelligence
 - [[fully-undetected]] — phishing FUD as fully undetected infrastructure and fear/uncertainty/doubt social engineering
 

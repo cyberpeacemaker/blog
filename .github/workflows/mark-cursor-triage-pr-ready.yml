@@ -1,18 +1,17 @@
-name: Mark Cursor Triage PR Ready
+name: Prepare Cursor Triage PR Auto-Merge
 
 on:
   pull_request_target:
-    types: [opened, reopened, synchronize]
+    types: [opened, reopened, synchronize, ready_for_review]
     branches: [main]
 
 permissions:
   pull-requests: write
 
 jobs:
-  mark-ready:
-    name: Mark matching automation PRs ready
+  prepare-auto-merge:
+    name: Mark matching automation PRs ready and request auto-merge
     if: >-
-      github.event.pull_request.draft &&
       github.event.pull_request.head.repo.full_name == github.repository &&
       (
         startsWith(github.event.pull_request.head.ref, 'cursor/daily-inbox-triage') ||
@@ -22,9 +21,20 @@ jobs:
       )
     runs-on: ubuntu-latest
     steps:
-      - name: Mark PR ready for review
+      - name: Mark PR ready and request auto-merge
         env:
           GH_TOKEN: ${{ secrets.PAT_TOKEN }}
           GH_REPO: ${{ github.repository }}
           PR_NUMBER: ${{ github.event.pull_request.number }}
-        run: gh pr merge "$PR_NUMBER" --repo "$GH_REPO" --auto --squash --delete-branch
+          IS_DRAFT: ${{ github.event.pull_request.draft }}
+        run: |
+          if [[ -z "${GH_TOKEN:-}" ]]; then
+            echo "Error: PAT_TOKEN secret is required to mark Cursor-created draft PRs ready and request auto-merge."
+            exit 1
+          fi
+
+          if [[ "$IS_DRAFT" == "true" ]]; then
+            gh pr ready "$PR_NUMBER" --repo "$GH_REPO"
+          fi
+
+          gh pr merge "$PR_NUMBER" --repo "$GH_REPO" --auto --squash --delete-branch

@@ -2,7 +2,7 @@
 title: "MOC - Dev Environment"
 description: "Maps developer tooling, Git, Python, VS Code, testing, Windows, and WSL environment notes."
 created: 2026-07-07
-updated: 2026-07-25
+updated: 2026-08-02
 tags: [dev, moc]
 type: hub
 lang: en
@@ -144,6 +144,7 @@ Developer tooling: Git, Python, VS Code, testing, and environment setup.
 
 ## VS Code / Cursor
 
+- [[continue-config-yaml]] — convert Continue local model settings from legacy JSON to current YAML schema
 - [[vscode-command-palette-fuzzy-search]] — Command Palette fuzzy search behavior and shortcuts
 - [[vscode-custom-visual-text]] — customize VS Code editor typography, Markdown syntax colors, preview CSS, and extensions
 - [[vscode-compact-folder]] — disable compact folders in VS Code Explorer
