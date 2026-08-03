@@ -4,10 +4,9 @@
 
 
 # Emergency
-- 回NICS-CLAW 
-- ppt | 這三個月的整理(BEC , porject-shepherd, misc)
+
+- ppt | 這三個月的整理(BEC , porject-shepherd, misc) | bookmark
 	- meeting-note > nics-meeting-minute
-- 菜瓜布
 - 出國準備
 	- ESTA
 	- 訂飯店
@@ -19,6 +18,7 @@
 	- 從別的帳戶轉錢
 	- 別的銀行賣商品
 - 訂生日蛋糕 (卡片)
+- 回八里家參考個人事項
 
 # Appending
 - obsidian automaion
@@ -29,15 +29,11 @@
 - git control for demo (different version)
 - human agent audience doc
 - new bec project standard of process
-- bookmark
 - asana
 - template (markdown, skill, minute additional instruction)
 - 玉山信用卡開卡、綁卡
 - 看信
 - 安全帽
-- 回八里家
-	- 帶手機殼
-	- 拿美金
 # malcolm report
 - 目前最新技術在台鐵
 - 目前撰寫環境先回到(BEC_v2)，可能需要搬部分資料回來(nics-malcolm-bec)
@@ -53,44 +49,9 @@
 	- we have fix the opensearch-arkime-pivot issue, which might be the reason why you can't correctly retrieve the raw packet. can you try again to see if you can solve 
 ---
 
-# frontmatter & OKF
-
-- automated updated with git control
-- add [doc,survey] 自動摘要yaml, kof
-
-```yaml
----
-title: "Clear, Semantic Title"
-description: "Punchy SEO summary + core semantic intent for RAG/vector filtering."
-created: YYYY-MM-DD
-updated: YYYY-MM-DD        # Crucial for AI to know if the knowledge is stale
-type: howto                # reference | howto | hub | concept — vital for MCP routers
-lang: en
-draft: true
-
-# --- AI & Agent Enhanced Fields (Infer these where possible!) ---
-domain: ""                 # e.g., tech/ai, life/health — narrows RAG search scope
-relations: []              # [slug-of-parent, slug-of-related] — builds the AI graph
-prerequisites: []          # What the human (or agent) needs to know before reading
-visibility: "private"      # private | internal | public — guards against AI data leakage
-tags: []                   # For hybrid (keyword + vector) RAG search
----
-```
-
-```plaintext
-knowledge/
-├── index.md             <-- The master map of your repo's knowledge
-├── services/
-│   ├── index.md         <-- Map of your services
-│   ├── auth-api.md      <-- Concept file (Short frontmatter + body)
-│   └── payment-gw.md    <-- Concept file
-└── database/
-    ├── index.md
-    └── schema.md
-```
-
 # AI
 - 101 claude
+- Claude design rule
 - 101 cursor, vscode agent
 - `finish-ai-task.sh`
 - auto ai categorize 'blog' (fills tags/lang)
@@ -98,7 +59,8 @@ knowledge/
 - cursor-setup
 - cursor 使用 (至少先setting, 在automation)
 - claude (基本功能看看)
-	
+- Hacking AI
+
 ---
 
 # 暫時推遲的事情
@@ -128,12 +90,6 @@ knowledge/
 - [ICS, Zeek, Suricata]_101
 - Malcolm_101
 - 
-### Project Shepherd
-- Porject_BEC_v3
-- lm studio
-### AI Learning
-- Claude_101
-- Claude design rule
 
 ---
 
@@ -155,11 +111,6 @@ knowledge/
 - Slack+Asana+Jira的測試
 - Github action
 - -cycom
-# Hacking AI
-剛剛想到可以測試一下hacking類型的AI，不過帶出幾個話題
- - local llm
- - destiliate
- - mcp
 
 ---
 
