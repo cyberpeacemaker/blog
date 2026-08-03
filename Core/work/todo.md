@@ -22,6 +22,7 @@
 
 # Appending
 - obsidian automaion
+- obsidian 其他vault的整理
 - daily auto git pr
 - 整理repo (sync, gitignore)
 - GTI CTF
